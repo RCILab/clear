@@ -3,7 +3,7 @@
 Anonymous project page for **CLEAR: Certified Constraint-Compatible Motion for
 Multi-Robot Passage** (submitted to IEEE T-RO).
 
-- `index.html` — project page (template shared with the other RCILab project pages)
+- `index.html` — project page
 - `playground/` — in-browser replay of precomputed runs from the actual CLEAR
   pipeline (static run bank; no server required)
 - `static/` — page assets
