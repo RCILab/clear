@@ -70,13 +70,20 @@
     <button class="fam" data-f="swap">Swap</button>
     <button class="fam" data-f="circ15">Circ15</button>
     <button class="fam" data-f="rect15">Rect15</button>
+    <button class="fam" data-f="doorway">Doorway</button>
+    <button class="fam" data-f="intersection">Intersection</button>
   </div>
 
   <div class="label">Team size N</div>
-  <div class="row">
+  <div class="row" id="nnMain">
     <button class="nn" data-n="20">20</button>
     <button class="nn" data-n="40">40</button>
     <button class="nn" data-n="60">60</button>
+    <button class="nn" data-n="80">80</button>
+  </div>
+  <div class="row" id="nnSmg" style="display:none">
+    <button class="nn" data-n="8">8</button>
+    <button class="nn" data-n="16">16</button>
   </div>
 
   <div class="label">Seed</div>
@@ -112,6 +119,8 @@ The simulation is computed tick by tick while you watch.</div>
     <div><span>frame buffer</span><span id="h-buf">&ndash;</span></div>
     <div><span>makespan</span><span id="h-mk">&ndash;</span></div>
     <div><span>sampled min pair</span><span id="h-mp">&ndash;</span></div>
+    <div><span>flow (robots/m&middot;s)</span><span id="h-flow">&ndash;</span></div>
+    <div><span>delay (s)</span><span id="h-delay">&ndash;</span></div>
   </div>
 </div>
 
@@ -171,13 +180,28 @@ function pickSeed() {
 })();
 
 /* ---------- controls ----------------------------------------------------- */
+const SMG_FAMILIES = new Set(["doorway", "intersection"]);
+function isSmgFamily() { return SMG_FAMILIES.has(family); }
+function syncTeamSizeRow() {
+  const smg = isSmgFamily();
+  $("nnMain").style.display = smg ? "none" : "flex";
+  $("nnSmg").style.display = smg ? "flex" : "none";
+  const valid = smg ? [8, 16] : [20, 40, 60, 80];
+  if (!valid.includes(nRobots)) { nRobots = valid[0]; dirty = true; }
+  const rowId = smg ? "nnSmg" : "nnMain";
+  document.querySelectorAll(".nn").forEach(x =>
+    x.classList.toggle("active",
+      +x.dataset.n === nRobots && x.parentElement.id === rowId));
+}
 document.querySelectorAll(".fam").forEach(b => b.onclick = () => {
   family = b.dataset.f;
   document.querySelectorAll(".fam").forEach(x => x.classList.toggle("active", x === b));
+  syncTeamSizeRow();
   pickSeed();
   $("play").disabled = false;
   $("status").classList.remove("err");
-  $("status").textContent = `${family}, N=${nRobots}, seed=${$("seed").value} — press Play.`;
+  $("status").textContent = `${family}, N=${nRobots}, seed=${$("seed").value} — press Play.`
+    + (isSmgFamily() ? "\nFlow and delay are computed after the run." : "");
 });
 document.querySelectorAll(".nn").forEach(b => b.onclick = () => {
   nRobots = +b.dataset.n; dirty = true;
@@ -289,7 +313,12 @@ function handleMessage(m) {
     $("hud").style.display = "block";
     $("h-scn").textContent = `${m.family} / N=${m.n} / seed ${m.seed}`;
     $("h-mk").textContent = "–"; $("h-mp").textContent = "–";
+    $("h-flow").textContent = "–"; $("h-delay").textContent = "–";
     $("status").textContent = "Buffering …";
+    return;
+  }
+  if (m.type === "phase") {
+    $("status").textContent = m.msg + " …";
     return;
   }
   if (m.type === "frame") {
@@ -330,6 +359,8 @@ function handleMessage(m) {
       ? m.makespan.toFixed(2) + " s" : "timeout";
     $("h-mp").textContent = m.min_pair !== null && isFinite(m.min_pair)
       ? m.min_pair.toFixed(3) + " m" : "–";
+    $("h-flow").textContent = m.flow != null ? m.flow.toFixed(3) : "–";
+    $("h-delay").textContent = m.delay != null ? m.delay.toFixed(2) + " s" : "–";
     $("status").textContent =
       (m.completed
         ? `Completed: all ${data.n} robots arrived` +
@@ -383,6 +414,8 @@ async function computeBatch() {
     $("h-scn").textContent = `${j.family} / N=${j.n} / seed ${j.seed}`;
     $("h-mk").textContent = j.completed ? j.makespan.toFixed(2) + " s" : "timeout";
     $("h-mp").textContent = j.min_pair.toFixed(3) + " m";
+    $("h-flow").textContent = j.flow != null ? j.flow.toFixed(3) : "–";
+    $("h-delay").textContent = j.delay != null ? j.delay.toFixed(2) + " s" : "–";
     $("status").textContent =
       (j.completed
         ? `Completed: all ${j.n} robots arrived (makespan ${j.makespan.toFixed(2)} s).`
@@ -432,6 +465,8 @@ async function loadFromBank() {
     $("h-scn").textContent = `${j.family} / N=${j.n} / seed ${j.seed}`;
     $("h-mk").textContent = j.completed ? j.makespan.toFixed(2) + " s" : "timeout";
     $("h-mp").textContent = j.min_pair.toFixed(3) + " m";
+    $("h-flow").textContent = j.flow != null ? j.flow.toFixed(3) : "–";
+    $("h-delay").textContent = j.delay != null ? j.delay.toFixed(2) + " s" : "–";
     $("h-rt").textContent = "precomputed";
     $("status").textContent = (j.completed
       ? `Completed: all ${j.n} robots arrived (makespan ${j.makespan.toFixed(2)} s).`
