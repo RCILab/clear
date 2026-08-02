@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- =============================================================
+       CLEAR anonymous project page (RCILab/grace template)
+       Target venue: IEEE Transactions on Robotics (T-RO), in preparation.
+       Keep author/institution information removed for anonymous review.
+       TODO before announcement:
+       - static/pdfs/clear_paper.pdf   (final submitted PDF)
+       - hardware video clips + hardware section (after the 40-trial batch)
+       - final abstract sentence on hardware results
+       - de-anonymize author block after acceptance
+       ============================================================= -->
+
+  <meta name="title" content="CLEAR: Certified Constraint-Compatible Motion for Multi-Robot Passage">
+  <meta name="description" content="CLEAR constructs multi-robot passage directions from active safety constraints: reciprocal circulation, boundary following, and rigid component translation composed in a common tangent cone with certified deadlock exclusion.">
+  <meta name="keywords" content="multi-robot navigation, collision avoidance, control barrier functions, deadlock resolution, passage, tangent cone">
+  <meta name="author" content="Anonymous Authors">
+  <meta name="robots" content="index, follow">
+
+  <title>CLEAR: Certified Constraint-Compatible Motion for Multi-Robot Passage | Project Page</title>
+
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+</head>
+<body>
+
+<main id="main-content">
+
+  <!-- ===================== Title ===================== -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title publication-title" style="font-size: clamp(1.45rem, 2.75vw, 2.45rem); line-height: 1.18; letter-spacing: -0.02em;">
+              CLEAR: Certified Constraint-Compatible Motion<br>for Multi-Robot Passage
+            </h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Anonymous Authors</span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Submitted to IEEE Transactions on Robotics (T-RO)</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a class="external-link button is-normal is-rounded is-dark" aria-disabled="true" style="pointer-events: none; opacity: 0.65;">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper (soon)</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a class="external-link button is-normal is-rounded is-dark" aria-disabled="true" style="pointer-events: none; opacity: 0.65;">
+                    <span class="icon"><i class="fas fa-video"></i></span>
+                    <span>Video (soon)</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="playground/" class="external-link button is-normal is-rounded is-link">
+                    <span class="icon"><i class="fas fa-gamepad"></i></span>
+                    <span>Interactive Playground</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a class="external-link button is-normal is-rounded is-dark" aria-disabled="true" style="pointer-events: none; opacity: 0.65;">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code (upon acceptance)</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Teaser ===================== -->
+  <section class="section pt-0">
+    <div class="container is-max-desktop">
+      <div class="columns is-multiline is-centered">
+        <div class="column is-3"><img src="static/images/clear_n20_free_seed0.png" alt="Free transport"></div>
+        <div class="column is-3"><img src="static/images/clear_n20_swap_seed0.png" alt="Symmetric swap"></div>
+        <div class="column is-3"><img src="static/images/clear_n20_circ15_seed0.png" alt="Circular clutter"></div>
+        <div class="column is-3"><img src="static/images/clear_n20_rect15_seed0.png" alt="Rectangular clutter"></div>
+      </div>
+      <p class="has-text-centered is-size-6 has-text-grey">
+        CLEAR executions at N&thinsp;=&thinsp;20: Free, Swap, Circ15, and Rect15.
+        Every trajectory satisfies the common physical-clearance audit.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== Abstract ===================== -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Safety in multi-robot collision avoidance does not imply passage: in symmetric
+              encounters and congested corridors, a safety filter can remove goal-directed
+              motion, leaving separated robots statically deadlocked. We present CLEAR, a
+              hybrid reactive controller that restores progress from active-constraint
+              geometry. CLEAR composes reciprocal and boundary circulation with rigid
+              component translation in a common tangent cone. An event-held token preserves
+              component direction, while a bounded-input CBF projection enforces
+              continuous-planar safety constraints. We establish continuous-planar forward
+              safety, a state-wise certificate excluding static deadlock after projection,
+              and finite-time exit from straight two-sided bridge cells. A sampled
+              native-input projection realizes CLEAR on bounded-yaw unicycles, with physical
+              clearance audited by exact held-input integration. Across 320 simulations with
+              up to 80 robots, CLEAR preserves audited clearance and sampled-command
+              feasibility in every run, completes 310 missions (96.9%), and matches or
+              exceeds every comparator in mission completion for every task&ndash;size
+              combination. It completes all 80 bottleneck missions with the highest
+              throughput, while the 80-robot component-parallel critical path remains within
+              the common 30&thinsp;ms control period.
+              <!-- TODO: append the final hardware sentence when the 40-trial batch lands. -->
+              Active-constraint geometry thus generates passage, not merely safety.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Mechanism ===================== -->
+  <section class="section pt-0">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Passage from active constraints</h2>
+      <div class="columns is-centered">
+        <div class="column is-6">
+          <img src="static/images/clear_reciprocal_qp_closeup.png" alt="Reciprocal circulation vs symmetric stall">
+          <p class="is-size-6 has-text-grey has-text-centered">
+            Same Swap instance: CLEAR&rsquo;s reciprocal circulation (left) bends the central
+            encounter into a coherent passage, while a plain CBF-QP safety filter (right)
+            contracts into a symmetric stall.
+          </p>
+        </div>
+        <div class="column is-6">
+          <img src="static/images/clear_component_closeup.png" alt="Rigid component translation">
+          <p class="is-size-6 has-text-grey has-text-centered">
+            Same Rect15 instance: rigid component translation (left) carries a wall-bridged
+            group through the local boundary passage; without it (right) the group stays
+            clustered until timeout.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Results ===================== -->
+  <section class="section pt-0">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Results at a glance</h2>
+      <div class="content">
+        <ul>
+          <li><b>310 / 320</b> audited mission completions (96.9%) across Free, Swap, Circ15, and Rect15 with 20&ndash;80 robots &mdash; best or tied in every task&ndash;size cell against MGR, ORCA, NH-ORCA, and GCBF+ on identical instances.</li>
+          <li><b>Zero</b> physical-clearance or sampled-command-feasibility failures over all 320 missions, including the ten liveness timeouts.</li>
+          <li><b>80 / 80</b> Doorway and Intersection missions with the highest normalized flow in every cell.</li>
+          <li>Nested internal ladder: safety filter alone <b>263</b> &rarr; + circulation <b>301</b> &rarr; + rigid component translation <b>310</b>, at a compute overhead of <b>4.8%</b> over the bare filter.</li>
+          <li>Component-parallel critical path &le; <b>22.8 ms</b> worst-seed p95 at N&thinsp;=&thinsp;80, inside the common 30 ms control period.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Playground ===================== -->
+  <section class="section pt-0">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-3">Try it in your browser</h2>
+      <p class="is-size-5 mb-4">
+        Replay precomputed runs of the actual CLEAR pipeline &mdash; pick a map family,
+        team size, and seed, then watch the passage unfold in real time.
+      </p>
+      <a href="playground/" class="button is-link is-medium is-rounded">
+        <span class="icon"><i class="fas fa-play"></i></span>
+        <span>Open the CLEAR Playground</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== BibTeX ===================== -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{anonymous2026clear,
+  title   = {CLEAR: Certified Constraint-Compatible Motion for Multi-Robot Passage},
+  author  = {Anonymous Authors},
+  journal = {IEEE Transactions on Robotics},
+  note    = {Submitted},
+  year    = {2026}
+}</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered is-size-7">
+        <p>Template adapted from the RCILab project-page format. Anonymous project page for double-anonymous review.</p>
+      </div>
+    </div>
+  </footer>
+
+</main>
+</body>
+</html>

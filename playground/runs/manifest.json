@@ -1,0 +1,34 @@
+[
+ {
+  "family": "circ15",
+  "n": 20,
+  "seed": 0,
+  "file": "circ15_n20_s0.json",
+  "completed": true,
+  "makespan": 25.46
+ },
+ {
+  "family": "free",
+  "n": 20,
+  "seed": 0,
+  "file": "free_n20_s0.json",
+  "completed": true,
+  "makespan": 23.92
+ },
+ {
+  "family": "rect15",
+  "n": 20,
+  "seed": 0,
+  "file": "rect15_n20_s0.json",
+  "completed": true,
+  "makespan": 26.46
+ },
+ {
+  "family": "swap",
+  "n": 20,
+  "seed": 0,
+  "file": "swap_n20_s0.json",
+  "completed": true,
+  "makespan": 21.34
+ }
+]

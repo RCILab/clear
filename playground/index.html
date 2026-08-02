@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CLEAR Playground</title>
+<style>
+  :root {
+    --bg: #14161b; --panel: #1e2129; --edge: #2c3040;
+    --text: #e8eaf0; --dim: #9aa0b0; --accent: #4f8ef7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 14px/1.45 "Segoe UI", system-ui, sans-serif;
+    display: flex; min-height: 100vh;
+  }
+  #panel {
+    width: 270px; padding: 18px 16px; background: var(--panel);
+    border-right: 1px solid var(--edge); flex-shrink: 0;
+  }
+  h1 { font-size: 17px; margin: 0 0 2px; }
+  .sub { color: var(--dim); font-size: 12px; margin-bottom: 16px; }
+  .label { font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+           color: var(--dim); margin: 14px 0 6px; }
+  .row { display: flex; gap: 6px; flex-wrap: wrap; }
+  button {
+    background: #262b36; color: var(--text); border: 1px solid var(--edge);
+    border-radius: 6px; padding: 7px 10px; cursor: pointer; font-size: 13px;
+  }
+  button:hover { border-color: var(--accent); }
+  button.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  button:disabled { opacity: .45; cursor: default; }
+  #play { width: 100%; font-size: 15px; padding: 9px; margin-top: 4px; }
+  input[type=number] {
+    width: 78px; background: #262b36; border: 1px solid var(--edge);
+    color: var(--text); border-radius: 6px; padding: 6px 8px;
+  }
+  input[type=range] { width: 100%; accent-color: var(--accent); }
+  #status { margin-top: 14px; font-size: 12.5px; color: var(--dim);
+            white-space: pre-line; min-height: 60px; }
+  #status.err { color: #f27979; }
+  .hud { margin-top: 10px; font-size: 12.5px; border-top: 1px solid var(--edge);
+         padding-top: 10px; }
+  .hud div { display: flex; justify-content: space-between; margin: 2px 0; }
+  .hud span:last-child { color: var(--text); font-variant-numeric: tabular-nums; }
+  .hud span:first-child { color: var(--dim); }
+  label.chk { font-size: 12.5px; color: var(--dim); display: flex;
+              align-items: center; gap: 6px; margin-top: 10px; }
+  #stage { flex: 1; display: flex; align-items: center; justify-content: center;
+           padding: 14px; position: relative; }
+  canvas { background: #101217; border: 1px solid var(--edge); border-radius: 8px;
+           max-width: 100%; max-height: calc(100vh - 28px); }
+  #livebadge {
+    position: absolute; top: 26px; right: 30px; display: none;
+    background: rgba(30,33,41,.9); border: 1px solid var(--edge);
+    border-radius: 6px; padding: 5px 10px; font-size: 12.5px;
+    font-variant-numeric: tabular-nums;
+  }
+  #livebadge .dot { color: #6fe08f; }
+</style>
+</head>
+<body>
+<div id="panel">
+  <h1>CLEAR Playground</h1>
+  <div class="sub" id="sub">actual clear_nav controller &middot; computed live at every tick</div>
+
+  <div class="label">Map family</div>
+  <div class="row">
+    <button class="fam" data-f="free">Free</button>
+    <button class="fam" data-f="swap">Swap</button>
+    <button class="fam" data-f="circ15">Circ15</button>
+    <button class="fam" data-f="rect15">Rect15</button>
+  </div>
+
+  <div class="label">Team size N</div>
+  <div class="row">
+    <button class="nn" data-n="20">20</button>
+    <button class="nn" data-n="40">40</button>
+    <button class="nn" data-n="60">60</button>
+  </div>
+
+  <div class="label">Seed</div>
+  <div class="row">
+    <input id="seed" type="number" min="0" max="99999" value="0">
+    <button id="dice" title="random seed">&#127922;</button>
+  </div>
+
+  <div class="label">Playback</div>
+  <div class="row" id="modeRow" style="margin-bottom:6px">
+    <button id="m-live" class="active" title="watch every tick as it is computed">Live</button>
+    <button id="m-smooth" title="compute the whole run first, then play smoothly at 1x">Smooth</button>
+  </div>
+  <button id="play" disabled>&#9654; Play</button>
+  <div class="row" style="margin-top:8px">
+    <button class="spd" data-s="0.5">0.5&times;</button>
+    <button class="spd active" data-s="1">1&times;</button>
+    <button class="spd" data-s="2">2&times;</button>
+    <button class="spd" data-s="4">4&times;</button>
+  </div>
+  <input id="timeline" type="range" min="0" max="1000" value="0" style="margin-top:10px" disabled>
+  <label class="chk"><input id="trails" type="checkbox" checked> trails</label>
+  <label class="chk"><input id="showgoals" type="checkbox" checked> goals</label>
+
+  <div id="status">Pick a family, then press Play.
+The simulation is computed tick by tick while you watch.</div>
+
+  <div class="hud" id="hud" style="display:none">
+    <div><span>scenario</span><span id="h-scn">&ndash;</span></div>
+    <div><span>time</span><span id="h-time">&ndash;</span></div>
+    <div><span>arrived</span><span id="h-arr">&ndash;</span></div>
+    <div><span>pipeline speed</span><span id="h-rt">&ndash;</span></div>
+    <div><span>frame buffer</span><span id="h-buf">&ndash;</span></div>
+    <div><span>makespan</span><span id="h-mk">&ndash;</span></div>
+    <div><span>sampled min pair</span><span id="h-mp">&ndash;</span></div>
+  </div>
+</div>
+
+<div id="stage">
+  <canvas id="cv" width="840" height="840"></canvas>
+  <div id="livebadge"><span class="dot">&#9679;</span> computing <span id="lb-rt">&ndash;</span></div>
+</div>
+
+<script>
+"use strict";
+const cv = document.getElementById("cv"), ctx = cv.getContext("2d");
+const $ = id => document.getElementById(id);
+
+let data = null;            // growing run buffer (live) or full run (static)
+let playing = false, simT = 0, speed = 1, lastTs = null;
+let family = null, nRobots = 20, dirty = true;
+let mode = "live", bank = null;
+let streamCtl = null, streaming = false, smoothMode = false, pendingStart = false;
+let bufferingPlayback = false;
+let busy = false;   // a batch compute is in flight; ignore Play until done
+let rtSamples = [], rtRatio = null, rtFinal = null, minPairLive = Infinity;
+const START_BUFFER_S = 1.0;   // absorb short compute spikes before live playback
+const RESUME_BUFFER_S = 0.5;  // resume only after a real underrun is refilled
+
+function hue(i) { return (i * 137.508) % 360; }
+function lastTime() { return data && data.times.length ? data.times[data.times.length - 1] : 0; }
+function bankPool() { return (bank || []).filter(e => e.family === family && e.n === nRobots); }
+function pickSeed() {
+  if (mode === "static") {
+    const pool = bankPool();
+    if (pool.length) $("seed").value = pool[Math.floor(Math.random() * pool.length)].seed;
+  } else {
+    $("seed").value = Math.floor(Math.random() * 10000);
+  }
+  dirty = true;
+}
+
+/* ---------- mode detection (GitHub Pages bank vs local live server) ------ */
+(async () => {
+  try {
+    const r = await fetch("runs/manifest.json", { cache: "no-store" });
+    if (r.ok) { bank = await r.json(); mode = "static"; }
+  } catch (_) { /* live mode */ }
+  if (mode === "static") {
+    $("sub").textContent = "precomputed runs from the actual clear_nav pipeline";
+    $("modeRow").style.display = "none";
+    $("status").textContent =
+      `Pick a family, then press Play.\nRun bank: ${bank.length} precomputed missions.`;
+  }
+})();
+
+/* ---------- controls ----------------------------------------------------- */
+document.querySelectorAll(".fam").forEach(b => b.onclick = () => {
+  family = b.dataset.f;
+  document.querySelectorAll(".fam").forEach(x => x.classList.toggle("active", x === b));
+  pickSeed();
+  $("play").disabled = false;
+  $("status").classList.remove("err");
+  $("status").textContent = `${family}, N=${nRobots}, seed=${$("seed").value} — press Play.`;
+});
+document.querySelectorAll(".nn").forEach(b => b.onclick = () => {
+  nRobots = +b.dataset.n; dirty = true;
+  document.querySelectorAll(".nn").forEach(x => x.classList.toggle("active", x === b));
+});
+document.querySelector('.nn[data-n="20"]').classList.add("active");
+document.querySelectorAll(".spd").forEach(b => b.onclick = () => {
+  speed = +b.dataset.s;
+  document.querySelectorAll(".spd").forEach(x => x.classList.toggle("active", x === b));
+});
+$("dice").onclick = pickSeed;
+$("seed").oninput = () => { dirty = true; };
+$("m-live").onclick = () => { smoothMode = false; dirty = true; setModeButtons(); };
+$("m-smooth").onclick = () => { smoothMode = true; dirty = true; setModeButtons(); };
+function setModeButtons() {
+  $("m-live").classList.toggle("active", !smoothMode);
+  $("m-smooth").classList.toggle("active", smoothMode);
+}
+$("play").onclick = onPlay;
+document.addEventListener("keydown", e => {
+  if (e.code === "Space" && family) { e.preventDefault(); onPlay(); }
+});
+$("timeline").oninput = () => {
+  if (!data || data.times.length < 2) return;
+  playing = false; updatePlayButton();
+  simT = (+$("timeline").value / 1000) * lastTime();
+  draw();
+};
+
+function onPlay() {
+  if (!family || busy) return;
+  if (dirty || !data) {
+    if (mode === "static") loadFromBank();
+    else if (smoothMode) computeBatch();
+    else startStream();
+    return;
+  }
+  if (!playing && simT >= lastTime() - 1e-9 && (data.done || mode === "static")) simT = 0;
+  playing = !playing; lastTs = null; updatePlayButton();
+}
+function updatePlayButton() {
+  $("play").innerHTML = playing ? "&#10074;&#10074; Pause" : "&#9654; Play";
+}
+
+/* ---------- live streaming ----------------------------------------------- */
+function freshRun(meta) {
+  return Object.assign({}, meta, {
+    times: [], traj: [], headings: [],
+    arrivals: new Array(meta.n).fill(null),
+    done: false, completed: null, makespan: null, min_pair: null,
+  });
+}
+
+async function startStream() {
+  if (streamCtl) streamCtl.abort();
+  streamCtl = new AbortController();
+  const myCtl = streamCtl;
+  streaming = true; dirty = false;
+  data = null; simT = 0; playing = false; updatePlayButton();
+  bufferingPlayback = false;
+  rtSamples = []; rtRatio = null; rtFinal = null; minPairLive = Infinity;
+  const seed = Math.max(0, +$("seed").value | 0);
+  $("status").classList.remove("err");
+  $("status").textContent = `Starting ${family}, N=${nRobots}, seed=${seed} …`;
+  $("livebadge").style.display = "block";
+  try {
+    const resp = await fetch(
+      `/api/stream?family=${family}&n=${nRobots}&seed=${seed}`,
+      { signal: streamCtl.signal },
+    );
+    const reader = resp.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = "";
+    for (;;) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      let nl;
+      while ((nl = buffer.indexOf("\n")) >= 0) {
+        const line = buffer.slice(0, nl).trim();
+        buffer = buffer.slice(nl + 1);
+        if (line) handleMessage(JSON.parse(line));
+      }
+    }
+  } catch (err) {
+    if (err.name !== "AbortError") {
+      $("status").textContent = "Error: " + err.message;
+      $("status").classList.add("err");
+    }
+  } finally {
+    if (streamCtl === myCtl) {   // an aborted stream must not touch the UI
+      streaming = false;
+      $("livebadge").style.display = "none";
+    }
+  }
+}
+
+function handleMessage(m) {
+  if (m.type === "meta") {
+    data = freshRun(m);
+    pendingStart = true;   // buffer a little before the playhead starts
+    $("timeline").disabled = false;
+    $("hud").style.display = "block";
+    $("h-scn").textContent = `${m.family} / N=${m.n} / seed ${m.seed}`;
+    $("h-mk").textContent = "–"; $("h-mp").textContent = "–";
+    $("status").textContent = "Buffering …";
+    return;
+  }
+  if (m.type === "frame") {
+    if (!data) return;
+    data.times.push(m.t);
+    data.traj.push(m.p);
+    data.headings.push(m.h);
+    data.arrivals = m.arr;
+    trackRatio(m.t);
+    if (pendingStart && m.t >= START_BUFFER_S) {
+      pendingStart = false;
+      simT = 0; playing = true; lastTs = null; updatePlayButton();
+      $("status").textContent = "Computing and playing live …";
+    }
+    if (bufferingPlayback && lastTime() - simT >= RESUME_BUFFER_S) {
+      bufferingPlayback = false;
+      lastTs = null;
+      $("status").textContent = "Computing and playing live …";
+    }
+    return;
+  }
+  if (m.type === "done") {
+    if (!data) return;
+    if (pendingStart) {
+      pendingStart = false;
+      simT = 0; playing = true; lastTs = null; updatePlayButton();
+    }
+    data.done = true;
+    bufferingPlayback = false;
+    data.completed = m.completed;
+    data.makespan = m.makespan;
+    data.min_pair = m.min_pair;
+    rtFinal = rtSamples.length >= 2
+      ? (rtSamples[rtSamples.length - 1][1] - rtSamples[0][1]) /
+        ((rtSamples[rtSamples.length - 1][0] - rtSamples[0][0]) / 1000)
+      : null;
+    $("h-mk").textContent = m.completed && m.makespan !== null
+      ? m.makespan.toFixed(2) + " s" : "timeout";
+    $("h-mp").textContent = m.min_pair !== null && isFinite(m.min_pair)
+      ? m.min_pair.toFixed(3) + " m" : "–";
+    $("status").textContent =
+      (m.completed
+        ? `Completed: all ${data.n} robots arrived` +
+          (m.makespan !== null ? ` (makespan ${m.makespan.toFixed(2)} s).` : ".")
+        : `Timeout: ${data.arrivals.filter(a => a !== null).length}/${data.n} arrived by ${data.horizon} s.`)
+      + (rtFinal ? `\nAverage compute speed ${rtFinal.toFixed(2)}× real-time.` : "");
+    return;
+  }
+  if (m.type === "error") throw new Error(m.error);
+}
+
+function trackRatio(t) {
+  const now = performance.now();
+  rtSamples.push([now, t]);
+  while (rtSamples.length > 2 && now - rtSamples[0][0] > 2000) rtSamples.shift();
+  if (rtSamples.length >= 2) {
+    const [w0, t0] = rtSamples[0], [w1, t1] = rtSamples[rtSamples.length - 1];
+    if (w1 > w0) rtRatio = (t1 - t0) / ((w1 - w0) / 1000);
+  }
+}
+
+/* ---------- smooth mode: compute the whole run first --------------------- */
+async function computeBatch() {
+  const seed = Math.max(0, +$("seed").value | 0);
+  if (streamCtl) { streamCtl.abort(); streamCtl = null; }
+  busy = true; $("play").disabled = true;
+  dirty = false;
+  bufferingPlayback = false; pendingStart = false;
+  data = null; simT = 0; playing = false; updatePlayButton();
+  rtSamples = []; rtRatio = null; rtFinal = null;
+  $("status").classList.remove("err");
+  $("livebadge").style.display = "block"; $("lb-rt").textContent = "";
+  const t0 = performance.now();
+  const tick = setInterval(() => {
+    $("status").textContent =
+      `Computing ${family}, N=${nRobots}, seed=${seed} … ` +
+      `${((performance.now() - t0) / 1000).toFixed(1)}s\n` +
+      "(whole run first, then smooth playback)";
+  }, 100);
+  try {
+    const r = await fetch(`/api/generate?family=${family}&n=${nRobots}&seed=${seed}`);
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || r.statusText);
+    j.done = true;
+    data = j; simT = 0;
+    const wall = (performance.now() - t0) / 1000;
+    rtFinal = lastTime() / wall;
+    playing = true; lastTs = null; updatePlayButton();
+    $("timeline").disabled = false;
+    $("hud").style.display = "block";
+    $("h-scn").textContent = `${j.family} / N=${j.n} / seed ${j.seed}`;
+    $("h-mk").textContent = j.completed ? j.makespan.toFixed(2) + " s" : "timeout";
+    $("h-mp").textContent = j.min_pair.toFixed(3) + " m";
+    $("status").textContent =
+      (j.completed
+        ? `Completed: all ${j.n} robots arrived (makespan ${j.makespan.toFixed(2)} s).`
+        : "Timeout run.")
+      + `\nComputed in ${wall.toFixed(1)}s — playing at full speed.`;
+  } catch (err) {
+    $("status").textContent = "Error: " + err.message;
+    $("status").classList.add("err");
+  } finally {
+    clearInterval(tick);
+    busy = false; $("play").disabled = false;
+    $("livebadge").style.display = "none";
+  }
+}
+
+/* ---------- static bank mode --------------------------------------------- */
+async function loadFromBank() {
+  const seed = Math.max(0, +$("seed").value | 0);
+  const pool = bankPool();
+  $("status").classList.remove("err");
+  if (!pool.length) {
+    $("status").textContent = `No precomputed run for ${family} at N=${nRobots}.`;
+    $("status").classList.add("err");
+    return;
+  }
+  let entry = pool.find(e => e.seed === seed);
+  if (!entry) { entry = pool[Math.floor(Math.random() * pool.length)]; $("seed").value = entry.seed; }
+  $("status").textContent = `Loading ${entry.file} …`;
+  try {
+    const r = await fetch("runs/" + entry.file);
+    if (!r.ok) throw new Error("failed to load " + entry.file);
+    const j = await r.json();
+    j.done = true;
+    bufferingPlayback = false; pendingStart = false;
+    data = j; dirty = false; simT = 0;
+    playing = true; lastTs = null; updatePlayButton();
+    $("timeline").disabled = false;
+    $("hud").style.display = "block";
+    $("h-scn").textContent = `${j.family} / N=${j.n} / seed ${j.seed}`;
+    $("h-mk").textContent = j.completed ? j.makespan.toFixed(2) + " s" : "timeout";
+    $("h-mp").textContent = j.min_pair.toFixed(3) + " m";
+    $("h-rt").textContent = "precomputed";
+    $("status").textContent = j.completed
+      ? `Completed: all ${j.n} robots arrived (makespan ${j.makespan.toFixed(2)} s).`
+      : `Timeout run.`;
+  } catch (err) {
+    $("status").textContent = "Error: " + err.message;
+    $("status").classList.add("err");
+  }
+}
+
+/* ---------- playback loop ------------------------------------------------ */
+function loop(ts) {
+  if (playing && data && data.times.length >= 2) {
+    if (lastTs !== null && !bufferingPlayback) {
+      // Playback uses the requested wall-clock speed. Compute throughput is
+      // diagnostic only; it never turns the motion into slow motion.
+      simT += ((ts - lastTs) / 1000) * speed;
+      const frontier = lastTime();
+      if (simT >= frontier) {
+        simT = frontier;
+        if (data.done) {
+          playing = false; updatePlayButton();
+        } else {
+          bufferingPlayback = true;
+          $("status").textContent =
+            "Playback paused briefly to refill the frame buffer …";
+        }
+      }
+    }
+    lastTs = ts;
+    draw();
+  } else {
+    lastTs = ts;
+    if (data && data.times.length) draw();
+  }
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+/* ---------- drawing ------------------------------------------------------ */
+function frameState(t) {
+  const dt = data.dt, last = data.times.length - 1;
+  let k = Math.min(Math.floor(t / dt), last - 1);
+  if (k < 0) k = 0;
+  const a = Math.min(Math.max((t - data.times[k]) / dt, 0), 1);
+  return { k, a };
+}
+function lerpAngle(p, q, a) {
+  let d = q - p;
+  while (d >  Math.PI) d -= 2 * Math.PI;
+  while (d < -Math.PI) d += 2 * Math.PI;
+  return p + a * d;
+}
+
+function draw() {
+  if (!data || !data.times.length) return;
+  const W = data.workspace, pad = 26;
+  const scale = (cv.width - 2 * pad) / W;
+  const X = x => pad + (x + W / 2) * scale;
+  const Y = y => cv.height - pad - (y + W / 2) * scale;
+
+  ctx.clearRect(0, 0, cv.width, cv.height);
+  ctx.strokeStyle = "#3a4052"; ctx.lineWidth = 1.5;
+  ctx.strokeRect(pad, pad, W * scale, W * scale);
+
+  for (const o of data.obstacles) {
+    ctx.fillStyle = "#333947"; ctx.strokeStyle = "#454d63"; ctx.lineWidth = 1;
+    if (o.type === "circle") {
+      ctx.beginPath();
+      ctx.arc(X(o.center[0]), Y(o.center[1]), o.radius * scale, 0, 7);
+      ctx.fill(); ctx.stroke();
+    } else {
+      const w = o.size[0] * scale, h = o.size[1] * scale;
+      ctx.fillRect(X(o.center[0]) - w / 2, Y(o.center[1]) - h / 2, w, h);
+      ctx.strokeRect(X(o.center[0]) - w / 2, Y(o.center[1]) - h / 2, w, h);
+    }
+  }
+
+  const { k, a } = frameState(simT);
+  const n = data.n, rb = data.body_radius * scale;
+
+  if ($("showgoals").checked) {
+    for (let i = 0; i < n; i++) {
+      ctx.strokeStyle = `hsla(${hue(i)},70%,60%,.45)`;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.arc(X(data.goals[i][0]), Y(data.goals[i][1]),
+              data.arrival_radius * scale, 0, 7);
+      ctx.stroke();
+    }
+  }
+
+  if ($("trails").checked && data.traj.length > 1) {
+    const span = Math.round(3.0 / data.dt), step = 3;
+    const from = Math.max(0, k - span);
+    for (let i = 0; i < n; i++) {
+      ctx.strokeStyle = `hsla(${hue(i)},70%,55%,.28)`;
+      ctx.lineWidth = 1.2;
+      ctx.beginPath();
+      let started = false;
+      for (let f = from; f <= k; f += step) {
+        const p = data.traj[f][i];
+        if (started) ctx.lineTo(X(p[0]), Y(p[1]));
+        else { ctx.moveTo(X(p[0]), Y(p[1])); started = true; }
+      }
+      ctx.stroke();
+    }
+  }
+
+  let arrived = 0;
+  const kn = Math.min(k + 1, data.traj.length - 1);
+  for (let i = 0; i < n; i++) {
+    const p0 = data.traj[k][i], p1 = data.traj[kn][i];
+    const x = p0[0] + a * (p1[0] - p0[0]), y = p0[1] + a * (p1[1] - p0[1]);
+    const th = lerpAngle(data.headings[k][i], data.headings[kn][i], a);
+    const done = data.arrivals[i] !== null && simT >= data.arrivals[i];
+    if (done) arrived++;
+    ctx.fillStyle = `hsl(${hue(i)},70%,${done ? 40 : 55}%)`;
+    ctx.beginPath(); ctx.arc(X(x), Y(y), rb, 0, 7); ctx.fill();
+    ctx.strokeStyle = done ? "rgba(255,255,255,.35)" : "rgba(255,255,255,.85)";
+    ctx.lineWidth = 1.6;
+    ctx.beginPath(); ctx.moveTo(X(x), Y(y));
+    ctx.lineTo(X(x + Math.cos(th) * data.body_radius * 1.7),
+               Y(y + Math.sin(th) * data.body_radius * 1.7));
+    ctx.stroke();
+  }
+
+  $("h-time").textContent = simT.toFixed(2) + " / "
+    + lastTime().toFixed(2) + " s" + (data.done ? "" : " …");
+  $("h-arr").textContent = arrived + " / " + n;
+  $("h-buf").textContent = data.done
+    ? "–" : Math.max(0, lastTime() - simT).toFixed(2) + " s";
+  if (mode === "live") {
+    const shown = data.done
+      ? (rtFinal ? rtFinal.toFixed(2) + "× (avg)" : "–")
+      : (rtRatio ? rtRatio.toFixed(2) + "× real-time" : "…");
+    $("h-rt").textContent = shown;
+    $("lb-rt").textContent = rtRatio ? rtRatio.toFixed(2) + "×" : "";
+  }
+  if (lastTime() > 0)
+    $("timeline").value = Math.round((simT / lastTime()) * 1000);
+}
+</script>
+</body>
+</html>
