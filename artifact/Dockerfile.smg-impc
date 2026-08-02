@@ -1,0 +1,15 @@
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    OMP_NUM_THREADS=1 \
+    OPENBLAS_NUM_THREADS=1
+
+RUN pip install --no-cache-dir \
+    cvxpy==1.6.0 \
+    numpy==2.2.3 \
+    scipy==1.15.1 \
+    scs==3.2.7.post2
+
+WORKDIR /work
+

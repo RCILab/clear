@@ -1,0 +1,440 @@
+{
+  "initial_heading_rad": 0.0,
+  "protocol": {
+    "workspace_size": 16.0,
+    "body_radius": 0.2,
+    "safety_margin": 0.02,
+    "speed_limit": 0.8,
+    "arrival_radius": 0.22,
+    "dt": 0.03,
+    "horizon": 0.03,
+    "obstacle_fraction": 0.15,
+    "circle_count": 14,
+    "rectangle_count": 12,
+    "swap_radius": 7.5
+  },
+  "geometry": {
+    "doorway_width": 1.2,
+    "doorway_thickness": 0.8,
+    "intersection_corridor_width": 2.4,
+    "staging_distance": 3.2,
+    "queue_spacing": 0.6,
+    "staging_row_spacing": 0.56,
+    "reported_cost_field_passage_floor": 0.59,
+    "reported_baseline_local_model_width": 0.74,
+    "robot_diameter_m": 0.4,
+    "pair_clearance_m": 0.44,
+    "lookahead_virtual_diameter_m": 0.44,
+    "doorway_nominal_safety_lanes": 2,
+    "doorway_nominal_virtual_lanes": 2,
+    "doorway_cost_field_margin_m": 0.61,
+    "baseline_local_model_margin_m": 0.45999999999999996,
+    "fairness_note_required": false
+  },
+  "method": "IMPC-DR",
+  "implementation": "public IMPC-DR structure adapted to [x,y,v,theta] and [a,omega] with sequential affine prediction",
+  "prediction_steps": 24,
+  "scp_iterations": 2,
+  "records": [
+    {
+      "method": "IMPC-DR",
+      "family": "doorway_w1.20",
+      "n_robots": 8,
+      "seed": 0,
+      "fingerprint": "a048fe0721d4b278",
+      "mission_success": false,
+      "physical_mission_success": false,
+      "robot_arrival_rate": 0.0,
+      "makespan_s": null,
+      "unarrived_robots": 8,
+      "maximum_final_goal_distance_m": 10.802147934554498,
+      "minimum_physical_pair_distance_m": 0.56,
+      "minimum_physical_obstacle_clearance_m": 2.598226392609366,
+      "maximum_linear_speed_mps": 0.03599999996768966,
+      "maximum_yaw_rate_rps": 1.5707963151474227,
+      "all_solves_accepted": true,
+      "final_solve_backend_counts": {
+        "CLARABEL": 8
+      },
+      "final_solve_status_counts": {
+        "optimal": 8
+      },
+      "controller_wall_time_s": 0.2039253480033949,
+      "mean_control_step_ms": 203.9253480033949,
+      "p95_control_step_ms": 203.9253480033949,
+      "executed_steps": 1,
+      "pair_planning_guard_m": 0.0002,
+      "obstacle_planning_guard_m": 0.0001,
+      "first_arrival_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "final_positions_m": [
+        [
+          -3.2,
+          -0.28
+        ],
+        [
+          -3.2,
+          0.28
+        ],
+        [
+          -3.8000000000000003,
+          -0.28
+        ],
+        [
+          -3.8000000000000003,
+          0.28
+        ],
+        [
+          3.2,
+          -0.28
+        ],
+        [
+          3.2,
+          0.28
+        ],
+        [
+          3.8000000000000003,
+          -0.28
+        ],
+        [
+          3.8000000000000003,
+          0.28
+        ]
+      ],
+      "gap_completed_robots": 0,
+      "gap_entered_robots": 0,
+      "gap_entry_start_s": null,
+      "gap_exit_end_s": null,
+      "parallel_throughput_robots_per_s": 0.0,
+      "smg_flow_rate_robots_per_m_s": 0.0
+    },
+    {
+      "method": "IMPC-DR",
+      "family": "doorway_w1.20",
+      "n_robots": 16,
+      "seed": 0,
+      "fingerprint": "81d0d78027b2fecb",
+      "mission_success": false,
+      "physical_mission_success": false,
+      "robot_arrival_rate": 0.0,
+      "makespan_s": null,
+      "unarrived_robots": 16,
+      "maximum_final_goal_distance_m": 11.39150560724964,
+      "minimum_physical_pair_distance_m": 0.56,
+      "minimum_physical_obstacle_clearance_m": 2.598226392609366,
+      "maximum_linear_speed_mps": 0.03599999997506146,
+      "maximum_yaw_rate_rps": 1.5707963167465253,
+      "all_solves_accepted": true,
+      "final_solve_backend_counts": {
+        "CLARABEL": 16
+      },
+      "final_solve_status_counts": {
+        "optimal": 16
+      },
+      "controller_wall_time_s": 0.5034327890025452,
+      "mean_control_step_ms": 503.4327890025452,
+      "p95_control_step_ms": 503.4327890025452,
+      "executed_steps": 1,
+      "pair_planning_guard_m": 0.0002,
+      "obstacle_planning_guard_m": 0.0001,
+      "first_arrival_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "final_positions_m": [
+        [
+          -3.2,
+          -0.28
+        ],
+        [
+          -3.2,
+          0.28
+        ],
+        [
+          -3.8000000000000003,
+          -0.28
+        ],
+        [
+          -3.8000000000000003,
+          0.28
+        ],
+        [
+          -4.4,
+          -0.28
+        ],
+        [
+          -4.4,
+          0.28
+        ],
+        [
+          -5.0,
+          -0.28
+        ],
+        [
+          -5.0,
+          0.28
+        ],
+        [
+          3.2,
+          -0.28
+        ],
+        [
+          3.2,
+          0.28
+        ],
+        [
+          3.8000000000000003,
+          -0.28
+        ],
+        [
+          3.8000000000000003,
+          0.28
+        ],
+        [
+          4.4,
+          -0.28
+        ],
+        [
+          4.4,
+          0.28
+        ],
+        [
+          5.0,
+          -0.28
+        ],
+        [
+          5.0,
+          0.28
+        ]
+      ],
+      "gap_completed_robots": 0,
+      "gap_entered_robots": 0,
+      "gap_entry_start_s": null,
+      "gap_exit_end_s": null,
+      "parallel_throughput_robots_per_s": 0.0,
+      "smg_flow_rate_robots_per_m_s": 0.0
+    },
+    {
+      "method": "IMPC-DR",
+      "family": "intersection_w2.40",
+      "n_robots": 8,
+      "seed": 0,
+      "fingerprint": "27e35d3a1a4bfe00",
+      "mission_success": false,
+      "physical_mission_success": false,
+      "robot_arrival_rate": 0.0,
+      "makespan_s": null,
+      "unarrived_robots": 8,
+      "maximum_final_goal_distance_m": 10.0,
+      "minimum_physical_pair_distance_m": 0.7211102550927979,
+      "minimum_physical_obstacle_clearance_m": 0.7799999999999996,
+      "maximum_linear_speed_mps": 0.035999999988895026,
+      "maximum_yaw_rate_rps": 1.5707963199410762,
+      "all_solves_accepted": true,
+      "final_solve_backend_counts": {
+        "CLARABEL": 8
+      },
+      "final_solve_status_counts": {
+        "optimal": 8
+      },
+      "controller_wall_time_s": 0.18953744300233666,
+      "mean_control_step_ms": 189.53744300233666,
+      "p95_control_step_ms": 189.53744300233666,
+      "executed_steps": 1,
+      "pair_planning_guard_m": 0.0002,
+      "obstacle_planning_guard_m": 0.0001,
+      "first_arrival_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "final_positions_m": [
+        [
+          -3.2,
+          0.2
+        ],
+        [
+          -3.8000000000000003,
+          -0.2
+        ],
+        [
+          3.2,
+          -0.2
+        ],
+        [
+          3.8000000000000003,
+          0.2
+        ],
+        [
+          -0.2,
+          -3.2
+        ],
+        [
+          0.2,
+          -3.8000000000000003
+        ],
+        [
+          0.2,
+          3.2
+        ],
+        [
+          -0.2,
+          3.8000000000000003
+        ]
+      ],
+      "gap_completed_robots": 0,
+      "gap_entered_robots": 0,
+      "gap_entry_start_s": null,
+      "gap_exit_end_s": null,
+      "parallel_throughput_robots_per_s": 0.0,
+      "smg_flow_rate_robots_per_m_s": 0.0
+    },
+    {
+      "method": "IMPC-DR",
+      "family": "intersection_w2.40",
+      "n_robots": 16,
+      "seed": 0,
+      "fingerprint": "f36827c5cea51590",
+      "mission_success": false,
+      "physical_mission_success": false,
+      "robot_arrival_rate": 0.0,
+      "makespan_s": null,
+      "unarrived_robots": 16,
+      "maximum_final_goal_distance_m": 10.0,
+      "minimum_physical_pair_distance_m": 0.7211102550927976,
+      "minimum_physical_obstacle_clearance_m": 0.7799999999999996,
+      "maximum_linear_speed_mps": 0.035999999977497796,
+      "maximum_yaw_rate_rps": 1.5707963207150286,
+      "all_solves_accepted": true,
+      "final_solve_backend_counts": {
+        "CLARABEL": 16
+      },
+      "final_solve_status_counts": {
+        "optimal": 16
+      },
+      "controller_wall_time_s": 0.4263540270039812,
+      "mean_control_step_ms": 426.3540270039812,
+      "p95_control_step_ms": 426.3540270039812,
+      "executed_steps": 1,
+      "pair_planning_guard_m": 0.0002,
+      "obstacle_planning_guard_m": 0.0001,
+      "first_arrival_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "final_positions_m": [
+        [
+          -3.2,
+          0.2
+        ],
+        [
+          -3.8000000000000003,
+          -0.2
+        ],
+        [
+          -4.4,
+          0.2
+        ],
+        [
+          -5.0,
+          -0.2
+        ],
+        [
+          3.2,
+          -0.2
+        ],
+        [
+          3.8000000000000003,
+          0.2
+        ],
+        [
+          4.4,
+          -0.2
+        ],
+        [
+          5.0,
+          0.2
+        ],
+        [
+          -0.2,
+          -3.2
+        ],
+        [
+          0.2,
+          -3.8000000000000003
+        ],
+        [
+          -0.2,
+          -4.4
+        ],
+        [
+          0.2,
+          -5.0
+        ],
+        [
+          0.2,
+          3.2
+        ],
+        [
+          -0.2,
+          3.8000000000000003
+        ],
+        [
+          0.2,
+          4.4
+        ],
+        [
+          -0.2,
+          5.0
+        ]
+      ],
+      "gap_completed_robots": 0,
+      "gap_entered_robots": 0,
+      "gap_entry_start_s": null,
+      "gap_exit_end_s": null,
+      "parallel_throughput_robots_per_s": 0.0,
+      "smg_flow_rate_robots_per_m_s": 0.0
+    }
+  ]
+}

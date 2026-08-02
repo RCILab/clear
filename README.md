@@ -1,23 +1,29 @@
-# CLEAR — project page
+# CLEAR project page and code
 
-Anonymous project page for **CLEAR: Certified Constraint-Compatible Motion for
-Multi-Robot Passage** (submitted to IEEE T-RO).
+This repository hosts the CLEAR project page and its reproducibility artifact.
 
-- `index.html` — project page
-- `playground/` — in-browser replay of precomputed runs from the actual CLEAR
-  pipeline (static run bank; no server required)
-- `static/` — page assets
+| Path | Purpose |
+|:---|:---|
+| `index.html` | project page |
+| `playground/` | browser replay of retained CLEAR executions |
+| `static/` | project-page styles, scripts, and images |
+| `artifact/` | canonical 310/320 implementation, tests, validation, and final records |
+
+The experiment inventory and hashes are in
+`artifact/results/PAPER_EXPERIMENT_MANIFEST.md`. Start with
+`artifact/README.md` to reproduce the controller, internal comparisons,
+shared-resource experiments, StraightBridge audit, and latency analysis.
 
 ## Local preview
 
 ```bash
 python -m http.server 8000
-# open http://localhost:8000
 ```
 
-## TODO before announcement
+Then open `http://localhost:8000`.
 
-- [ ] `static/pdfs/clear_paper.pdf` (final submitted PDF) + enable the Paper button
-- [ ] hardware section and video clips after the 40-trial batch
-- [ ] extend `playground/runs/` bank (`visualization/precompute.py` in the main repo)
-- [ ] de-anonymize the author block after acceptance
+## Release checklist
+
+- add the final submitted paper and enable the Paper button;
+- replace the marked hardware placeholders and add the final video;
+- enable the Code button when the anonymous-review restriction is lifted.

@@ -1,0 +1,226 @@
+{
+  "initial_heading_rad": 0.0,
+  "protocol": {
+    "workspace_size": 16.0,
+    "body_radius": 0.2,
+    "safety_margin": 0.02,
+    "speed_limit": 0.8,
+    "arrival_radius": 0.22,
+    "dt": 0.03,
+    "horizon": 0.3,
+    "obstacle_fraction": 0.15,
+    "circle_count": 14,
+    "rectangle_count": 12,
+    "swap_radius": 7.5
+  },
+  "geometry": {
+    "doorway_width": 1.2,
+    "doorway_thickness": 0.8,
+    "intersection_corridor_width": 2.4,
+    "staging_distance": 3.2,
+    "queue_spacing": 0.6,
+    "staging_row_spacing": 0.56,
+    "reported_cost_field_passage_floor": 0.59,
+    "reported_baseline_local_model_width": 0.74,
+    "robot_diameter_m": 0.4,
+    "pair_clearance_m": 0.44,
+    "lookahead_virtual_diameter_m": 0.44,
+    "doorway_nominal_safety_lanes": 2,
+    "doorway_nominal_virtual_lanes": 2,
+    "doorway_cost_field_margin_m": 0.61,
+    "baseline_local_model_margin_m": 0.45999999999999996,
+    "fairness_note_required": false
+  },
+  "method": "IMPC-DR",
+  "implementation": "public IMPC-DR structure adapted to [x,y,v,theta] and [a,omega] with sequential affine prediction",
+  "prediction_steps": 24,
+  "scp_iterations": 2,
+  "records": [
+    {
+      "method": "IMPC-DR",
+      "family": "rect15",
+      "n_robots": 8,
+      "seed": 99,
+      "fingerprint": "969a1d65b8110236",
+      "mission_success": false,
+      "physical_mission_success": false,
+      "robot_arrival_rate": 0.0,
+      "makespan_s": null,
+      "unarrived_robots": 8,
+      "maximum_final_goal_distance_m": 13.171412542329607,
+      "minimum_physical_pair_distance_m": 0.6726177684190981,
+      "minimum_physical_obstacle_clearance_m": 0.14963623753927532,
+      "maximum_linear_speed_mps": 0.35999999818019424,
+      "maximum_yaw_rate_rps": 1.5707963243420786,
+      "all_solves_accepted": true,
+      "final_solve_backend_counts": {
+        "CLARABEL": 80
+      },
+      "final_solve_status_counts": {
+        "optimal": 80
+      },
+      "controller_wall_time_s": 1.7345611919990915,
+      "mean_control_step_ms": 173.45611919990915,
+      "p95_control_step_ms": 201.38144099983037,
+      "executed_steps": 10,
+      "batch_step_ms": {
+        "mean": 175.83150324992093,
+        "median": 172.5009750000424,
+        "p95": 201.4380731499129,
+        "maximum": 201.6259220002018,
+        "sample_count": 8
+      },
+      "shared_coordination_ms": {
+        "mean": 0.0037461250000000003,
+        "median": 0.0035529999999999997,
+        "p95": 0.005473399999999999,
+        "maximum": 0.006319,
+        "sample_count": 8
+      },
+      "local_unit_ms": {
+        "per_step_max": {
+          "mean": 25.786755375,
+          "median": 24.6538125,
+          "p95": 30.84916805,
+          "maximum": 31.038356,
+          "sample_count": 8
+        },
+        "per_call": {
+          "mean": 21.976289734375,
+          "median": 20.8890345,
+          "p95": 28.695146749999992,
+          "maximum": 31.038356,
+          "sample_count": 64
+        },
+        "unit_count": {
+          "mean": 8.0,
+          "median": 8.0,
+          "p95": 8.0,
+          "maximum": 8.0,
+          "sample_count": 8
+        }
+      },
+      "critical_path_ms": {
+        "mean": 25.7905015,
+        "median": 24.6571705,
+        "p95": 30.8521262,
+        "maximum": 31.041304,
+        "sample_count": 8
+      },
+      "controller_backend": "cvxpy-clarabel-persistent-cpu",
+      "worker_count": 1,
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "gpu_model": "none",
+      "warmup_steps": 2,
+      "scenario_fingerprint": "969a1d65b8110236",
+      "local_unit_definition": "one robot neighbor/static constraint update, two SCP solves, nonlinear rollout, and post-processing",
+      "timing_v2_samples_file": "validation/timing_v2/samples/impc_rect15_n8_s99.npz",
+      "timing_v2_samples_sha256": "4325f09805d68c76056c352bb9c2cdb673cef6e5197b08a653dd574779768fa8",
+      "phase_profile_per_agent_call_ms": {
+        "canonicalization_and_interface": {
+          "mean": 11.440122950000001,
+          "median": 10.57752,
+          "p95": 15.836358349999998,
+          "maximum": 21.76112,
+          "sample_count": 80
+        },
+        "cvxpy_graph_construction": {
+          "mean": 0.32925677500000006,
+          "median": 0.0,
+          "p95": 1.4700517499999997,
+          "maximum": 2.047575,
+          "sample_count": 80
+        },
+        "neighbor_constraint": {
+          "mean": 0.41258357500000004,
+          "median": 0.395523,
+          "p95": 0.6375747999999998,
+          "maximum": 0.838478,
+          "sample_count": 80
+        },
+        "parameter_update": {
+          "mean": 0.351045475,
+          "median": 0.330414,
+          "p95": 0.47926474999999996,
+          "maximum": 0.537974,
+          "sample_count": 80
+        },
+        "post_processing": {
+          "mean": 0.3798480125,
+          "median": 0.35846500000000003,
+          "p95": 0.48265739999999996,
+          "maximum": 0.681228,
+          "sample_count": 80
+        },
+        "solver_reported": {
+          "mean": 3.9456828,
+          "median": 3.845625,
+          "p95": 4.7368455,
+          "maximum": 5.200625,
+          "sample_count": 80
+        },
+        "solver_wall": {
+          "mean": 15.385805749999998,
+          "median": 14.489889999999999,
+          "p95": 20.9862696,
+          "maximum": 25.440451,
+          "sample_count": 80
+        },
+        "static_constraint": {
+          "mean": 3.932589525,
+          "median": 3.7797590000000003,
+          "p95": 4.735309299999999,
+          "maximum": 7.113251,
+          "sample_count": 80
+        }
+      },
+      "persistent_problem_enabled": true,
+      "pair_planning_guard_m": 0.0002,
+      "obstacle_planning_guard_m": 0.0001,
+      "first_arrival_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "final_positions_m": [
+        [
+          3.081704471827727,
+          -4.35186310231
+        ],
+        [
+          -6.56919443735664,
+          -3.5758701590296367
+        ],
+        [
+          -3.7930853361003547,
+          -1.600192879021278
+        ],
+        [
+          3.4263867635171343,
+          -3.767106733135948
+        ],
+        [
+          7.52666546048512,
+          5.456421311427957
+        ],
+        [
+          0.012405413350612945,
+          5.164908427767632
+        ],
+        [
+          -0.7282191773723751,
+          3.327450493015542
+        ],
+        [
+          7.293051772496841,
+          -5.14825072150788
+        ]
+      ]
+    }
+  ]
+}

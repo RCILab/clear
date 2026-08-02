@@ -1,0 +1,39 @@
+FROM python:3.10-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    OMP_NUM_THREADS=1 \
+    OPENBLAS_NUM_THREADS=1 \
+    MKL_NUM_THREADS=1 \
+    NUMEXPR_NUM_THREADS=1 \
+    JAX_PLATFORM_NAME=cpu
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends git build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# This is the dependency generation used by the released 0.4.x checkpoint.
+# Pins prevent today's Flax/Optax releases from silently upgrading JAX and
+# changing the public numerical path.
+RUN python -m pip install --no-cache-dir \
+      "numpy<2" "scipy<1.13" \
+      "jax==0.4.23" "jaxlib==0.4.23" \
+      "flax==0.7.5" "optax==0.1.7" "chex==0.1.85" \
+      "orbax-checkpoint==0.4.8" \
+      "jraph==0.0.6.dev0" "jaxtyping==0.2.25" \
+      "einops==0.7.0" "equinox==0.11.2" \
+      "tensorflow-probability==0.21.0" \
+      "pyyaml>=6.0.1" "attrs>=23.1.0" "rich>=13.5.3" \
+      "loguru>=0.7.2" "colour>=0.1.5" "control>=0.9.4" \
+      "tqdm>=4.66.1" "ipdb>=0.13.13" \
+      "matplotlib<3.9" "seaborn<0.14" "wandb<0.18" \
+      "opencv-python-headless<4.11" \
+      "jaxproxqp @ git+https://github.com/oswinso/jaxproxqp.git"
+
+COPY baselines/gcbfplus /opt/gcbfplus
+RUN python -m pip install --no-cache-dir -e /opt/gcbfplus
+
+WORKDIR /work
+ENV PYTHONPATH=/opt/gcbfplus:/work:/work/baselines/comparison-harness
+
+CMD ["python", "-c", "import jax, gcbfplus; print(jax.devices())"]

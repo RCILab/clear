@@ -1,0 +1,221 @@
+{
+  "algorithm": "NH-ORCA",
+  "initial_heading_rad": 0.0,
+  "physical_protocol": {
+    "arrival_radius": 0.22,
+    "body_radius": 0.2,
+    "circle_count": 14,
+    "dt": 0.03,
+    "horizon": 0.3,
+    "obstacle_fraction": 0.15,
+    "rectangle_count": 12,
+    "safety_margin": 0.02,
+    "speed_limit": 0.8,
+    "swap_radius": 7.5,
+    "workspace_size": 16.0
+  },
+  "records": [
+    {
+      "algorithm": "NH-ORCA",
+      "arrival_success": false,
+      "batch_step_ms": {
+        "maximum": 0.168377,
+        "mean": 0.145336375,
+        "median": 0.1406305,
+        "p95": 0.16609255,
+        "sample_count": 8
+      },
+      "control_time_max_ms": 0.178596,
+      "control_time_mean_ms": 0.1509591,
+      "control_time_p95_ms": 0.17399745,
+      "controller_backend": "public-rvo2-c++-legacy-step",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 0.168377,
+        "mean": 0.145336375,
+        "median": 0.1406305,
+        "p95": 0.16609255,
+        "sample_count": 8
+      },
+      "dynamics": "bounded-lookahead-unicycle",
+      "ever_arrival_rate": 0.0,
+      "ever_arrival_success": false,
+      "family": "rect15",
+      "final_arrival_success": false,
+      "final_centers": [
+        [
+          3.303222248175,
+          -4.343104541285
+        ],
+        [
+          -6.551926061397,
+          -3.61121438722
+        ],
+        [
+          -3.611370153777,
+          -1.541434065641
+        ],
+        [
+          3.279547997892,
+          -3.827039585973
+        ],
+        [
+          7.356769776314,
+          5.418512898515
+        ],
+        [
+          0.160587629322,
+          5.229535112393
+        ],
+        [
+          -0.98263973771,
+          3.390780706134
+        ],
+        [
+          7.276512127886,
+          -5.173354043064
+        ],
+        [
+          -3.64679991436,
+          0.204531665313
+        ],
+        [
+          -1.709532450861,
+          4.69866169404
+        ],
+        [
+          6.434811858108,
+          1.133237143494
+        ],
+        [
+          -2.924434964104,
+          2.205849967983
+        ],
+        [
+          -0.030591857729,
+          -3.434477674728
+        ],
+        [
+          3.283481675682,
+          -5.979229702512
+        ],
+        [
+          4.051680454142,
+          7.658006708191
+        ],
+        [
+          -3.704439649751,
+          2.59142423246
+        ],
+        [
+          -0.444695348911,
+          4.37577199336
+        ],
+        [
+          -2.80094276593,
+          0.94702258301
+        ],
+        [
+          6.957753129669,
+          -6.109212892152
+        ],
+        [
+          -4.839178901699,
+          6.262407723502
+        ]
+      ],
+      "final_headings": [
+        0.032772964782,
+        -0.471238898038,
+        0.319320755144,
+        0.471238898038,
+        0.471238898038,
+        0.471238898038,
+        -0.458333924532,
+        0.471238898038,
+        -0.471238898038,
+        0.18421721503,
+        -0.471238898038,
+        -0.471238898038,
+        0.471238898038,
+        0.309050209674,
+        0.32393277882,
+        -0.471238898038,
+        -0.448429058611,
+        0.471238898038,
+        -0.456844922155,
+        -0.471238898038
+      ],
+      "final_maximum_goal_distance_m": 16.766028488160664,
+      "final_state_sha256": "bae0321a0cc9e2d4c2de4d8df36ee08f9d08cc7af6768bab7e1f5ca4d00c36ff",
+      "fingerprint": "4028572f94385c2a",
+      "gpu_model": "none",
+      "local_unit_definition": "complete legacy RVO2 step",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 0.035233,
+          "mean": 0.02724475,
+          "median": 0.02605,
+          "p95": 0.033845599999999997,
+          "sample_count": 8
+        },
+        "per_step_max": {
+          "maximum": 0.035233,
+          "mean": 0.02724475,
+          "median": 0.02605,
+          "p95": 0.033845599999999997,
+          "sample_count": 8
+        },
+        "unit_count": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "sample_count": 8
+        }
+      },
+      "makespan_s": null,
+      "maximum_linear_speed_mps": 0.7999898426727051,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "mean_path_length_m": 0.1613538534451636,
+      "minimum_boundary_clearance_m": 0.09309199988696815,
+      "minimum_obstacle_clearance_m": 0.09309199988696815,
+      "minimum_pair_distance_m": 0.5166076927685676,
+      "minimum_static_obstacle_clearance_m": 0.13236786157954392,
+      "n_robots": 20,
+      "parameters": {
+        "circle_vertices": 32,
+        "heading_gain": 2.5,
+        "lookahead_m": 0.05,
+        "max_neighbors": 19,
+        "mode": "nh-orca",
+        "neighbor_distance_m": 3.0,
+        "obstacle_inflation_m": 0.0,
+        "obstacle_time_horizon_s": 2.0,
+        "pair_inflation_m": 0.0,
+        "time_horizon_s": 2.0
+      },
+      "planning_time_ms": 407.118446,
+      "robot_arrival_rate": 0.0,
+      "safe": true,
+      "scenario_fingerprint": "4028572f94385c2a",
+      "seed": 99,
+      "shared_coordination_ms": {
+        "maximum": 0.141624,
+        "mean": 0.11809162499999999,
+        "median": 0.11678649999999999,
+        "p95": 0.13637154999999998,
+        "sample_count": 8
+      },
+      "steps": 10,
+      "success": false,
+      "termination_time_s": 0.3,
+      "timing_v2_samples_file": "baselines/comparison-harness/results/timing_v2/samples/nh-orca_rect15_n20_s99.npz",
+      "timing_v2_samples_sha256": "126dd2ccdee9de21d978d5c7a5c30e669f2202dea38a2eac3581706adcabd232",
+      "warmup_steps": 2,
+      "worker_count": 1
+    }
+  ],
+  "shared_static_guidance": "cost-field",
+  "source": "public NH-ORCA Python implementation"
+}

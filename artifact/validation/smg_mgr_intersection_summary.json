@@ -1,0 +1,42 @@
+{
+  "fingerprints_verified": true,
+  "metric_definitions": {
+    "average_interference_delay": "pooled per-robot TTG_multi - TTG_solo for the same method and paired start-goal instance",
+    "penalized_flow_rate": "resource flow rate with zero assigned to incomplete trials"
+  },
+  "record_count": 40,
+  "rows": [
+    {
+      "average_interference_delay_s": 3.650506329113924,
+      "delay_evaluated_robots": 158,
+      "family": "Intersection",
+      "mean_control_step_ms": null,
+      "mean_robot_arrival_rate": 0.9875,
+      "method": "MGR",
+      "mission_successes": 19,
+      "n_robots": 8,
+      "p95_interference_delay_s": 8.1225,
+      "penalized_flow_rate_robots_per_m_s": 0.40570062378073546,
+      "resource_completion_rate": 0.95,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.42705328819024785,
+      "trials": 20
+    },
+    {
+      "average_interference_delay_s": 6.096196721311475,
+      "delay_evaluated_robots": 305,
+      "family": "Intersection",
+      "mean_control_step_ms": null,
+      "mean_robot_arrival_rate": 0.953125,
+      "method": "MGR",
+      "mission_successes": 13,
+      "n_robots": 16,
+      "p95_interference_delay_s": 13.044000000000002,
+      "penalized_flow_rate_robots_per_m_s": 0.35305110998785805,
+      "resource_completion_rate": 0.65,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.5431555538274739,
+      "trials": 20
+    }
+  ]
+}

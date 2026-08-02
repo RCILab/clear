@@ -1,0 +1,247 @@
+{
+  "environment": {
+    "cpu_model": "Intel(R) Core(TM) i7-14700F",
+    "logical_cpu_count": 28,
+    "numpy": "2.4.6",
+    "platform": "Linux-6.6.114.1-microsoft-standard-WSL2-x86_64-with-glibc2.41",
+    "python": "3.11.15"
+  },
+  "groups": [
+    {
+      "family": "circ15",
+      "maximum_cbf_sweeps": 670,
+      "maximum_observed_ms": 8.174591,
+      "maximum_seed_p95_ms": 2.5995056,
+      "mean_controller_ms": 1.9612188267006803,
+      "n_robots": 20,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.042190155460982
+    },
+    {
+      "family": "free",
+      "maximum_cbf_sweeps": 840,
+      "maximum_observed_ms": 7.529428,
+      "maximum_seed_p95_ms": 2.6415868,
+      "mean_controller_ms": 1.7262870352040816,
+      "n_robots": 20,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.07055183749244348
+    },
+    {
+      "family": "rect15",
+      "maximum_cbf_sweeps": 2570,
+      "maximum_observed_ms": 9.001978,
+      "maximum_seed_p95_ms": 3.3868866,
+      "mean_controller_ms": 2.5013065957482987,
+      "n_robots": 20,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.07704359921477875
+    },
+    {
+      "family": "swap",
+      "maximum_cbf_sweeps": 1460,
+      "maximum_observed_ms": 4.604456,
+      "maximum_seed_p95_ms": 2.5778715499999993,
+      "mean_controller_ms": 1.5908148365646257,
+      "n_robots": 20,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.06792919853609074
+    },
+    {
+      "family": "circ15",
+      "maximum_cbf_sweeps": 2350,
+      "maximum_observed_ms": 13.378118,
+      "maximum_seed_p95_ms": 3.4652127999999993,
+      "mean_controller_ms": 2.498125265816326,
+      "n_robots": 40,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.009944964672239641
+    },
+    {
+      "family": "free",
+      "maximum_cbf_sweeps": 1540,
+      "maximum_observed_ms": 6.513291,
+      "maximum_seed_p95_ms": 3.30170585,
+      "mean_controller_ms": 2.181423744557823,
+      "n_robots": 40,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.11503721120939482
+    },
+    {
+      "family": "rect15",
+      "maximum_cbf_sweeps": 3310,
+      "maximum_observed_ms": 29.438036,
+      "maximum_seed_p95_ms": 4.2893602,
+      "mean_controller_ms": 2.9604692743197276,
+      "n_robots": 40,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.09409228422967766
+    },
+    {
+      "family": "swap",
+      "maximum_cbf_sweeps": 2170,
+      "maximum_observed_ms": 10.156823,
+      "maximum_seed_p95_ms": 4.7212587,
+      "mean_controller_ms": 2.112791692517007,
+      "n_robots": 40,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.16036448462517092
+    },
+    {
+      "family": "circ15",
+      "maximum_cbf_sweeps": 4000,
+      "maximum_observed_ms": 55.375928,
+      "maximum_seed_p95_ms": 5.44738515,
+      "mean_controller_ms": 3.1932338680272108,
+      "n_robots": 60,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.08895700461586928
+    },
+    {
+      "family": "free",
+      "maximum_cbf_sweeps": 4000,
+      "maximum_observed_ms": 8.510428,
+      "maximum_seed_p95_ms": 3.7322720499999997,
+      "mean_controller_ms": 2.4851118602040816,
+      "n_robots": 60,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.1231749607325668
+    },
+    {
+      "family": "rect15",
+      "maximum_cbf_sweeps": 4000,
+      "maximum_observed_ms": 67.518603,
+      "maximum_seed_p95_ms": 5.95004855,
+      "mean_controller_ms": 4.057692642517007,
+      "n_robots": 60,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.2799085260160294
+    },
+    {
+      "family": "swap",
+      "maximum_cbf_sweeps": 4000,
+      "maximum_observed_ms": 42.705417,
+      "maximum_seed_p95_ms": 9.2494633,
+      "mean_controller_ms": 3.19146547755102,
+      "n_robots": 60,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.1437798774692276
+    },
+    {
+      "family": "circ15",
+      "maximum_cbf_sweeps": 4000,
+      "maximum_observed_ms": 62.884922,
+      "maximum_seed_p95_ms": 7.5792871,
+      "mean_controller_ms": 4.114936464965986,
+      "n_robots": 80,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.08228672284716304
+    },
+    {
+      "family": "free",
+      "maximum_cbf_sweeps": 2950,
+      "maximum_observed_ms": 12.27434,
+      "maximum_seed_p95_ms": 5.211064549999998,
+      "mean_controller_ms": 3.2769928719387758,
+      "n_robots": 80,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.09802754534831168
+    },
+    {
+      "family": "rect15",
+      "maximum_cbf_sweeps": 4000,
+      "maximum_observed_ms": 61.375584,
+      "maximum_seed_p95_ms": 7.971976599999997,
+      "mean_controller_ms": 4.689951766496598,
+      "n_robots": 80,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.04703106332980188
+    },
+    {
+      "family": "swap",
+      "maximum_cbf_sweeps": 4000,
+      "maximum_observed_ms": 44.184242,
+      "maximum_seed_p95_ms": 15.205376499999998,
+      "mean_controller_ms": 7.228799679421769,
+      "n_robots": 80,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.21787287391953003
+    },
+    {
+      "family": "free",
+      "maximum_cbf_sweeps": 4000,
+      "maximum_observed_ms": 21.235089,
+      "maximum_seed_p95_ms": 9.956934449999999,
+      "mean_controller_ms": 5.859006534353742,
+      "n_robots": 120,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.13626879656201626
+    },
+    {
+      "family": "swap",
+      "maximum_cbf_sweeps": 4000,
+      "maximum_observed_ms": 96.250054,
+      "maximum_seed_p95_ms": 31.645932849999994,
+      "mean_controller_ms": 10.060159190646258,
+      "n_robots": 120,
+      "nonconverged_steps": 0,
+      "seed_count": 3,
+      "std_seed_mean_ms": 0.2210183191300757
+    }
+  ],
+  "measurement_scope": "CLEARController.command plus three bounded native-unicycle CBF projections per 33.3 Hz step; excludes scenario/planner/target lookup, state integration, and swept-distance audits",
+  "worst_family_by_count": [
+    {
+      "family": "rect15",
+      "maximum_seed_p95_ms": 3.3868866,
+      "mean_controller_ms": 2.5013065957482987,
+      "n_robots": 20,
+      "within_30ms_at_p95": true
+    },
+    {
+      "family": "swap",
+      "maximum_seed_p95_ms": 4.7212587,
+      "mean_controller_ms": 2.112791692517007,
+      "n_robots": 40,
+      "within_30ms_at_p95": true
+    },
+    {
+      "family": "swap",
+      "maximum_seed_p95_ms": 9.2494633,
+      "mean_controller_ms": 3.19146547755102,
+      "n_robots": 60,
+      "within_30ms_at_p95": true
+    },
+    {
+      "family": "swap",
+      "maximum_seed_p95_ms": 15.205376499999998,
+      "mean_controller_ms": 7.228799679421769,
+      "n_robots": 80,
+      "within_30ms_at_p95": true
+    },
+    {
+      "family": "swap",
+      "maximum_seed_p95_ms": 31.645932849999994,
+      "mean_controller_ms": 10.060159190646258,
+      "n_robots": 120,
+      "within_30ms_at_p95": false
+    }
+  ]
+}

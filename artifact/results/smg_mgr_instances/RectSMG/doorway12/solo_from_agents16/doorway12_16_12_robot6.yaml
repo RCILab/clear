@@ -1,0 +1,19 @@
+agentNum: 1
+agent_size: 1.0
+goalPoints:
+- - 37.0
+  - 21.499999999999996
+obstacles:
+- center:
+  - 20.0
+  - 30.75
+  width: 2.0
+  height: 18.5
+- center:
+  - 20.0
+  - 9.25
+  width: 2.0
+  height: 18.5
+startPoints:
+- - 7.570248768006611
+  - 19.258681327036285

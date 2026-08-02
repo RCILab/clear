@@ -1,0 +1,44 @@
+{
+  "config": {
+    "bridge_progress_retention": 0.9,
+    "inner_substeps": 3,
+    "lookahead_m": 0.05,
+    "outer_period_s": 0.03,
+    "robots": 4,
+    "seeds": 20,
+    "timeout_s": 10.0,
+    "yaw_rate_limit_rps": 1.5707963267948966
+  },
+  "summary": {
+    "certified_bridge_progress_violations": 0,
+    "certified_bridge_projection_calls": 10026,
+    "certified_bridge_row_rejections": 0,
+    "certified_bridge_steps": 3342,
+    "minimum_certified_bridge_progress_residual": 1.5286343521819545,
+    "nonconverged_steps": 0,
+    "physical_mission_successes": 18,
+    "runs": 20
+  },
+  "records": [
+    {"seed": 0, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 168, "certified_bridge_projection_calls": 504, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 1.676220901260472, "nonconverged_steps": 0},
+    {"seed": 1, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 166, "certified_bridge_projection_calls": 498, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 2.1041016778821864, "nonconverged_steps": 0},
+    {"seed": 2, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 167, "certified_bridge_projection_calls": 501, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 1.9468409748579207, "nonconverged_steps": 0},
+    {"seed": 3, "physical_mission_success": false, "makespan_s": 4.74, "certified_bridge_steps": 166, "certified_bridge_projection_calls": 498, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 2.334369211375428, "nonconverged_steps": 0},
+    {"seed": 4, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 168, "certified_bridge_projection_calls": 504, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 1.6694360080520403, "nonconverged_steps": 0},
+    {"seed": 5, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 166, "certified_bridge_projection_calls": 498, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 2.0522949136140625, "nonconverged_steps": 0},
+    {"seed": 6, "physical_mission_success": true, "makespan_s": 4.77, "certified_bridge_steps": 169, "certified_bridge_projection_calls": 507, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 1.5286343521819545, "nonconverged_steps": 0},
+    {"seed": 7, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 166, "certified_bridge_projection_calls": 498, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 2.0557691199507655, "nonconverged_steps": 0},
+    {"seed": 8, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 168, "certified_bridge_projection_calls": 504, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 1.7014445885859069, "nonconverged_steps": 0},
+    {"seed": 9, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 168, "certified_bridge_projection_calls": 504, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 1.6249417671259845, "nonconverged_steps": 0},
+    {"seed": 10, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 168, "certified_bridge_projection_calls": 504, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 1.6904547399966263, "nonconverged_steps": 0},
+    {"seed": 11, "physical_mission_success": false, "makespan_s": 4.74, "certified_bridge_steps": 166, "certified_bridge_projection_calls": 498, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 2.3052759508419935, "nonconverged_steps": 0},
+    {"seed": 12, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 166, "certified_bridge_projection_calls": 498, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 2.1677724200248787, "nonconverged_steps": 0},
+    {"seed": 13, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 167, "certified_bridge_projection_calls": 501, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 1.935593485314847, "nonconverged_steps": 0},
+    {"seed": 14, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 168, "certified_bridge_projection_calls": 504, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 1.6590455527144008, "nonconverged_steps": 0},
+    {"seed": 15, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 167, "certified_bridge_projection_calls": 501, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 1.8469112929699547, "nonconverged_steps": 0},
+    {"seed": 16, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 167, "certified_bridge_projection_calls": 501, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 1.8571320403219016, "nonconverged_steps": 0},
+    {"seed": 17, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 167, "certified_bridge_projection_calls": 501, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 1.9185416601537126, "nonconverged_steps": 0},
+    {"seed": 18, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 168, "certified_bridge_projection_calls": 504, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 1.6452338068081982, "nonconverged_steps": 0},
+    {"seed": 19, "physical_mission_success": true, "makespan_s": 4.74, "certified_bridge_steps": 166, "certified_bridge_projection_calls": 498, "certified_bridge_row_rejections": 0, "certified_bridge_progress_violations": 0, "minimum_certified_bridge_progress_residual": 2.1437250602994324, "nonconverged_steps": 0}
+  ]
+}

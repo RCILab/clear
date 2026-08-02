@@ -1,0 +1,139 @@
+{
+  "algorithm": "GCBF+",
+  "initial_heading_rad": 0.0,
+  "physical_protocol": {
+    "arrival_radius": 0.22,
+    "body_radius": 0.2,
+    "circle_count": 14,
+    "dt": 0.03,
+    "horizon": 0.3,
+    "obstacle_fraction": 0.15,
+    "rectangle_count": 12,
+    "safety_margin": 0.02,
+    "speed_limit": 0.8,
+    "swap_radius": 7.5,
+    "workspace_size": 16.0
+  },
+  "records": [
+    {
+      "algorithm": "GCBF+",
+      "arrival_success": false,
+      "batch_contains_local_units": false,
+      "batch_step_ms": {
+        "maximum": 2.029895,
+        "mean": 1.8656833750000001,
+        "median": 1.8463735,
+        "p95": 1.9776266999999998,
+        "sample_count": 8
+      },
+      "control_time_max_ms": 2.533974,
+      "control_time_mean_ms": 1.9767053999999997,
+      "control_time_p95_ms": 2.4321115499999997,
+      "controller_backend": "public-gcbfplus-jax-gpu",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 1.791628,
+        "mean": 1.719866875,
+        "median": 1.7313290000000001,
+        "p95": 1.78937575,
+        "sample_count": 8
+      },
+      "dynamics": "bounded-unicycle",
+      "ego_action_max_abs_error": 0.008357048034667969,
+      "ego_action_parity_note": "The induced graph contains the identical one-hop sensing messages, but its smaller padded shape changes float32 segment reduction order.",
+      "ego_action_parity_tolerance": 5e-06,
+      "ego_action_parity_violations": 200,
+      "ever_arrival_rate": 0.0,
+      "ever_arrival_success": false,
+      "family": "rect15",
+      "final_arrival_success": false,
+      "final_maximum_goal_distance_m": 16.876660872236485,
+      "final_state_sha256": "2e673c98554d0467d0b4ee50b6bd6cf5b11e59f4f903caf937d089faa745f85c",
+      "fingerprint": "4028572f94385c2a",
+      "first_arrival_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "gpu_model": "NVIDIA GeForce RTX 4070 Ti",
+      "local_unit_definition": "induced one-hop sensing graph construction and synchronized policy inference for one ego robot",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 1.791628,
+          "mean": 0.8652410375,
+          "median": 0.528527,
+          "p95": 1.7051609,
+          "sample_count": 160
+        },
+        "per_step_max": {
+          "maximum": 1.791628,
+          "mean": 1.719866875,
+          "median": 1.7313290000000001,
+          "p95": 1.78937575,
+          "sample_count": 8
+        },
+        "unit_count": {
+          "maximum": 20.0,
+          "mean": 20.0,
+          "median": 20.0,
+          "p95": 20.0,
+          "sample_count": 8
+        }
+      },
+      "makespan_s": null,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963705062866,
+      "mean_path_length_m": 0.08951646800679844,
+      "minimum_obstacle_clearance_m": 0.09280447600390307,
+      "minimum_pair_distance_m": 0.6271905551980395,
+      "n_robots": 20,
+      "parameters": {
+        "checkpoint_step": 1000,
+        "n_rays": 32,
+        "obstacle_count_including_walls": 16,
+        "scaled_acceleration_limit": 3.0,
+        "scaled_arrival_radius": 0.055,
+        "scaled_speed_limit": 0.2,
+        "spatial_scale": 4.0
+      },
+      "planning_time_ms": 447.223539,
+      "robot_arrival_rate": 0.0,
+      "safe": true,
+      "scenario_fingerprint": "4028572f94385c2a",
+      "seed": 99,
+      "shared_coordination_ms": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "sample_count": 8
+      },
+      "steps": 10,
+      "success": false,
+      "termination_time_s": 0.3,
+      "timing_v2_samples_file": "baselines/comparison-harness/results/timing_v2/samples/gcbfplus_rect15_n20_s99_gpu.npz",
+      "timing_v2_samples_sha256": "55c0266606430df6226fcdd0bc223d8fdbce60e6c12ae7b1cbb44b92ab66184f",
+      "warmup_steps": 2,
+      "worker_count": 1
+    }
+  ],
+  "shared_static_guidance": "cost-field",
+  "source": "public GCBF+ implementation under the common protocol"
+}

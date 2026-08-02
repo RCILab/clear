@@ -1,0 +1,1690 @@
+{
+  "bootstrap_samples": 20000,
+  "bootstrap_seed": 20260729,
+  "clear_source": "../../experiments/results/unicycle_clear_all_sizes_raw.json",
+  "comparison": "CLEAR versus computationally optimized public MGR implementation",
+  "family_summaries": [
+    {
+      "clear": {
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 80,
+        "declared_safe_runs": 80,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 24.283125,
+        "successful_makespan_std_s": 2.957558689510444
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 32.79445074773929,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 20.905213239457957,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "free",
+      "instances": 80,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 57,
+        "count": 76,
+        "estimate": -5.143421052631578,
+        "exact_sign_p": 1.4836899336372363e-05,
+        "lower": -6.750404605263157,
+        "median": -3.7200000000000006,
+        "mgr_faster": 19,
+        "ties": 0,
+        "upper": -3.656042763157896
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 3,
+        "arrival_success_rate": 0.95,
+        "arrival_successes": 76,
+        "declared_margin_safe_runs": 3,
+        "physical_safe_runs": 80,
+        "robot_arrival_rate": 0.9979687500000001,
+        "successful_makespan_mean_s": 29.398815789473684,
+        "successful_makespan_std_s": 8.68373851396663
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.44270384817837793,
+        "clear_static_margin_m": 0.003979125130971539,
+        "mgr_obstacle_declared_margin_m": null,
+        "mgr_obstacle_physical_clearance_m": null,
+        "mgr_pair_declared_margin_m": -0.0035541174089863126,
+        "mgr_pair_distance_m": 0.43644588259101375
+      },
+      "paired_success": {
+        "both": 76,
+        "clear_only": 4,
+        "mcnemar_exact_p": 0.125,
+        "mgr_only": 0,
+        "neither": 0
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -6.645750000000001,
+        "lower": -8.775759374999998,
+        "median": -3.8100000000000005,
+        "timeout_s": 60.0,
+        "upper": -4.702490625
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 80,
+        "declared_safe_runs": 80,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 25.679999999999996,
+        "successful_makespan_std_s": 3.418010747255548
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 40.772690921339354,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 37.84812204278359,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "swap",
+      "instances": 80,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 54,
+        "count": 54,
+        "estimate": -16.122222222222224,
+        "exact_sign_p": 1.1102230246251565e-16,
+        "lower": -17.66168055555556,
+        "median": -14.985,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": -14.647194444444448
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.675,
+        "arrival_successes": 54,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 77,
+        "robot_arrival_rate": 0.9010416666666667,
+        "successful_makespan_mean_s": 39.894999999999996,
+        "successful_makespan_std_s": 7.242419263785607
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.44010493435488657,
+        "clear_static_margin_m": 0.03952746717509026,
+        "mgr_obstacle_declared_margin_m": null,
+        "mgr_obstacle_physical_clearance_m": null,
+        "mgr_pair_declared_margin_m": -0.08069203435397199,
+        "mgr_pair_distance_m": 0.35930796564602807
+      },
+      "paired_success": {
+        "both": 54,
+        "clear_only": 26,
+        "mcnemar_exact_p": 2.9802322387695312e-08,
+        "mgr_only": 0,
+        "neither": 0
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -20.749125,
+        "lower": -22.534228125,
+        "median": -20.025,
+        "timeout_s": 60.0,
+        "upper": -18.963365625000005
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 0.9375,
+        "arrival_successes": 75,
+        "declared_safe_runs": 80,
+        "robot_arrival_rate": 0.9984895833333333,
+        "successful_makespan_mean_s": 27.553199999999997,
+        "successful_makespan_std_s": 4.755468021983546
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 52.321891858636334,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 28.594499786251163,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "circ15",
+      "instances": 80,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 13,
+        "count": 13,
+        "estimate": -17.743846153846153,
+        "exact_sign_p": 0.000244140625,
+        "lower": -22.59461538461538,
+        "median": -18.75,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": -12.83290384615386
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.1625,
+        "arrival_successes": 13,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 67,
+        "robot_arrival_rate": 0.9184375000000001,
+        "successful_makespan_mean_s": 41.32384615384615,
+        "successful_makespan_std_s": 10.70658639846017
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.44019589557338457,
+        "clear_static_margin_m": 1.5049228110325386e-05,
+        "mgr_obstacle_declared_margin_m": -0.1004046860347389,
+        "mgr_obstacle_physical_clearance_m": -0.08040468603473888,
+        "mgr_pair_declared_margin_m": -0.07010902560843724,
+        "mgr_pair_distance_m": 0.3698909743915628
+      },
+      "paired_success": {
+        "both": 13,
+        "clear_only": 62,
+        "mcnemar_exact_p": 4.336808689942018e-19,
+        "mgr_only": 0,
+        "neither": 5
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -27.383999999999997,
+        "lower": -29.551884375000007,
+        "median": -30.495,
+        "timeout_s": 60.0,
+        "upper": -25.058596875000003
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 0.9375,
+        "arrival_successes": 75,
+        "declared_safe_runs": 80,
+        "robot_arrival_rate": 0.9932291666666668,
+        "successful_makespan_mean_s": 27.7096,
+        "successful_makespan_std_s": 5.748456535500685
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 88.94566763276516,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 80.53877188377464,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "rect15",
+      "instances": 80,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 6,
+        "count": 6,
+        "estimate": -11.894999999999998,
+        "exact_sign_p": 0.03125,
+        "lower": -18.115,
+        "median": -12.45,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": -5.839999999999999
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.075,
+        "arrival_successes": 6,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 57,
+        "robot_arrival_rate": 0.8744791666666666,
+        "successful_makespan_mean_s": 34.65,
+        "successful_makespan_std_s": 9.633690881484624
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.440000836373349,
+        "clear_static_margin_m": 7.43891483909187e-06,
+        "mgr_obstacle_declared_margin_m": -0.10293915492957889,
+        "mgr_obstacle_physical_clearance_m": -0.08293915492957887,
+        "mgr_pair_declared_margin_m": -0.12380354326405352,
+        "mgr_pair_distance_m": 0.31619645673594654
+      },
+      "paired_success": {
+        "both": 6,
+        "clear_only": 69,
+        "mcnemar_exact_p": 3.3881317890172014e-21,
+        "mgr_only": 0,
+        "neither": 5
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -28.371000000000002,
+        "lower": -30.59255625,
+        "median": -31.185000000000002,
+        "timeout_s": 60.0,
+        "upper": -25.953375000000005
+      }
+    }
+  ],
+  "mgr_computational_optimization": "vectorized and cached geometry and communication operations; constant QP data reuse with the public CVXOPT path retained",
+  "mgr_controller_source_modified": true,
+  "mgr_evaluator": "headless wrapper preserving upstream control/update order; exact linear swept safety evaluation between control nodes",
+  "mgr_implementation": "computationally optimized public MGR implementation",
+  "mgr_shards": [
+    "results/mgr_clear320_final_cont_shard0of12.jsonl",
+    "results/mgr_clear320_final_cont_shard10of12.jsonl",
+    "results/mgr_clear320_final_cont_shard11of12.jsonl",
+    "results/mgr_clear320_final_cont_shard1of12.jsonl",
+    "results/mgr_clear320_final_cont_shard2of12.jsonl",
+    "results/mgr_clear320_final_cont_shard3of12.jsonl",
+    "results/mgr_clear320_final_cont_shard4of12.jsonl",
+    "results/mgr_clear320_final_cont_shard5of12.jsonl",
+    "results/mgr_clear320_final_cont_shard6of12.jsonl",
+    "results/mgr_clear320_final_cont_shard7of12.jsonl",
+    "results/mgr_clear320_final_cont_shard8of12.jsonl",
+    "results/mgr_clear320_final_cont_shard9of12.jsonl",
+    "results/mgr_clear320_final_shard0of6.jsonl",
+    "results/mgr_clear320_final_shard1of6.jsonl",
+    "results/mgr_clear320_final_shard2of6.jsonl",
+    "results/mgr_clear320_final_shard3of6.jsonl",
+    "results/mgr_clear320_final_shard4of6.jsonl",
+    "results/mgr_clear320_final_shard5of6.jsonl"
+  ],
+  "overall": {
+    "clear": {
+      "arrival_success_rate": 0.96875,
+      "arrival_successes": 310,
+      "declared_safe_runs": 320,
+      "robot_arrival_rate": 0.9979296875000001,
+      "successful_makespan_mean_s": 26.26374193548387,
+      "successful_makespan_std_s": 4.535129852725677
+    },
+    "computation": {
+      "mean_of_run_mean_iteration_ms": 53.708675290120034,
+      "mean_of_run_p95_iteration_ms": null,
+      "median_run_mean_iteration_ms": 34.700122582527456,
+      "median_run_p95_iteration_ms": null,
+      "qp_failure_events": 0,
+      "qp_max_iterations": 0,
+      "qp_mean_iterations": null,
+      "qp_solve_count": 0
+    },
+    "instances": 320,
+    "joint_success_clear_minus_mgr_makespan_s": {
+      "clear_faster": 130,
+      "count": 149,
+      "estimate": -10.493557046979866,
+      "exact_sign_p": 1.5845286212458737e-21,
+      "lower": -11.91,
+      "median": -10.350000000000001,
+      "mgr_faster": 19,
+      "ties": 0,
+      "upper": -9.090805369127517
+    },
+    "mgr": {
+      "arrival_and_declared_margin_successes": 3,
+      "arrival_success_rate": 0.465625,
+      "arrival_successes": 149,
+      "declared_margin_safe_runs": 3,
+      "physical_safe_runs": 281,
+      "robot_arrival_rate": 0.9229817708333334,
+      "successful_makespan_mean_s": 34.45469798657718,
+      "successful_makespan_std_s": 9.874115188348076
+    },
+    "minimum_safety": {
+      "clear_pair_distance_m": 0.440000836373349,
+      "clear_static_margin_m": 7.43891483909187e-06,
+      "mgr_obstacle_declared_margin_m": -0.10293915492957889,
+      "mgr_obstacle_physical_clearance_m": -0.08293915492957887,
+      "mgr_pair_declared_margin_m": -0.12380354326405352,
+      "mgr_pair_distance_m": 0.31619645673594654
+    },
+    "paired_success": {
+      "both": 149,
+      "clear_only": 161,
+      "mcnemar_exact_p": 6.842277657836021e-49,
+      "mgr_only": 0,
+      "neither": 10
+    },
+    "timeout_penalized_clear_minus_mgr_s": {
+      "estimate": -20.78746875,
+      "lower": -22.197658593750003,
+      "median": -24.990000000000002,
+      "timeout_s": 60.0,
+      "upper": -19.36976484375
+    }
+  },
+  "paired": true,
+  "physical_protocol": {
+    "arrival_radius": 0.22,
+    "body_radius": 0.2,
+    "circle_count": 14,
+    "dt": 0.03,
+    "horizon": 60.0,
+    "obstacle_fraction": 0.15,
+    "rectangle_count": 12,
+    "safety_margin": 0.02,
+    "speed_limit": 0.8,
+    "swap_radius": 7.5,
+    "workspace_size": 16.0
+  },
+  "robot_summaries": [
+    {
+      "clear": {
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 80,
+        "declared_safe_runs": 80,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 22.053749999999997,
+        "successful_makespan_std_s": 2.2150185729426766
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 10.637704880895743,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 8.865491540133892,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "instances": 80,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 42,
+        "count": 54,
+        "estimate": -8.501666666666665,
+        "exact_sign_p": 5.2094472007935266e-05,
+        "lower": -10.888902777777778,
+        "median": -9.09,
+        "mgr_faster": 12,
+        "ties": 0,
+        "upper": -6.208305555555557
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 3,
+        "arrival_success_rate": 0.675,
+        "arrival_successes": 54,
+        "declared_margin_safe_runs": 3,
+        "physical_safe_runs": 74,
+        "robot_arrival_rate": 0.96,
+        "successful_makespan_mean_s": 30.12,
+        "successful_makespan_std_s": 9.379685395214892
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.464683349671077,
+        "clear_static_margin_m": 0.00022940735634513487,
+        "mgr_obstacle_declared_margin_m": -0.10293915492957889,
+        "mgr_obstacle_physical_clearance_m": -0.08293915492957887,
+        "mgr_pair_declared_margin_m": -0.06551922576406721,
+        "mgr_pair_distance_m": 0.37448077423593285
+      },
+      "n_robots": 20,
+      "paired_success": {
+        "both": 54,
+        "clear_only": 26,
+        "mcnemar_exact_p": 2.9802322387695312e-08,
+        "mgr_only": 0,
+        "neither": 0
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -17.777250000000002,
+        "lower": -21.153384375,
+        "median": -12.9,
+        "timeout_s": 60.0,
+        "upper": -14.436721875000002
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 0.975,
+        "arrival_successes": 78,
+        "declared_safe_runs": 80,
+        "robot_arrival_rate": 0.9990625000000002,
+        "successful_makespan_mean_s": 24.900769230769235,
+        "successful_makespan_std_s": 2.8495917999905576
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 22.938424771871045,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 19.278542180539073,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "instances": 80,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 38,
+        "count": 44,
+        "estimate": -10.692272727272728,
+        "exact_sign_p": 9.430375484953402e-07,
+        "lower": -13.097113636363632,
+        "median": -11.775,
+        "mgr_faster": 6,
+        "ties": 0,
+        "upper": -8.23840909090909
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.55,
+        "arrival_successes": 44,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 74,
+        "robot_arrival_rate": 0.9596875,
+        "successful_makespan_mean_s": 34.51568181818182,
+        "successful_makespan_std_s": 9.25294432027343
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.44019589557338457,
+        "clear_static_margin_m": 8.096412976374423e-05,
+        "mgr_obstacle_declared_margin_m": -0.1004046860347389,
+        "mgr_obstacle_physical_clearance_m": -0.08040468603473888,
+        "mgr_pair_declared_margin_m": -0.06733083410224577,
+        "mgr_pair_distance_m": 0.3726691658977543
+      },
+      "n_robots": 40,
+      "paired_success": {
+        "both": 44,
+        "clear_only": 34,
+        "mcnemar_exact_p": 1.1641532182693481e-10,
+        "mgr_only": 0,
+        "neither": 2
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -20.205375,
+        "lower": -23.143931249999998,
+        "median": -20.909999999999997,
+        "timeout_s": 60.0,
+        "upper": -17.273943750000004
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 0.95,
+        "arrival_successes": 76,
+        "declared_safe_runs": 80,
+        "robot_arrival_rate": 0.9974999999999999,
+        "successful_makespan_mean_s": 27.75078947368421,
+        "successful_makespan_std_s": 2.680623690192462
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 70.95962068358328,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 61.283139033129956,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "instances": 80,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 33,
+        "count": 34,
+        "estimate": -13.517647058823528,
+        "exact_sign_p": 4.0745362639427185e-09,
+        "lower": -16.673823529411763,
+        "median": -13.844999999999999,
+        "mgr_faster": 1,
+        "ties": 0,
+        "upper": -10.446154411764708
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.425,
+        "arrival_successes": 34,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 70,
+        "robot_arrival_rate": 0.9327083333333333,
+        "successful_makespan_mean_s": 39.75970588235294,
+        "successful_makespan_std_s": 9.965025349385908
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.4400405792010525,
+        "clear_static_margin_m": 7.76300777087513e-05,
+        "mgr_obstacle_declared_margin_m": -0.09837503025433697,
+        "mgr_obstacle_physical_clearance_m": -0.07837503025433695,
+        "mgr_pair_declared_margin_m": -0.12380354326405352,
+        "mgr_pair_distance_m": 0.31619645673594654
+      },
+      "n_robots": 60,
+      "paired_success": {
+        "both": 34,
+        "clear_only": 42,
+        "mcnemar_exact_p": 4.547473508864641e-13,
+        "mgr_only": 0,
+        "neither": 4
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -22.034625000000002,
+        "lower": -24.507009375,
+        "median": -26.729999999999997,
+        "timeout_s": 60.0,
+        "upper": -19.408481249999998
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 0.95,
+        "arrival_successes": 76,
+        "declared_safe_runs": 80,
+        "robot_arrival_rate": 0.99515625,
+        "successful_makespan_mean_s": 30.607105263157887,
+        "successful_makespan_std_s": 4.674665853524213
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 110.29895082413006,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 104.1279307035129,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "instances": 80,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 17,
+        "count": 17,
+        "estimate": -10.258235294117647,
+        "exact_sign_p": 1.52587890625e-05,
+        "lower": -13.59714705882353,
+        "median": -9.57,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": -7.258235294117647
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.2125,
+        "arrival_successes": 17,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 63,
+        "robot_arrival_rate": 0.83953125,
+        "successful_makespan_mean_s": 37.455882352941174,
+        "successful_makespan_std_s": 6.5363876289043725
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.440000836373349,
+        "clear_static_margin_m": 7.43891483909187e-06,
+        "mgr_obstacle_declared_margin_m": -0.10293915492957889,
+        "mgr_obstacle_physical_clearance_m": -0.08293915492957887,
+        "mgr_pair_declared_margin_m": -0.08805844797666096,
+        "mgr_pair_distance_m": 0.3519415520233391
+      },
+      "n_robots": 80,
+      "paired_success": {
+        "both": 17,
+        "clear_only": 59,
+        "mcnemar_exact_p": 3.469446951953614e-18,
+        "mgr_only": 0,
+        "neither": 4
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -23.132625,
+        "lower": -25.383759375,
+        "median": -28.080000000000002,
+        "timeout_s": 60.0,
+        "upper": -20.773481250000003
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "clear": {
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 21.316499999999998,
+        "successful_makespan_std_s": 2.2470501715992484
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 7.391955032841197,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 7.324813027174696,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "free",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 8,
+        "count": 20,
+        "estimate": 0.03449999999999971,
+        "exact_sign_p": 0.5034446716308594,
+        "lower": -0.8310000000000002,
+        "median": 0.5549999999999997,
+        "mgr_faster": 12,
+        "ties": 0,
+        "upper": 0.8579999999999994
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 3,
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_margin_safe_runs": 3,
+        "physical_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 21.282,
+        "successful_makespan_std_s": 2.343972336822573
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.47043753478869754,
+        "clear_static_margin_m": 0.04370591760514575,
+        "mgr_obstacle_declared_margin_m": null,
+        "mgr_obstacle_physical_clearance_m": null,
+        "mgr_pair_declared_margin_m": -0.0028112075112958212,
+        "mgr_pair_distance_m": 0.43718879248870424
+      },
+      "n_robots": 20,
+      "paired_success": {
+        "both": 20,
+        "clear_only": 0,
+        "mcnemar_exact_p": 1.0,
+        "mgr_only": 0,
+        "neither": 0
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": 0.03449999999999971,
+        "lower": -0.8235000000000003,
+        "median": 0.5549999999999997,
+        "timeout_s": 60.0,
+        "upper": 0.8399999999999996
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 22.935000000000002,
+        "successful_makespan_std_s": 1.4327283504962791
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 15.494707836639328,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 15.498579087648212,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "free",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 13,
+        "count": 19,
+        "estimate": -2.6936842105263152,
+        "exact_sign_p": 0.1670684814453125,
+        "lower": -4.474736842105261,
+        "median": -2.759999999999998,
+        "mgr_faster": 6,
+        "ties": 0,
+        "upper": -0.9757500000000033
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.95,
+        "arrival_successes": 19,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 20,
+        "robot_arrival_rate": 0.9974999999999999,
+        "successful_makespan_mean_s": 25.684736842105263,
+        "successful_makespan_std_s": 4.492129374337906
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.4602528749016229,
+        "clear_static_margin_m": 0.008560177247525225,
+        "mgr_obstacle_declared_margin_m": null,
+        "mgr_obstacle_physical_clearance_m": null,
+        "mgr_pair_declared_margin_m": -0.0029210426182599836,
+        "mgr_pair_distance_m": 0.4370789573817401
+      },
+      "n_robots": 40,
+      "paired_success": {
+        "both": 19,
+        "clear_only": 1,
+        "mcnemar_exact_p": 1.0,
+        "mgr_only": 0,
+        "neither": 0
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -4.4655,
+        "lower": -8.820112499999999,
+        "median": -2.8049999999999997,
+        "timeout_s": 60.0,
+        "upper": -1.4219625000000022
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 25.8945,
+        "successful_makespan_std_s": 1.667044264243565
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 28.08173217312885,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 26.62405637373122,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "free",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 19,
+        "count": 20,
+        "estimate": -8.301,
+        "exact_sign_p": 4.00543212890625e-05,
+        "lower": -11.886,
+        "median": -5.355,
+        "mgr_faster": 1,
+        "ties": 0,
+        "upper": -5.1855
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 34.195499999999996,
+        "successful_makespan_std_s": 8.46309168031835
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.4514485553310047,
+        "clear_static_margin_m": 0.020141006808717776,
+        "mgr_obstacle_declared_margin_m": null,
+        "mgr_obstacle_physical_clearance_m": null,
+        "mgr_pair_declared_margin_m": -0.0029653612709866217,
+        "mgr_pair_distance_m": 0.43703463872901344
+      },
+      "n_robots": 60,
+      "paired_success": {
+        "both": 20,
+        "clear_only": 0,
+        "mcnemar_exact_p": 1.0,
+        "mgr_only": 0,
+        "neither": 0
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -8.301,
+        "lower": -11.908575,
+        "median": -5.355,
+        "timeout_s": 60.0,
+        "upper": -5.189962500000003
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 26.986499999999996,
+        "successful_makespan_std_s": 2.210323327146125
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 80.20940794834779,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 80.45285530016518,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "free",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 17,
+        "count": 17,
+        "estimate": -10.258235294117647,
+        "exact_sign_p": 1.52587890625e-05,
+        "lower": -13.542352941176471,
+        "median": -9.57,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": -7.24226470588236
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.85,
+        "arrival_successes": 17,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 20,
+        "robot_arrival_rate": 0.994375,
+        "successful_makespan_mean_s": 37.455882352941174,
+        "successful_makespan_std_s": 6.5363876289043725
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.44270384817837793,
+        "clear_static_margin_m": 0.003979125130971539,
+        "mgr_obstacle_declared_margin_m": null,
+        "mgr_obstacle_physical_clearance_m": null,
+        "mgr_pair_declared_margin_m": -0.0035541174089863126,
+        "mgr_pair_distance_m": 0.43644588259101375
+      },
+      "n_robots": 80,
+      "paired_success": {
+        "both": 17,
+        "clear_only": 3,
+        "mcnemar_exact_p": 0.25,
+        "mgr_only": 0,
+        "neither": 0
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -13.850999999999999,
+        "lower": -18.711037500000003,
+        "median": -11.430000000000001,
+        "timeout_s": 60.0,
+        "upper": -9.513
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 21.4725,
+        "successful_makespan_std_s": 0.09872209799016127
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 7.7746157334346035,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 7.754363275127374,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "swap",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 20,
+        "count": 20,
+        "estimate": -12.302999999999999,
+        "exact_sign_p": 1.9073486328125e-06,
+        "lower": -14.351999999999999,
+        "median": -11.37,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": -10.615499999999999
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 33.775499999999994,
+        "successful_makespan_std_s": 4.348516353158191
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.5156251791986698,
+        "clear_static_margin_m": 0.23007135066889894,
+        "mgr_obstacle_declared_margin_m": null,
+        "mgr_obstacle_physical_clearance_m": null,
+        "mgr_pair_declared_margin_m": -0.004637748377383288,
+        "mgr_pair_distance_m": 0.43536225162261677
+      },
+      "n_robots": 20,
+      "paired_success": {
+        "both": 20,
+        "clear_only": 0,
+        "mcnemar_exact_p": 1.0,
+        "mgr_only": 0,
+        "neither": 0
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -12.302999999999999,
+        "lower": -14.3235,
+        "median": -11.37,
+        "timeout_s": 60.0,
+        "upper": -10.626000000000001
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 23.997,
+        "successful_makespan_std_s": 0.34106798211068196
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 17.461232828380794,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 17.3572407876251,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "swap",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 20,
+        "count": 20,
+        "estimate": -16.548000000000002,
+        "exact_sign_p": 1.9073486328125e-06,
+        "lower": -18.547612500000003,
+        "median": -16.199999999999996,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": -14.627962500000006
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 40.545,
+        "successful_makespan_std_s": 4.566773017073839
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.46414158538876116,
+        "clear_static_margin_m": 0.19778204938663713,
+        "mgr_obstacle_declared_margin_m": null,
+        "mgr_obstacle_physical_clearance_m": null,
+        "mgr_pair_declared_margin_m": -0.003406733862679534,
+        "mgr_pair_distance_m": 0.4365932661373205
+      },
+      "n_robots": 40,
+      "paired_success": {
+        "both": 20,
+        "clear_only": 0,
+        "mcnemar_exact_p": 1.0,
+        "mgr_only": 0,
+        "neither": 0
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -16.548000000000002,
+        "lower": -18.559537500000005,
+        "median": -16.199999999999996,
+        "timeout_s": 60.0,
+        "upper": -14.665387500000008
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 26.845499999999998,
+        "successful_makespan_std_s": 0.5995478559539243
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 59.590358820378256,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 58.96320469476515,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "swap",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 14,
+        "count": 14,
+        "estimate": -20.969999999999995,
+        "exact_sign_p": 0.0001220703125,
+        "lower": -23.73010714285714,
+        "median": -20.025,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": -18.366375
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.7,
+        "arrival_successes": 14,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 20,
+        "robot_arrival_rate": 0.9466666666666667,
+        "successful_makespan_mean_s": 47.70857142857143,
+        "successful_makespan_std_s": 5.631725869015312
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.4523840468005544,
+        "clear_static_margin_m": 0.06227805060272651,
+        "mgr_obstacle_declared_margin_m": null,
+        "mgr_obstacle_physical_clearance_m": null,
+        "mgr_pair_declared_margin_m": -0.008572233039660149,
+        "mgr_pair_distance_m": 0.4314277669603399
+      },
+      "n_robots": 60,
+      "paired_success": {
+        "both": 14,
+        "clear_only": 6,
+        "mcnemar_exact_p": 0.03125,
+        "mgr_only": 0,
+        "neither": 0
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -24.550499999999992,
+        "lower": -27.622500000000002,
+        "median": -24.330000000000002,
+        "timeout_s": 60.0,
+        "upper": -21.494999999999997
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 30.404999999999994,
+        "successful_makespan_std_s": 1.242338626606246
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 78.26455630316379,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 80.35064752047766,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "swap",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 0,
+        "count": 0,
+        "estimate": NaN,
+        "exact_sign_p": 1.0,
+        "lower": NaN,
+        "median": null,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": NaN
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.0,
+        "arrival_successes": 0,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 17,
+        "robot_arrival_rate": 0.6575000000000001,
+        "successful_makespan_mean_s": null,
+        "successful_makespan_std_s": null
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.44010493435488657,
+        "clear_static_margin_m": 0.03952746717509026,
+        "mgr_obstacle_declared_margin_m": null,
+        "mgr_obstacle_physical_clearance_m": null,
+        "mgr_pair_declared_margin_m": -0.08069203435397199,
+        "mgr_pair_distance_m": 0.35930796564602807
+      },
+      "n_robots": 80,
+      "paired_success": {
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "mgr_only": 0,
+        "neither": 0
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -29.595000000000006,
+        "lower": -30.094537500000005,
+        "median": -29.955000000000002,
+        "timeout_s": 60.0,
+        "upper": -29.0369625
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 22.77,
+        "successful_makespan_std_s": 2.6105716252434665
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 10.039253716406272,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 9.949514510654504,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "circ15",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 9,
+        "count": 9,
+        "estimate": -17.276666666666664,
+        "exact_sign_p": 0.00390625,
+        "lower": -24.13675,
+        "median": -16.56,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": -10.67
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.45,
+        "arrival_successes": 9,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 17,
+        "robot_arrival_rate": 0.925,
+        "successful_makespan_mean_s": 39.449999999999996,
+        "successful_makespan_std_s": 11.485720482407709
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.464683349671077,
+        "clear_static_margin_m": 0.0008564833779811376,
+        "mgr_obstacle_declared_margin_m": -0.07895945538933863,
+        "mgr_obstacle_physical_clearance_m": -0.05895945538933861,
+        "mgr_pair_declared_margin_m": -0.06551922576406721,
+        "mgr_pair_distance_m": 0.37448077423593285
+      },
+      "n_robots": 20,
+      "paired_success": {
+        "both": 9,
+        "clear_only": 11,
+        "mcnemar_exact_p": 0.0009765625,
+        "mgr_only": 0,
+        "neither": 0
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -27.982499999999998,
+        "lower": -32.983537500000004,
+        "median": -33.93000000000001,
+        "timeout_s": 60.0,
+        "upper": -22.4234625
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 0.9,
+        "arrival_successes": 18,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 0.9962500000000001,
+        "successful_makespan_mean_s": 26.471666666666664,
+        "successful_makespan_std_s": 2.790429547367847
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 21.195186897239957,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 21.04711906573766,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "circ15",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 4,
+        "count": 4,
+        "estimate": -18.794999999999998,
+        "exact_sign_p": 0.125,
+        "lower": -21.839999999999996,
+        "median": -19.994999999999997,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": -14.632499999999999
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.2,
+        "arrival_successes": 4,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 18,
+        "robot_arrival_rate": 0.9412500000000001,
+        "successful_makespan_mean_s": 45.53999999999999,
+        "successful_makespan_std_s": 8.51454050433727
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.44019589557338457,
+        "clear_static_margin_m": 0.002553845395327853,
+        "mgr_obstacle_declared_margin_m": -0.1004046860347389,
+        "mgr_obstacle_physical_clearance_m": -0.08040468603473888,
+        "mgr_pair_declared_margin_m": -0.002895554427180924,
+        "mgr_pair_distance_m": 0.43710444557281913
+      },
+      "n_robots": 40,
+      "paired_success": {
+        "both": 4,
+        "clear_only": 14,
+        "mcnemar_exact_p": 0.0001220703125,
+        "mgr_only": 0,
+        "neither": 2
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -27.283500000000004,
+        "lower": -31.747575,
+        "median": -32.55,
+        "timeout_s": 60.0,
+        "upper": -22.072462500000004
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 0.9,
+        "arrival_successes": 18,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 0.9983333333333334,
+        "successful_makespan_mean_s": 29.098333333333333,
+        "successful_makespan_std_s": 2.8363320348232692
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 70.23673361723665,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 75.13728246854589,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "circ15",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 0,
+        "count": 0,
+        "estimate": NaN,
+        "exact_sign_p": 1.0,
+        "lower": NaN,
+        "median": null,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": NaN
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.0,
+        "arrival_successes": 0,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 17,
+        "robot_arrival_rate": 0.9175000000000001,
+        "successful_makespan_mean_s": null,
+        "successful_makespan_std_s": null
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.4405736102187358,
+        "clear_static_margin_m": 7.76300777087513e-05,
+        "mgr_obstacle_declared_margin_m": -0.09837503025433697,
+        "mgr_obstacle_physical_clearance_m": -0.07837503025433695,
+        "mgr_pair_declared_margin_m": -0.009146943675925223,
+        "mgr_pair_distance_m": 0.43085305632407483
+      },
+      "n_robots": 60,
+      "paired_success": {
+        "both": 0,
+        "clear_only": 18,
+        "mcnemar_exact_p": 7.62939453125e-06,
+        "mgr_only": 0,
+        "neither": 2
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -27.811500000000002,
+        "lower": -31.430999999999994,
+        "median": -30.495,
+        "timeout_s": 60.0,
+        "upper": -23.086462500000003
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 0.95,
+        "arrival_successes": 19,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 0.999375,
+        "successful_makespan_mean_s": 32.148947368421055,
+        "successful_makespan_std_s": 4.421834579971483
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 107.8163932036625,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 106.9945234012248,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "circ15",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 0,
+        "count": 0,
+        "estimate": NaN,
+        "exact_sign_p": 1.0,
+        "lower": NaN,
+        "median": null,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": NaN
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.0,
+        "arrival_successes": 0,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 15,
+        "robot_arrival_rate": 0.8899999999999999,
+        "successful_makespan_mean_s": null,
+        "successful_makespan_std_s": null
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.4481023666948607,
+        "clear_static_margin_m": 1.5049228110325386e-05,
+        "mgr_obstacle_declared_margin_m": -0.09045293118893155,
+        "mgr_obstacle_physical_clearance_m": -0.07045293118893153,
+        "mgr_pair_declared_margin_m": -0.07010902560843724,
+        "mgr_pair_distance_m": 0.3698909743915628
+      },
+      "n_robots": 80,
+      "paired_success": {
+        "both": 0,
+        "clear_only": 19,
+        "mcnemar_exact_p": 3.814697265625e-06,
+        "mgr_only": 0,
+        "neither": 1
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -26.458500000000004,
+        "lower": -29.265037500000005,
+        "median": -28.590000000000003,
+        "timeout_s": 60.0,
+        "upper": -22.876462500000002
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 22.656,
+        "successful_makespan_std_s": 2.5838453595571975
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 17.3449950409009,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 17.2485877547665,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "rect15",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 5,
+        "count": 5,
+        "estimate": -11.645999999999997,
+        "exact_sign_p": 0.0625,
+        "lower": -18.924,
+        "median": -11.760000000000002,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": -4.368
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.25,
+        "arrival_successes": 5,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 17,
+        "robot_arrival_rate": 0.915,
+        "successful_makespan_mean_s": 34.056,
+        "successful_makespan_std_s": 10.647240487562962
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.46756145273233995,
+        "clear_static_margin_m": 0.00022940735634513487,
+        "mgr_obstacle_declared_margin_m": -0.10293915492957889,
+        "mgr_obstacle_physical_clearance_m": -0.08293915492957887,
+        "mgr_pair_declared_margin_m": -0.04164569527578138,
+        "mgr_pair_distance_m": 0.3983543047242187
+      },
+      "n_robots": 20,
+      "paired_success": {
+        "both": 5,
+        "clear_only": 15,
+        "mcnemar_exact_p": 6.103515625e-05,
+        "mgr_only": 0,
+        "neither": 0
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -30.858000000000004,
+        "lower": -35.770537499999996,
+        "median": -36.870000000000005,
+        "timeout_s": 60.0,
+        "upper": -25.171462500000004
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 1.0,
+        "arrival_successes": 20,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 1.0,
+        "successful_makespan_mean_s": 26.3565,
+        "successful_makespan_std_s": 3.7783890677600183
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 37.60257152522409,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 37.48101044601435,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "rect15",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 1,
+        "count": 1,
+        "estimate": -13.139999999999997,
+        "exact_sign_p": 1.0,
+        "lower": -13.139999999999997,
+        "median": -13.139999999999997,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": -13.139999999999997
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.05,
+        "arrival_successes": 1,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 16,
+        "robot_arrival_rate": 0.9000000000000001,
+        "successful_makespan_mean_s": 37.62,
+        "successful_makespan_std_s": null
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.4478692058489413,
+        "clear_static_margin_m": 8.096412976374423e-05,
+        "mgr_obstacle_declared_margin_m": -0.08758951127470907,
+        "mgr_obstacle_physical_clearance_m": -0.06758951127470905,
+        "mgr_pair_declared_margin_m": -0.06733083410224577,
+        "mgr_pair_distance_m": 0.3726691658977543
+      },
+      "n_robots": 40,
+      "paired_success": {
+        "both": 1,
+        "clear_only": 19,
+        "mcnemar_exact_p": 3.814697265625e-06,
+        "mgr_only": 0,
+        "neither": 0
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -32.5245,
+        "lower": -34.77603750000001,
+        "median": -34.019999999999996,
+        "timeout_s": 60.0,
+        "upper": -29.743350000000014
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 0.9,
+        "arrival_successes": 18,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 0.9916666666666666,
+        "successful_makespan_mean_s": 29.471666666666668,
+        "successful_makespan_std_s": 3.1737864748963958
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 125.92965812358945,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 125.59480356671521,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "rect15",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 0,
+        "count": 0,
+        "estimate": NaN,
+        "exact_sign_p": 1.0,
+        "lower": NaN,
+        "median": null,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": NaN
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.0,
+        "arrival_successes": 0,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 13,
+        "robot_arrival_rate": 0.8666666666666668,
+        "successful_makespan_mean_s": null,
+        "successful_makespan_std_s": null
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.4400405792010525,
+        "clear_static_margin_m": 0.0001797072168361058,
+        "mgr_obstacle_declared_margin_m": -0.09734555955590818,
+        "mgr_obstacle_physical_clearance_m": -0.07734555955590816,
+        "mgr_pair_declared_margin_m": -0.12380354326405352,
+        "mgr_pair_distance_m": 0.31619645673594654
+      },
+      "n_robots": 60,
+      "paired_success": {
+        "both": 0,
+        "clear_only": 18,
+        "mcnemar_exact_p": 7.62939453125e-06,
+        "mgr_only": 0,
+        "neither": 2
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -27.4755,
+        "lower": -31.080037500000003,
+        "median": -30.660000000000004,
+        "timeout_s": 60.0,
+        "upper": -22.771425000000008
+      }
+    },
+    {
+      "clear": {
+        "arrival_success_rate": 0.85,
+        "arrival_successes": 17,
+        "declared_safe_runs": 20,
+        "robot_arrival_rate": 0.98125,
+        "successful_makespan_mean_s": 33.38117647058824,
+        "successful_makespan_std_s": 6.735432319414379
+      },
+      "computation": {
+        "mean_of_run_mean_iteration_ms": 174.90544584134622,
+        "mean_of_run_p95_iteration_ms": null,
+        "median_run_mean_iteration_ms": 176.4247253603116,
+        "median_run_p95_iteration_ms": null,
+        "qp_failure_events": 0,
+        "qp_max_iterations": 0,
+        "qp_mean_iterations": null,
+        "qp_solve_count": 0
+      },
+      "family": "rect15",
+      "instances": 20,
+      "joint_success_clear_minus_mgr_makespan_s": {
+        "clear_faster": 0,
+        "count": 0,
+        "estimate": NaN,
+        "exact_sign_p": 1.0,
+        "lower": NaN,
+        "median": null,
+        "mgr_faster": 0,
+        "ties": 0,
+        "upper": NaN
+      },
+      "mgr": {
+        "arrival_and_declared_margin_successes": 0,
+        "arrival_success_rate": 0.0,
+        "arrival_successes": 0,
+        "declared_margin_safe_runs": 0,
+        "physical_safe_runs": 11,
+        "robot_arrival_rate": 0.8162500000000001,
+        "successful_makespan_mean_s": null,
+        "successful_makespan_std_s": null
+      },
+      "minimum_safety": {
+        "clear_pair_distance_m": 0.440000836373349,
+        "clear_static_margin_m": 7.43891483909187e-06,
+        "mgr_obstacle_declared_margin_m": -0.10293915492957889,
+        "mgr_obstacle_physical_clearance_m": -0.08293915492957887,
+        "mgr_pair_declared_margin_m": -0.08805844797666096,
+        "mgr_pair_distance_m": 0.3519415520233391
+      },
+      "n_robots": 80,
+      "paired_success": {
+        "both": 0,
+        "clear_only": 17,
+        "mcnemar_exact_p": 1.52587890625e-05,
+        "mgr_only": 0,
+        "neither": 3
+      },
+      "timeout_penalized_clear_minus_mgr_s": {
+        "estimate": -22.626,
+        "lower": -27.240037500000003,
+        "median": -27.390000000000004,
+        "timeout_s": 60.0,
+        "upper": -17.378887500000012
+      }
+    }
+  ]
+}

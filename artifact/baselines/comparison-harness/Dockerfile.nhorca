@@ -1,0 +1,31 @@
+FROM python:3.10-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    OMP_NUM_THREADS=1 \
+    OPENBLAS_NUM_THREADS=1 \
+    MKL_NUM_THREADS=1 \
+    NUMEXPR_NUM_THREADS=1
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+       build-essential \
+       cmake \
+       libeigen3-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN python -m pip install --no-cache-dir "numpy<2" pyyaml
+
+WORKDIR /opt/nh-orca
+COPY NH-ORCA-python /opt/nh-orca
+
+RUN cmake -S . -B build \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_CXX_FLAGS="-include cstdint" \
+    && cmake --build build --config Release --parallel \
+    && cp build/pyrvo2*.so python/
+
+WORKDIR /work
+ENV PYTHONPATH=/opt/nh-orca/python:/work:/work/baselines/comparison-harness
+
+CMD ["python", "-c", "import pyrvo2; print('NH-ORCA ready')"]

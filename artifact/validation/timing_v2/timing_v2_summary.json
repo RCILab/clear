@@ -1,0 +1,1279 @@
+{
+  "aggregation": "mean is the mean of seed means; p95 is the largest seed p95",
+  "created_utc": "2026-07-31T03:07:11.928275+00:00",
+  "groups": [
+    {
+      "batch": {
+        "maximum_ms": 22.687256,
+        "mean_of_seed_means_ms": 12.714034642517007,
+        "mean_of_seed_medians_ms": 12.692206499999998,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 13.99767295
+      },
+      "controller_backend": [
+        "numpy+scipy+osqp-component"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 14.207101,
+        "mean_of_seed_means_ms": 4.025414932142858,
+        "mean_of_seed_medians_ms": 3.951127833333333,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 4.65971245
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "CLEAR",
+      "n_robots": 20,
+      "scenario_fingerprints": [
+        "52135e2051226e3c",
+        "6c011b2fc892eddf",
+        "7a1acb1942ce9a35"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 34.689326,
+        "mean_of_seed_means_ms": 20.44357090255102,
+        "mean_of_seed_medians_ms": 20.736714000000003,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 23.6104892
+      },
+      "controller_backend": [
+        "numpy+scipy+osqp-component"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 22.650566,
+        "mean_of_seed_means_ms": 5.417631305442177,
+        "mean_of_seed_medians_ms": 5.171873333333333,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 6.920403299999999
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "CLEAR",
+      "n_robots": 40,
+      "scenario_fingerprints": [
+        "276d23e6bee3c665",
+        "7afb985b3f19cd4f",
+        "cad351c4a891b5a7"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 72.069591,
+        "mean_of_seed_means_ms": 27.81437070595238,
+        "mean_of_seed_medians_ms": 28.505285333333333,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 32.34394925
+      },
+      "controller_backend": [
+        "numpy+scipy+osqp-component"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 59.150502,
+        "mean_of_seed_means_ms": 7.176646802040817,
+        "mean_of_seed_medians_ms": 6.658557833333333,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 9.943744950000001
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "CLEAR",
+      "n_robots": 60,
+      "scenario_fingerprints": [
+        "c86f12600b7f6ebc",
+        "f6b5c2611603d5ba",
+        "95187891f5d1a381"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 81.774402,
+        "mean_of_seed_means_ms": 33.63508253979592,
+        "mean_of_seed_medians_ms": 34.563160333333336,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 39.359714849999996
+      },
+      "controller_backend": [
+        "numpy+scipy+osqp-component"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 65.592988,
+        "mean_of_seed_means_ms": 8.78594584047619,
+        "mean_of_seed_medians_ms": 8.039361166666668,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 12.17680775
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "CLEAR",
+      "n_robots": 80,
+      "scenario_fingerprints": [
+        "509b15e377a67853",
+        "bf5fd42d9ff178af",
+        "24dc7f5c525af1ae"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 8.505135,
+        "mean_of_seed_means_ms": 4.432145409693878,
+        "mean_of_seed_medians_ms": 4.399994499999999,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 4.6593465
+      },
+      "controller_backend": [
+        "public-gcbfplus-jax-cpu"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 4.218547,
+        "mean_of_seed_means_ms": 1.3642679069727892,
+        "mean_of_seed_medians_ms": 1.343146,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 1.9800285
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "GCBF+ CPU",
+      "n_robots": 20,
+      "scenario_fingerprints": [
+        "52135e2051226e3c",
+        "6c011b2fc892eddf",
+        "7a1acb1942ce9a35"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 17.03757,
+        "mean_of_seed_means_ms": 7.123356723129252,
+        "mean_of_seed_medians_ms": 7.066266666666667,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 7.44010235
+      },
+      "controller_backend": [
+        "public-gcbfplus-jax-cpu"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 8.394447,
+        "mean_of_seed_means_ms": 2.1980871738095242,
+        "mean_of_seed_medians_ms": 2.2030565,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 3.169183
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "GCBF+ CPU",
+      "n_robots": 40,
+      "scenario_fingerprints": [
+        "276d23e6bee3c665",
+        "7afb985b3f19cd4f",
+        "cad351c4a891b5a7"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 12.823585,
+        "mean_of_seed_means_ms": 7.414448769387756,
+        "mean_of_seed_medians_ms": 7.320545666666668,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 8.644601349999999
+      },
+      "controller_backend": [
+        "public-gcbfplus-jax-cpu"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 11.44838,
+        "mean_of_seed_means_ms": 3.144552980102041,
+        "mean_of_seed_medians_ms": 3.2288986666666672,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 5.181475450000001
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "GCBF+ CPU",
+      "n_robots": 60,
+      "scenario_fingerprints": [
+        "c86f12600b7f6ebc",
+        "f6b5c2611603d5ba",
+        "95187891f5d1a381"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 19.424137,
+        "mean_of_seed_means_ms": 10.112386145068028,
+        "mean_of_seed_medians_ms": 9.953583,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 11.6474917
+      },
+      "controller_backend": [
+        "public-gcbfplus-jax-cpu"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 13.574463,
+        "mean_of_seed_means_ms": 4.0250617374149655,
+        "mean_of_seed_medians_ms": 4.004173166666667,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 5.276098749999999
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "GCBF+ CPU",
+      "n_robots": 80,
+      "scenario_fingerprints": [
+        "509b15e377a67853",
+        "bf5fd42d9ff178af",
+        "24dc7f5c525af1ae"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 7.437094,
+        "mean_of_seed_means_ms": 1.916975137585034,
+        "mean_of_seed_medians_ms": 1.834217,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 2.9999765999999997
+      },
+      "controller_backend": [
+        "public-gcbfplus-jax-gpu"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 7.437094,
+        "mean_of_seed_means_ms": 1.916975137585034,
+        "mean_of_seed_medians_ms": 1.834217,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 2.9999765999999997
+      },
+      "gpu_model": [
+        "NVIDIA GeForce RTX 4070 Ti"
+      ],
+      "method": "GCBF+ GPU",
+      "n_robots": 20,
+      "scenario_fingerprints": [
+        "52135e2051226e3c",
+        "6c011b2fc892eddf",
+        "7a1acb1942ce9a35"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 11.113974,
+        "mean_of_seed_means_ms": 2.053920858333333,
+        "mean_of_seed_medians_ms": 1.9224321666666666,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 3.276339
+      },
+      "controller_backend": [
+        "public-gcbfplus-jax-gpu"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 11.113974,
+        "mean_of_seed_means_ms": 2.053920858333333,
+        "mean_of_seed_medians_ms": 1.9224321666666666,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 3.276339
+      },
+      "gpu_model": [
+        "NVIDIA GeForce RTX 4070 Ti"
+      ],
+      "method": "GCBF+ GPU",
+      "n_robots": 40,
+      "scenario_fingerprints": [
+        "276d23e6bee3c665",
+        "7afb985b3f19cd4f",
+        "cad351c4a891b5a7"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 9.041977,
+        "mean_of_seed_means_ms": 2.197796252040816,
+        "mean_of_seed_medians_ms": 1.973399333333333,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 3.438467399999999
+      },
+      "controller_backend": [
+        "public-gcbfplus-jax-gpu"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 9.041977,
+        "mean_of_seed_means_ms": 2.197796252040816,
+        "mean_of_seed_medians_ms": 1.973399333333333,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 3.438467399999999
+      },
+      "gpu_model": [
+        "NVIDIA GeForce RTX 4070 Ti"
+      ],
+      "method": "GCBF+ GPU",
+      "n_robots": 60,
+      "scenario_fingerprints": [
+        "c86f12600b7f6ebc",
+        "f6b5c2611603d5ba",
+        "95187891f5d1a381"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 8.993364,
+        "mean_of_seed_means_ms": 2.8417216217687074,
+        "mean_of_seed_medians_ms": 2.7100665,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 5.1652605000000005
+      },
+      "controller_backend": [
+        "public-gcbfplus-jax-gpu"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 8.993364,
+        "mean_of_seed_means_ms": 2.8417216217687074,
+        "mean_of_seed_medians_ms": 2.7100665,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 5.1652605000000005
+      },
+      "gpu_model": [
+        "NVIDIA GeForce RTX 4070 Ti"
+      ],
+      "method": "GCBF+ GPU",
+      "n_robots": 80,
+      "scenario_fingerprints": [
+        "509b15e377a67853",
+        "bf5fd42d9ff178af",
+        "24dc7f5c525af1ae"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 27.921661,
+        "mean_of_seed_means_ms": 14.054313113265307,
+        "mean_of_seed_medians_ms": 13.924877,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 16.25888395
+      },
+      "controller_backend": [
+        "official-mgr-cvxopt"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 12.341757,
+        "mean_of_seed_means_ms": 1.412327570238095,
+        "mean_of_seed_medians_ms": 1.3901231666666665,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 2.445028899999999
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "MGR",
+      "n_robots": 20,
+      "scenario_fingerprints": [
+        "52135e2051226e3c",
+        "6c011b2fc892eddf",
+        "7a1acb1942ce9a35"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 42.258888,
+        "mean_of_seed_means_ms": 29.306013454081636,
+        "mean_of_seed_medians_ms": 29.103197833333336,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 32.826018749999996
+      },
+      "controller_backend": [
+        "official-mgr-cvxopt"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 10.566855,
+        "mean_of_seed_means_ms": 1.71417521292517,
+        "mean_of_seed_medians_ms": 1.6124208333333332,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 2.9760890499999983
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "MGR",
+      "n_robots": 40,
+      "scenario_fingerprints": [
+        "276d23e6bee3c665",
+        "7afb985b3f19cd4f",
+        "cad351c4a891b5a7"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 62.585818,
+        "mean_of_seed_means_ms": 45.60418376139456,
+        "mean_of_seed_medians_ms": 45.304114500000004,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 49.5084743
+      },
+      "controller_backend": [
+        "official-mgr-cvxopt"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 11.811344,
+        "mean_of_seed_means_ms": 2.0594673459183674,
+        "mean_of_seed_medians_ms": 1.922877,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 3.4325059999999996
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "MGR",
+      "n_robots": 60,
+      "scenario_fingerprints": [
+        "c86f12600b7f6ebc",
+        "f6b5c2611603d5ba",
+        "95187891f5d1a381"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 80.799151,
+        "mean_of_seed_means_ms": 62.07754821700681,
+        "mean_of_seed_medians_ms": 61.87678066666666,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 68.75226185
+      },
+      "controller_backend": [
+        "official-mgr-cvxopt"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 12.840012,
+        "mean_of_seed_means_ms": 2.5593879916666666,
+        "mean_of_seed_medians_ms": 2.339049166666667,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 4.30478175
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "MGR",
+      "n_robots": 80,
+      "scenario_fingerprints": [
+        "509b15e377a67853",
+        "bf5fd42d9ff178af",
+        "24dc7f5c525af1ae"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 0.556275,
+        "mean_of_seed_means_ms": 0.08622278913797843,
+        "mean_of_seed_medians_ms": 0.07834166666666666,
+        "sample_count": 4712,
+        "worst_seed_p95_ms": 0.1441430999999999
+      },
+      "controller_backend": [
+        "public-rvo2-c++-per-agent-hook"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 0.542376,
+        "mean_of_seed_means_ms": 0.07910704408541196,
+        "mean_of_seed_medians_ms": 0.0719075,
+        "sample_count": 4712,
+        "worst_seed_p95_ms": 0.13117025
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "NH-ORCA",
+      "n_robots": 20,
+      "scenario_fingerprints": [
+        "52135e2051226e3c",
+        "6c011b2fc892eddf",
+        "7a1acb1942ce9a35"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 1.394698,
+        "mean_of_seed_means_ms": 0.14981597680543537,
+        "mean_of_seed_medians_ms": 0.13758033333333333,
+        "sample_count": 5123,
+        "worst_seed_p95_ms": 0.22197094999999994
+      },
+      "controller_backend": [
+        "public-rvo2-c++-per-agent-hook"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 1.359216,
+        "mean_of_seed_means_ms": 0.12862791472085092,
+        "mean_of_seed_medians_ms": 0.11748399999999999,
+        "sample_count": 5123,
+        "worst_seed_p95_ms": 0.19113919999999995
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "NH-ORCA",
+      "n_robots": 40,
+      "scenario_fingerprints": [
+        "276d23e6bee3c665",
+        "7afb985b3f19cd4f",
+        "cad351c4a891b5a7"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 1.658999,
+        "mean_of_seed_means_ms": 0.21908907653061224,
+        "mean_of_seed_medians_ms": 0.20457483333333334,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 0.30300859999999996
+      },
+      "controller_backend": [
+        "public-rvo2-c++-per-agent-hook"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 1.625723,
+        "mean_of_seed_means_ms": 0.1763327243197279,
+        "mean_of_seed_medians_ms": 0.162251,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 0.24872000000000002
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "NH-ORCA",
+      "n_robots": 60,
+      "scenario_fingerprints": [
+        "c86f12600b7f6ebc",
+        "f6b5c2611603d5ba",
+        "95187891f5d1a381"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 2.60377,
+        "mean_of_seed_means_ms": 0.29557189030612246,
+        "mean_of_seed_medians_ms": 0.2796878333333333,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 0.40334415
+      },
+      "controller_backend": [
+        "public-rvo2-c++-per-agent-hook"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 2.49614,
+        "mean_of_seed_means_ms": 0.22566092687074832,
+        "mean_of_seed_medians_ms": 0.20985399999999998,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 0.3215375
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "NH-ORCA",
+      "n_robots": 80,
+      "scenario_fingerprints": [
+        "509b15e377a67853",
+        "bf5fd42d9ff178af",
+        "24dc7f5c525af1ae"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 0.709967,
+        "mean_of_seed_means_ms": 0.09080276768707483,
+        "mean_of_seed_medians_ms": 0.08108116666666666,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 0.14718225
+      },
+      "controller_backend": [
+        "public-rvo2-c++-per-agent-hook"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 0.688683,
+        "mean_of_seed_means_ms": 0.08350942551020409,
+        "mean_of_seed_medians_ms": 0.07466016666666665,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 0.13417389999999998
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "ORCA",
+      "n_robots": 20,
+      "scenario_fingerprints": [
+        "52135e2051226e3c",
+        "6c011b2fc892eddf",
+        "7a1acb1942ce9a35"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 1.152372,
+        "mean_of_seed_means_ms": 0.15613964914965986,
+        "mean_of_seed_medians_ms": 0.141248,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 0.24460159999999997
+      },
+      "controller_backend": [
+        "public-rvo2-c++-per-agent-hook"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 1.111788,
+        "mean_of_seed_means_ms": 0.1333343700680272,
+        "mean_of_seed_medians_ms": 0.1192185,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 0.21161529999999998
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "ORCA",
+      "n_robots": 40,
+      "scenario_fingerprints": [
+        "276d23e6bee3c665",
+        "7afb985b3f19cd4f",
+        "cad351c4a891b5a7"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 1.0631,
+        "mean_of_seed_means_ms": 0.22644432925170066,
+        "mean_of_seed_medians_ms": 0.20838016666666667,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 0.33911244999999995
+      },
+      "controller_backend": [
+        "public-rvo2-c++-per-agent-hook"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 1.01577,
+        "mean_of_seed_means_ms": 0.18227000731292517,
+        "mean_of_seed_medians_ms": 0.16440766666666665,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 0.2852909499999999
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "ORCA",
+      "n_robots": 60,
+      "scenario_fingerprints": [
+        "c86f12600b7f6ebc",
+        "f6b5c2611603d5ba",
+        "95187891f5d1a381"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 1.852377,
+        "mean_of_seed_means_ms": 0.3036897198979591,
+        "mean_of_seed_medians_ms": 0.2819163333333333,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 0.4375981
+      },
+      "controller_backend": [
+        "public-rvo2-c++-per-agent-hook"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 1.6004009999999997,
+        "mean_of_seed_means_ms": 0.23216101717687074,
+        "mean_of_seed_medians_ms": 0.21131016666666666,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 0.35178445
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "ORCA",
+      "n_robots": 80,
+      "scenario_fingerprints": [
+        "509b15e377a67853",
+        "bf5fd42d9ff178af",
+        "24dc7f5c525af1ae"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 21.502054,
+        "mean_of_seed_means_ms": 12.729260932142857,
+        "mean_of_seed_medians_ms": 12.749874166666666,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 14.20499515
+      },
+      "controller_backend": [
+        "numpy+scipy+osqp-component"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 12.922213,
+        "mean_of_seed_means_ms": 3.9554877392857146,
+        "mean_of_seed_medians_ms": 3.874423666666667,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 4.6019881499999995
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "Vanilla CBF-QP",
+      "n_robots": 20,
+      "scenario_fingerprints": [
+        "52135e2051226e3c",
+        "6c011b2fc892eddf",
+        "7a1acb1942ce9a35"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 54.273028,
+        "mean_of_seed_means_ms": 20.859842622789113,
+        "mean_of_seed_medians_ms": 21.3220805,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 24.0392019
+      },
+      "controller_backend": [
+        "numpy+scipy+osqp-component"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 42.070473,
+        "mean_of_seed_means_ms": 5.302983085034014,
+        "mean_of_seed_medians_ms": 5.120345166666667,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 6.3813229
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "Vanilla CBF-QP",
+      "n_robots": 40,
+      "scenario_fingerprints": [
+        "276d23e6bee3c665",
+        "7afb985b3f19cd4f",
+        "cad351c4a891b5a7"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 59.330697,
+        "mean_of_seed_means_ms": 27.273348005102036,
+        "mean_of_seed_medians_ms": 28.242551666666667,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 32.0652989
+      },
+      "controller_backend": [
+        "numpy+scipy+osqp-component"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 40.327373,
+        "mean_of_seed_means_ms": 6.8003030591836735,
+        "mean_of_seed_medians_ms": 6.4583398333333335,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 8.8662698
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "Vanilla CBF-QP",
+      "n_robots": 60,
+      "scenario_fingerprints": [
+        "c86f12600b7f6ebc",
+        "f6b5c2611603d5ba",
+        "95187891f5d1a381"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    },
+    {
+      "batch": {
+        "maximum_ms": 53.32414,
+        "mean_of_seed_means_ms": 32.107973604421765,
+        "mean_of_seed_medians_ms": 32.90216783333334,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 37.2635485
+      },
+      "controller_backend": [
+        "numpy+scipy+osqp-component"
+      ],
+      "cpu_model": [
+        "13th Gen Intel(R) Core(TM) i7-13700KF"
+      ],
+      "critical_path": {
+        "maximum_ms": 31.439932,
+        "mean_of_seed_means_ms": 8.582777359863947,
+        "mean_of_seed_medians_ms": 8.183690833333335,
+        "sample_count": 5880,
+        "worst_seed_p95_ms": 11.79592735
+      },
+      "gpu_model": [
+        "none"
+      ],
+      "method": "Vanilla CBF-QP",
+      "n_robots": 80,
+      "scenario_fingerprints": [
+        "509b15e377a67853",
+        "bf5fd42d9ff178af",
+        "24dc7f5c525af1ae"
+      ],
+      "seeds": [
+        0,
+        7,
+        13
+      ],
+      "warmup_steps": [
+        40
+      ],
+      "worker_count": [
+        1
+      ]
+    }
+  ],
+  "not_run_scale_gate": [
+    {
+      "control_period_ms": 30.0,
+      "family": "rect15",
+      "gate_n_robots": 8,
+      "gate_worst_seed_critical_p95_ms": 31.760458149999955,
+      "method": "IMPC-DR",
+      "n_robots": 20,
+      "reason": "N=8 worst-seed local critical-path p95 is 31.760 ms, above the 30 ms period; mean canonicalization/interface time (10.993 ms per agent call) exceeds reported solver time (4.450 ms), so the GPU-solver entry condition is also false.",
+      "seed": null,
+      "status": "not_run_scale_gate"
+    },
+    {
+      "control_period_ms": 30.0,
+      "family": "rect15",
+      "gate_n_robots": 8,
+      "gate_worst_seed_critical_p95_ms": 31.760458149999955,
+      "method": "IMPC-DR",
+      "n_robots": 40,
+      "reason": "N=8 worst-seed local critical-path p95 is 31.760 ms, above the 30 ms period; mean canonicalization/interface time (10.993 ms per agent call) exceeds reported solver time (4.450 ms), so the GPU-solver entry condition is also false.",
+      "seed": null,
+      "status": "not_run_scale_gate"
+    },
+    {
+      "control_period_ms": 30.0,
+      "family": "rect15",
+      "gate_n_robots": 8,
+      "gate_worst_seed_critical_p95_ms": 31.760458149999955,
+      "method": "IMPC-DR",
+      "n_robots": 60,
+      "reason": "N=8 worst-seed local critical-path p95 is 31.760 ms, above the 30 ms period; mean canonicalization/interface time (10.993 ms per agent call) exceeds reported solver time (4.450 ms), so the GPU-solver entry condition is also false.",
+      "seed": null,
+      "status": "not_run_scale_gate"
+    },
+    {
+      "control_period_ms": 30.0,
+      "family": "rect15",
+      "gate_n_robots": 8,
+      "gate_worst_seed_critical_p95_ms": 31.760458149999955,
+      "method": "IMPC-DR",
+      "n_robots": 80,
+      "reason": "N=8 worst-seed local critical-path p95 is 31.760 ms, above the 30 ms period; mean canonicalization/interface time (10.993 ms per agent call) exceeds reported solver time (4.450 ms), so the GPU-solver entry condition is also false.",
+      "seed": null,
+      "status": "not_run_scale_gate"
+    }
+  ],
+  "protocol": {
+    "blas_threads": 1,
+    "dt_s": 0.03,
+    "family": "rect15",
+    "horizon_s": 60.0,
+    "seeds": [
+      0,
+      7,
+      13
+    ],
+    "warmup_steps": 40
+  },
+  "schema_version": "timing-v2.1",
+  "source_sha256": {
+    "baselines/comparison-harness/results/timing_v2/timing_v2_gcbfplus_cpu_rect15.json": "f3dcaf26da9f424ecf32d8de0204a6cef399fca89c0bdab8894a3c0eae460dbe",
+    "baselines/comparison-harness/results/timing_v2/timing_v2_gcbfplus_gpu_rect15.json": "b7a38aa05e9f4bb5528dbfbd7479f3fd6b5b239cab04d2fc23834139a287cf2b",
+    "baselines/comparison-harness/results/timing_v2/timing_v2_nhorca_rect15.json": "6ad1a3b3fc4d90c9028b8055c000c9802b66e4a8cf6155319551fab3ccbb6b94",
+    "baselines/comparison-harness/results/timing_v2/timing_v2_orca_rect15.json": "f5635377a33a546811b68eb09f918a0fffee9a2135278d45aadd61dd9d0649c9",
+    "baselines/mgr-harness/results/timing_v2/timing_v2_mgr_rect15.json": "8c2241675f7ed447d5acdc7ea21249253fd25aef6efeeb9b7edc85251686ba17",
+    "experiments/validation/timing_v2/timing_v2_clear_rect15.json": "07ab8d107df3988fc85e78045fa6efc3157701a785d8f8b871b20565939d1a89",
+    "experiments/validation/timing_v2/timing_v2_impc_scale_gate.json": "d4f9c72acef1b1a8fda31e8113a90d84478183e251a5fa9ad883e015e820d857",
+    "experiments/validation/timing_v2/timing_v2_vanilla_rect15.json": "f4a707bbb74b3b35f21d48e81814e69582bf247ec107720c315be4f6fb271757"
+  }
+}

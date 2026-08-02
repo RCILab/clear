@@ -1,0 +1,1040 @@
+{
+  "fingerprints_verified": true,
+  "metric_definitions": {
+    "average_interference_delay": "pooled per-robot TTG_multi - TTG_solo for the same method and paired start-goal instance",
+    "penalized_flow_rate": "resource flow rate with zero assigned to incomplete trials"
+  },
+  "paired_clear_comparisons": [
+    {
+      "baseline": "GCBF+",
+      "family": "Doorway",
+      "mean_paired_delay_delta_s": -12.165,
+      "mean_paired_penalized_flow_delta": 0.8482793650894126,
+      "mission": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      },
+      "n_robots": 8,
+      "paired_delay_trials": 5,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "GCBF+",
+      "family": "Doorway",
+      "mean_paired_delay_delta_s": -20.240859375,
+      "mean_paired_penalized_flow_delta": 1.006430224770172,
+      "mission": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      },
+      "n_robots": 16,
+      "paired_delay_trials": 8,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "GCBF+",
+      "family": "Intersection",
+      "mean_paired_delay_delta_s": -21.448124999999997,
+      "mean_paired_penalized_flow_delta": 0.6923995411072608,
+      "mission": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      },
+      "n_robots": 8,
+      "paired_delay_trials": 14,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "GCBF+",
+      "family": "Intersection",
+      "mean_paired_delay_delta_s": -14.253749999999998,
+      "mean_paired_penalized_flow_delta": 0.9179055717084738,
+      "mission": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      },
+      "n_robots": 16,
+      "paired_delay_trials": 18,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "IMPC-DR",
+      "family": "Doorway",
+      "mean_paired_delay_delta_s": 0.784771825396825,
+      "mean_paired_penalized_flow_delta": 0.8260571428671905,
+      "mission": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      },
+      "n_robots": 8,
+      "paired_delay_trials": 18,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 1,
+        "clear_only": 19,
+        "mcnemar_exact_p": 3.814697265625e-06,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "IMPC-DR",
+      "family": "Doorway",
+      "mean_paired_delay_delta_s": -0.5097127594627597,
+      "mean_paired_penalized_flow_delta": 1.006430224770172,
+      "mission": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      },
+      "n_robots": 16,
+      "paired_delay_trials": 9,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "IMPC-DR",
+      "family": "Intersection",
+      "mean_paired_delay_delta_s": 1.1688946428571427,
+      "mean_paired_penalized_flow_delta": 0.42505049506300563,
+      "mission": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      },
+      "n_robots": 8,
+      "paired_delay_trials": 20,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 12,
+        "clear_only": 8,
+        "mcnemar_exact_p": 0.0078125,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "IMPC-DR",
+      "family": "Intersection",
+      "mean_paired_delay_delta_s": 1.8845008741258742,
+      "mean_paired_penalized_flow_delta": 0.6561088064423156,
+      "mission": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      },
+      "n_robots": 16,
+      "paired_delay_trials": 20,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 10,
+        "clear_only": 10,
+        "mcnemar_exact_p": 0.001953125,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "MGR",
+      "family": "Doorway",
+      "mean_paired_delay_delta_s": -1.5221625000000003,
+      "mean_paired_penalized_flow_delta": 0.8482793650894126,
+      "mission": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      },
+      "n_robots": 8,
+      "paired_delay_trials": 20,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "MGR",
+      "family": "Doorway",
+      "mean_paired_delay_delta_s": -1.742754166666667,
+      "mean_paired_penalized_flow_delta": 1.006430224770172,
+      "mission": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      },
+      "n_robots": 16,
+      "paired_delay_trials": 20,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "MGR",
+      "family": "Intersection",
+      "mean_paired_delay_delta_s": -1.6636250000000001,
+      "mean_paired_penalized_flow_delta": 0.2866989173265253,
+      "mission": {
+        "baseline_only": 0,
+        "both": 19,
+        "clear_only": 1,
+        "mcnemar_exact_p": 1.0,
+        "neither": 0
+      },
+      "n_robots": 8,
+      "paired_delay_trials": 20,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 19,
+        "clear_only": 1,
+        "mcnemar_exact_p": 1.0,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "MGR",
+      "family": "Intersection",
+      "mean_paired_delay_delta_s": -2.0362386363636364,
+      "mean_paired_penalized_flow_delta": 0.5648544617206157,
+      "mission": {
+        "baseline_only": 0,
+        "both": 13,
+        "clear_only": 7,
+        "mcnemar_exact_p": 0.015625,
+        "neither": 0
+      },
+      "n_robots": 16,
+      "paired_delay_trials": 20,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 13,
+        "clear_only": 7,
+        "mcnemar_exact_p": 0.015625,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "NH-ORCA",
+      "family": "Doorway",
+      "mean_paired_delay_delta_s": -17.17864705882353,
+      "mean_paired_penalized_flow_delta": 0.6780348637158606,
+      "mission": {
+        "baseline_only": 0,
+        "both": 11,
+        "clear_only": 9,
+        "mcnemar_exact_p": 0.00390625,
+        "neither": 0
+      },
+      "n_robots": 8,
+      "paired_delay_trials": 17,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 13,
+        "clear_only": 7,
+        "mcnemar_exact_p": 0.015625,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "NH-ORCA",
+      "family": "Doorway",
+      "mean_paired_delay_delta_s": -11.05778120782726,
+      "mean_paired_penalized_flow_delta": 0.6938270326013702,
+      "mission": {
+        "baseline_only": 0,
+        "both": 12,
+        "clear_only": 8,
+        "mcnemar_exact_p": 0.0078125,
+        "neither": 0
+      },
+      "n_robots": 16,
+      "paired_delay_trials": 19,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 14,
+        "clear_only": 6,
+        "mcnemar_exact_p": 0.03125,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "NH-ORCA",
+      "family": "Intersection",
+      "mean_paired_delay_delta_s": -0.3269999999999999,
+      "mean_paired_penalized_flow_delta": 0.31127988463663064,
+      "mission": {
+        "baseline_only": 0,
+        "both": 20,
+        "clear_only": 0,
+        "mcnemar_exact_p": 1.0,
+        "neither": 0
+      },
+      "n_robots": 8,
+      "paired_delay_trials": 20,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 20,
+        "clear_only": 0,
+        "mcnemar_exact_p": 1.0,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "NH-ORCA",
+      "family": "Intersection",
+      "mean_paired_delay_delta_s": -1.6964999999999997,
+      "mean_paired_penalized_flow_delta": 0.5041724134506278,
+      "mission": {
+        "baseline_only": 0,
+        "both": 19,
+        "clear_only": 1,
+        "mcnemar_exact_p": 1.0,
+        "neither": 0
+      },
+      "n_robots": 16,
+      "paired_delay_trials": 20,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 20,
+        "clear_only": 0,
+        "mcnemar_exact_p": 1.0,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "ORCA",
+      "family": "Doorway",
+      "mean_paired_delay_delta_s": -7.12875,
+      "mean_paired_penalized_flow_delta": 0.6458262408679379,
+      "mission": {
+        "baseline_only": 0,
+        "both": 10,
+        "clear_only": 10,
+        "mcnemar_exact_p": 0.001953125,
+        "neither": 0
+      },
+      "n_robots": 8,
+      "paired_delay_trials": 16,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 11,
+        "clear_only": 9,
+        "mcnemar_exact_p": 0.00390625,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "ORCA",
+      "family": "Doorway",
+      "mean_paired_delay_delta_s": -12.648915178571428,
+      "mean_paired_penalized_flow_delta": 0.9930594532766569,
+      "mission": {
+        "baseline_only": 0,
+        "both": 0,
+        "clear_only": 20,
+        "mcnemar_exact_p": 1.9073486328125e-06,
+        "neither": 0
+      },
+      "n_robots": 16,
+      "paired_delay_trials": 12,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 1,
+        "clear_only": 19,
+        "mcnemar_exact_p": 3.814697265625e-06,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "ORCA",
+      "family": "Intersection",
+      "mean_paired_delay_delta_s": -3.9665624999999998,
+      "mean_paired_penalized_flow_delta": 0.49806531333069637,
+      "mission": {
+        "baseline_only": 0,
+        "both": 17,
+        "clear_only": 3,
+        "mcnemar_exact_p": 0.25,
+        "neither": 0
+      },
+      "n_robots": 8,
+      "paired_delay_trials": 20,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 20,
+        "clear_only": 0,
+        "mcnemar_exact_p": 1.0,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "ORCA",
+      "family": "Intersection",
+      "mean_paired_delay_delta_s": -24.577960099111415,
+      "mean_paired_penalized_flow_delta": 0.7879220752055826,
+      "mission": {
+        "baseline_only": 0,
+        "both": 9,
+        "clear_only": 11,
+        "mcnemar_exact_p": 0.0009765625,
+        "neither": 0
+      },
+      "n_robots": 16,
+      "paired_delay_trials": 19,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 17,
+        "clear_only": 3,
+        "mcnemar_exact_p": 0.25,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "Vanilla CBF-QP",
+      "family": "Doorway",
+      "mean_paired_delay_delta_s": -7.272,
+      "mean_paired_penalized_flow_delta": 0.5510660745366323,
+      "mission": {
+        "baseline_only": 0,
+        "both": 17,
+        "clear_only": 3,
+        "mcnemar_exact_p": 0.25,
+        "neither": 0
+      },
+      "n_robots": 8,
+      "paired_delay_trials": 20,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 17,
+        "clear_only": 3,
+        "mcnemar_exact_p": 0.25,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "Vanilla CBF-QP",
+      "family": "Doorway",
+      "mean_paired_delay_delta_s": -9.14304375,
+      "mean_paired_penalized_flow_delta": 0.5327422696897013,
+      "mission": {
+        "baseline_only": 0,
+        "both": 18,
+        "clear_only": 2,
+        "mcnemar_exact_p": 0.5,
+        "neither": 0
+      },
+      "n_robots": 16,
+      "paired_delay_trials": 20,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 18,
+        "clear_only": 2,
+        "mcnemar_exact_p": 0.5,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "Vanilla CBF-QP",
+      "family": "Intersection",
+      "mean_paired_delay_delta_s": -2.7830625,
+      "mean_paired_penalized_flow_delta": 0.37885627798111027,
+      "mission": {
+        "baseline_only": 0,
+        "both": 20,
+        "clear_only": 0,
+        "mcnemar_exact_p": 1.0,
+        "neither": 0
+      },
+      "n_robots": 8,
+      "paired_delay_trials": 20,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 20,
+        "clear_only": 0,
+        "mcnemar_exact_p": 1.0,
+        "neither": 0
+      }
+    },
+    {
+      "baseline": "Vanilla CBF-QP",
+      "family": "Intersection",
+      "mean_paired_delay_delta_s": -7.014656249999999,
+      "mean_paired_penalized_flow_delta": 0.5316485567259657,
+      "mission": {
+        "baseline_only": 0,
+        "both": 20,
+        "clear_only": 0,
+        "mcnemar_exact_p": 1.0,
+        "neither": 0
+      },
+      "n_robots": 16,
+      "paired_delay_trials": 20,
+      "paired_trials": 20,
+      "resource": {
+        "baseline_only": 0,
+        "both": 20,
+        "clear_only": 0,
+        "mcnemar_exact_p": 1.0,
+        "neither": 0
+      }
+    }
+  ],
+  "record_count": 560,
+  "rows": [
+    {
+      "all_arrived": 20,
+      "average_interference_delay_s": 3.6103124999999996,
+      "delay_evaluated_robots": 160,
+      "family": "Doorway",
+      "mean_control_step_ms": 3.956283343749237,
+      "mean_robot_arrival_rate": 1.0,
+      "method": "CLEAR",
+      "mission_successes": 20,
+      "n_robots": 8,
+      "p95_interference_delay_s": 7.2315,
+      "penalized_flow_rate_robots_per_m_s": 0.8482793650894126,
+      "resource_completion_rate": 1,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.8482793650894126,
+      "trials": 20
+    },
+    {
+      "all_arrived": 20,
+      "average_interference_delay_s": 6.33,
+      "delay_evaluated_robots": 320,
+      "family": "Doorway",
+      "mean_control_step_ms": 6.247336479049045,
+      "mean_robot_arrival_rate": 1.0,
+      "method": "CLEAR",
+      "mission_successes": 20,
+      "n_robots": 16,
+      "p95_interference_delay_s": 14.869500000000004,
+      "penalized_flow_rate_robots_per_m_s": 1.006430224770172,
+      "resource_completion_rate": 1,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 1.006430224770172,
+      "trials": 20
+    },
+    {
+      "all_arrived": 20,
+      "average_interference_delay_s": 1.9702499999999998,
+      "delay_evaluated_robots": 160,
+      "family": "Intersection",
+      "mean_control_step_ms": 4.082962135624257,
+      "mean_robot_arrival_rate": 1.0,
+      "method": "CLEAR",
+      "mission_successes": 20,
+      "n_robots": 8,
+      "p95_interference_delay_s": 2.4615,
+      "penalized_flow_rate_robots_per_m_s": 0.6923995411072608,
+      "resource_completion_rate": 1,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.6923995411072608,
+      "trials": 20
+    },
+    {
+      "all_arrived": 20,
+      "average_interference_delay_s": 4.00996875,
+      "delay_evaluated_robots": 320,
+      "family": "Intersection",
+      "mean_control_step_ms": 6.2270556136012605,
+      "mean_robot_arrival_rate": 1.0,
+      "method": "CLEAR",
+      "mission_successes": 20,
+      "n_robots": 16,
+      "p95_interference_delay_s": 6.783,
+      "penalized_flow_rate_robots_per_m_s": 0.9179055717084738,
+      "resource_completion_rate": 1,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.9179055717084738,
+      "trials": 20
+    },
+    {
+      "all_arrived": 0,
+      "average_interference_delay_s": 16.014,
+      "delay_evaluated_robots": 5,
+      "family": "Doorway",
+      "mean_control_step_ms": 2.45364091705,
+      "mean_robot_arrival_rate": 0.08125,
+      "method": "GCBF+",
+      "mission_successes": 0,
+      "n_robots": 8,
+      "p95_interference_delay_s": 30.096,
+      "penalized_flow_rate_robots_per_m_s": 0.0,
+      "resource_completion_rate": 0,
+      "safe_runs": 5,
+      "successful_flow_rate_robots_per_m_s": null,
+      "trials": 20
+    },
+    {
+      "all_arrived": 0,
+      "average_interference_delay_s": 26.616666666666667,
+      "delay_evaluated_robots": 9,
+      "family": "Doorway",
+      "mean_control_step_ms": 3.55146468685,
+      "mean_robot_arrival_rate": 0.046875,
+      "method": "GCBF+",
+      "mission_successes": 0,
+      "n_robots": 16,
+      "p95_interference_delay_s": 33.077999999999996,
+      "penalized_flow_rate_robots_per_m_s": 0.0,
+      "resource_completion_rate": 0,
+      "safe_runs": 0,
+      "successful_flow_rate_robots_per_m_s": null,
+      "trials": 20
+    },
+    {
+      "all_arrived": 0,
+      "average_interference_delay_s": 22.778823529411763,
+      "delay_evaluated_robots": 17,
+      "family": "Intersection",
+      "mean_control_step_ms": 3.1315661251,
+      "mean_robot_arrival_rate": 0.125,
+      "method": "GCBF+",
+      "mission_successes": 0,
+      "n_robots": 8,
+      "p95_interference_delay_s": 40.158,
+      "penalized_flow_rate_robots_per_m_s": 0.0,
+      "resource_completion_rate": 0,
+      "safe_runs": 0,
+      "successful_flow_rate_robots_per_m_s": null,
+      "trials": 20
+    },
+    {
+      "all_arrived": 0,
+      "average_interference_delay_s": 18.43125,
+      "delay_evaluated_robots": 32,
+      "family": "Intersection",
+      "mean_control_step_ms": 3.712081500125,
+      "mean_robot_arrival_rate": 0.1,
+      "method": "GCBF+",
+      "mission_successes": 0,
+      "n_robots": 16,
+      "p95_interference_delay_s": 38.157,
+      "penalized_flow_rate_robots_per_m_s": 0.0,
+      "resource_completion_rate": 0,
+      "safe_runs": 0,
+      "successful_flow_rate_robots_per_m_s": null,
+      "trials": 20
+    },
+    {
+      "all_arrived": 1,
+      "average_interference_delay_s": 3.1675531914893615,
+      "delay_evaluated_robots": 94,
+      "family": "Doorway",
+      "mean_control_step_ms": 564.0321284643587,
+      "mean_robot_arrival_rate": 0.5875,
+      "method": "IMPC-DR",
+      "mission_successes": 0,
+      "n_robots": 8,
+      "p95_interference_delay_s": 10.384499999999996,
+      "penalized_flow_rate_robots_per_m_s": 0.022222222222222223,
+      "resource_completion_rate": 0.05,
+      "safe_runs": 14,
+      "successful_flow_rate_robots_per_m_s": 0.4444444444444445,
+      "trials": 20
+    },
+    {
+      "all_arrived": 0,
+      "average_interference_delay_s": 6.640714285714286,
+      "delay_evaluated_robots": 70,
+      "family": "Doorway",
+      "mean_control_step_ms": 1242.398519762442,
+      "mean_robot_arrival_rate": 0.21875,
+      "method": "IMPC-DR",
+      "mission_successes": 0,
+      "n_robots": 16,
+      "p95_interference_delay_s": 28.922999999999952,
+      "penalized_flow_rate_robots_per_m_s": 0.0,
+      "resource_completion_rate": 0,
+      "safe_runs": 3,
+      "successful_flow_rate_robots_per_m_s": null,
+      "trials": 20
+    },
+    {
+      "all_arrived": 4,
+      "average_interference_delay_s": 0.8253488372093024,
+      "delay_evaluated_robots": 129,
+      "family": "Intersection",
+      "mean_control_step_ms": 504.0841050529293,
+      "mean_robot_arrival_rate": 0.80625,
+      "method": "IMPC-DR",
+      "mission_successes": 0,
+      "n_robots": 8,
+      "p95_interference_delay_s": 2.7539999999999973,
+      "penalized_flow_rate_robots_per_m_s": 0.26734904604425513,
+      "resource_completion_rate": 0.6,
+      "safe_runs": 2,
+      "successful_flow_rate_robots_per_m_s": 0.4455817434070919,
+      "trials": 20
+    },
+    {
+      "all_arrived": 2,
+      "average_interference_delay_s": 2.130531914893617,
+      "delay_evaluated_robots": 282,
+      "family": "Intersection",
+      "mean_control_step_ms": 1016.0299554118377,
+      "mean_robot_arrival_rate": 0.88125,
+      "method": "IMPC-DR",
+      "mission_successes": 0,
+      "n_robots": 16,
+      "p95_interference_delay_s": 5.7285,
+      "penalized_flow_rate_robots_per_m_s": 0.26179676526615814,
+      "resource_completion_rate": 0.5,
+      "safe_runs": 2,
+      "successful_flow_rate_robots_per_m_s": 0.5235935305323163,
+      "trials": 20
+    },
+    {
+      "all_arrived": 0,
+      "average_interference_delay_s": 5.171351351351351,
+      "delay_evaluated_robots": 74,
+      "family": "Doorway",
+      "mean_control_step_ms": null,
+      "mean_robot_arrival_rate": 0.33125,
+      "method": "MGR",
+      "mission_successes": 0,
+      "n_robots": 8,
+      "p95_interference_delay_s": 11.542499999999995,
+      "penalized_flow_rate_robots_per_m_s": 0.0,
+      "resource_completion_rate": 0,
+      "safe_runs": 19,
+      "successful_flow_rate_robots_per_m_s": null,
+      "trials": 20
+    },
+    {
+      "all_arrived": 0,
+      "average_interference_delay_s": 8.00159090909091,
+      "delay_evaluated_robots": 132,
+      "family": "Doorway",
+      "mean_control_step_ms": null,
+      "mean_robot_arrival_rate": 0.3375,
+      "method": "MGR",
+      "mission_successes": 0,
+      "n_robots": 16,
+      "p95_interference_delay_s": 16.562999999999995,
+      "penalized_flow_rate_robots_per_m_s": 0.0,
+      "resource_completion_rate": 0,
+      "safe_runs": 18,
+      "successful_flow_rate_robots_per_m_s": null,
+      "trials": 20
+    },
+    {
+      "all_arrived": 19,
+      "average_interference_delay_s": 3.650506329113924,
+      "delay_evaluated_robots": 158,
+      "family": "Intersection",
+      "mean_control_step_ms": null,
+      "mean_robot_arrival_rate": 0.9875,
+      "method": "MGR",
+      "mission_successes": 19,
+      "n_robots": 8,
+      "p95_interference_delay_s": 8.1225,
+      "penalized_flow_rate_robots_per_m_s": 0.40570062378073546,
+      "resource_completion_rate": 0.95,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.42705328819024785,
+      "trials": 20
+    },
+    {
+      "all_arrived": 13,
+      "average_interference_delay_s": 6.096196721311475,
+      "delay_evaluated_robots": 305,
+      "family": "Intersection",
+      "mean_control_step_ms": null,
+      "mean_robot_arrival_rate": 0.953125,
+      "method": "MGR",
+      "mission_successes": 13,
+      "n_robots": 16,
+      "p95_interference_delay_s": 13.044000000000002,
+      "penalized_flow_rate_robots_per_m_s": 0.35305110998785805,
+      "resource_completion_rate": 0.65,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.5431555538274739,
+      "trials": 20
+    },
+    {
+      "all_arrived": 11,
+      "average_interference_delay_s": 20.21018691588785,
+      "delay_evaluated_robots": 107,
+      "family": "Doorway",
+      "mean_control_step_ms": 2.5979505958027054,
+      "mean_robot_arrival_rate": 0.66875,
+      "method": "NH-ORCA",
+      "mission_successes": 11,
+      "n_robots": 8,
+      "p95_interference_delay_s": 42.59699999999999,
+      "penalized_flow_rate_robots_per_m_s": 0.17024450137355207,
+      "resource_completion_rate": 0.65,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.2619146174977724,
+      "trials": 20
+    },
+    {
+      "all_arrived": 12,
+      "average_interference_delay_s": 16.606108949416342,
+      "delay_evaluated_robots": 257,
+      "family": "Doorway",
+      "mean_control_step_ms": 0.31816434856949627,
+      "mean_robot_arrival_rate": 0.803125,
+      "method": "NH-ORCA",
+      "mission_successes": 12,
+      "n_robots": 16,
+      "p95_interference_delay_s": 39.144,
+      "penalized_flow_rate_robots_per_m_s": 0.3126031921688017,
+      "resource_completion_rate": 0.7,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.44657598881257393,
+      "trials": 20
+    },
+    {
+      "all_arrived": 20,
+      "average_interference_delay_s": 2.2972499999999996,
+      "delay_evaluated_robots": 160,
+      "family": "Intersection",
+      "mean_control_step_ms": 0.26870634047834424,
+      "mean_robot_arrival_rate": 1.0,
+      "method": "NH-ORCA",
+      "mission_successes": 20,
+      "n_robots": 8,
+      "p95_interference_delay_s": 6.827999999999994,
+      "penalized_flow_rate_robots_per_m_s": 0.38111965647063006,
+      "resource_completion_rate": 1,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.38111965647063006,
+      "trials": 20
+    },
+    {
+      "all_arrived": 20,
+      "average_interference_delay_s": 5.70646875,
+      "delay_evaluated_robots": 320,
+      "family": "Intersection",
+      "mean_control_step_ms": 0.3634760584309908,
+      "mean_robot_arrival_rate": 1.0,
+      "method": "NH-ORCA",
+      "mission_successes": 19,
+      "n_robots": 16,
+      "p95_interference_delay_s": 13.501500000000004,
+      "penalized_flow_rate_robots_per_m_s": 0.413733158257846,
+      "resource_completion_rate": 1,
+      "safe_runs": 19,
+      "successful_flow_rate_robots_per_m_s": 0.413733158257846,
+      "trials": 20
+    },
+    {
+      "all_arrived": 11,
+      "average_interference_delay_s": 10.324148936170213,
+      "delay_evaluated_robots": 94,
+      "family": "Doorway",
+      "mean_control_step_ms": 2.198766367841705,
+      "mean_robot_arrival_rate": 0.5875,
+      "method": "ORCA",
+      "mission_successes": 10,
+      "n_robots": 8,
+      "p95_interference_delay_s": 20.462999999999983,
+      "penalized_flow_rate_robots_per_m_s": 0.20245312422147474,
+      "resource_completion_rate": 0.55,
+      "safe_runs": 19,
+      "successful_flow_rate_robots_per_m_s": 0.3680965894935904,
+      "trials": 20
+    },
+    {
+      "all_arrived": 0,
+      "average_interference_delay_s": 15.254383561643834,
+      "delay_evaluated_robots": 73,
+      "family": "Doorway",
+      "mean_control_step_ms": 0.360861701275,
+      "mean_robot_arrival_rate": 0.225,
+      "method": "ORCA",
+      "mission_successes": 0,
+      "n_robots": 16,
+      "p95_interference_delay_s": 42.726,
+      "penalized_flow_rate_robots_per_m_s": 0.013370771493515177,
+      "resource_completion_rate": 0.05,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.26741542987030353,
+      "trials": 20
+    },
+    {
+      "all_arrived": 20,
+      "average_interference_delay_s": 5.9368125,
+      "delay_evaluated_robots": 160,
+      "family": "Intersection",
+      "mean_control_step_ms": 0.309790822360857,
+      "mean_robot_arrival_rate": 1.0,
+      "method": "ORCA",
+      "mission_successes": 17,
+      "n_robots": 8,
+      "p95_interference_delay_s": 14.790000000000001,
+      "penalized_flow_rate_robots_per_m_s": 0.19433422777656437,
+      "resource_completion_rate": 1,
+      "safe_runs": 17,
+      "successful_flow_rate_robots_per_m_s": 0.19433422777656437,
+      "trials": 20
+    },
+    {
+      "all_arrived": 11,
+      "average_interference_delay_s": 28.667362637362636,
+      "delay_evaluated_robots": 273,
+      "family": "Intersection",
+      "mean_control_step_ms": 0.3998617611633819,
+      "mean_robot_arrival_rate": 0.828125,
+      "method": "ORCA",
+      "mission_successes": 9,
+      "n_robots": 16,
+      "p95_interference_delay_s": 42.20399999999999,
+      "penalized_flow_rate_robots_per_m_s": 0.12998349650289123,
+      "resource_completion_rate": 0.85,
+      "safe_runs": 18,
+      "successful_flow_rate_robots_per_m_s": 0.15292176059163673,
+      "trials": 20
+    },
+    {
+      "all_arrived": 17,
+      "average_interference_delay_s": 11.501830985915493,
+      "delay_evaluated_robots": 142,
+      "family": "Doorway",
+      "mean_control_step_ms": 3.634265396299088,
+      "mean_robot_arrival_rate": 0.8875,
+      "method": "Vanilla CBF-QP",
+      "mission_successes": 17,
+      "n_robots": 8,
+      "p95_interference_delay_s": 20.87099999999999,
+      "penalized_flow_rate_robots_per_m_s": 0.2972132905527804,
+      "resource_completion_rate": 0.85,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.34966269476797696,
+      "trials": 20
+    },
+    {
+      "all_arrived": 18,
+      "average_interference_delay_s": 15.917919463087248,
+      "delay_evaluated_robots": 298,
+      "family": "Doorway",
+      "mean_control_step_ms": 7.430708984899684,
+      "mean_robot_arrival_rate": 0.93125,
+      "method": "Vanilla CBF-QP",
+      "mission_successes": 18,
+      "n_robots": 16,
+      "p95_interference_delay_s": 27.57749999999999,
+      "penalized_flow_rate_robots_per_m_s": 0.4736879550804708,
+      "resource_completion_rate": 0.9,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.526319950089412,
+      "trials": 20
+    },
+    {
+      "all_arrived": 20,
+      "average_interference_delay_s": 4.7533125,
+      "delay_evaluated_robots": 160,
+      "family": "Intersection",
+      "mean_control_step_ms": 4.129494458450426,
+      "mean_robot_arrival_rate": 1.0,
+      "method": "Vanilla CBF-QP",
+      "mission_successes": 20,
+      "n_robots": 8,
+      "p95_interference_delay_s": 7.649999999999999,
+      "penalized_flow_rate_robots_per_m_s": 0.3135432631261505,
+      "resource_completion_rate": 1,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.3135432631261505,
+      "trials": 20
+    },
+    {
+      "all_arrived": 20,
+      "average_interference_delay_s": 11.024625,
+      "delay_evaluated_robots": 320,
+      "family": "Intersection",
+      "mean_control_step_ms": 9.292211332300212,
+      "mean_robot_arrival_rate": 1.0,
+      "method": "Vanilla CBF-QP",
+      "mission_successes": 20,
+      "n_robots": 16,
+      "p95_interference_delay_s": 19.020000000000003,
+      "penalized_flow_rate_robots_per_m_s": 0.38625701498250803,
+      "resource_completion_rate": 1,
+      "safe_runs": 20,
+      "successful_flow_rate_robots_per_m_s": 0.38625701498250803,
+      "trials": 20
+    }
+  ]
+}

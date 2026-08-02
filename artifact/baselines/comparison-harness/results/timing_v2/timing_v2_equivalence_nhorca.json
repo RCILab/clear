@@ -1,0 +1,11 @@
+{
+  "candidate": "baselines/comparison-harness/results/timing_v2/smoke_nhorca_hook.json",
+  "created_utc": "2026-07-31T03:07:11.774595+00:00",
+  "final_state_sha256_equal": true,
+  "maximum_center_error": 0.0,
+  "maximum_heading_error": 0.0,
+  "outcome_fields_equal": true,
+  "passed": true,
+  "reference": "baselines/comparison-harness/results/timing_v2/smoke_nhorca_legacy.json",
+  "scenario_fingerprint_equal": true
+}

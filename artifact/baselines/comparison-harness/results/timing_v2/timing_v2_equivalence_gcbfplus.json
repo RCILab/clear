@@ -1,0 +1,13 @@
+{
+  "cpu_case_count": 12,
+  "cpu_ego_action_tolerance": 5e-05,
+  "cpu_induced_ego_timing_accepted": true,
+  "cpu_maximum_ego_action_error": 1.1861324310302734e-05,
+  "cpu_parity_violations": 0,
+  "created_utc": "2026-07-31T03:07:11.778672+00:00",
+  "gpu_induced_ego_timing_accepted": false,
+  "gpu_official_mode": "synchronized full-graph batch only; no deployment critical-path claim",
+  "gpu_probe_maximum_ego_action_error": 0.008357048034667969,
+  "passed": true,
+  "tolerance_rationale": "The induced graph preserves the one-hop messages, while its smaller padded shape changes float32 segment-reduction order. The accepted action tolerance maps to at most 0.001 rad/s under the physical yaw scaling."
+}

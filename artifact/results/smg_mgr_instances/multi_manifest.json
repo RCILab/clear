@@ -1,0 +1,732 @@
+{
+  "description": "Paired common-unicycle Social Mini-Game instances",
+  "physical_protocol": {
+    "body_radius_m": 0.2,
+    "dt_s": 0.03,
+    "horizon_s": 60.0,
+    "pair_clearance_m": 0.44
+  },
+  "record_count": 80,
+  "records": [
+    {
+      "family": "doorway",
+      "fingerprint": "a048fe0721d4b278",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_0.yaml",
+      "seed": 0,
+      "yaml_sha256": "ad2d72d4c8b1bbaf0faef516dd7218c39b6c20037a0646b39cdafecff273bdb8"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "9b7b2bd8d759fc8d",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_1.yaml",
+      "seed": 1,
+      "yaml_sha256": "fa8cf60c1fedcf74cc388ee8cb4bb5ef20996fe62156103697f1dd4b620dcd5c"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "d681efe159e0db00",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_2.yaml",
+      "seed": 2,
+      "yaml_sha256": "b2feeb8d89ff695e9355e46a72835c6ecf50a0d47a3744d212b6309286839a57"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "becb0fabf6cf3394",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_3.yaml",
+      "seed": 3,
+      "yaml_sha256": "2b8717d963f08a34b087eeaacd6cc77be77e97ed696e23441e2e510a20c8c610"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "4cd558fbcb9657e5",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_4.yaml",
+      "seed": 4,
+      "yaml_sha256": "fa95b8a9340a392e0dc692de51d88c9658a822337633ea59c016000d940960ae"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "99439600bf6ff442",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_5.yaml",
+      "seed": 5,
+      "yaml_sha256": "598cec4ad8891e2e9430fd7230a306e553b80803ea81ca6416e2b59df257b002"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "188bffcbd128f4f0",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_6.yaml",
+      "seed": 6,
+      "yaml_sha256": "fe9d6a9e2cc4cc65cb1700b6a2f7a48db8a2a5f9f77a4bcfa538433244d1ae82"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "c58ac5105a60266e",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_7.yaml",
+      "seed": 7,
+      "yaml_sha256": "fe5eed3ffd0bc16df1f5003b0f928558522e5b14adb8a26e78e947d760ae2cc7"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "d39229161479c47c",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_8.yaml",
+      "seed": 8,
+      "yaml_sha256": "b160c63ea8e37fb0da415c76f06d9a5a5f29051b7939466adc3d1fb98d9006c5"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "3d56acf2b7a4257c",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_9.yaml",
+      "seed": 9,
+      "yaml_sha256": "3919e95c72fdf938fd9e2980a852554a4ea2b23cc3e374513f9cc0c6d2570449"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "ca8971168999cadf",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_10.yaml",
+      "seed": 10,
+      "yaml_sha256": "1a4bdd020c47af1cf789b394a95d5a50dc7cc523f7e4903583261d469659df8d"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "ae0a600d72ee31ef",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_11.yaml",
+      "seed": 11,
+      "yaml_sha256": "69d965aafb588b16500903af1b04a4bdf1eeb1dbe3ae51be733c1a4cf751feb1"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "70df64202177e4f9",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_12.yaml",
+      "seed": 12,
+      "yaml_sha256": "94716b2f573ca9156a91ca402436fd960fe31f8110180d01bdf1099a011d7846"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "f3ed67133380ab8e",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_13.yaml",
+      "seed": 13,
+      "yaml_sha256": "634bbb4b178705d175db407ef6b6b2fe244ebadc77fd6579accab9392d66165f"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "9fe1f538ce99fe85",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_14.yaml",
+      "seed": 14,
+      "yaml_sha256": "5dbac3c49f4bee4558f3c515e1ae1130342d2f8b45dd2326fe218763cc214d3b"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "ff53f40d5eb18228",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_15.yaml",
+      "seed": 15,
+      "yaml_sha256": "29f1dff6698bc45c2145d95fa6a708d3cd266a4bb814672105abecc4a64fcf7e"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "033201567bcf1ab4",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_16.yaml",
+      "seed": 16,
+      "yaml_sha256": "c916a1c17cf8324b24705abbecf95d566026a39b35fb39185f5288e2cb879293"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "97880af1835149bd",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_17.yaml",
+      "seed": 17,
+      "yaml_sha256": "1031233e99914b8886f8ff07d2896c124a3aad80fd73e4e3e4037d98df682059"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "8d610f2ef84c9210",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_18.yaml",
+      "seed": 18,
+      "yaml_sha256": "0f886f6802afb3715d4a7ab3bc40c801f47c1ee7a331a0eddfb3bd559edb3f82"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "dd5be9a558662ec5",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents8/doorway12_8_19.yaml",
+      "seed": 19,
+      "yaml_sha256": "7f8d75c580dfe093b5b028425c7c9d04938cf62730ebeeac9177394599ba6bc3"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "81d0d78027b2fecb",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_0.yaml",
+      "seed": 0,
+      "yaml_sha256": "3ea4b4bef39a90b25bc3289906c644b7685ff89b20a1f8283865cb76835a1e21"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "05a2533beae9c077",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_1.yaml",
+      "seed": 1,
+      "yaml_sha256": "ca4069e67767755c103c3a9e3de6c9e615bb73adb6dfa28bfdbe64e3fd905207"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "fa8a26b0baaa3bf9",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_2.yaml",
+      "seed": 2,
+      "yaml_sha256": "11ff647a5e8164c0c20af7e6e2ac9a0b1991d5b89dc0ce1b57a81347e144b288"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "4c86067bfe1d9e24",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_3.yaml",
+      "seed": 3,
+      "yaml_sha256": "fae002ce2440aa654f850700d2735f75c5683d39d4b98b26853c01c673567896"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "ae2b16f21535647d",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_4.yaml",
+      "seed": 4,
+      "yaml_sha256": "6a2581f6f5a054e9dc1a4a6a8d5f826e1462b93eec07bf3227b303cba41693e2"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "5a41c8bf6e11d680",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_5.yaml",
+      "seed": 5,
+      "yaml_sha256": "7162c458c5b6e015f3da2ca6fe5713860bf8efad6718067e09061a8916fb4dc8"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "4f70c8e9100eb3a4",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_6.yaml",
+      "seed": 6,
+      "yaml_sha256": "8f9723acbeca9fac4a85c3881b7d93f3f20ec89a327eeec664e6f91c6494143b"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "0310f5067ebbcf42",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_7.yaml",
+      "seed": 7,
+      "yaml_sha256": "85265cff78c4daf8b79231941d4cedd747feb49487dbb2f092a9b218c5f1f440"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "5741b7ad0f948238",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_8.yaml",
+      "seed": 8,
+      "yaml_sha256": "d95c2f4cadd4536beb25bb74726be53f9b855d237c7651e68869ec6bbfbfd78b"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "7e7fc22e36fc1991",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_9.yaml",
+      "seed": 9,
+      "yaml_sha256": "9d4e195b9fba9e67e92c8f1971473b1e8a5b039476ffda2c3e2f1fcf54290a85"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "b18ec4af9b20e105",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_10.yaml",
+      "seed": 10,
+      "yaml_sha256": "c3ca7de889bfbe5d9feb7613851ad2c82d6c3e5bd97722640e075629906d9cda"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "c274fc4fe298fbf0",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_11.yaml",
+      "seed": 11,
+      "yaml_sha256": "49168e4c0a606c2fd313f57cffedbb047e72e880890d9c777b2a205879200f90"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "7e0ebf15e6835ae1",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_12.yaml",
+      "seed": 12,
+      "yaml_sha256": "f8b8ff2602c5b7ff73ede51d73bd9b20f71cd82c8b6e23ecdf32647318c2af56"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "6d734bcbc73dde22",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_13.yaml",
+      "seed": 13,
+      "yaml_sha256": "5c946581a5e3243e2679c4eded4735bac4224cc173423f40d66d137ebeb0934e"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "0bfd825806543bdd",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_14.yaml",
+      "seed": 14,
+      "yaml_sha256": "2ee58b7b9100bfb58d2ccbac6d6aafe373a60fab8db611b58d30f70116818fe9"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "8092ae87be958416",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_15.yaml",
+      "seed": 15,
+      "yaml_sha256": "fad9cca24c95b27bb5deba855c9735dd6f206f48687d4085fdd57effc5decb33"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "8574f9d3712ba76a",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_16.yaml",
+      "seed": 16,
+      "yaml_sha256": "476faeefa13970698ab67abe3cd1b0e0184e4584549af7398f67e0e0c793781e"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "86c386b7dc760e2f",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_17.yaml",
+      "seed": 17,
+      "yaml_sha256": "fb1d11bbbff3fb4933873ac79e9a244340ec78227f5ae8abbf93fa15921ea240"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "a010951a26c4225d",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_18.yaml",
+      "seed": 18,
+      "yaml_sha256": "58cad750474428369c0d43a3f744a13895e3786adfd9c23fbe610b1677bf3a4e"
+    },
+    {
+      "family": "doorway",
+      "fingerprint": "5ebc49534559996b",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/doorway12/agents16/doorway12_16_19.yaml",
+      "seed": 19,
+      "yaml_sha256": "112433791fcabbec34eb3ccec4f5e21bbbddd1074871b1d4854f78ce00fe7cc1"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "27e35d3a1a4bfe00",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_0.yaml",
+      "seed": 0,
+      "yaml_sha256": "a023af2eb9f3f7a2e8f8e228b36330b8d002dc3f7a99c1b38fcbd86c4d7fc9b0"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "8deb88d2415498b1",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_1.yaml",
+      "seed": 1,
+      "yaml_sha256": "ed26715d8343bda5d502d6930add39bbe906b95da797a764fb86b1fcedbb3cdf"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "2eccad75b37cdda9",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_2.yaml",
+      "seed": 2,
+      "yaml_sha256": "2bec49e24b6f5128cbcb79e66c49e754e8ea549bec418888d2b7ef658b8db357"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "71ffdffbfc6dcf33",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_3.yaml",
+      "seed": 3,
+      "yaml_sha256": "28017b6e84ffbaba7b371ed94213614aa299aa1842c2061788c9cb85fedd9688"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "16c87e1d22e16da6",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_4.yaml",
+      "seed": 4,
+      "yaml_sha256": "15a7290cf9da81eeeec90c6b861767782150548966cf0000f3400cb72d77533d"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "e6d1b3bd752b6543",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_5.yaml",
+      "seed": 5,
+      "yaml_sha256": "55133eccf098c8e096c0b4bfae13d78d4c6b22351c9d59dd8751d7c1375586ce"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "b39a7c4d58979c63",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_6.yaml",
+      "seed": 6,
+      "yaml_sha256": "4acf069be35f26b053d2aa5a3bf31fe03db5f0ac3e2614fddd2d33f2ee5fe6f0"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "0989b2dd95372be9",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_7.yaml",
+      "seed": 7,
+      "yaml_sha256": "912352a42e83b4cdf34cb413d48a2d2394f54a3b1724d2e97a50e51c21bba470"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "7b39815269dc7983",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_8.yaml",
+      "seed": 8,
+      "yaml_sha256": "bcf36f1db6f6f9071e46bdd50e6bb849aee9b5774b5b25b2fdee35111eb38bf8"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "63622dbbcdee5c42",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_9.yaml",
+      "seed": 9,
+      "yaml_sha256": "e31ff29ac0aa39b46d6d967e1b59b114973d8ee63327bfc2b96ac723ef325abe"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "d1cd59deccdba012",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_10.yaml",
+      "seed": 10,
+      "yaml_sha256": "523f5c836434c510d537b8232d23bb1d1018e989ed9bd85d1c787e8c6731f506"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "0b5e95a7d3755bb1",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_11.yaml",
+      "seed": 11,
+      "yaml_sha256": "d605638c6fd88787e52f8f1a4efecf52a298a7dbe46598ca1fcf83867e1e9b01"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "538fd70f15637e2a",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_12.yaml",
+      "seed": 12,
+      "yaml_sha256": "76e3e5abf69d7e424fa6f8cd38e6075336c98a5d395aa79f3a743fddde464dfd"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "980601fd7fd1641f",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_13.yaml",
+      "seed": 13,
+      "yaml_sha256": "ab7a2f8baf2f5df788fe3e382c399a1bfd0798aadbd51bfed236e3d6c77a7e51"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "f25b720d0a2ba01b",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_14.yaml",
+      "seed": 14,
+      "yaml_sha256": "35f76739ed76947b16f5f1b94271fca2655acbba21c768f9feb405198e46b9b7"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "d4301bd097d42d11",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_15.yaml",
+      "seed": 15,
+      "yaml_sha256": "94107a96c47ffae555f6ae10fff5821960dba906d3b494da22479243c7cd4556"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "35b2ef3513c4080b",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_16.yaml",
+      "seed": 16,
+      "yaml_sha256": "1768c01a0f88557631435f3d323f9637d4c0d83a0c40ccc9e5b4973de2b60707"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "ecc8e47464b64dc3",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_17.yaml",
+      "seed": 17,
+      "yaml_sha256": "af8fc67f16485ae9bfa451363b964762092d82bd920079926590f6d093bf7052"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "100156549414826c",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_18.yaml",
+      "seed": 18,
+      "yaml_sha256": "1733e53774cddb87b542995a9faf35167dd75d138f8ef14208c8677ce9855ac5"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "8439df101a9a9de7",
+      "n_robots": 8,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents8/intersection24_8_19.yaml",
+      "seed": 19,
+      "yaml_sha256": "43b6a33fd642d441a25f75920f7ac50ecf3a9d4922c2f7869f4bc22dd651090a"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "f36827c5cea51590",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_0.yaml",
+      "seed": 0,
+      "yaml_sha256": "6cb334a0c2bfc5169aa5b3fea307b1817cf95cac8f4e6aa742bd746ddef40915"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "97c7b78ac57d1a87",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_1.yaml",
+      "seed": 1,
+      "yaml_sha256": "0c81f111ea7ac76fbd7c20477127ae49d618b9f6fb2ffc8e82b74239c580257a"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "5f37d38d66f9b71f",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_2.yaml",
+      "seed": 2,
+      "yaml_sha256": "31c597bffc8b7a939a7e1dc96dfdb258b05ec8eacb7a64138e54a3795c25e692"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "0ef15e50f0e700b9",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_3.yaml",
+      "seed": 3,
+      "yaml_sha256": "bbd5f1efebb78803ccc84d4e0b51a90effbb2722e494e0567679291ccc2a500c"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "07f739abeb0e1091",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_4.yaml",
+      "seed": 4,
+      "yaml_sha256": "30e36fd035c93829cf54545e3b8e10d9e1d7c942cf5b13b41cbe2233766171bb"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "c3e531fe09f74368",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_5.yaml",
+      "seed": 5,
+      "yaml_sha256": "cd9a009c76258e83e1775d4e4bc786b563066c45ec54c31dbf826ba4ab1ead7f"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "6713b5a7e9f1a807",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_6.yaml",
+      "seed": 6,
+      "yaml_sha256": "4eb269cfdefc2981582208158d2305f31475f5fd30902550e77d410e19ad0958"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "fdae6fbb92ac5c8f",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_7.yaml",
+      "seed": 7,
+      "yaml_sha256": "05bffebb4062e2bdea3ea598e9cc725fccc8094231af6cf694c8be880e9a22e2"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "818228706808df55",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_8.yaml",
+      "seed": 8,
+      "yaml_sha256": "4a61452228bd459df033c56422a63688ad2324210c137fede6cb82eb7a6187e2"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "6cdf1c71b19d842a",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_9.yaml",
+      "seed": 9,
+      "yaml_sha256": "353846b3a84e4c9c265e60d2d27156ee7ae6881213e0128fb3cf75a604af3a23"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "31d1f757988c260f",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_10.yaml",
+      "seed": 10,
+      "yaml_sha256": "61b25eab19759a5e93ec5b705dc0c34c6611b74641998bac8779e30a6dda5ead"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "635ab56d4bed4fbc",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_11.yaml",
+      "seed": 11,
+      "yaml_sha256": "93ac272b4a75a48082cf93c318f5e550960d674102ecac66d0542bf97b98994b"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "251469bcf7565a36",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_12.yaml",
+      "seed": 12,
+      "yaml_sha256": "a39ac4e19c0db727e11a7c1f0e77f6f1f7d8e2ab82d5d6375a70a1b148b12c26"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "c8c68e24e174839f",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_13.yaml",
+      "seed": 13,
+      "yaml_sha256": "983babc49f0537bf3507affa874de0b1e37aedcecd024e5260c156d4d7539040"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "f7b84e1db932cd99",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_14.yaml",
+      "seed": 14,
+      "yaml_sha256": "3d5a4f7cd0e526ee8a9e7f558d29cbb7f38079f2441abc629d35a26059e8ca86"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "89fe7cdfcbb0e6fb",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_15.yaml",
+      "seed": 15,
+      "yaml_sha256": "61068356a2fdccc1f645cb498b0c4f606985d9a02747546a74cdf7228cb60b68"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "e6d014397c49752d",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_16.yaml",
+      "seed": 16,
+      "yaml_sha256": "7ecedd2ab1ccb092d3669c5ca691490ad99130e86dfedf9df02c0b76b6775b22"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "89120244e1603351",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_17.yaml",
+      "seed": 17,
+      "yaml_sha256": "3fe9dcb9eadfb8948c67abd9e34d95c0954e1947d24f85d2be6d0b2599a336c3"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "d67908f02c073284",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_18.yaml",
+      "seed": 18,
+      "yaml_sha256": "bb0852d41f670fe98b5b4e7377924d29bfd13f10694df57f789f7eddbcb9d76f"
+    },
+    {
+      "family": "intersection",
+      "fingerprint": "5a2231248920a800",
+      "n_robots": 16,
+      "record_kind": "multi",
+      "relative_yaml": "RectSMG/intersection24/agents16/intersection24_16_19.yaml",
+      "seed": 19,
+      "yaml_sha256": "11f9289e3580fbdffefdcd5a68764dafbbf6792a0fd2e7a2c7cab34f9c99795a"
+    }
+  ]
+}

@@ -1,0 +1,602 @@
+{
+  "initial_heading_rad": 0.0,
+  "protocol": {
+    "workspace_size": 16.0,
+    "body_radius": 0.2,
+    "safety_margin": 0.02,
+    "speed_limit": 0.8,
+    "arrival_radius": 0.22,
+    "dt": 0.03,
+    "horizon": 3.0,
+    "obstacle_fraction": 0.15,
+    "circle_count": 14,
+    "rectangle_count": 12,
+    "swap_radius": 7.5
+  },
+  "geometry": {
+    "doorway_width": 1.2,
+    "doorway_thickness": 0.8,
+    "intersection_corridor_width": 2.4,
+    "staging_distance": 3.2,
+    "queue_spacing": 0.6,
+    "staging_row_spacing": 0.56,
+    "reported_cost_field_passage_floor": 0.59,
+    "reported_baseline_local_model_width": 0.74,
+    "robot_diameter_m": 0.4,
+    "pair_clearance_m": 0.44,
+    "lookahead_virtual_diameter_m": 0.44,
+    "doorway_nominal_safety_lanes": 2,
+    "doorway_nominal_virtual_lanes": 2,
+    "doorway_cost_field_margin_m": 0.61,
+    "baseline_local_model_margin_m": 0.45999999999999996,
+    "fairness_note_required": false
+  },
+  "method": "IMPC-DR",
+  "implementation": "public IMPC-DR structure adapted to [x,y,v,theta] and [a,omega] with sequential affine prediction",
+  "prediction_steps": 24,
+  "scp_iterations": 2,
+  "records": [
+    {
+      "method": "IMPC-DR",
+      "family": "rect15",
+      "n_robots": 8,
+      "seed": 0,
+      "fingerprint": "eeb262241e4c8779",
+      "mission_success": false,
+      "physical_mission_success": false,
+      "robot_arrival_rate": 0.0,
+      "makespan_s": null,
+      "unarrived_robots": 8,
+      "maximum_final_goal_distance_m": 12.143155949122267,
+      "minimum_physical_pair_distance_m": 1.01860883668864,
+      "minimum_physical_obstacle_clearance_m": 0.001217278761149021,
+      "maximum_linear_speed_mps": 0.7999999999392394,
+      "maximum_yaw_rate_rps": 1.5707963264106921,
+      "all_solves_accepted": true,
+      "final_solve_backend_counts": {
+        "CLARABEL": 800
+      },
+      "final_solve_status_counts": {
+        "optimal": 800
+      },
+      "controller_wall_time_s": 17.222489063007743,
+      "mean_control_step_ms": 172.22489063007743,
+      "p95_control_step_ms": 193.7785184508357,
+      "executed_steps": 100,
+      "batch_step_ms": {
+        "mean": 172.305401850167,
+        "median": 169.62265099974164,
+        "p95": 187.12273764989817,
+        "maximum": 213.27876499951694,
+        "sample_count": 60
+      },
+      "shared_coordination_ms": {
+        "mean": 0.00521165,
+        "median": 0.004563,
+        "p95": 0.008609749999999996,
+        "maximum": 0.01617,
+        "sample_count": 60
+      },
+      "local_unit_ms": {
+        "per_step_max": {
+          "mean": 24.926516283333335,
+          "median": 22.763102500000002,
+          "p95": 31.753355249999956,
+          "maximum": 60.597023,
+          "sample_count": 60
+        },
+        "per_call": {
+          "mean": 21.53496553541667,
+          "median": 21.0911275,
+          "p95": 23.636208099999998,
+          "maximum": 60.597023,
+          "sample_count": 480
+        },
+        "unit_count": {
+          "mean": 8.0,
+          "median": 8.0,
+          "p95": 8.0,
+          "maximum": 8.0,
+          "sample_count": 60
+        }
+      },
+      "critical_path_ms": {
+        "mean": 24.93172793333333,
+        "median": 22.767823,
+        "p95": 31.760458149999955,
+        "maximum": 60.60151,
+        "sample_count": 60
+      },
+      "controller_backend": "cvxpy-clarabel-persistent-cpu",
+      "worker_count": 1,
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "gpu_model": "none",
+      "warmup_steps": 40,
+      "scenario_fingerprint": "eeb262241e4c8779",
+      "batch_contains_local_units": true,
+      "local_unit_definition": "one robot neighbor/static constraint update, two SCP solves, nonlinear rollout, and post-processing",
+      "timing_v2_samples_file": "experiments/validation/timing_v2/samples/impc_rect15_n8_s0.npz",
+      "timing_v2_samples_sha256": "f496744ce7983dccd058fbdb890798015694716ba5530a23a284095e15294715",
+      "phase_profile_per_agent_call_ms": {
+        "canonicalization_and_interface": {
+          "mean": 10.98626922375,
+          "median": 10.5614825,
+          "p95": 12.71612495,
+          "maximum": 50.006718,
+          "sample_count": 800
+        },
+        "cvxpy_graph_construction": {
+          "mean": 0.20861587,
+          "median": 0.0,
+          "p95": 1.00367315,
+          "maximum": 2.5839,
+          "sample_count": 800
+        },
+        "neighbor_constraint": {
+          "mean": 0.44049710124999997,
+          "median": 0.408497,
+          "p95": 0.6098793499999999,
+          "maximum": 1.378736,
+          "sample_count": 800
+        },
+        "parameter_update": {
+          "mean": 0.34819165999999996,
+          "median": 0.33162400000000003,
+          "p95": 0.46080414999999986,
+          "maximum": 0.945328,
+          "sample_count": 800
+        },
+        "post_processing": {
+          "mean": 0.3835879287500001,
+          "median": 0.36005750000000003,
+          "p95": 0.5108298,
+          "maximum": 1.47525,
+          "sample_count": 800
+        },
+        "solver_reported": {
+          "mean": 4.4969017099999995,
+          "median": 4.445689,
+          "p95": 5.1515081,
+          "maximum": 22.847023,
+          "sample_count": 800
+        },
+        "solver_wall": {
+          "mean": 15.48317093375,
+          "median": 15.050906,
+          "p95": 17.746044449999992,
+          "maximum": 54.780387,
+          "sample_count": 800
+        },
+        "static_constraint": {
+          "mean": 3.7497721375000004,
+          "median": 3.6945305,
+          "p95": 4.14625915,
+          "maximum": 7.041253,
+          "sample_count": 800
+        }
+      },
+      "persistent_problem_enabled": true,
+      "pair_planning_guard_m": 0.0002,
+      "obstacle_planning_guard_m": 0.0001,
+      "first_arrival_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "final_positions_m": [
+        [
+          -0.5089157258096323,
+          -4.8624244008715305
+        ],
+        [
+          -0.11630698632626943,
+          7.092576509992944
+        ],
+        [
+          -3.0511760274075663,
+          6.642038540766368
+        ],
+        [
+          -0.5778023802125138,
+          -3.1333239670805124
+        ],
+        [
+          3.8618331234726266,
+          7.200152282569129
+        ],
+        [
+          4.812395668618434,
+          -1.0036932003484411
+        ],
+        [
+          2.092893306467655,
+          0.8869855137801855
+        ],
+        [
+          -3.4056658132125963,
+          4.206155291257234
+        ]
+      ]
+    },
+    {
+      "method": "IMPC-DR",
+      "family": "rect15",
+      "n_robots": 8,
+      "seed": 7,
+      "fingerprint": "fcecf15ef7a57b73",
+      "mission_success": false,
+      "physical_mission_success": false,
+      "robot_arrival_rate": 0.0,
+      "makespan_s": null,
+      "unarrived_robots": 8,
+      "maximum_final_goal_distance_m": 16.59992038182969,
+      "minimum_physical_pair_distance_m": 0.9051086993762689,
+      "minimum_physical_obstacle_clearance_m": 9.232268771183771e-05,
+      "maximum_linear_speed_mps": 0.7999999998652848,
+      "maximum_yaw_rate_rps": 1.5707963262205955,
+      "all_solves_accepted": false,
+      "final_solve_backend_counts": {
+        "CLARABEL": 800
+      },
+      "final_solve_status_counts": {
+        "optimal": 799,
+        "infeasible": 1
+      },
+      "controller_wall_time_s": 16.984485946997665,
+      "mean_control_step_ms": 169.84485946997665,
+      "p95_control_step_ms": 189.09467935036446,
+      "executed_steps": 100,
+      "batch_step_ms": {
+        "mean": 170.10048481670572,
+        "median": 168.31708299975554,
+        "p95": 190.06042269979375,
+        "maximum": 197.86030200133936,
+        "sample_count": 60
+      },
+      "shared_coordination_ms": {
+        "mean": 0.0048528500000000006,
+        "median": 0.0042780000000000006,
+        "p95": 0.007154499999999999,
+        "maximum": 0.016044,
+        "sample_count": 60
+      },
+      "local_unit_ms": {
+        "per_step_max": {
+          "mean": 24.531513816666664,
+          "median": 22.8169815,
+          "p95": 29.754366149999946,
+          "maximum": 58.992363,
+          "sample_count": 60
+        },
+        "per_call": {
+          "mean": 21.259338212499998,
+          "median": 20.8640675,
+          "p95": 23.7182371,
+          "maximum": 58.992363,
+          "sample_count": 480
+        },
+        "unit_count": {
+          "mean": 8.0,
+          "median": 8.0,
+          "p95": 8.0,
+          "maximum": 8.0,
+          "sample_count": 60
+        }
+      },
+      "critical_path_ms": {
+        "mean": 24.536366666666662,
+        "median": 22.8206655,
+        "p95": 29.757856899999943,
+        "maximum": 58.996843,
+        "sample_count": 60
+      },
+      "controller_backend": "cvxpy-clarabel-persistent-cpu",
+      "worker_count": 1,
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "gpu_model": "none",
+      "warmup_steps": 40,
+      "scenario_fingerprint": "fcecf15ef7a57b73",
+      "batch_contains_local_units": true,
+      "local_unit_definition": "one robot neighbor/static constraint update, two SCP solves, nonlinear rollout, and post-processing",
+      "timing_v2_samples_file": "experiments/validation/timing_v2/samples/impc_rect15_n8_s7.npz",
+      "timing_v2_samples_sha256": "cc5b69860a6ebd02ccfd96072d6c1ff2ad4479d0475946a220ff32d223d34c03",
+      "phase_profile_per_agent_call_ms": {
+        "canonicalization_and_interface": {
+          "mean": 10.84099547625,
+          "median": 10.431895,
+          "p95": 12.357857099999993,
+          "maximum": 48.537096,
+          "sample_count": 800
+        },
+        "cvxpy_graph_construction": {
+          "mean": 0.19823728375000002,
+          "median": 0.0,
+          "p95": 0.8791683499999999,
+          "maximum": 1.804272,
+          "sample_count": 800
+        },
+        "neighbor_constraint": {
+          "mean": 0.46306016499999997,
+          "median": 0.438481,
+          "p95": 0.6697609999999998,
+          "maximum": 1.644307,
+          "sample_count": 800
+        },
+        "parameter_update": {
+          "mean": 0.35260427,
+          "median": 0.3292655,
+          "p95": 0.49092529999999995,
+          "maximum": 1.71601,
+          "sample_count": 800
+        },
+        "post_processing": {
+          "mean": 0.38750213250000004,
+          "median": 0.36256,
+          "p95": 0.5149406,
+          "maximum": 1.465053,
+          "sample_count": 800
+        },
+        "solver_reported": {
+          "mean": 4.32695686125,
+          "median": 4.2763985,
+          "p95": 5.14534905,
+          "maximum": 6.167873,
+          "sample_count": 800
+        },
+        "solver_wall": {
+          "mean": 15.167952337500001,
+          "median": 14.762377,
+          "p95": 17.16144725,
+          "maximum": 53.471827,
+          "sample_count": 800
+        },
+        "static_constraint": {
+          "mean": 3.7479198712499997,
+          "median": 3.7085515,
+          "p95": 4.12974455,
+          "maximum": 11.613294,
+          "sample_count": 800
+        }
+      },
+      "persistent_problem_enabled": true,
+      "pair_planning_guard_m": 0.0002,
+      "obstacle_planning_guard_m": 0.0001,
+      "first_arrival_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "final_positions_m": [
+        [
+          2.9838560147055455,
+          -2.8723447060977425
+        ],
+        [
+          5.23389351459606,
+          1.4902055202134352
+        ],
+        [
+          3.6340029858994747,
+          1.6557717837692472
+        ],
+        [
+          1.3153043830526527,
+          -4.3057230393280435
+        ],
+        [
+          5.235392817716127,
+          -3.667982516116064
+        ],
+        [
+          3.6159777120830268,
+          2.5607009783421946
+        ],
+        [
+          -6.854599660688329,
+          3.5548734103542734
+        ],
+        [
+          4.826928784182885,
+          5.547281784194125
+        ]
+      ]
+    },
+    {
+      "method": "IMPC-DR",
+      "family": "rect15",
+      "n_robots": 8,
+      "seed": 13,
+      "fingerprint": "4241872432dafdff",
+      "mission_success": false,
+      "physical_mission_success": false,
+      "robot_arrival_rate": 0.125,
+      "makespan_s": null,
+      "unarrived_robots": 7,
+      "maximum_final_goal_distance_m": 7.251342704743853,
+      "minimum_physical_pair_distance_m": 0.94864992329814,
+      "minimum_physical_obstacle_clearance_m": 9.99999939470253e-05,
+      "maximum_linear_speed_mps": 0.7999999999173139,
+      "maximum_yaw_rate_rps": 1.5707963261161149,
+      "all_solves_accepted": true,
+      "final_solve_backend_counts": {
+        "CLARABEL": 800
+      },
+      "final_solve_status_counts": {
+        "optimal": 800
+      },
+      "controller_wall_time_s": 17.46787013600442,
+      "mean_control_step_ms": 174.67870136004422,
+      "p95_control_step_ms": 189.5370923511109,
+      "executed_steps": 100,
+      "batch_step_ms": {
+        "mean": 174.75481316673057,
+        "median": 173.28813150024183,
+        "p95": 187.46367014911735,
+        "maximum": 237.4575160006206,
+        "sample_count": 60
+      },
+      "shared_coordination_ms": {
+        "mean": 0.005182366666666668,
+        "median": 0.004619,
+        "p95": 0.008745999999999999,
+        "maximum": 0.010957,
+        "sample_count": 60
+      },
+      "local_unit_ms": {
+        "per_step_max": {
+          "mean": 24.915006499999997,
+          "median": 23.3941745,
+          "p95": 28.353959399999955,
+          "maximum": 71.681761,
+          "sample_count": 60
+        },
+        "per_call": {
+          "mean": 21.84090203125,
+          "median": 21.4560465,
+          "p95": 24.065881549999993,
+          "maximum": 71.681761,
+          "sample_count": 480
+        },
+        "unit_count": {
+          "mean": 8.0,
+          "median": 8.0,
+          "p95": 8.0,
+          "maximum": 8.0,
+          "sample_count": 60
+        }
+      },
+      "critical_path_ms": {
+        "mean": 24.920188866666667,
+        "median": 23.3981465,
+        "p95": 28.359736449999954,
+        "maximum": 71.685243,
+        "sample_count": 60
+      },
+      "controller_backend": "cvxpy-clarabel-persistent-cpu",
+      "worker_count": 1,
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "gpu_model": "none",
+      "warmup_steps": 40,
+      "scenario_fingerprint": "4241872432dafdff",
+      "batch_contains_local_units": true,
+      "local_unit_definition": "one robot neighbor/static constraint update, two SCP solves, nonlinear rollout, and post-processing",
+      "timing_v2_samples_file": "experiments/validation/timing_v2/samples/impc_rect15_n8_s13.npz",
+      "timing_v2_samples_sha256": "68d2af12741a3354fa3715559b3f630725e0e1d6042c571c140e4b9f1c07bd4d",
+      "phase_profile_per_agent_call_ms": {
+        "canonicalization_and_interface": {
+          "mean": 11.151485683750002,
+          "median": 10.806481,
+          "p95": 12.672375649999998,
+          "maximum": 57.478951,
+          "sample_count": 800
+        },
+        "cvxpy_graph_construction": {
+          "mean": 0.1429287075,
+          "median": 0.0,
+          "p95": 0.7986444499999993,
+          "maximum": 1.716815,
+          "sample_count": 800
+        },
+        "neighbor_constraint": {
+          "mean": 0.45967842375,
+          "median": 0.437187,
+          "p95": 0.6947323499999999,
+          "maximum": 1.146664,
+          "sample_count": 800
+        },
+        "parameter_update": {
+          "mean": 0.36790612625,
+          "median": 0.3437015,
+          "p95": 0.5050241999999999,
+          "maximum": 1.422154,
+          "sample_count": 800
+        },
+        "post_processing": {
+          "mean": 0.40226746625000004,
+          "median": 0.3658405,
+          "p95": 0.5842309,
+          "maximum": 1.760563,
+          "sample_count": 800
+        },
+        "solver_reported": {
+          "mean": 4.52757226625,
+          "median": 4.457597,
+          "p95": 5.460187099999999,
+          "maximum": 13.334133,
+          "sample_count": 800
+        },
+        "solver_wall": {
+          "mean": 15.67905795,
+          "median": 15.331586,
+          "p95": 17.51522945,
+          "maximum": 62.811107,
+          "sample_count": 800
+        },
+        "static_constraint": {
+          "mean": 3.84057394375,
+          "median": 3.7849645,
+          "p95": 4.3978565,
+          "maximum": 7.336843,
+          "sample_count": 800
+        }
+      },
+      "persistent_problem_enabled": true,
+      "pair_planning_guard_m": 0.0002,
+      "obstacle_planning_guard_m": 0.0001,
+      "first_arrival_times_s": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        2.67,
+        null,
+        null
+      ],
+      "final_positions_m": [
+        [
+          -1.3317769886347768,
+          3.573583745667995
+        ],
+        [
+          0.6994786002778787,
+          -2.2346215872187942
+        ],
+        [
+          5.07807725835638,
+          -6.3488637058013095
+        ],
+        [
+          4.550857846402807,
+          6.190003800844876
+        ],
+        [
+          5.051089678452139,
+          -3.307135890201202
+        ],
+        [
+          -1.953852320764303,
+          4.326938495405147
+        ],
+        [
+          -0.46406876899435706,
+          1.3269266116869027
+        ],
+        [
+          -0.9875482077227209,
+          -6.91550551875577
+        ]
+      ]
+    }
+  ]
+}

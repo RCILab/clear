@@ -1,0 +1,2902 @@
+{
+  "coordinate_transform": "p_mgr = (p_clear + [8, 8]) / 0.4",
+  "description": "Canonical CLEAR physical scenarios exported for paired execution by the official MGR implementation",
+  "physical_protocol": {
+    "arrival_radius": 0.22,
+    "body_radius": 0.2,
+    "circle_count": 14,
+    "dt": 0.03,
+    "horizon": 60.0,
+    "obstacle_fraction": 0.15,
+    "rectangle_count": 12,
+    "safety_margin": 0.02,
+    "speed_limit": 0.8,
+    "swap_radius": 7.5,
+    "workspace_size": 16.0
+  },
+  "record_count": 320,
+  "records": [
+    {
+      "family": "free",
+      "fingerprint": "552bc6bb83f1a8ce",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "bfbc8104a31e6ddba292572f52b0ca567e27826d005bfdc7f74b16ffba0e9011"
+    },
+    {
+      "family": "free",
+      "fingerprint": "956eb7c2eed7ef49",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_1.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 1,
+      "yaml_sha256": "f26354a8ac04c0aee9edc347d019dbd9e68631eb7f969b1fc5e02ab9f39cb9b3"
+    },
+    {
+      "family": "free",
+      "fingerprint": "e31937ea83ac2c85",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_2.yaml",
+      "roundtrip_max_abs_error_m": 8.881784197001252e-16,
+      "seed": 2,
+      "yaml_sha256": "244d9f99121869631b059a9b6b568f2b860d8b5fbd8bc0715b0fef88a3fa8dc2"
+    },
+    {
+      "family": "free",
+      "fingerprint": "8a2776483e8aa8ae",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_3.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 3,
+      "yaml_sha256": "2f16cb38f3e1ff7271aa4e49b6f376a1b0942507d5c8b9a79a9d5c54ffdef580"
+    },
+    {
+      "family": "free",
+      "fingerprint": "38a357d920065e64",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_4.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 4,
+      "yaml_sha256": "02672f69214fe6b86e36ea4e79e452b30504b29d8068710d33c1400be2b9d67f"
+    },
+    {
+      "family": "free",
+      "fingerprint": "5f3ef219e12a03fe",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "5e48328f50d172e99ed28db1a8c4f66cefa381e4279cf7effdd085e6fc9c165a"
+    },
+    {
+      "family": "free",
+      "fingerprint": "7bdb242595a37843",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_6.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 6,
+      "yaml_sha256": "8c7bbeec8462b52194549e916bf7e0c5ede9e318022561a1524339b1bcb1b163"
+    },
+    {
+      "family": "free",
+      "fingerprint": "074b9eba880ec094",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "0348008d239886182ba53ffc881dba2c27dd85b92a27eb1b3775a1192dbf1d9e"
+    },
+    {
+      "family": "free",
+      "fingerprint": "90828e2362961432",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "abe04467c7c09c63cf7c5bb4dbb0dc755ad8efc03be54fd57e411f4d52bbdb84"
+    },
+    {
+      "family": "free",
+      "fingerprint": "607b7491449c01fa",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_9.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 9,
+      "yaml_sha256": "abedf4397c8e8c1e997857ed918532e3a8bec3f0efe6b92c09041424ea6f267b"
+    },
+    {
+      "family": "free",
+      "fingerprint": "9d563f4fa6339996",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_10.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 10,
+      "yaml_sha256": "60ee348993f03389fedd3d8def2e33ec0c8c8015807385be46f371af1133ecb6"
+    },
+    {
+      "family": "free",
+      "fingerprint": "5f7867992fba15da",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "8fc12219a079c70f57268b1587f747c6e4d86e4acbc78b20f8dd570b4eded766"
+    },
+    {
+      "family": "free",
+      "fingerprint": "9504491691df8161",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_12.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 12,
+      "yaml_sha256": "14f0643be1469c515489ac269a93edf1e970c68a225d5187a023d1f9fcb6bc9e"
+    },
+    {
+      "family": "free",
+      "fingerprint": "cbb9c7aaca2d746d",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_13.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 13,
+      "yaml_sha256": "3490afdea1134b687e541c64c88a292f3e28653aa847b4b346dc31c8e7b0fbb5"
+    },
+    {
+      "family": "free",
+      "fingerprint": "9c6cd666cd39a2ac",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_14.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 14,
+      "yaml_sha256": "2201b57dc0727d99186a04273392c36b076462f1a57adb04f1c8d9b2a216af11"
+    },
+    {
+      "family": "free",
+      "fingerprint": "fdf0695be6b0d35a",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_15.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 15,
+      "yaml_sha256": "98334ea31c1bf371cf578c7e2584dc70796fe72d777dc442b81f75eecc999b8a"
+    },
+    {
+      "family": "free",
+      "fingerprint": "ccb0a3708c1a2249",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_16.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 16,
+      "yaml_sha256": "3fc781e92a2fac6358fb9a6d3681169062ffbe3b41a2700ea88b3192c04eb005"
+    },
+    {
+      "family": "free",
+      "fingerprint": "ff95ae9d5e854b80",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_17.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 17,
+      "yaml_sha256": "ad7e276fc415edaab1b50c9a3efc4f0cc08acf6d0d25d977db6afcda026c593b"
+    },
+    {
+      "family": "free",
+      "fingerprint": "e244f6cbe6a5c87f",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_18.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 18,
+      "yaml_sha256": "b66f9cbc030a0097a6522bf8fc05d0a8fda2d72d26bc179990876b8bcc178b8b"
+    },
+    {
+      "family": "free",
+      "fingerprint": "1a3c9a56be9d09d7",
+      "n_robots": 20,
+      "relative_yaml": "Free_maps/agents20/Free_20_19.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 19,
+      "yaml_sha256": "ed4402559f66946678e0e2ba9f613ff2e4b405153eb96b870893c9942d77e7bc"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "9e13b655c1e24170",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_0.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 0,
+      "yaml_sha256": "8a10615ba87ef7636d534553a97e71ec46719c6d88258baf5ca4143d391ec181"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "41a4970460bcc0f5",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_1.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 1,
+      "yaml_sha256": "a64b997cc0686f55eb7618d3e98ffbe98647296dcad00e44c6d7d807c6216afa"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "a395b72d78467699",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_2.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 2,
+      "yaml_sha256": "d576a090d9d45723843ae9ff7abf4894222b4e94a58518016e772b4cb8cf56c6"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "23c0e03fcdbb7457",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_3.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 3,
+      "yaml_sha256": "86895b87cb0178d82ae080bff60e212e2f58e85e07c116ba5ef3c00e4b9970e8"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "65a4cf08e251c53e",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_4.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 4,
+      "yaml_sha256": "ba2b18de1da0b0d1ccc74fa93d84d39b96f5ec27e393aef5044e4c84aca6d6ce"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "22a08e47de7b31ec",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "b8217b32b52bbbab47c359fab15a3e55283b54e85675b5ae10b862bdc0163407"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "f3f8b1e88dcfbf3d",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "57e2f42cce4ee16fbaa8f641e8dcbe04b4a66852a36ae5a7e0708eb727f76859"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "eea90bd7d47da373",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "c3a30bf2624cb6902c76a3909aca7c3541da1437a36fef6288d768dfcf712195"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "1fea45910f7bd0a4",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_8.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 8,
+      "yaml_sha256": "9a39754d49aa7e1d103ee5263e820eacf6468c4b424af3c350bb9ec764093496"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "620dd7502ab7fe78",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_9.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 9,
+      "yaml_sha256": "4b1d92e879677109cc848afb9674e4238d21d94634640db2eb9fa718e8f882ee"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "a2c895b76e66d393",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_10.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 10,
+      "yaml_sha256": "5e2f690dd31e306618d6a8990c52ccac74cd16afbcfec1e50de098ace09a73cc"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "f2e10b6a7a579af0",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "ce74145d9cf259c4da0b978af73e1889d316978fe7246033fb43554448fbd4e7"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "5b26fc12ef5bc631",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_12.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 12,
+      "yaml_sha256": "015f74da926ae187b7bfc212de61fe19c28f4de1e4a52f10045c58dd262b0fc6"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "08855cf62ecc0116",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_13.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 13,
+      "yaml_sha256": "83f50a45296d5f3d5929b1491161ce097a323147bef75b2cf305ba5a17db2174"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "3b6919635929dca1",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_14.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 14,
+      "yaml_sha256": "b8b5d29cce40f2efc36ed36018719190202bec178d27136876034ba684c7f6cb"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "17e147935e367d50",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_15.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 15,
+      "yaml_sha256": "4fa950d7d3ea2cc71ce033e46acc070b9b2e45e411d3526a3c290d9c6396c83f"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "1c4bd5aca611a71e",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_16.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 16,
+      "yaml_sha256": "7fd10fa12d1a3482d8e660e5ad6cb44f3ab6e2807e2d0ba5c049d10f2954364a"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "c474502404ca0a6b",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_17.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 17,
+      "yaml_sha256": "170e3860357197aa4802f96c7fc516e3d80b114137517a876b63d82d6fb3d0a1"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "775415c3a95e96cb",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_18.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 18,
+      "yaml_sha256": "883310891240e283b8d4b46c88fb173e6aef859c6ab3d5e6aeaf4af43579faf2"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "18edfdef43030550",
+      "n_robots": 20,
+      "relative_yaml": "circle_maps/CircleEnv15/agents20/CircleEnv_15_20_19.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 19,
+      "yaml_sha256": "9bef285753c318ff094b825d26786998148ce587710893e262ef238188af8791"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "52135e2051226e3c",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "d697dc811bca7bbb90436b34104b57dd64c2f287e6a23c3096bb9bf1d5f9d479"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "a47b5cd4b82463cc",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_1.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 1,
+      "yaml_sha256": "8dd966ed4b5b5bb2b1d26e69fe103355bec976bc358b146fb5ba75b91c80af58"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "cf2a19440840911a",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_2.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 2,
+      "yaml_sha256": "2eb7eebfe4e2417ae8d94274243b661d4c19f7f1ccdda66655a49b4b7fea68e1"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "9eb0dbd4ee7857aa",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_3.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 3,
+      "yaml_sha256": "6fd7f59a1f7af6d8773173ecf313d425afe3e640233b3ac67711dbda88146e89"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "ef14daea5440e662",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_4.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 4,
+      "yaml_sha256": "a630458249d2d78380717ee26daf178c40efb14b8c21a7329790a06653053a8d"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "bfb908ec5877d2b1",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "ea3b1753adebd0ddec3a8ba49031ae998f04e56c2ba995416f39582260c27fcd"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "0c37554c8d889c54",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "b3f48e88c07bcf1944cbf1cd8887443a45cb0e9adb9abd88106ea86136b80629"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "6c011b2fc892eddf",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "8d5adb5df9e501e4b132a9338a9598298be78f46df2baf530361d60e24154d0e"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "9e068bdbcd6211f4",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "6cba09db810e1b6e3f43ed75563f3e1bae3600535e644e606034ad48a8d34b8d"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "36f47d53f03ea997",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_9.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 9,
+      "yaml_sha256": "3a813f0a929d91e4106c32b1e1131e9c75d113bfc4e1d02baeb9479672b9204d"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "665cc39eed86a83a",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_10.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 10,
+      "yaml_sha256": "032c2d8ac6c4f35538b30146576f8f752149715a2097c83426dc6ef8cfa4e2a1"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "66c5eebbd872fff3",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "69c3ed9442beefa4492b4de7807ec98f845cfe2cd21b2da1d3223e6c2c972dca"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "500ada38662d48de",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_12.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 12,
+      "yaml_sha256": "5a135fa947c3970b02981f5b4fe8a5064ac0bb802dd794e78f98a8003ceffac2"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "7a1acb1942ce9a35",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_13.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 13,
+      "yaml_sha256": "1f661805fb581613d3932320bcaaad3f8ae5058d77c37bb72a1ed2fe9343ccc0"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "2332a49a8379e9e2",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_14.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 14,
+      "yaml_sha256": "371c9b457b1a218a248df443a57afcc523fffd03cf6d6a7d140fea06f54e11b5"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "5ef56b638d088d41",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_15.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 15,
+      "yaml_sha256": "05a02d7bcb662109b4f27ee92fd28fa1d83d4a80bd9099abddf7b979e4925cb2"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "81cf0914941c4e3f",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_16.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 16,
+      "yaml_sha256": "17d2c7b1fb190d7d2cb5a6d52c430e997fa85aa035d844fb785aacb7d04d04e6"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "4ec7ebb81ce00384",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_17.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 17,
+      "yaml_sha256": "92f4aab5ac9037a71a45e2e7b87ab803bcd9e527bbb9440cd393bf6e8f87ebfa"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "dd717d3539ae08a2",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_18.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 18,
+      "yaml_sha256": "7a8310622a2d73eb30518df5879a1738b2061518350f80084cb06373b99ea832"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "92b043ae15d9db6f",
+      "n_robots": 20,
+      "relative_yaml": "rect_maps/RectEnv15/agents20/RectEnv_15_20_19.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 19,
+      "yaml_sha256": "49d12819b94a71837b764f51d21d37478dc213500cea732e35426c7cbeef9981"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "9f91f0048450b32b",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "b35fcb5d86485b070fcf0aa8f259e56f625a6b2d4943fba57e8299c11add452d"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "2f6c57f880da48d0",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_1.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 1,
+      "yaml_sha256": "39281133c092a16aa94ce687f4aa4c9efc1223e7df7d25a7198c0f328c2fc1c9"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "ebd299ac09288194",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_2.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 2,
+      "yaml_sha256": "fa8b2b963e7d3043f468691e7baa773d7c5174fe2689bda0e11f3fe6fa502df9"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "bcfcf267ee23a57d",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_3.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 3,
+      "yaml_sha256": "dab91d78d87c70a3a56e1f60f6255e7c67f38c736384d37dd2561417cce76ec3"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "e31e4d07bb7806b0",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_4.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 4,
+      "yaml_sha256": "39bc764e407588c641cd84332318c80ee03b7f10711bdbdb76b0b4dd4437c3ea"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "b0806ddb7e4aebbe",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "c01844f06744283061612bc72e460488ee8af92d6abf07975b3480c7df470f56"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "25f7b088a85a53da",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "f957398666f82ec14a84452cebf3f9616f297409c46503250c117cb4f4a15ab0"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "10bcbfa15a6e4a8a",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "fb24a6bf381bce92a3d0d8e97267546129718dadb0bc437bef9cd99ee4aa3724"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "f9c16ee1ca921141",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "df32b90b2348dca948d609aaefee566a7e430a0f8bb0957e9ae57243596e94b8"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "2f15b915c0fac52d",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_9.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 9,
+      "yaml_sha256": "b8df36770543ebc4cbbe88f9fd9272d0784725d3ecc66c3e6e8b6cbd5e0d3a88"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "3437a7322e5f7987",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_10.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 10,
+      "yaml_sha256": "4eb217a895ae8029f9a04015ef9a08881f9d0599fb4efdd183eb5f346bcdd08c"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "38984c55bec9fadc",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "c5366b42f66fc231c13c7d84f25c78491e50a44d94e3c18706984cb3a0d25dc1"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "d8b90bf904170c2a",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_12.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 12,
+      "yaml_sha256": "26e7215407a64075dbb71bddc8f8f29a28c0f6466843695cd9e22078a99929bc"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "a9e3b08f52b3a06b",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_13.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 13,
+      "yaml_sha256": "6f73d384757bac2560f54951e345dbf3aeadb19eb53128ceaf22f28eea77a03a"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "5612ac6cc039a6f1",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_14.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 14,
+      "yaml_sha256": "6fc780c404f65b1c0d2ceabec31f75d419e60f066b182287a32e68a385281ee3"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "5959a31ea55b4f50",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_15.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 15,
+      "yaml_sha256": "f7b9acae9d13d6122b292388a1f41ae9e691951d05ea85df29bbad2e996edde7"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "71b3a8ef20b08389",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_16.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 16,
+      "yaml_sha256": "7d23c5272d937583e12edb282e60eb67feff1c420325e20a64bd3b41b300a947"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "b9e5d1b21268761f",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_17.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 17,
+      "yaml_sha256": "b5a2e2d21e158cf9b80f2b1351f163192fdd4cc1e968719e67a7f0509771f55a"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "82d4dfffa02a7a91",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_18.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 18,
+      "yaml_sha256": "eba5f1cde8a2313eee64a2f6ca1bb8fd468835c8330e4b3417de7d82ba56f94f"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "495e2b602a1613b4",
+      "n_robots": 20,
+      "relative_yaml": "swap_maps/agents20/Free_Swap_18_20_19.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 19,
+      "yaml_sha256": "893a8487c7ff314d4080aa674986c70bd0033e6cc799371f798aa151dcbb4446"
+    },
+    {
+      "family": "free",
+      "fingerprint": "ca53af1b0fd10c2d",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "6c17cc0e3c829ee2f3f5292d2c7b2a0b31d155f88bb8e1bef06a21d2c7a5b46b"
+    },
+    {
+      "family": "free",
+      "fingerprint": "270a18e5e237ab60",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_1.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 1,
+      "yaml_sha256": "3c55ddf91a541e9e6a8c6ab3dd6d773accb7bf92dd3e5ad29224b231e6a7904b"
+    },
+    {
+      "family": "free",
+      "fingerprint": "1fe6ce6154635fb7",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_2.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 2,
+      "yaml_sha256": "7664eb19d5022a7798e2792accb3117d8d2d9a20202939aaae4e23adffafac99"
+    },
+    {
+      "family": "free",
+      "fingerprint": "d09d3c667107bda8",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_3.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 3,
+      "yaml_sha256": "77c8e3752bdb19409ac692fe42e95f0dc252458aa28d238cc7edb88f11e4a503"
+    },
+    {
+      "family": "free",
+      "fingerprint": "be9df418317d06d0",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_4.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 4,
+      "yaml_sha256": "012f34b8b8ec4982f102e3225b2ff01e448d404656b927487546429f6501fe19"
+    },
+    {
+      "family": "free",
+      "fingerprint": "6bdd9d590e7b1f52",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "bd373d67bbb57a43404810586758972f25fbdc11fd82b67edcbdbe4e6b682718"
+    },
+    {
+      "family": "free",
+      "fingerprint": "3f3f377d90316e3e",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "ca5966d289d5cb61443502f68e7a021a30183163ec90ded72a6cf4af08653d5c"
+    },
+    {
+      "family": "free",
+      "fingerprint": "ff593a8cb439a695",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "c5a4b388008254a2c7904534d2a64c7b478980aae17b27fa67bd45a127f75be0"
+    },
+    {
+      "family": "free",
+      "fingerprint": "bdb4f893ecc97ecd",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "bcd8a326fe264607107d335549a875d91b56a8c818788b052924609df291ec1f"
+    },
+    {
+      "family": "free",
+      "fingerprint": "de6dbc4df93da92b",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_9.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 9,
+      "yaml_sha256": "d9d7645182fce0cb2775a6d4a9640970e7be0ebd88554d44706d14b8b5a99ff7"
+    },
+    {
+      "family": "free",
+      "fingerprint": "c6fecedc3253ee7d",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_10.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 10,
+      "yaml_sha256": "c3b3260f893c4cfe04de231d766271d3f0167adea019151dd0ff3a780a9f52cc"
+    },
+    {
+      "family": "free",
+      "fingerprint": "9f65c4a78c8f57b7",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "146646442bc2c6b17d7081b4611ca48ad17f86cb1616a7587ef1962ec97a6218"
+    },
+    {
+      "family": "free",
+      "fingerprint": "98323dcaa23f303d",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_12.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 12,
+      "yaml_sha256": "3b90220b0f748eaa7c0d76350fd6b13e5e7e940b0a0a8ba8762e2eef1fb60d45"
+    },
+    {
+      "family": "free",
+      "fingerprint": "4a0dfbc5aecc35b4",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_13.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 13,
+      "yaml_sha256": "55a3ea4fbc66485d97fc5947c02f0f941a209b82260e961ef71a4a212a8f7eb4"
+    },
+    {
+      "family": "free",
+      "fingerprint": "6b651941eac2f86c",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_14.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 14,
+      "yaml_sha256": "12eb63525f72c2c026f702a0a4ade3407b30b29ebfad96c7399597a82c4a4664"
+    },
+    {
+      "family": "free",
+      "fingerprint": "1ceadd45288f58ee",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_15.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 15,
+      "yaml_sha256": "4b4e7eddc17be2c51d99c5d4b0349a3df5d2292dcac4e2d210e629177d015de8"
+    },
+    {
+      "family": "free",
+      "fingerprint": "6dca622e28dea877",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_16.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 16,
+      "yaml_sha256": "03a9da5e1b58c9479ca128344b7e483b5606cbf00d8db57d4bb8821a9fde643b"
+    },
+    {
+      "family": "free",
+      "fingerprint": "66c1f262e9871c0f",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_17.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 17,
+      "yaml_sha256": "0e1801ab6306469be4923a518641025938a9e243ecade8a7c6b3dca265990857"
+    },
+    {
+      "family": "free",
+      "fingerprint": "ed78472c2812b1f9",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_18.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 18,
+      "yaml_sha256": "66956fe84210f2281d4dc82abb17d25e376b135589da20e4d658431af449e308"
+    },
+    {
+      "family": "free",
+      "fingerprint": "d8e701af4f49e600",
+      "n_robots": 40,
+      "relative_yaml": "Free_maps/agents40/Free_40_19.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 19,
+      "yaml_sha256": "8e93eba048749ebcbc9f1e6129fab4d44ad6462738beedaa998d3f54d79f3f71"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "d5c3a0e72d799d46",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "d6f9d4b0fff5f1fda82c04ce5bdd0e3964e719d2b1f00ef5dfc28aabbfa86d5d"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "f2f91bdb1401e548",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_1.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 1,
+      "yaml_sha256": "6d7837e9cf7a3d1f0ccb63103492c0bdc1c48a7ba9344aceb09924db0c264e6e"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "873bcec6cd4a87fc",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_2.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 2,
+      "yaml_sha256": "957a72b33befd3a12dabc285e1ebcbf780d8e5bb5c4aa8b13c40b59550aa3660"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "a8343dd2ee780214",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_3.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 3,
+      "yaml_sha256": "ffa2a6938b1a40ca45142b5398fd61f00d9220d2fcb594edf161342f3637cf5c"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "cb27631c6b448c1a",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_4.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 4,
+      "yaml_sha256": "6dc6a24c39435cc2251d221811f7851c0e76de2bf31adfe2720bfc697af6dfd4"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "726a3a3ed1a47e2e",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "8e6028219f342e3c0be40542adc8ae66f997e23393d524e5c34b63732c1d6edd"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "3d15e38ed0ac3b3a",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "667eadeae5400560bd3fa395b83b35af8493e15fd627aa39c17621c07be21ad7"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "1bc1a94718a712c3",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "f3d2fe7298bf15b8e4f38621309e1f2c825777b35907a80d55a613b46c7390ab"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "6454b2f272590b7b",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "c1a9e3a900f018d1e1361e488f0a7c5656570daaf3795b47ac595afbf83046fd"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "eb4218e99a076f15",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_9.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 9,
+      "yaml_sha256": "5ff9f4dcaa2f237abcfa05623afc6072ca0274df02c3b3f08868ba7f6cdef5de"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "1231a5d6459fc084",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_10.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 10,
+      "yaml_sha256": "9a7097f2bfdda09a0a203810a08ddd377325089149fba0c9a996038ccc3ce26c"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "0248015a59fc719a",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "c4251bb30fea5c6cbfb55c65c08b49160b3a4b574d5a8c4da6c0981c238756c4"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "0a46e177e158098e",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_12.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 12,
+      "yaml_sha256": "b8c7721272998c04fee859983c26b39c909eda0051bf450a6d81a198f4484317"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "b75bd0d456185d73",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_13.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 13,
+      "yaml_sha256": "16d9c959fc0e4ec544b2d369a3c39920f42b66eefa80b91492bcb6f58982e75c"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "52cbe71546f779d7",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_14.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 14,
+      "yaml_sha256": "84177d0126f569e673295bb7653adfa940125523053c629925bbe72acca56d65"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "ef39b3c9ecbc8f41",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_15.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 15,
+      "yaml_sha256": "b0d0e6da2ce124da52335382e139f2d817486378954be17d67446a6337e8618c"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "a0a37bdec9c16e53",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_16.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 16,
+      "yaml_sha256": "0b3f48af1eed06cba6ad7788f68396415d1ff72e90bf60e8a478f4ed9a626808"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "9c9d44a19c43ecc3",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_17.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 17,
+      "yaml_sha256": "639e257c16f0faf3b8fae694215c9cf769a0f5871fd9af46bba531379f0684ca"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "d362a34e9c95f46d",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_18.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 18,
+      "yaml_sha256": "0944e4e78b28390868fa8caf8710fddfbde791ad9ef8133f56f61f3166e5679a"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "bd6bd316d0a2e576",
+      "n_robots": 40,
+      "relative_yaml": "circle_maps/CircleEnv15/agents40/CircleEnv_15_40_19.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 19,
+      "yaml_sha256": "de917b62b9afa07e2b0c57695cdac4328f6afc7dd4a539a8373e945afe374372"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "276d23e6bee3c665",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "c4185a3b322341ec6bfd67c60e59b42dda7f27c4286e9eb1c6b6aa70b7ad965d"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "fa0a6bc3625aee87",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_1.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 1,
+      "yaml_sha256": "22828d7cc759195bb6bf5b4e2fd5de992230c63478ea25ba53a9d902b590772d"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "b551f59d2ff3684f",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_2.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 2,
+      "yaml_sha256": "94cc70808f01db6dab3f678aefb9123b608b1dca082dbbb8d964e5e727726c85"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "e0bce9f7ace1a68f",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_3.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 3,
+      "yaml_sha256": "0b7bec087c6d832e4386e2059d45500e308c23c449c58b9858ddfa01284b0448"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "f9e065f7b740579e",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_4.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 4,
+      "yaml_sha256": "fdd8717b74fbd21df8a08f8de8e729f752c955604df0a763f97dafac2ec607bb"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "371041653d1c9ca2",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "046ce4ef7d019ba3bedae5868b3941f2ebecd27125cfb80a4a72e0f26b150344"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "e5151f0ba72f1f35",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "f02f2a9daae78cf2380ff1d87fb6cf76f4196dc1ba577b01107886488eab6f6b"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "7afb985b3f19cd4f",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "aed07b19fb82cc9b05544e6afc4e7ea77b0158a2665f79aaab6e7c80425d2790"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "d873e02b4d028beb",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "fb28d4b71ef9abf114cf553ae646476e9957b393bd68a35d1bad9902b546c7fd"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "84655db5b89819d4",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_9.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 9,
+      "yaml_sha256": "afb6a3fcf7ffbc61cd019c0cb086a589daa2da1212a60a57c6d1fa50bc3f833c"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "99e0ee2a7fa79bdb",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_10.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 10,
+      "yaml_sha256": "26e6382c8d1852f03790d42e55e5a5106cb1d6f441a21bad480d3f97037896f4"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "ed4ba2d0cd1be238",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "1779272b5ad50ff1f7cfd10c0a951c8a3d863d82571a157bd7888191ff46a388"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "940a8c929d026673",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_12.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 12,
+      "yaml_sha256": "d5318937affb883a5df7222858a5ce8b70ca7a09b8558cf1b13f4f779c4a0e23"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "cad351c4a891b5a7",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_13.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 13,
+      "yaml_sha256": "6f0f21e6ed44e8d98efc016b7ab52d392e3b6f9c943bff1d7860461fe5ced539"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "bf7a6cee616bbf20",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_14.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 14,
+      "yaml_sha256": "5bb34609069846301b05a58025f5cc54a1252693d8630c6229eacb9e4484efc1"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "b01c86968bdf7d6a",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_15.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 15,
+      "yaml_sha256": "5da8cfd41e702ce8822deac7c8e56562a64af9c7b9251fabaf1ed0b43191c3a5"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "ada4a203276bb796",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_16.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 16,
+      "yaml_sha256": "35381ad93389ac00228af61d3d40c12049abb7c155326f7f8d2d0c867ae687d3"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "77b92bea8a4cf293",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_17.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 17,
+      "yaml_sha256": "6062ddefb797a831f1fd8094bcf510cfddfc4a71a436a11148394ad864a4b495"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "5f6d20104cca461e",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_18.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 18,
+      "yaml_sha256": "053ba436944114993bbe0a8a977b04359fd85876aa7bbae710e13a89f4bebe7f"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "b4ed873968aa8f6e",
+      "n_robots": 40,
+      "relative_yaml": "rect_maps/RectEnv15/agents40/RectEnv_15_40_19.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 19,
+      "yaml_sha256": "30ffdcfc7cf96aa0b0a7ee7d783db8e7e60fd371a17acd1b0ce7cb0717aee576"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "a8d8eb89a2ead810",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "19cc104e4a7dfbe9c7e63a4167bbd3b27af0bd1439180ad484fbd9fa8d8e2911"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "89ef909fcc777f38",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_1.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 1,
+      "yaml_sha256": "32906fb3f991a50516cab678756f8b3c7bf1e5f968bda5cabab9d2dcfdf40bf5"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "84ae42e533e55901",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_2.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 2,
+      "yaml_sha256": "6d8e8b6e0e0cf689580c50ad75e5f4940787da02775d775ed6fcfc33d152bcc9"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "8e896728cc3be292",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_3.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 3,
+      "yaml_sha256": "043499d61bca7da44315bdc2d1aafc621391d812aec343d25f266432bc930610"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "394ffea76b2f5883",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_4.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 4,
+      "yaml_sha256": "b1a1044107bd5d4d4909ae14a1407e6bb20bd1078fee297e44183969800a820c"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "ef84f52fb3b20c8d",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "d7114b335e56a447ada61a8e786b3dc3c458c95e5aa42d9f87c7b9c51ed455f6"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "0d0806dd167f9fc9",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "c99774679bb8c5d4578de0677b57eb26db3621dd12ce9e5958282d475024e00b"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "570fbff0563f8774",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "211e43f7f5861e7d7546dc8ae9fc97b329f44c9838cb8a906fff2b6430860940"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "bdfa9f9ce8f1a475",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "e1e361db0c6d004935c78db0cd1e46dd86eb2948ed34d43d45f70c3490563c4f"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "4f4d6d74f6373631",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_9.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 9,
+      "yaml_sha256": "f7ad72237d86746f7e73ba4d5e7129627ca61a70d73f29a2e1546494b49106f0"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "27461d4bda5c34e5",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_10.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 10,
+      "yaml_sha256": "2acf467e9bc85d95b2d8c9ebcf1d79fbb80401a101a422513647217bddbc827b"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "d59d0c1f51933531",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "df6a0701a0c55a4a7056294fa62c82880f1453f2fdf55a73c18a0bbe826e0844"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "1eee544cc439476d",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_12.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 12,
+      "yaml_sha256": "735f984c284a22c428d93ee3eef524827e50a605d741bd191149b3017a5e92ec"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "e031fc75bea4056e",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_13.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 13,
+      "yaml_sha256": "00424aca2c5c060dd4af424e16251f8d31702df9cd6ecc7c5cd8ac76940de084"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "b69f9e57850d92b2",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_14.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 14,
+      "yaml_sha256": "515454feeae58583e014cfb379487d728109b0db5e7147c96644bbaa297074fa"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "2e2dda7f4c356ef1",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_15.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 15,
+      "yaml_sha256": "f35257c52cabffd1912b1aa08a0730292b83b049e3df339692e00c0708a993fa"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "d98c92925abf8b1e",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_16.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 16,
+      "yaml_sha256": "5ebaf46ac9adc68a2a576801638ad517e079f5e7d95b866811e85414a9a52b3c"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "e7e5221790484abf",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_17.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 17,
+      "yaml_sha256": "b627833aec56430485416bb32c2d44935487718824269b6e62d30060f9e3fd77"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "aa5de75ea53a33db",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_18.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 18,
+      "yaml_sha256": "6584aa90518cb334a6bff1bf4a5a35e0a65656d1de367ee009a3d7bc430437ec"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "7fe937affaf53786",
+      "n_robots": 40,
+      "relative_yaml": "swap_maps/agents40/Free_Swap_18_40_19.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 19,
+      "yaml_sha256": "28d348ad1af131d3fe1b3ea844b8752f49d5fbe4f3939e2730bfe3f0d689f01d"
+    },
+    {
+      "family": "free",
+      "fingerprint": "8430babc563b93c5",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "8c6c36972e627c5b24ea938acce37042587a38a7e931387ff29b0adfa9cb041b"
+    },
+    {
+      "family": "free",
+      "fingerprint": "ddddcc4d6ba3fcf2",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_1.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 1,
+      "yaml_sha256": "e27b3b7f4a1b7c22d905e140c571bcca3f93654980e8b90c179d781910853199"
+    },
+    {
+      "family": "free",
+      "fingerprint": "e55fb1d4a36c6cfa",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_2.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 2,
+      "yaml_sha256": "2b87a76cfce615dc223eb983665b5ed5914c4ed527e23464af457b5d07eba596"
+    },
+    {
+      "family": "free",
+      "fingerprint": "a018e2a3e88ae7c0",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_3.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 3,
+      "yaml_sha256": "7632e6199b35349abfa79390550ff5aa577284c59efbaf3568144417297c55b8"
+    },
+    {
+      "family": "free",
+      "fingerprint": "9937a87b6ab2cfba",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_4.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 4,
+      "yaml_sha256": "8e5e57de6fe8ad87303f91251029264001f31cc65da4f2dc16256fc5caea6394"
+    },
+    {
+      "family": "free",
+      "fingerprint": "e8980921b53f4caf",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "bf0697e4f618c8eee2929fe3aba939d7677af108a03dbbe748e3f8a71f2c6f56"
+    },
+    {
+      "family": "free",
+      "fingerprint": "29a94e75179fd9a5",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "2e3ff600acdc1e2294503725de6360c75b228ecb0a2ab4e0dc22f9fab6250d75"
+    },
+    {
+      "family": "free",
+      "fingerprint": "42308a875cabba03",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "eadff96a909e26e4667564f663f7b25c4f3cc65f05eb7767a0feb0e2a4459c1a"
+    },
+    {
+      "family": "free",
+      "fingerprint": "e8ca39f41997c37e",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "914bb55394bead0ca362b72b2647c964c18e07335af9fee640625cac74254e83"
+    },
+    {
+      "family": "free",
+      "fingerprint": "b74017647be3bc35",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_9.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 9,
+      "yaml_sha256": "b1a672b0901e235e47b16a4a10be1b45a9ffa860e49ea12498bd3d7ff1132dd2"
+    },
+    {
+      "family": "free",
+      "fingerprint": "ada99ffc2ef983e3",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_10.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 10,
+      "yaml_sha256": "9864b53221ca7ad60b39d397a4cad84bea0c572314eb2d788b569fff437fffa7"
+    },
+    {
+      "family": "free",
+      "fingerprint": "4d995b74a7c5a1f0",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "d3f7be20156973138307b44ee6d3c1749a89b88aefe0ec507a728dd13b8b4caa"
+    },
+    {
+      "family": "free",
+      "fingerprint": "5e51ecb4ceb2b732",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_12.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 12,
+      "yaml_sha256": "66cd9302159d6cc1529f0a98d56f93b9d2de2f737c48e0cf43019063e48db91e"
+    },
+    {
+      "family": "free",
+      "fingerprint": "e0a03bcac4e7e661",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_13.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 13,
+      "yaml_sha256": "26da8906ab2e1cb65456f4ba863deb08ededa09348686b0c79fb3141e98bb795"
+    },
+    {
+      "family": "free",
+      "fingerprint": "250967144b4a46e9",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_14.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 14,
+      "yaml_sha256": "a38e811b1096ba8123ad97f21aa0d94a6fed2d2ee36e970c5601a4b0d4d2dbb5"
+    },
+    {
+      "family": "free",
+      "fingerprint": "fd2c37a46a73b5cc",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_15.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 15,
+      "yaml_sha256": "d6efd2d75d647e26da66170cbeda288b312ee33e681298c3e39e459913544e22"
+    },
+    {
+      "family": "free",
+      "fingerprint": "ff11495f24ae1f30",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_16.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 16,
+      "yaml_sha256": "5ec7f343086ef6b86f21cfcef7cb74783687a119f28650e56b4b68a4b705bb66"
+    },
+    {
+      "family": "free",
+      "fingerprint": "73611793453d343c",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_17.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 17,
+      "yaml_sha256": "2392d7947918a4bb0eef561dc4515e0e4f32319ddf78ae35a832396ce2d5ca7a"
+    },
+    {
+      "family": "free",
+      "fingerprint": "6c142e13dfd6890f",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_18.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 18,
+      "yaml_sha256": "6f921428168147c96d9e7d6a0bd5cc0f5f2125516ac0cc31ef7a9c3e473a58d8"
+    },
+    {
+      "family": "free",
+      "fingerprint": "7950c39681378580",
+      "n_robots": 60,
+      "relative_yaml": "Free_maps/agents60/Free_60_19.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 19,
+      "yaml_sha256": "e5766fadc0ad440b6a7a260bcc6e38e2578803f98cf37f41fe30ae1a1c0fcc1b"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "520dee5b02554a32",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "7e08b63c13da13a65ab1e06b1f8fe30463e30b87b915207c59eaac09f9518e5b"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "1849f53a15e6f635",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_1.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 1,
+      "yaml_sha256": "1a8d72f4ae257831e6dac480cac8ecc9d01fdb049e9688fde1600e782b0a3dc6"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "f066e5ec7cbb10de",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_2.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 2,
+      "yaml_sha256": "1ea1448c31057a84e56c588502faedb5006c826834f4514c5525ac65eb47bbf5"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "86cecaff554cb008",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_3.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 3,
+      "yaml_sha256": "2ec128a59a150c5ea37a680f9f177d53a612bbd3b46d120a93c467d748e6f04e"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "717bf0f6cf8fc58e",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_4.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 4,
+      "yaml_sha256": "9efa719f85f53a5ba1322e76c3b7b19ee63a56726cb79e52032dceb647b63c13"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "79221461079c4d61",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "fca7944fa28d2525a36c259861e1473f6ac51aaec63fa3da4607211a517d75bc"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "dff695e9a9046cb4",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "62d6b51d9112be81d8faba483bbc9d311ce490213bb56d3446a221f61e9af352"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "617f4766bf08fdfb",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "ff4c2f3c0dfb53a0c7e92201c8e2419b1593f8590b11dcb7f3a6077f8a38190e"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "352aa1da6fb5820b",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "08c5987ff5f0187a7c375b68a0d4a5556f882af7166b1be762bb0a307b01af01"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "04d17071557e0c4f",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_9.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 9,
+      "yaml_sha256": "134637ca4eb2b257965e6a042ff8e73154353cdfed32214486e08d063946aded"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "bc89a386ba10d0f5",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_10.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 10,
+      "yaml_sha256": "1f744e93f85ffdfcf933cdd2229c2ffad2f1469c6e5a013f38fe7009aa0b9c52"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "9203804ff3fe26a6",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "07ac2b2acb76076eea891477f39de69ad633e65a89ab9a363e11680cb6613ce2"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "bca081387159f6e9",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_12.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 12,
+      "yaml_sha256": "2aad405c32d57333c259ceb005b827c690fe8090a9290a309e0f1c0d313e826a"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "4bc96ad5cafc22d1",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_13.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 13,
+      "yaml_sha256": "c9746541732a624ee40fe8c808a870d1b1809a4d7ae137b50959d3faee5c99db"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "e0a3a219aba543cc",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_14.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 14,
+      "yaml_sha256": "db08c4f9220b606dbf4fe084e5f7d242088208c79b80ff88561506c49eb08f08"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "b444b7c8c7776c17",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_15.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 15,
+      "yaml_sha256": "28d584eaf4857e80dbbdd915037910529dbdf29e3b605c242eea8d6560998244"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "233375ddeb4f670e",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_16.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 16,
+      "yaml_sha256": "aae3230396764a41d3598a13e54064d7799eeddb485e131ff957c5ea9dfc282e"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "91fb4d633ddc7f31",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_17.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 17,
+      "yaml_sha256": "4cd0a74ea395e809869ddf9dfe5d94fc0d3aa021f9a9742168f3b8cb65efbf1d"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "3fd911e9019f3b9f",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_18.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 18,
+      "yaml_sha256": "a58e7c36bf8e8842b6da7e27af74532bfe0a32360b0b83df4f3ddcf1dfa80437"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "d0664c2e4eec7de3",
+      "n_robots": 60,
+      "relative_yaml": "circle_maps/CircleEnv15/agents60/CircleEnv_15_60_19.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 19,
+      "yaml_sha256": "9dae24e9f3cbec964c5705cb502b21c7a6054e63e78310e3c799bcbd5caa603a"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "c86f12600b7f6ebc",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "dbd896674d5220b7858e814b78d379424a17a5af73c13188261f305075ddbc03"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "a057a5afd2800869",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_1.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 1,
+      "yaml_sha256": "2a0340c66eaba6c08e2151416e78684827f4664c8dfa8e77452fbb37abca0263"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "030fd6d9c379fb2c",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_2.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 2,
+      "yaml_sha256": "cc1fe09c844c15540efa210a4a9a046095b38a3e51721e5b6441bf81a2333d2b"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "dac39a7d703f8abd",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_3.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 3,
+      "yaml_sha256": "10b48aac561b1ed8122889f959fec2f9248127b9dc48a1ed54f63f28afb840e2"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "f1937d3cc51c6c3d",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_4.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 4,
+      "yaml_sha256": "11e1abb6557e9f343e717feef238a3f4c78c7957f9073a80efd149e02e715d42"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "8b3e6c1a6eadb2d8",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "2d5b1e8b99abf80d4c841bd15bd53e8313c06ec2060c1861d08b6bffd3ff9021"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "1282780763228fca",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "bd13a42c01d79525e7ee44d436053f59835d037b69a6752be178a429ce87474f"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "f6b5c2611603d5ba",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "45235897b4a6c3b41867dc62bfe021007c98a006698133d0d9659c60cbff16ff"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "4f8bb8fc637a2bfe",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "6cd6cefe024cde4be74620b5b016ee64bf4aae4f45c7a709d4703d04107cb0f5"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "c254874df8c00646",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_9.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 9,
+      "yaml_sha256": "14619f22b1be6f5299e5bfc76b5f4c0dd2c7474d501e76b7fbb2be68b239d9eb"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "19f6dcd85b9faa66",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_10.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 10,
+      "yaml_sha256": "91ca1a2d56b3608660a4036741699d35f52cf4683fe64132daf43b2be4ed0ba8"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "c9ba4dcc6f782e5b",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "a74b9697c75840980e7528332201d96730a28e1e7ac6a2605b79839468fc22cc"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "5806e01fa658075b",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_12.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 12,
+      "yaml_sha256": "ac2ac7490d1eed3e3cbc54f4d2043f74f9ea265f4143f5407351153ee96f0049"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "95187891f5d1a381",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_13.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 13,
+      "yaml_sha256": "3988d16827946f6decb78d537a5decfaf1e25bd92c6fc4d4df59efb28e3da87e"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "82ea6d3b016d2f13",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_14.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 14,
+      "yaml_sha256": "48cf792ddb19ae50abce18de0dde60b2f912dbcad78a80cd1cb1656348de7bbd"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "123c22d7aa9f7ddf",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_15.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 15,
+      "yaml_sha256": "036ae073e0f8b58bd9ae61e0a4b83f628b638d43c359cbaddeeae62c0e92f82d"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "a1c093a9811bd587",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_16.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 16,
+      "yaml_sha256": "bed1de9a27b1afcf11929377d89a0d55a27c4c03493d05d246fd938c45aaaec5"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "ab290dd32d5db2a1",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_17.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 17,
+      "yaml_sha256": "07926faf14258f8385514ae2ff09d4417741574e15ec5140e13310adcfc68c6c"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "be747856ab672645",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_18.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 18,
+      "yaml_sha256": "1ea7ae11ddc43e0ded0098e3dacb6754c3e8016fdd657bdbe919ace69dfdf116"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "910486d8fa7396f4",
+      "n_robots": 60,
+      "relative_yaml": "rect_maps/RectEnv15/agents60/RectEnv_15_60_19.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 19,
+      "yaml_sha256": "371c9253190fb14c422ae78c8e94b370826ed543f367cedb1ec81edae8a27d2f"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "442ac990544e80e2",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "98c15c9c9d1ca9ba06de37ba2df3e2722c66e7394cb60470843390944f5f9800"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "0478c6cc812eac71",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_1.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 1,
+      "yaml_sha256": "196f85aabf57f5fb3ac81861ab4e5b958fbad07e7ab6c0a6e399a1316c9a35da"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "4305337e003c0808",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_2.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 2,
+      "yaml_sha256": "8227c601530027bf2d8bd68693fff4333adf526e09353bdda7559ffe490277ea"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "02bc04ac66caca78",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_3.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 3,
+      "yaml_sha256": "ea00eda6d5b91d065548f21475bfde480c32e6a44ab745101f98bbd105726f03"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "cbf18cd8c9d8ec9e",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_4.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 4,
+      "yaml_sha256": "e9876dc7b86f0d3a1e0cf83f5d540bfff6c87791e5a96d9d1f5b4ab855906737"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "50b5b64716d2267f",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "974afb127adccaf72834078e523ebdf0439bc731fc6cf1d66ee7cdf5854138aa"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "c6444052e35e0dde",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "57d60ffcf7b29e7f336ebfc86d3829d20c67a5186fd36f2ca71c22c70bf83b76"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "e50afff9c5536b2e",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "25f38fc0f23acb229d6533320e74510382346ee004c8d8ca1324e0a4aa888be6"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "004339b79fa48a09",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "95bd4cf80e283b6085f8f2a668271cb94e512bd1d8c4af762989d917168693f6"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "04286b6018a654fe",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_9.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 9,
+      "yaml_sha256": "8656cc89b93940692bb42975473e1516d10d763ddfe2520ccaf7cf564897dbf7"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "4147863f40d6cef1",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_10.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 10,
+      "yaml_sha256": "7dd29f527a2f53bcbd7f7af355831741ca1a950cf25b010d08bd88f89c70a833"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "ed469eed4026a8ac",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "9fcc9e3867e0d3de8a1a221863553e9eb05801d22b8851ec39bc3eaf72d3a68e"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "c6e7a6b17c2a54dd",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_12.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 12,
+      "yaml_sha256": "fb2fac3e571d4c81c571ed820824753e8d322dad80d8fa70f74a5e1ca16f1b20"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "d9dd6ab41aedab75",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_13.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 13,
+      "yaml_sha256": "fbd71d61650d6305620f60a54b1f608ea516bf29df464bc2fa25f67455b80292"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "7be1ef23201dc8dd",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_14.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 14,
+      "yaml_sha256": "933bd3de693d3e5fdf55da0dc74029f1e40cca9f3c0b52df0a892150e53ad225"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "7ba280664fd83a1e",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_15.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 15,
+      "yaml_sha256": "23761f620ea20a8044ca01e355931e63628d8292a6c73843f55692985f1fe059"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "9ffd673979eb4d84",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_16.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 16,
+      "yaml_sha256": "bc91ba16211ccd91ea7efc91208d6b4622e04247dc3217a5b81da22056736504"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "5d92019b152cb0c4",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_17.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 17,
+      "yaml_sha256": "56cc0d49e0b4d3a7774874f2f32b61c082f7a6df520e2846acdf614849326da2"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "7823660dff8cacec",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_18.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 18,
+      "yaml_sha256": "35e13308f94e82b64e305f8e1b640756fb1840d4cfdfe04b39dedb58091d0155"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "3b442164f58e37a5",
+      "n_robots": 60,
+      "relative_yaml": "swap_maps/agents60/Free_Swap_18_60_19.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 19,
+      "yaml_sha256": "9dc6657ee74987baa93487bd43d05c74df868a5c7cd6dc0f91c487bba6b25c8c"
+    },
+    {
+      "family": "free",
+      "fingerprint": "b5d592e00a62e32e",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "dfe93fcaef5f0fff8be3f1134ad9e0241d8d5527b5da8b449c945a90081111a8"
+    },
+    {
+      "family": "free",
+      "fingerprint": "ce1dc7495b011738",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_1.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 1,
+      "yaml_sha256": "e3f63cd46685e6268668f32befc456b2bf1ab395db0f87621c933d12c7cdce32"
+    },
+    {
+      "family": "free",
+      "fingerprint": "11000ea4f24d50e7",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_2.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 2,
+      "yaml_sha256": "37d0ea4115ac1ad3046e5ab634c5d7c87bd13125bb663fcc0a913a1a6c165a46"
+    },
+    {
+      "family": "free",
+      "fingerprint": "a79c5002e13be99a",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_3.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 3,
+      "yaml_sha256": "8504f0490b3a0a530b63191ae6dd91caca4956f0916dc0eae5a8443c907707b4"
+    },
+    {
+      "family": "free",
+      "fingerprint": "ef27a473f6435a8a",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_4.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 4,
+      "yaml_sha256": "94308e5a7709601ae39079812c533500a056c1db73b44e09889b39d16a9c26a5"
+    },
+    {
+      "family": "free",
+      "fingerprint": "f11d83f5e05082cc",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "0c7a647f40db578972ba0faa27790d3204c3272694c04dabcd9dadce3ea3a113"
+    },
+    {
+      "family": "free",
+      "fingerprint": "4695b80158e3ac45",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "8232d65357d73890e6d35056ee3f471b9ba48fe580d7a86fb44f0b5822e979d0"
+    },
+    {
+      "family": "free",
+      "fingerprint": "9d17b4d153af12fd",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "2f5de15340c70343ccbb63a9c6027afd128b36957639dc2b0734100a41f487fa"
+    },
+    {
+      "family": "free",
+      "fingerprint": "e59fae6856ee5507",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "21ed3da6d12f4fc632aa3b5ba36de027d599602982fe55ed069d31b46b016cc3"
+    },
+    {
+      "family": "free",
+      "fingerprint": "a63ea96fa602dd0a",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_9.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 9,
+      "yaml_sha256": "9f1401d739d2056563b82375b2d8ced5e5e7fe5cb256979bad7e9584f08eb691"
+    },
+    {
+      "family": "free",
+      "fingerprint": "aa28cced1ffb3d7d",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_10.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 10,
+      "yaml_sha256": "970696cb6320476b29b37c6ce4a8a5b88ffc8182f33a8ec5b009573aed43ac9d"
+    },
+    {
+      "family": "free",
+      "fingerprint": "3ff40b4055ecdb8c",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "7349b91d458d47d6b51692834a4e4a1523ddacd3015f6690d7949cf0c3cba797"
+    },
+    {
+      "family": "free",
+      "fingerprint": "306a9cb1700534d1",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_12.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 12,
+      "yaml_sha256": "35d3d7d9f0e27b356f7dddf21590626900fc4539862f336caba42d96d110880c"
+    },
+    {
+      "family": "free",
+      "fingerprint": "56cf33116d65d954",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_13.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 13,
+      "yaml_sha256": "8283c7bab3a0e525f86c5a871b5b189a2fae9eb0a9ed86b3483d756bdef4f2d9"
+    },
+    {
+      "family": "free",
+      "fingerprint": "08fb51e4497e755c",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_14.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 14,
+      "yaml_sha256": "f97e3624a42676f310adb7f505c0799882be0bec5abc01e15b6cf498f881ab36"
+    },
+    {
+      "family": "free",
+      "fingerprint": "69706dad2e70d932",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_15.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 15,
+      "yaml_sha256": "0a394a08e93a645425089f4cea0de86bae4f74a76bc7690a09dfe3d8d5229c8d"
+    },
+    {
+      "family": "free",
+      "fingerprint": "7f7f53b626cf5a71",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_16.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 16,
+      "yaml_sha256": "399d64f74554740dd806af1b6a413ac3dcaa2b81f1456c2015a8b629b94540e7"
+    },
+    {
+      "family": "free",
+      "fingerprint": "c7f3ab113788c9d1",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_17.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 17,
+      "yaml_sha256": "76ecdc189de6b36da6c7bf0886f2982b40af6497260059b672ae1ed190a411f3"
+    },
+    {
+      "family": "free",
+      "fingerprint": "b4dbf24bfaaec98f",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_18.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 18,
+      "yaml_sha256": "d719ad06135e601a3479e04a7f36feb5ede3d868a0b16c6f35c6efa74b387fc6"
+    },
+    {
+      "family": "free",
+      "fingerprint": "1860474e56f63618",
+      "n_robots": 80,
+      "relative_yaml": "Free_maps/agents80/Free_80_19.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 19,
+      "yaml_sha256": "227cbb70a54c8f10d0add393443140e283ecdcc87d522e0740feacc1903cd933"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "7df77b9a5fd5dded",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "cb1218ce028361ab6daee58749879a200d7cc9f4ca41045c7e35ff1e26dfe10b"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "8dca56a2f76e794c",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_1.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 1,
+      "yaml_sha256": "78c8feebac8f2ee834b32e63067d6ce642975e7157b843401a536d6da001a78e"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "aa9e84fb70d7c5f0",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_2.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 2,
+      "yaml_sha256": "821aff3fa72eea82d28b6f10a8f91bb97ce375c61402b83d02037266d83b2f90"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "c929f561c2ad3643",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_3.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 3,
+      "yaml_sha256": "f333d5cb20a3f3adae5c3e3076b92b5429e475bbc3be47b94636b05097f9227f"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "7be40e310e14f5bd",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_4.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 4,
+      "yaml_sha256": "2aa14fd2ea9e3c94aca19dc444eac209341209f8d80b6ca4fe242468588c7759"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "e781e7f65662d1a5",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "5ebcb1ad2c37a56bfe56d280313ad6d88c01a4133e5a08b56b8e36265f90770d"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "58ed043bde22f382",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "9e96245a64eb988e760386a2920759f3fb05c814fc173c7bab249a0f122c8b07"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "06169abeaf0e322d",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "9e3ce5aa398e704bb80b67016d691bf0b74af8b5e3b04316e30c9b4544868402"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "a3b1c0ec8cd3442f",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "98f65f89538786d7a36707d881addbb28852e7ed3d5be88af1ae8ff6f1330bb9"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "183965f66276c025",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_9.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 9,
+      "yaml_sha256": "3cc335827a9de4c425638cebc4a1799efabf353b1d407fd6ee4e7c912f972879"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "d6efcfe361ecc085",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_10.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 10,
+      "yaml_sha256": "ab774e7dd915fb31c6bd3d02736a0ca3218ea678e9ca5da6b529c8d485a4ca70"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "31c0e37ac1f72c97",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "58bb4ea0a035e69efacc2fd5f32875a93f1c69a3c48f80f9375d6d3fd567f5ee"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "4d69582121c686cc",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_12.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 12,
+      "yaml_sha256": "8cd991282a4e8781ec97409cb1eeb17d1de3e7f39ed59f99e51d2c50debf89fd"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "53ce704a2ab9d702",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_13.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 13,
+      "yaml_sha256": "bd2e548d7f7e3e752d4877aee0824c4bd8bfd69aaf2a5268cf9ed8af99bc77b4"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "17e6ca78d9c5ff86",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_14.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 14,
+      "yaml_sha256": "8f1a25f1e1d93fc4abdb219de25bf8eb5b8d26c662a7cd563eee0aae541bef2a"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "9b228101beaf7737",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_15.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 15,
+      "yaml_sha256": "c641aa84f396d826a2d0fa7efe218a14398e9d57ead0d1565bd1813ce2956194"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "aec21781d7bf3161",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_16.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 16,
+      "yaml_sha256": "4c8bfffd5742f2678d3e347ae82477fc29e9008d855c532cd600fd782ef2a44c"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "eb17f6e5bafc9a75",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_17.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 17,
+      "yaml_sha256": "9c8a6e8fb63810667bec7bef506965d362100a22b93f699fccc8bcf3ed45a1cb"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "dc05735ce0961cc9",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_18.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 18,
+      "yaml_sha256": "c2ff3fa1595d4cbf488f02af61ba77e7624949647d4f33b5fbcce3c8ebdefbe3"
+    },
+    {
+      "family": "circ15",
+      "fingerprint": "02cfb96a33527874",
+      "n_robots": 80,
+      "relative_yaml": "circle_maps/CircleEnv15/agents80/CircleEnv_15_80_19.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 19,
+      "yaml_sha256": "b4ffda878eb2019588f5d1f2579ed89e82db0397ca614a48ea5d626f11a761d8"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "509b15e377a67853",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "e20acb1ebb74e4e1edbfedb863d305106d772a39bb5c784fe662519cd430c9a8"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "5417fec88d30e49e",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_1.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 1,
+      "yaml_sha256": "32d2a0f9b564efc1f6f7c3edf7773feec8b3cb4de05498a06da1dd920fe8f3c0"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "f2919ded2b2426df",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_2.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 2,
+      "yaml_sha256": "b1739093f1f6e8029faa6815696a8657e3526164600d6278e05108ecce79b288"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "c4e6d9f1a299af94",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_3.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 3,
+      "yaml_sha256": "e719f393ddc7db479fbc68e38c3e85ec0bf72e0bdbe4e76885d0adb256d12cfe"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "0ccbbe5c1fea0ec5",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_4.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 4,
+      "yaml_sha256": "83aa161011dbbd2cccc790596aebc06b2b46c8d5fd1d9af9d61ae7db2d781fbf"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "12eb83854d9e12a2",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "6743a7de82dd13c1c59220ac27dd3e9355faee7112167bd39cae6ba73f957a85"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "e1b64ff7df91a31b",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "acca2835199aa67c22a340f0c80d28339e7d41aaceaf30ed9dccfc228743d3df"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "bf5fd42d9ff178af",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "7bf03122a164c4b493ea8ff366d8d0adf937437c6fd352093aea9ffaf85a3b99"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "b5f815b4764ef35a",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "2ba0e970385f83bc5a8d541cb9b64a8572820dc1fb6ac3d755999f868e570b84"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "0a395e662233fc5a",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_9.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 9,
+      "yaml_sha256": "98fc99c795f627314a35cdd7a2c97e2b5e8c9e4bda80cf54034e65d1e581ef31"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "3b84199426ca53de",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_10.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 10,
+      "yaml_sha256": "3d3c7a02188fb184fe002c19ae433c129f4d7703f687546433982e41c83dadf5"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "f722025351e2736a",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "55cd4caa72aa47c2c8e5ea7dbcae76e03c1c910ba027965e336268c4c31b219b"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "d2fe319c2f12a623",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_12.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 12,
+      "yaml_sha256": "334d7c79bae6f07f531392ddef745fbfe70cc9139bbcd836542c7732df271fc1"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "24dc7f5c525af1ae",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_13.yaml",
+      "roundtrip_max_abs_error_m": 1.7763568394002505e-15,
+      "seed": 13,
+      "yaml_sha256": "29a1a8c01d16004f0baebf88f946a547f18e3baebfda2e0fc8cf5a14751c4423"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "c78d14c7b06cc4f0",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_14.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 14,
+      "yaml_sha256": "edd32af24ead08823c90b8093750ba32302783cdf4812ce87e88414986f0f9df"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "f9ac74ce259a90f7",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_15.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 15,
+      "yaml_sha256": "51e16ab6f4f7b92631b06e403106ffcb22412febbe0e6e97016f3de39ea7ebec"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "05829571050aa0f1",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_16.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 16,
+      "yaml_sha256": "a44ca45e37a2dd04af8a46001bedd48a232d6de4bf279bf86426e4ca3bddbd59"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "94df3f2c2736faec",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_17.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 17,
+      "yaml_sha256": "46edab9e93b51f68f5a3e7f1f223ad131487a5d0e4b3d873aa10b0a686175967"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "d80223e090adfc9c",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_18.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 18,
+      "yaml_sha256": "042cd26b1e7b5acb8d59cb24e9f03e70f48d8d18cf1609d533ce206494a5d2c0"
+    },
+    {
+      "family": "rect15",
+      "fingerprint": "d9ef868a961b57d6",
+      "n_robots": 80,
+      "relative_yaml": "rect_maps/RectEnv15/agents80/RectEnv_15_80_19.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 19,
+      "yaml_sha256": "1dc588095c0c6bc42f9b75f231d0c3a1b7fb85b07b452b549071f0400353dc4a"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "2910dd24a2c08fb9",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_0.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 0,
+      "yaml_sha256": "f6e7f4d9f948df4e69cd7f690bfadf7de77f1ef96751f57abff054c47314dbd4"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "c46a87e90972ac0d",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_1.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 1,
+      "yaml_sha256": "f7c6a464a771735824ebc6e18555ad8caf1f29f960e5fe31178e750ce1ead45c"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "4ae5335a215e2824",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_2.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 2,
+      "yaml_sha256": "4a4df33c2f3411982aa6df37f0cb17623f450683ac0ee3ca94ae4e43dbd3b624"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "6fc7d7a739029ae1",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_3.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 3,
+      "yaml_sha256": "2a0d61c33d1151af58cd3b27dcf8feea82aff0f5cb8212954f48fbb0105bd8f0"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "9abc98877d799859",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_4.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 4,
+      "yaml_sha256": "199926797244060641ac9a0a992054a919e2f21d4eb1d59309f056f6d6629611"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "96dc582ed2cb17ba",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_5.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 5,
+      "yaml_sha256": "5507b9b2c953d7cb7cbfbf5aafc0c2f833f32f641f940c2943a2a12fd6148552"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "02d7f0703a5c00a0",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_6.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 6,
+      "yaml_sha256": "9c7bdcb2fe0789944462540d0d55a63192120e7eeeb05388e7fff92da94532e9"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "7e81226f5661c24b",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_7.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 7,
+      "yaml_sha256": "a89e0244a6a3d6ea9e3c089b0ec038bc8a7cd72ae4dd802a27c5819bdec36878"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "42a94772fd0725f3",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_8.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 8,
+      "yaml_sha256": "7c5386c8ddbfc2b379414a5f78f7fe86558ce2b4bc35dc6d2376aed936be0908"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "eb69a67a6e7d7a53",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_9.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 9,
+      "yaml_sha256": "8b00548cc190d45a49474a1487fbdee06933491b2dbc09ea3f14f2af8159d301"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "2360952e82737841",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_10.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 10,
+      "yaml_sha256": "6c2ed52c664fe523b94ee7f3f492cb41d768e3017a8f1a854f4a9d5db54f45cc"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "e4d2b277ccd0c026",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_11.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 11,
+      "yaml_sha256": "4bc20c84e06ba75c56c084f978bb814d3053cd5d452f114cd9c46c0e96f754e4"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "503b447531c9980d",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_12.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 12,
+      "yaml_sha256": "0b23ccf775b2f6eed5177d85e5705539ffa139cbb5476c02b71e06a6defd3dfe"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "769b594860c92995",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_13.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 13,
+      "yaml_sha256": "c3fa1bedc89cbe782839bd1d0104336fb93d7583f684c15680097317d1d529d7"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "137027fbfb1f5e5a",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_14.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 14,
+      "yaml_sha256": "38144b1023982a33e588ec754413a5429a1d930fd04da5c2a5960c88c4e99e0f"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "37cf34555992df4c",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_15.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 15,
+      "yaml_sha256": "0e831ca893ae60fbf004424b88df1158b875bd9800d190a52c379991d7fb2c7b"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "04fb469fe693ca01",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_16.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 16,
+      "yaml_sha256": "526f9d80f150027117c1e44787d08f2568d139a02b5c1a79cedee17d788b8ca9"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "daffbf576626bbad",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_17.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 17,
+      "yaml_sha256": "c60dbcbd60c01842a29ae40b21b5104f28ea6be5b33255958cfb8650d03771a8"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "34baeed73efaf366",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_18.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 18,
+      "yaml_sha256": "3e4b88222b485ef063b0f56c0396f3f7629cd0d4cdd2092981a363ec29b46be6"
+    },
+    {
+      "family": "swap",
+      "fingerprint": "789abc87c1d46bc9",
+      "n_robots": 80,
+      "relative_yaml": "swap_maps/agents80/Free_Swap_18_80_19.yaml",
+      "roundtrip_max_abs_error_m": 2.6645352591003757e-15,
+      "seed": 19,
+      "yaml_sha256": "7729b8e4567f1c721bd6eda849bbb42de5469e9da0de17e669dab9723f9b09bd"
+    }
+  ],
+  "source_raw": "results/unicycle_clear_all_sizes_raw.json",
+  "unicycle_initial_heading_rad": 0.0
+}

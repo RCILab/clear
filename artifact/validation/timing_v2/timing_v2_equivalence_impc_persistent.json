@@ -1,0 +1,10 @@
+{
+  "candidate": "experiments/validation/timing_v2/smoke_impc_rect15.json",
+  "created_utc": "2026-07-31T03:07:11.777557+00:00",
+  "maximum_position_error_m": 2.8495290571584064e-09,
+  "passed": true,
+  "reference": "experiments/validation/timing_v2/smoke_impc_rect15_reference.json",
+  "scenario_fingerprint_equal": true,
+  "solver_status_and_acceptance_equal": true,
+  "tolerance_m": 1e-06
+}

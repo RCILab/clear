@@ -1,0 +1,76 @@
+{
+  "case_count": 6,
+  "comparisons": [
+    {
+      "family": "free",
+      "maximum_center_error": 6.602660000964988e-07,
+      "maximum_heading_error": 2.9208960001803064e-06,
+      "n_robots": 20,
+      "passed": true,
+      "scenario_fingerprint_equal": true,
+      "seed": 99,
+      "solver_event_counts_equal": true,
+      "variant": "clear"
+    },
+    {
+      "family": "rect15",
+      "maximum_center_error": 5.713670008233862e-07,
+      "maximum_heading_error": 8.858100000175284e-07,
+      "n_robots": 20,
+      "passed": true,
+      "scenario_fingerprint_equal": true,
+      "seed": 99,
+      "solver_event_counts_equal": true,
+      "variant": "clear"
+    },
+    {
+      "family": "swap",
+      "maximum_center_error": 2.185290002287843e-07,
+      "maximum_heading_error": 1.19378000040804e-07,
+      "n_robots": 20,
+      "passed": true,
+      "scenario_fingerprint_equal": true,
+      "seed": 99,
+      "solver_event_counts_equal": true,
+      "variant": "clear"
+    },
+    {
+      "family": "free",
+      "maximum_center_error": 4.733269998169476e-07,
+      "maximum_heading_error": 6.708170001701319e-07,
+      "n_robots": 20,
+      "passed": true,
+      "scenario_fingerprint_equal": true,
+      "seed": 99,
+      "solver_event_counts_equal": true,
+      "variant": "vanilla-cbf-qp"
+    },
+    {
+      "family": "rect15",
+      "maximum_center_error": 4.78320999697246e-07,
+      "maximum_heading_error": 7.750719999144451e-07,
+      "n_robots": 20,
+      "passed": true,
+      "scenario_fingerprint_equal": true,
+      "seed": 99,
+      "solver_event_counts_equal": true,
+      "variant": "vanilla-cbf-qp"
+    },
+    {
+      "family": "swap",
+      "maximum_center_error": 2.823499993809264e-07,
+      "maximum_heading_error": 1.0776999737061033e-08,
+      "n_robots": 20,
+      "passed": true,
+      "scenario_fingerprint_equal": true,
+      "seed": 99,
+      "solver_event_counts_equal": true,
+      "variant": "vanilla-cbf-qp"
+    }
+  ],
+  "created_utc": "2026-07-31T01:50:58.362015+00:00",
+  "maximum_state_error": 2.9208960001803064e-06,
+  "passed": true,
+  "tolerance": 5e-06,
+  "tolerance_rationale": "Independent OSQP workspaces use different warm-start histories and finite 1e-7 termination tolerances; the decomposed QP is row-support exact and its one-step objective/command test passes at 1e-8, while 3 s rollout accumulation reached 2.921e-6."
+}

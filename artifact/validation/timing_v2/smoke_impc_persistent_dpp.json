@@ -1,0 +1,23 @@
+{
+  "method": "IMPC-DR",
+  "implementation": "public algorithm adapted to common unicycle dynamics",
+  "state": "[x, y, v, theta]",
+  "input": "[a, omega]",
+  "dt_s": 0.03,
+  "horizon_steps": 24,
+  "scp_iterations": 2,
+  "records": [
+    {
+      "n_robots": 8,
+      "steps": 5,
+      "mean_replan_wall_time_s": 0.1481877121999787,
+      "maximum_replan_wall_time_s": 0.19490232600037416,
+      "per_robot_replan_ms": 18.523464024997338,
+      "moving_robot_count": 8,
+      "minimum_pair_distance_m": 1.5110210858731192,
+      "all_solves_accepted": true,
+      "maximum_abs_speed_mps": 0.179999999201715,
+      "maximum_abs_yaw_rate_rps": 1.5707963189475127
+    }
+  ]
+}

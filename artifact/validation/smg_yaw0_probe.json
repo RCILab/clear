@@ -1,0 +1,1631 @@
+{
+  "initial_heading_rad": 0.0,
+  "protocol": {
+    "workspace_size": 16.0,
+    "body_radius": 0.2,
+    "safety_margin": 0.02,
+    "speed_limit": 0.8,
+    "arrival_radius": 0.22,
+    "dt": 0.03,
+    "horizon": 60.0,
+    "obstacle_fraction": 0.15,
+    "circle_count": 14,
+    "rectangle_count": 12,
+    "swap_radius": 7.5
+  },
+  "unicycle": {
+    "lookahead": 0.05,
+    "yaw_rate_limit": 1.5707963267948966,
+    "inner_substeps": 3,
+    "projection_backend": "osqp",
+    "projection_max_sweeps": 4000,
+    "projection_extension_sweeps": 0,
+    "projection_tolerance": 1e-06,
+    "projection_solver_tolerance": 1e-07,
+    "projection_solver_margin": 0.0,
+    "minimum_restoration_retention": 0.25,
+    "hierarchical_progress": false,
+    "hqp_progress_retention": 0.995,
+    "hqp_regularization": 1e-06,
+    "hqp_minimum_direction_norm": 1e-08,
+    "certified_bridge_progress": true,
+    "bridge_progress_retention": 0.9,
+    "bridge_geometry_tolerance": 1e-08,
+    "actuation_mode": "native-cbf"
+  },
+  "controller": {
+    "goal_gain": 1.2,
+    "goal_slow_radius": 0.8,
+    "pair_sense_radius": 2.2,
+    "obstacle_sense_radius": 1.2,
+    "circulation_gain": 0.72,
+    "obstacle_circulation_gain": 0.62,
+    "boundary_progress_aligned": true,
+    "cluster_escape_gain": 0.55,
+    "cluster_pair_band": 0.08,
+    "cluster_boundary_band": 0.08,
+    "cluster_escape_hysteresis": true,
+    "terminal_capture_hysteresis": true,
+    "terminal_capture_radius": 0.22,
+    "terminal_open_capture_radius": 0.6,
+    "terminal_release_radius": 0.8,
+    "certificate_margin_gain": 0.08,
+    "adaptive_certificate_gain": false,
+    "handedness": 1,
+    "closing_bias": 0.12,
+    "tangent_band": 0.08,
+    "tangent_regularization": 1e-08,
+    "tangent_projection_max_sweeps": 1800,
+    "cbf_rate": 4.0,
+    "projection_tolerance": 1e-08,
+    "projection_max_sweeps": 1800,
+    "numerical_clearance": 0.0002
+  },
+  "metric_definitions": {
+    "parallel_throughput": "|S|/(t_end-t_start), with first resource entry and last post-resource exit",
+    "smg_flow_rate": "parallel throughput divided by physical gap width",
+    "interference_delay": "TTG_multi-TTG_solo using the same method, dynamics, map, start, and goal"
+  },
+  "records": [
+    {
+      "family": "doorway_w0.80",
+      "n_robots": 8,
+      "seed": 0,
+      "fingerprint": "385084b80b60e61e",
+      "mission_success": false,
+      "physical_mission_success": false,
+      "robot_arrival_rate": 0.75,
+      "makespan_s": NaN,
+      "unarrived_robots": 2,
+      "maximum_final_goal_distance_m": 7.470235343896041,
+      "minimum_physical_pair_distance_m": 0.5013694008602635,
+      "minimum_transferred_pair_lower_bound_m": 0.4400131444413754,
+      "minimum_physical_obstacle_clearance_m": 0.04761302172336837,
+      "minimum_virtual_obstacle_clearance_m": -7.846135963163192e-10,
+      "maximum_linear_speed_mps": 0.8000001612401388,
+      "maximum_yaw_rate_rps": 1.5707997871542956,
+      "minimum_yaw_scale": null,
+      "minimum_yaw_retention": 2.808212437476105e-15,
+      "theoretical_yaw_scale_floor": null,
+      "nonconverged_steps": 0,
+      "feasibility_restoration_steps": 0,
+      "projection_iteration_cap_calls": 0,
+      "hqp_active_calls": 0,
+      "hqp_nonconverged_calls": 0,
+      "minimum_hqp_progress_retention": null,
+      "tangent_fallback_steps": 0,
+      "cluster_escape_steps": 267,
+      "cluster_escape_component_steps": 320,
+      "minimum_cbf_residual": -1.9720621884989666e-07,
+      "minimum_tangent_residual": -9.637706400306145e-09,
+      "static_certificate_steps": 2000,
+      "static_certificate_violations": 0,
+      "certified_bridge_steps": 0,
+      "certified_bridge_projection_calls": 0,
+      "certified_bridge_row_rejections": 0,
+      "certified_bridge_progress_violations": 0,
+      "minimum_certified_bridge_progress_residual": null,
+      "method": "CLEAR",
+      "controller_wall_time_s": 4.439694300992414,
+      "mean_control_step_ms": 2.219847150496207,
+      "first_arrival_times_s": [
+        13.44,
+        14.19,
+        15.33,
+        16.98,
+        null,
+        20.7,
+        22.77,
+        null
+      ],
+      "final_positions_m": [
+        [
+          6.751651596433964,
+          -1.7870956368306092
+        ],
+        [
+          6.755072237639675,
+          -0.5778975022167261
+        ],
+        [
+          6.760990904101496,
+          0.6314371068377904
+        ],
+        [
+          6.750230969097368,
+          1.7950401055386906
+        ],
+        [
+          0.6700000000000005,
+          1.7593366315550831
+        ],
+        [
+          -6.799900633652657,
+          0.549840632004558
+        ],
+        [
+          -6.750359105156416,
+          -0.593858719189296
+        ],
+        [
+          0.6700000000000059,
+          -1.7407033458488774
+        ]
+      ],
+      "gap_completed_robots": 6,
+      "gap_entered_robots": 6,
+      "gap_entry_start_s": 3.5999999999999996,
+      "gap_exit_end_s": 13.59,
+      "parallel_throughput_robots_per_s": 0.0,
+      "smg_flow_rate_robots_per_m_s": 0.0,
+      "geometry": {
+        "doorway_width": 0.8,
+        "doorway_thickness": 0.8,
+        "intersection_corridor_width": 2.4,
+        "staging_distance": 3.2,
+        "queue_spacing": 0.6,
+        "staging_row_spacing": 0.56,
+        "reported_cost_field_passage_floor": 0.59,
+        "reported_baseline_local_model_width": 0.74,
+        "robot_diameter_m": 0.4,
+        "pair_clearance_m": 0.44,
+        "lookahead_virtual_diameter_m": 0.54,
+        "doorway_nominal_safety_lanes": 1,
+        "doorway_nominal_virtual_lanes": 1,
+        "doorway_cost_field_margin_m": 0.21000000000000008,
+        "baseline_local_model_margin_m": 0.06000000000000005,
+        "fairness_note_required": true
+      }
+    },
+    {
+      "family": "doorway_w0.80",
+      "n_robots": 16,
+      "seed": 0,
+      "fingerprint": "5054d8925d56930f",
+      "mission_success": false,
+      "physical_mission_success": false,
+      "robot_arrival_rate": 0.75,
+      "makespan_s": NaN,
+      "unarrived_robots": 4,
+      "maximum_final_goal_distance_m": 7.48624573480494,
+      "minimum_physical_pair_distance_m": 0.4400005991128015,
+      "minimum_transferred_pair_lower_bound_m": 0.4399999999877171,
+      "minimum_physical_obstacle_clearance_m": 0.04637270415999403,
+      "minimum_virtual_obstacle_clearance_m": -5.122296364845624e-09,
+      "maximum_linear_speed_mps": 0.8000001698541253,
+      "maximum_yaw_rate_rps": 1.5708001413101218,
+      "minimum_yaw_scale": null,
+      "minimum_yaw_retention": 1.0015356006807364e-14,
+      "theoretical_yaw_scale_floor": null,
+      "nonconverged_steps": 0,
+      "feasibility_restoration_steps": 0,
+      "projection_iteration_cap_calls": 0,
+      "hqp_active_calls": 0,
+      "hqp_nonconverged_calls": 0,
+      "minimum_hqp_progress_retention": null,
+      "tangent_fallback_steps": 0,
+      "cluster_escape_steps": 1673,
+      "cluster_escape_component_steps": 1836,
+      "minimum_cbf_residual": -2.1031950216815736e-07,
+      "minimum_tangent_residual": -9.986474982522567e-09,
+      "static_certificate_steps": 2000,
+      "static_certificate_violations": 0,
+      "certified_bridge_steps": 0,
+      "certified_bridge_projection_calls": 0,
+      "certified_bridge_row_rejections": 0,
+      "certified_bridge_progress_violations": 0,
+      "minimum_certified_bridge_progress_residual": null,
+      "method": "CLEAR",
+      "controller_wall_time_s": 5.945811183002661,
+      "mean_control_step_ms": 2.9729055915013305,
+      "first_arrival_times_s": [
+        13.44,
+        14.16,
+        15.57,
+        27.9,
+        null,
+        22.47,
+        27.63,
+        25.86,
+        null,
+        26.07,
+        26.16,
+        null,
+        null,
+        27.33,
+        35.309999999999995,
+        27.72
+      ],
+      "final_positions_m": [
+        [
+          6.769208052711472,
+          -1.7604469299469383
+        ],
+        [
+          6.849363398423239,
+          -0.6081202126115489
+        ],
+        [
+          6.844213215274742,
+          0.5768077773135557
+        ],
+        [
+          6.754787380824592,
+          1.7784929036413728
+        ],
+        [
+          -0.6700000000047042,
+          -1.7688538833049892
+        ],
+        [
+          6.249997878003631,
+          -0.6003034981559346
+        ],
+        [
+          6.225543992145408,
+          0.6429818681437145
+        ],
+        [
+          6.166879319259811,
+          1.7625421280760625
+        ],
+        [
+          0.6699999999907148,
+          2.2929251485001334
+        ],
+        [
+          -6.826452631942926,
+          0.5577292541053924
+        ],
+        [
+          -6.780979413893173,
+          -0.6460809281429696
+        ],
+        [
+          0.6699999999992264,
+          -1.7513339902957625
+        ],
+        [
+          0.6711683114694645,
+          1.7529387998111023
+        ],
+        [
+          -6.239300194385297,
+          0.6309095205063651
+        ],
+        [
+          -6.217111987008434,
+          -0.5530197791698345
+        ],
+        [
+          -6.150531080768295,
+          -1.792731848230503
+        ]
+      ],
+      "gap_completed_robots": 12,
+      "gap_entered_robots": 12,
+      "gap_entry_start_s": 3.54,
+      "gap_exit_end_s": 20.88,
+      "parallel_throughput_robots_per_s": 0.0,
+      "smg_flow_rate_robots_per_m_s": 0.0,
+      "geometry": {
+        "doorway_width": 0.8,
+        "doorway_thickness": 0.8,
+        "intersection_corridor_width": 2.4,
+        "staging_distance": 3.2,
+        "queue_spacing": 0.6,
+        "staging_row_spacing": 0.56,
+        "reported_cost_field_passage_floor": 0.59,
+        "reported_baseline_local_model_width": 0.74,
+        "robot_diameter_m": 0.4,
+        "pair_clearance_m": 0.44,
+        "lookahead_virtual_diameter_m": 0.54,
+        "doorway_nominal_safety_lanes": 1,
+        "doorway_nominal_virtual_lanes": 1,
+        "doorway_cost_field_margin_m": 0.21000000000000008,
+        "baseline_local_model_margin_m": 0.06000000000000005,
+        "fairness_note_required": true
+      }
+    },
+    {
+      "family": "doorway_w1.20",
+      "n_robots": 8,
+      "seed": 0,
+      "fingerprint": "a048fe0721d4b278",
+      "mission_success": true,
+      "physical_mission_success": true,
+      "robot_arrival_rate": 1.0,
+      "makespan_s": 23.31,
+      "unarrived_robots": 0,
+      "maximum_final_goal_distance_m": 0.05012177552656654,
+      "minimum_physical_pair_distance_m": 0.45413755391371535,
+      "minimum_transferred_pair_lower_bound_m": 0.44001810568618893,
+      "minimum_physical_obstacle_clearance_m": 0.0008128573007224749,
+      "minimum_virtual_obstacle_clearance_m": 4.695020546896522e-05,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "minimum_yaw_scale": null,
+      "minimum_yaw_retention": 7.916753439735546e-05,
+      "theoretical_yaw_scale_floor": null,
+      "nonconverged_steps": 0,
+      "feasibility_restoration_steps": 0,
+      "projection_iteration_cap_calls": 0,
+      "hqp_active_calls": 0,
+      "hqp_nonconverged_calls": 0,
+      "minimum_hqp_progress_retention": null,
+      "tangent_fallback_steps": 15,
+      "cluster_escape_steps": 234,
+      "cluster_escape_component_steps": 241,
+      "minimum_cbf_residual": -1.5265857994904708e-07,
+      "minimum_tangent_residual": -9.941464515492622e-09,
+      "static_certificate_steps": 1871,
+      "static_certificate_violations": 0,
+      "certified_bridge_steps": 0,
+      "certified_bridge_projection_calls": 0,
+      "certified_bridge_row_rejections": 0,
+      "certified_bridge_progress_violations": 0,
+      "minimum_certified_bridge_progress_residual": null,
+      "method": "CLEAR",
+      "controller_wall_time_s": 4.8404440409940435,
+      "mean_control_step_ms": 2.4202220204970217,
+      "first_arrival_times_s": [
+        16.59,
+        16.08,
+        16.62,
+        16.86,
+        20.43,
+        21.57,
+        23.189999999999998,
+        23.31
+      ],
+      "final_positions_m": [
+        [
+          6.750169343725335,
+          -1.803952427024162
+        ],
+        [
+          6.752594758652331,
+          -0.5839425815843767
+        ],
+        [
+          6.7509091419844545,
+          0.5906679136634767
+        ],
+        [
+          6.7500002570130455,
+          1.8000069277326374
+        ],
+        [
+          -6.759104081688583,
+          1.7710737959395892
+        ],
+        [
+          -6.767675743640396,
+          0.5616941932243408
+        ],
+        [
+          -6.750442383328598,
+          -0.5935228572851926
+        ],
+        [
+          -6.750000047103807,
+          -1.7999223637018882
+        ]
+      ],
+      "gap_completed_robots": 8,
+      "gap_entered_robots": 8,
+      "gap_entry_start_s": 4.35,
+      "gap_exit_end_s": 13.77,
+      "parallel_throughput_robots_per_s": 0.8492569002123143,
+      "smg_flow_rate_robots_per_m_s": 0.7077140835102619,
+      "geometry": {
+        "doorway_width": 1.2,
+        "doorway_thickness": 0.8,
+        "intersection_corridor_width": 2.4,
+        "staging_distance": 3.2,
+        "queue_spacing": 0.6,
+        "staging_row_spacing": 0.56,
+        "reported_cost_field_passage_floor": 0.59,
+        "reported_baseline_local_model_width": 0.74,
+        "robot_diameter_m": 0.4,
+        "pair_clearance_m": 0.44,
+        "lookahead_virtual_diameter_m": 0.54,
+        "doorway_nominal_safety_lanes": 2,
+        "doorway_nominal_virtual_lanes": 2,
+        "doorway_cost_field_margin_m": 0.61,
+        "baseline_local_model_margin_m": 0.45999999999999996,
+        "fairness_note_required": false
+      }
+    },
+    {
+      "family": "doorway_w1.20",
+      "n_robots": 16,
+      "seed": 0,
+      "fingerprint": "81d0d78027b2fecb",
+      "mission_success": true,
+      "physical_mission_success": true,
+      "robot_arrival_rate": 1.0,
+      "makespan_s": 29.34,
+      "unarrived_robots": 0,
+      "maximum_final_goal_distance_m": 0.050154930033729936,
+      "minimum_physical_pair_distance_m": 0.4532644040549797,
+      "minimum_transferred_pair_lower_bound_m": 0.4400318421976621,
+      "minimum_physical_obstacle_clearance_m": 0.046720318986167825,
+      "minimum_virtual_obstacle_clearance_m": 8.737476187015147e-09,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "minimum_yaw_scale": null,
+      "minimum_yaw_retention": 3.553828741246702e-05,
+      "theoretical_yaw_scale_floor": null,
+      "nonconverged_steps": 0,
+      "feasibility_restoration_steps": 1,
+      "projection_iteration_cap_calls": 1,
+      "hqp_active_calls": 0,
+      "hqp_nonconverged_calls": 0,
+      "minimum_hqp_progress_retention": null,
+      "tangent_fallback_steps": 12,
+      "cluster_escape_steps": 273,
+      "cluster_escape_component_steps": 353,
+      "minimum_cbf_residual": -2.2297060931278367e-07,
+      "minimum_tangent_residual": -9.992619755389547e-09,
+      "static_certificate_steps": 1951,
+      "static_certificate_violations": 0,
+      "certified_bridge_steps": 0,
+      "certified_bridge_projection_calls": 0,
+      "certified_bridge_row_rejections": 0,
+      "certified_bridge_progress_violations": 0,
+      "minimum_certified_bridge_progress_residual": null,
+      "method": "CLEAR",
+      "controller_wall_time_s": 6.730704913003137,
+      "mean_control_step_ms": 3.3653524565015687,
+      "first_arrival_times_s": [
+        15.75,
+        23.16,
+        20.04,
+        25.05,
+        15.03,
+        17.849999999999998,
+        16.02,
+        29.34,
+        24.33,
+        17.79,
+        25.349999999999998,
+        24.21,
+        22.59,
+        22.71,
+        23.939999999999998,
+        16.83
+      ],
+      "final_positions_m": [
+        [
+          6.847724329054139,
+          -1.8150760340450725
+        ],
+        [
+          6.765248320807374,
+          -0.6357883031186025
+        ],
+        [
+          6.849875883813632,
+          0.6036972121753073
+        ],
+        [
+          6.766610800230963,
+          1.837057270383855
+        ],
+        [
+          6.244365329442145,
+          -1.7769433275166813
+        ],
+        [
+          6.209355830672129,
+          -0.6491166701218123
+        ],
+        [
+          6.2236062958794545,
+          0.644075914871307
+        ],
+        [
+          6.203023789007173,
+          1.7500915854648729
+        ],
+        [
+          -6.753848796606487,
+          1.8190749647142714
+        ],
+        [
+          -6.8122234895567315,
+          0.6486426079661115
+        ],
+        [
+          -6.849998627092212,
+          -0.6003474175380505
+        ],
+        [
+          -6.750839799666585,
+          -1.8092789398665217
+        ],
+        [
+          -6.212804166265857,
+          1.751667560146413
+        ],
+        [
+          -6.199607367885397,
+          0.5500015324682679
+        ],
+        [
+          -6.1669789708681515,
+          -0.562454152659981
+        ],
+        [
+          -6.164100076553953,
+          -1.765196612586821
+        ]
+      ],
+      "gap_completed_robots": 16,
+      "gap_entered_robots": 16,
+      "gap_entry_start_s": 3.6599999999999997,
+      "gap_exit_end_s": 15.18,
+      "parallel_throughput_robots_per_s": 1.3888888888888888,
+      "smg_flow_rate_robots_per_m_s": 1.1574074074074074,
+      "geometry": {
+        "doorway_width": 1.2,
+        "doorway_thickness": 0.8,
+        "intersection_corridor_width": 2.4,
+        "staging_distance": 3.2,
+        "queue_spacing": 0.6,
+        "staging_row_spacing": 0.56,
+        "reported_cost_field_passage_floor": 0.59,
+        "reported_baseline_local_model_width": 0.74,
+        "robot_diameter_m": 0.4,
+        "pair_clearance_m": 0.44,
+        "lookahead_virtual_diameter_m": 0.54,
+        "doorway_nominal_safety_lanes": 2,
+        "doorway_nominal_virtual_lanes": 2,
+        "doorway_cost_field_margin_m": 0.61,
+        "baseline_local_model_margin_m": 0.45999999999999996,
+        "fairness_note_required": false
+      }
+    },
+    {
+      "family": "intersection_w2.40",
+      "n_robots": 8,
+      "seed": 0,
+      "fingerprint": "27e35d3a1a4bfe00",
+      "mission_success": true,
+      "physical_mission_success": true,
+      "robot_arrival_rate": 1.0,
+      "makespan_s": 16.2,
+      "unarrived_robots": 0,
+      "maximum_final_goal_distance_m": 0.050341290824049624,
+      "minimum_physical_pair_distance_m": 0.464213932820068,
+      "minimum_transferred_pair_lower_bound_m": 0.4400032865249519,
+      "minimum_physical_obstacle_clearance_m": 0.29555622356462463,
+      "minimum_virtual_obstacle_clearance_m": 0.24583528536015187,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "minimum_yaw_scale": null,
+      "minimum_yaw_retention": 2.4496075034626675e-05,
+      "theoretical_yaw_scale_floor": null,
+      "nonconverged_steps": 0,
+      "feasibility_restoration_steps": 0,
+      "projection_iteration_cap_calls": 0,
+      "hqp_active_calls": 0,
+      "hqp_nonconverged_calls": 0,
+      "minimum_hqp_progress_retention": null,
+      "tangent_fallback_steps": 0,
+      "cluster_escape_steps": 0,
+      "cluster_escape_component_steps": 0,
+      "minimum_cbf_residual": -1.6641507694092894e-07,
+      "minimum_tangent_residual": -4.384063001516836e-09,
+      "static_certificate_steps": 2000,
+      "static_certificate_violations": 0,
+      "certified_bridge_steps": 0,
+      "certified_bridge_projection_calls": 0,
+      "certified_bridge_row_rejections": 0,
+      "certified_bridge_progress_violations": 0,
+      "minimum_certified_bridge_progress_residual": null,
+      "method": "CLEAR",
+      "controller_wall_time_s": 4.640525520997471,
+      "mean_control_step_ms": 2.3202627604987356,
+      "first_arrival_times_s": [
+        14.79,
+        15.479999999999999,
+        15.57,
+        16.2,
+        15.24,
+        15.899999999999999,
+        15.149999999999999,
+        15.78
+      ],
+      "final_positions_m": [
+        [
+          6.754824878886466,
+          0.17967970573870742
+        ],
+        [
+          6.169959075407604,
+          -0.1603592297988723
+        ],
+        [
+          -6.753999719486902,
+          -0.18128148783076484
+        ],
+        [
+          -6.168436604642872,
+          0.16087396497432516
+        ],
+        [
+          -0.18069402985457483,
+          6.753507795507467
+        ],
+        [
+          0.16048097804636927,
+          6.168937016711883
+        ],
+        [
+          0.18010934984322677,
+          -6.7546344703932375
+        ],
+        [
+          -0.16083168725632196,
+          -6.168489813733202
+        ]
+      ],
+      "gap_completed_robots": 8,
+      "gap_entered_robots": 8,
+      "gap_entry_start_s": 3.12,
+      "gap_exit_end_s": 7.9799999999999995,
+      "parallel_throughput_robots_per_s": 1.6460905349794241,
+      "smg_flow_rate_robots_per_m_s": 0.6858710562414267,
+      "geometry": {
+        "doorway_width": 0.8,
+        "doorway_thickness": 0.8,
+        "intersection_corridor_width": 2.4,
+        "staging_distance": 3.2,
+        "queue_spacing": 0.6,
+        "staging_row_spacing": 0.56,
+        "reported_cost_field_passage_floor": 0.59,
+        "reported_baseline_local_model_width": 0.74,
+        "robot_diameter_m": 0.4,
+        "pair_clearance_m": 0.44,
+        "lookahead_virtual_diameter_m": 0.54,
+        "doorway_nominal_safety_lanes": 1,
+        "doorway_nominal_virtual_lanes": 1,
+        "doorway_cost_field_margin_m": 0.21000000000000008,
+        "baseline_local_model_margin_m": 0.06000000000000005,
+        "fairness_note_required": true
+      }
+    },
+    {
+      "family": "intersection_w2.40",
+      "n_robots": 16,
+      "seed": 0,
+      "fingerprint": "f36827c5cea51590",
+      "mission_success": true,
+      "physical_mission_success": true,
+      "robot_arrival_rate": 1.0,
+      "makespan_s": 19.71,
+      "unarrived_robots": 0,
+      "maximum_final_goal_distance_m": 0.05043203233272758,
+      "minimum_physical_pair_distance_m": 0.44060719713506874,
+      "minimum_transferred_pair_lower_bound_m": 0.4400000604610872,
+      "minimum_physical_obstacle_clearance_m": 0.06441572258970754,
+      "minimum_virtual_obstacle_clearance_m": 0.015679933034402294,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "minimum_yaw_scale": null,
+      "minimum_yaw_retention": 9.829451543007706e-05,
+      "theoretical_yaw_scale_floor": null,
+      "nonconverged_steps": 0,
+      "feasibility_restoration_steps": 0,
+      "projection_iteration_cap_calls": 0,
+      "hqp_active_calls": 0,
+      "hqp_nonconverged_calls": 0,
+      "minimum_hqp_progress_retention": null,
+      "tangent_fallback_steps": 0,
+      "cluster_escape_steps": 93,
+      "cluster_escape_component_steps": 110,
+      "minimum_cbf_residual": -1.6878082685634066e-07,
+      "minimum_tangent_residual": -9.536834058576638e-09,
+      "static_certificate_steps": 2000,
+      "static_certificate_violations": 0,
+      "certified_bridge_steps": 0,
+      "certified_bridge_projection_calls": 0,
+      "certified_bridge_row_rejections": 0,
+      "certified_bridge_progress_violations": 0,
+      "minimum_certified_bridge_progress_residual": null,
+      "method": "CLEAR",
+      "controller_wall_time_s": 6.1556538570002886,
+      "mean_control_step_ms": 3.0778269285001443,
+      "first_arrival_times_s": [
+        18.419999999999998,
+        17.4,
+        18.36,
+        16.98,
+        18.0,
+        19.08,
+        15.69,
+        13.709999999999999,
+        18.63,
+        17.49,
+        19.71,
+        17.04,
+        17.73,
+        18.36,
+        15.149999999999999,
+        13.41
+      ],
+      "final_positions_m": [
+        [
+          6.7813123734725105,
+          0.24637810261825144
+        ],
+        [
+          6.19896773302057,
+          -0.24997854923002588
+        ],
+        [
+          5.551295872979748,
+          0.1907466546137329
+        ],
+        [
+          4.9868459612577745,
+          -0.2481187599411035
+        ],
+        [
+          -6.776218014786895,
+          -0.24404169001143594
+        ],
+        [
+          -6.149673418836872,
+          0.2032477226227215
+        ],
+        [
+          -5.555115356944172,
+          -0.22289054264509764
+        ],
+        [
+          -4.999522876998002,
+          0.24999173402601904
+        ],
+        [
+          -0.24900127624240329,
+          6.788830436918215
+        ],
+        [
+          0.17357080304613123,
+          6.2420118824189785
+        ],
+        [
+          -0.15752978363246065,
+          5.573180703731867
+        ],
+        [
+          0.2491444297851998,
+          5.008777886261282
+        ],
+        [
+          0.2421999778163773,
+          -6.77338513698269
+        ],
+        [
+          -0.22913716861100034,
+          -6.158935021137335
+        ],
+        [
+          0.20126560895317397,
+          -5.549583850611268
+        ],
+        [
+          -0.19381649849969607,
+          -4.949951664305419
+        ]
+      ],
+      "gap_completed_robots": 16,
+      "gap_entered_robots": 16,
+      "gap_entry_start_s": 3.1799999999999997,
+      "gap_exit_end_s": 10.83,
+      "parallel_throughput_robots_per_s": 2.0915032679738563,
+      "smg_flow_rate_robots_per_m_s": 0.8714596949891068,
+      "geometry": {
+        "doorway_width": 0.8,
+        "doorway_thickness": 0.8,
+        "intersection_corridor_width": 2.4,
+        "staging_distance": 3.2,
+        "queue_spacing": 0.6,
+        "staging_row_spacing": 0.56,
+        "reported_cost_field_passage_floor": 0.59,
+        "reported_baseline_local_model_width": 0.74,
+        "robot_diameter_m": 0.4,
+        "pair_clearance_m": 0.44,
+        "lookahead_virtual_diameter_m": 0.54,
+        "doorway_nominal_safety_lanes": 1,
+        "doorway_nominal_virtual_lanes": 1,
+        "doorway_cost_field_margin_m": 0.21000000000000008,
+        "baseline_local_model_margin_m": 0.06000000000000005,
+        "fairness_note_required": true
+      }
+    },
+    {
+      "family": "doorway_w0.80",
+      "n_robots": 8,
+      "seed": 0,
+      "fingerprint": "385084b80b60e61e",
+      "mission_success": false,
+      "physical_mission_success": false,
+      "robot_arrival_rate": 0.25,
+      "makespan_s": NaN,
+      "unarrived_robots": 6,
+      "maximum_final_goal_distance_m": 7.51199154605246,
+      "minimum_physical_pair_distance_m": 0.4910555246974099,
+      "minimum_transferred_pair_lower_bound_m": 0.44000684506384746,
+      "minimum_physical_obstacle_clearance_m": 0.04716279150986655,
+      "minimum_virtual_obstacle_clearance_m": -4.3467801580376886e-09,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "minimum_yaw_scale": null,
+      "minimum_yaw_retention": 5.89783795656071e-16,
+      "theoretical_yaw_scale_floor": null,
+      "nonconverged_steps": 0,
+      "feasibility_restoration_steps": 0,
+      "projection_iteration_cap_calls": 0,
+      "hqp_active_calls": 0,
+      "hqp_nonconverged_calls": 0,
+      "minimum_hqp_progress_retention": null,
+      "tangent_fallback_steps": 0,
+      "cluster_escape_steps": 0,
+      "cluster_escape_component_steps": 0,
+      "minimum_cbf_residual": -1.529053135357339e-07,
+      "minimum_tangent_residual": 0.0,
+      "static_certificate_steps": 0,
+      "static_certificate_violations": 0,
+      "certified_bridge_steps": 0,
+      "certified_bridge_projection_calls": 0,
+      "certified_bridge_row_rejections": 0,
+      "certified_bridge_progress_violations": 0,
+      "minimum_certified_bridge_progress_residual": null,
+      "method": "Vanilla CBF-QP",
+      "controller_wall_time_s": 3.9387244100071257,
+      "mean_control_step_ms": 1.9693622050035628,
+      "first_arrival_times_s": [
+        null,
+        15.84,
+        16.89,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "final_positions_m": [
+        [
+          -0.6700000000200015,
+          -1.7470778425692586
+        ],
+        [
+          6.750000034483526,
+          -0.5999412765136992
+        ],
+        [
+          6.750000158031182,
+          0.5998742892598476
+        ],
+        [
+          -0.6700000000437704,
+          1.746700182276875
+        ],
+        [
+          0.6700000000146068,
+          1.7475144532722888
+        ],
+        [
+          0.6699007827199269,
+          0.5501864934127954
+        ],
+        [
+          0.7119409823837523,
+          -0.627562023638636
+        ],
+        [
+          0.6700001659107591,
+          -1.747956711263316
+        ]
+      ],
+      "gap_completed_robots": 2,
+      "gap_entered_robots": 2,
+      "gap_entry_start_s": 4.41,
+      "gap_exit_end_s": 8.4,
+      "parallel_throughput_robots_per_s": 0.0,
+      "smg_flow_rate_robots_per_m_s": 0.0,
+      "geometry": {
+        "doorway_width": 0.8,
+        "doorway_thickness": 0.8,
+        "intersection_corridor_width": 2.4,
+        "staging_distance": 3.2,
+        "queue_spacing": 0.6,
+        "staging_row_spacing": 0.56,
+        "reported_cost_field_passage_floor": 0.59,
+        "reported_baseline_local_model_width": 0.74,
+        "robot_diameter_m": 0.4,
+        "pair_clearance_m": 0.44,
+        "lookahead_virtual_diameter_m": 0.54,
+        "doorway_nominal_safety_lanes": 1,
+        "doorway_nominal_virtual_lanes": 1,
+        "doorway_cost_field_margin_m": 0.21000000000000008,
+        "baseline_local_model_margin_m": 0.06000000000000005,
+        "fairness_note_required": true
+      }
+    },
+    {
+      "family": "doorway_w0.80",
+      "n_robots": 16,
+      "seed": 0,
+      "fingerprint": "5054d8925d56930f",
+      "mission_success": false,
+      "physical_mission_success": false,
+      "robot_arrival_rate": 0.375,
+      "makespan_s": NaN,
+      "unarrived_robots": 10,
+      "maximum_final_goal_distance_m": 7.503302140158237,
+      "minimum_physical_pair_distance_m": 0.48639419259587224,
+      "minimum_transferred_pair_lower_bound_m": 0.43999999850883575,
+      "minimum_physical_obstacle_clearance_m": 0.047117111978948495,
+      "minimum_virtual_obstacle_clearance_m": -9.384027555014995e-09,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707995680728981,
+      "minimum_yaw_scale": null,
+      "minimum_yaw_retention": 1.857187770940128e-16,
+      "theoretical_yaw_scale_floor": null,
+      "nonconverged_steps": 0,
+      "feasibility_restoration_steps": 0,
+      "projection_iteration_cap_calls": 0,
+      "hqp_active_calls": 0,
+      "hqp_nonconverged_calls": 0,
+      "minimum_hqp_progress_retention": null,
+      "tangent_fallback_steps": 0,
+      "cluster_escape_steps": 0,
+      "cluster_escape_component_steps": 0,
+      "minimum_cbf_residual": -1.7851078657621366e-07,
+      "minimum_tangent_residual": 0.0,
+      "static_certificate_steps": 0,
+      "static_certificate_violations": 0,
+      "certified_bridge_steps": 0,
+      "certified_bridge_projection_calls": 0,
+      "certified_bridge_row_rejections": 0,
+      "certified_bridge_progress_violations": 0,
+      "minimum_certified_bridge_progress_residual": null,
+      "method": "Vanilla CBF-QP",
+      "controller_wall_time_s": 5.023246306009241,
+      "mean_control_step_ms": 2.5116231530046207,
+      "first_arrival_times_s": [
+        null,
+        18.09,
+        18.509999999999998,
+        null,
+        null,
+        18.66,
+        18.9,
+        null,
+        null,
+        33.51,
+        null,
+        null,
+        null,
+        null,
+        22.89,
+        null
+      ],
+      "final_positions_m": [
+        [
+          -0.670000000001088,
+          -2.02899401864442
+        ],
+        [
+          6.750004182528724,
+          -0.6006467112791959
+        ],
+        [
+          6.750000365901853,
+          0.6001912855207114
+        ],
+        [
+          -0.6700000000016609,
+          2.0284990467232595
+        ],
+        [
+          -0.670000002770881,
+          -1.4889940186589243
+        ],
+        [
+          6.150006079204528,
+          -0.6007796689009365
+        ],
+        [
+          6.15000002292519,
+          0.6000478812808476
+        ],
+        [
+          -0.6700000097806659,
+          1.4884990467408792
+        ],
+        [
+          0.6700000000055354,
+          2.031495514037859
+        ],
+        [
+          -6.75000003468588,
+          0.6000588955572735
+        ],
+        [
+          0.703202743686105,
+          -0.6386211554007599
+        ],
+        [
+          0.6700000008553327,
+          -2.030435953016915
+        ],
+        [
+          0.6701770251539965,
+          1.4914958273218706
+        ],
+        [
+          0.670017154022206,
+          0.6535561154913102
+        ],
+        [
+          -6.150000411772711,
+          -0.5997970783405518
+        ],
+        [
+          0.6726036834029776,
+          -1.4905037906530552
+        ]
+      ],
+      "gap_completed_robots": 6,
+      "gap_entered_robots": 6,
+      "gap_entry_start_s": 4.41,
+      "gap_exit_end_s": 25.02,
+      "parallel_throughput_robots_per_s": 0.0,
+      "smg_flow_rate_robots_per_m_s": 0.0,
+      "geometry": {
+        "doorway_width": 0.8,
+        "doorway_thickness": 0.8,
+        "intersection_corridor_width": 2.4,
+        "staging_distance": 3.2,
+        "queue_spacing": 0.6,
+        "staging_row_spacing": 0.56,
+        "reported_cost_field_passage_floor": 0.59,
+        "reported_baseline_local_model_width": 0.74,
+        "robot_diameter_m": 0.4,
+        "pair_clearance_m": 0.44,
+        "lookahead_virtual_diameter_m": 0.54,
+        "doorway_nominal_safety_lanes": 1,
+        "doorway_nominal_virtual_lanes": 1,
+        "doorway_cost_field_margin_m": 0.21000000000000008,
+        "baseline_local_model_margin_m": 0.06000000000000005,
+        "fairness_note_required": true
+      }
+    },
+    {
+      "family": "doorway_w1.20",
+      "n_robots": 8,
+      "seed": 0,
+      "fingerprint": "a048fe0721d4b278",
+      "mission_success": true,
+      "physical_mission_success": true,
+      "robot_arrival_rate": 1.0,
+      "makespan_s": 30.48,
+      "unarrived_robots": 0,
+      "maximum_final_goal_distance_m": 0.0500000000009924,
+      "minimum_physical_pair_distance_m": 0.4544179797517629,
+      "minimum_transferred_pair_lower_bound_m": 0.4400000492302242,
+      "minimum_physical_obstacle_clearance_m": 6.317373270434135e-05,
+      "minimum_virtual_obstacle_clearance_m": -6.861769707988685e-09,
+      "maximum_linear_speed_mps": 0.8000000065517412,
+      "maximum_yaw_rate_rps": 1.5707996888335618,
+      "minimum_yaw_scale": null,
+      "minimum_yaw_retention": 1.0533814554442666e-09,
+      "theoretical_yaw_scale_floor": null,
+      "nonconverged_steps": 0,
+      "feasibility_restoration_steps": 0,
+      "projection_iteration_cap_calls": 0,
+      "hqp_active_calls": 0,
+      "hqp_nonconverged_calls": 0,
+      "minimum_hqp_progress_retention": null,
+      "tangent_fallback_steps": 0,
+      "cluster_escape_steps": 0,
+      "cluster_escape_component_steps": 0,
+      "minimum_cbf_residual": -2.0963985968708299e-07,
+      "minimum_tangent_residual": 0.0,
+      "static_certificate_steps": 0,
+      "static_certificate_violations": 0,
+      "certified_bridge_steps": 0,
+      "certified_bridge_projection_calls": 0,
+      "certified_bridge_row_rejections": 0,
+      "certified_bridge_progress_violations": 0,
+      "minimum_certified_bridge_progress_residual": null,
+      "method": "Vanilla CBF-QP",
+      "controller_wall_time_s": 3.9199885179987177,
+      "mean_control_step_ms": 1.9599942589993589,
+      "first_arrival_times_s": [
+        20.82,
+        20.189999999999998,
+        21.029999999999998,
+        26.88,
+        25.95,
+        30.48,
+        24.48,
+        26.79
+      ],
+      "final_positions_m": [
+        [
+          6.750000159074766,
+          -1.7998738748661975
+        ],
+        [
+          6.750019372341703,
+          -0.5986082891888308
+        ],
+        [
+          6.750004254177108,
+          0.5993477732673382
+        ],
+        [
+          6.750009454324609,
+          1.7990277124020921
+        ],
+        [
+          -6.750000359285112,
+          1.7998104519073959
+        ],
+        [
+          -6.750000700663759,
+          0.6002646997946552
+        ],
+        [
+          -6.750000688785084,
+          -0.6002624464334748
+        ],
+        [
+          -6.7500000695436855,
+          -1.799916606577184
+        ]
+      ],
+      "gap_completed_robots": 8,
+      "gap_entered_robots": 8,
+      "gap_entry_start_s": 3.81,
+      "gap_exit_end_s": 22.05,
+      "parallel_throughput_robots_per_s": 0.43859649122807015,
+      "smg_flow_rate_robots_per_m_s": 0.3654970760233918,
+      "geometry": {
+        "doorway_width": 1.2,
+        "doorway_thickness": 0.8,
+        "intersection_corridor_width": 2.4,
+        "staging_distance": 3.2,
+        "queue_spacing": 0.6,
+        "staging_row_spacing": 0.56,
+        "reported_cost_field_passage_floor": 0.59,
+        "reported_baseline_local_model_width": 0.74,
+        "robot_diameter_m": 0.4,
+        "pair_clearance_m": 0.44,
+        "lookahead_virtual_diameter_m": 0.54,
+        "doorway_nominal_safety_lanes": 2,
+        "doorway_nominal_virtual_lanes": 2,
+        "doorway_cost_field_margin_m": 0.61,
+        "baseline_local_model_margin_m": 0.45999999999999996,
+        "fairness_note_required": false
+      }
+    },
+    {
+      "family": "doorway_w1.20",
+      "n_robots": 16,
+      "seed": 0,
+      "fingerprint": "81d0d78027b2fecb",
+      "mission_success": true,
+      "physical_mission_success": true,
+      "robot_arrival_rate": 1.0,
+      "makespan_s": 44.91,
+      "unarrived_robots": 0,
+      "maximum_final_goal_distance_m": 0.05000000166219237,
+      "minimum_physical_pair_distance_m": 0.45811434495847275,
+      "minimum_transferred_pair_lower_bound_m": 0.4400000022656151,
+      "minimum_physical_obstacle_clearance_m": 0.04564400010918765,
+      "minimum_virtual_obstacle_clearance_m": -1.4524990543662852e-08,
+      "maximum_linear_speed_mps": 0.8000000026019922,
+      "maximum_yaw_rate_rps": 1.5707998876933176,
+      "minimum_yaw_scale": null,
+      "minimum_yaw_retention": 1.3520783413762151e-09,
+      "theoretical_yaw_scale_floor": null,
+      "nonconverged_steps": 0,
+      "feasibility_restoration_steps": 0,
+      "projection_iteration_cap_calls": 0,
+      "hqp_active_calls": 0,
+      "hqp_nonconverged_calls": 0,
+      "minimum_hqp_progress_retention": null,
+      "tangent_fallback_steps": 0,
+      "cluster_escape_steps": 0,
+      "cluster_escape_component_steps": 0,
+      "minimum_cbf_residual": -1.784618585088868e-07,
+      "minimum_tangent_residual": 0.0,
+      "static_certificate_steps": 0,
+      "static_certificate_violations": 0,
+      "certified_bridge_steps": 0,
+      "certified_bridge_projection_calls": 0,
+      "certified_bridge_row_rejections": 0,
+      "certified_bridge_progress_violations": 0,
+      "minimum_certified_bridge_progress_residual": null,
+      "method": "Vanilla CBF-QP",
+      "controller_wall_time_s": 5.390135106004891,
+      "mean_control_step_ms": 2.6950675530024455,
+      "first_arrival_times_s": [
+        19.74,
+        22.83,
+        22.349999999999998,
+        35.37,
+        27.119999999999997,
+        23.13,
+        26.25,
+        35.58,
+        33.39,
+        37.65,
+        30.09,
+        44.91,
+        33.78,
+        39.3,
+        30.45,
+        34.86
+      ],
+      "final_positions_m": [
+        [
+          6.750007608255833,
+          -1.7991277799616887
+        ],
+        [
+          6.750000092206108,
+          -0.6000960244771573
+        ],
+        [
+          6.750153922339992,
+          0.5960797267940638
+        ],
+        [
+          6.750053105641873,
+          1.797696145821395
+        ],
+        [
+          6.150099394700912,
+          -1.7968488746641134
+        ],
+        [
+          6.150000351049475,
+          -0.5998126369228951
+        ],
+        [
+          6.150334350210971,
+          0.5942273722506947
+        ],
+        [
+          6.150255009305343,
+          1.7949565982821662
+        ],
+        [
+          -6.750000391416207,
+          1.7998021577211059
+        ],
+        [
+          -6.7500007269833535,
+          0.6002696254930503
+        ],
+        [
+          -6.750000708480359,
+          -0.6002661721881504
+        ],
+        [
+          -6.77695367076369,
+          -1.7556280846148056
+        ],
+        [
+          -6.150013646739375,
+          1.7988318870764843
+        ],
+        [
+          -6.15000012874491,
+          0.6001134665097676
+        ],
+        [
+          -6.150000153069115,
+          -0.600123721409376
+        ],
+        [
+          -6.221550449895111,
+          -1.8451173832438241
+        ]
+      ],
+      "gap_completed_robots": 16,
+      "gap_entered_robots": 16,
+      "gap_entry_start_s": 3.81,
+      "gap_exit_end_s": 31.65,
+      "parallel_throughput_robots_per_s": 0.5747126436781609,
+      "smg_flow_rate_robots_per_m_s": 0.4789272030651341,
+      "geometry": {
+        "doorway_width": 1.2,
+        "doorway_thickness": 0.8,
+        "intersection_corridor_width": 2.4,
+        "staging_distance": 3.2,
+        "queue_spacing": 0.6,
+        "staging_row_spacing": 0.56,
+        "reported_cost_field_passage_floor": 0.59,
+        "reported_baseline_local_model_width": 0.74,
+        "robot_diameter_m": 0.4,
+        "pair_clearance_m": 0.44,
+        "lookahead_virtual_diameter_m": 0.54,
+        "doorway_nominal_safety_lanes": 2,
+        "doorway_nominal_virtual_lanes": 2,
+        "doorway_cost_field_margin_m": 0.61,
+        "baseline_local_model_margin_m": 0.45999999999999996,
+        "fairness_note_required": false
+      }
+    },
+    {
+      "family": "intersection_w2.40",
+      "n_robots": 8,
+      "seed": 0,
+      "fingerprint": "27e35d3a1a4bfe00",
+      "mission_success": true,
+      "physical_mission_success": true,
+      "robot_arrival_rate": 1.0,
+      "makespan_s": 19.98,
+      "unarrived_robots": 0,
+      "maximum_final_goal_distance_m": 0.05000000000099947,
+      "minimum_physical_pair_distance_m": 0.4994713358066825,
+      "minimum_transferred_pair_lower_bound_m": 0.4400097717025472,
+      "minimum_physical_obstacle_clearance_m": 0.4913987940033374,
+      "minimum_virtual_obstacle_clearance_m": 0.4414039881861356,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "minimum_yaw_scale": null,
+      "minimum_yaw_retention": 2.9733277867042094e-06,
+      "theoretical_yaw_scale_floor": null,
+      "nonconverged_steps": 0,
+      "feasibility_restoration_steps": 0,
+      "projection_iteration_cap_calls": 0,
+      "hqp_active_calls": 0,
+      "hqp_nonconverged_calls": 0,
+      "minimum_hqp_progress_retention": null,
+      "tangent_fallback_steps": 0,
+      "cluster_escape_steps": 0,
+      "cluster_escape_component_steps": 0,
+      "minimum_cbf_residual": -1.7508611898937182e-07,
+      "minimum_tangent_residual": 0.0,
+      "static_certificate_steps": 0,
+      "static_certificate_violations": 0,
+      "certified_bridge_steps": 0,
+      "certified_bridge_projection_calls": 0,
+      "certified_bridge_row_rejections": 0,
+      "certified_bridge_progress_violations": 0,
+      "minimum_certified_bridge_progress_residual": null,
+      "method": "Vanilla CBF-QP",
+      "controller_wall_time_s": 4.50158346099488,
+      "mean_control_step_ms": 2.25079173049744,
+      "first_arrival_times_s": [
+        17.34,
+        19.14,
+        18.15,
+        18.15,
+        19.98,
+        18.18,
+        18.06,
+        19.68
+      ],
+      "final_positions_m": [
+        [
+          6.7500123344577565,
+          0.1988894624110004
+        ],
+        [
+          6.1500638411564745,
+          -0.19747412588364152
+        ],
+        [
+          -6.750008936143832,
+          -0.19905473039499932
+        ],
+        [
+          -6.150039677630469,
+          0.19800847073066624
+        ],
+        [
+          -0.20622686287432382,
+          6.750389253393631
+        ],
+        [
+          0.22962881566509466,
+          6.159724284210198
+        ],
+        [
+          0.1992687287013121,
+          -6.7500053478621425
+        ],
+        [
+          -0.19802394005430493,
+          -6.150039063387573
+        ]
+      ],
+      "gap_completed_robots": 8,
+      "gap_entered_robots": 8,
+      "gap_entry_start_s": 2.6399999999999997,
+      "gap_exit_end_s": 13.08,
+      "parallel_throughput_robots_per_s": 0.7662835249042145,
+      "smg_flow_rate_robots_per_m_s": 0.3192848020434227,
+      "geometry": {
+        "doorway_width": 0.8,
+        "doorway_thickness": 0.8,
+        "intersection_corridor_width": 2.4,
+        "staging_distance": 3.2,
+        "queue_spacing": 0.6,
+        "staging_row_spacing": 0.56,
+        "reported_cost_field_passage_floor": 0.59,
+        "reported_baseline_local_model_width": 0.74,
+        "robot_diameter_m": 0.4,
+        "pair_clearance_m": 0.44,
+        "lookahead_virtual_diameter_m": 0.54,
+        "doorway_nominal_safety_lanes": 1,
+        "doorway_nominal_virtual_lanes": 1,
+        "doorway_cost_field_margin_m": 0.21000000000000008,
+        "baseline_local_model_margin_m": 0.06000000000000005,
+        "fairness_note_required": true
+      }
+    },
+    {
+      "family": "intersection_w2.40",
+      "n_robots": 16,
+      "seed": 0,
+      "fingerprint": "f36827c5cea51590",
+      "mission_success": true,
+      "physical_mission_success": true,
+      "robot_arrival_rate": 1.0,
+      "makespan_s": 28.41,
+      "unarrived_robots": 0,
+      "maximum_final_goal_distance_m": 0.05000000000099884,
+      "minimum_physical_pair_distance_m": 0.4563736310349565,
+      "minimum_transferred_pair_lower_bound_m": 0.440001589512685,
+      "minimum_physical_obstacle_clearance_m": 0.11683993728423767,
+      "minimum_virtual_obstacle_clearance_m": 0.06623743876370142,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "minimum_yaw_scale": null,
+      "minimum_yaw_retention": 4.215381414104326e-06,
+      "theoretical_yaw_scale_floor": null,
+      "nonconverged_steps": 0,
+      "feasibility_restoration_steps": 1,
+      "projection_iteration_cap_calls": 3,
+      "hqp_active_calls": 0,
+      "hqp_nonconverged_calls": 0,
+      "minimum_hqp_progress_retention": null,
+      "tangent_fallback_steps": 0,
+      "cluster_escape_steps": 0,
+      "cluster_escape_component_steps": 0,
+      "minimum_cbf_residual": -9.180625003026022e-07,
+      "minimum_tangent_residual": 0.0,
+      "static_certificate_steps": 0,
+      "static_certificate_violations": 0,
+      "certified_bridge_steps": 0,
+      "certified_bridge_projection_calls": 0,
+      "certified_bridge_row_rejections": 0,
+      "certified_bridge_progress_violations": 0,
+      "minimum_certified_bridge_progress_residual": null,
+      "method": "Vanilla CBF-QP",
+      "controller_wall_time_s": 6.087318153004162,
+      "mean_control_step_ms": 3.043659076502081,
+      "first_arrival_times_s": [
+        28.41,
+        24.54,
+        22.74,
+        23.04,
+        24.21,
+        24.39,
+        23.279999999999998,
+        25.11,
+        26.369999999999997,
+        27.509999999999998,
+        21.869999999999997,
+        21.39,
+        24.54,
+        28.14,
+        23.7,
+        23.16
+      ],
+      "final_positions_m": [
+        [
+          6.754788005236313,
+          0.22135124187458405
+        ],
+        [
+          6.217043896532125,
+          -0.24700537832098043
+        ],
+        [
+          5.637116839618761,
+          0.1664986535074731
+        ],
+        [
+          4.983984833709704,
+          -0.15263424814703727
+        ],
+        [
+          -6.750177487843375,
+          -0.19579080975724888
+        ],
+        [
+          -6.150136005770356,
+          0.20368538730186642
+        ],
+        [
+          -5.554182616179294,
+          -0.22001917430680007
+        ],
+        [
+          -4.95038724824409,
+          0.19378913344969284
+        ],
+        [
+          -0.2236614990096567,
+          6.755953053854853
+        ],
+        [
+          0.21140404889251574,
+          6.151317891695657
+        ],
+        [
+          -0.21533470655440654,
+          5.647590406333502
+        ],
+        [
+          0.2463488647982755,
+          5.018755871934145
+        ],
+        [
+          0.19800800272809402,
+          -6.750039696288296
+        ],
+        [
+          -0.20140651792822512,
+          -6.150019786841027
+        ],
+        [
+          0.23260651860943668,
+          -5.637905341896236
+        ],
+        [
+          -0.24813482172168744,
+          -5.013529188368783
+        ]
+      ],
+      "gap_completed_robots": 16,
+      "gap_entered_robots": 16,
+      "gap_entry_start_s": 2.6399999999999997,
+      "gap_exit_end_s": 20.009999999999998,
+      "parallel_throughput_robots_per_s": 0.9211283822682788,
+      "smg_flow_rate_robots_per_m_s": 0.3838034926117828,
+      "geometry": {
+        "doorway_width": 0.8,
+        "doorway_thickness": 0.8,
+        "intersection_corridor_width": 2.4,
+        "staging_distance": 3.2,
+        "queue_spacing": 0.6,
+        "staging_row_spacing": 0.56,
+        "reported_cost_field_passage_floor": 0.59,
+        "reported_baseline_local_model_width": 0.74,
+        "robot_diameter_m": 0.4,
+        "pair_clearance_m": 0.44,
+        "lookahead_virtual_diameter_m": 0.54,
+        "doorway_nominal_safety_lanes": 1,
+        "doorway_nominal_virtual_lanes": 1,
+        "doorway_cost_field_margin_m": 0.21000000000000008,
+        "baseline_local_model_margin_m": 0.06000000000000005,
+        "fairness_note_required": true
+      }
+    }
+  ]
+}

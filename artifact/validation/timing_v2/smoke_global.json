@@ -1,0 +1,225 @@
+{
+  "created_utc": "2026-07-31T00:58:44.084029+00:00",
+  "environment": {
+    "blas_threads": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "logical_cpu_count": 24,
+    "numpy": "2.4.6",
+    "python": "3.11.15"
+  },
+  "measurement_scope": "controller command plus three native-unicycle projections; excludes static planning, target lookup, integration, and mission audits",
+  "protocol": {
+    "arrival_radius": 0.22,
+    "body_radius": 0.2,
+    "circle_count": 14,
+    "dt": 0.03,
+    "horizon": 0.3,
+    "obstacle_fraction": 0.15,
+    "rectangle_count": 12,
+    "safety_margin": 0.02,
+    "speed_limit": 0.8,
+    "swap_radius": 7.5,
+    "workspace_size": 16.0
+  },
+  "records": [
+    {
+      "algorithm": "CLEAR",
+      "batch_step_ms": {
+        "maximum": 3.478821,
+        "mean": 2.56654,
+        "median": 2.3869585,
+        "p95": 3.3024885499999996,
+        "sample_count": 8
+      },
+      "controller_backend": "numpy+scipy+osqp-global",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 3.478821,
+        "mean": 2.56654,
+        "median": 2.3869585,
+        "p95": 3.3024885499999996,
+        "sample_count": 8
+      },
+      "dt_s": 0.03,
+      "family": "rect15",
+      "feasibility_restoration_calls": 0,
+      "final_centers": [
+        [
+          3.353210369718,
+          -4.385348018865
+        ],
+        [
+          -6.542498593164,
+          -3.604552520918
+        ],
+        [
+          -3.604801638619,
+          -1.551532902525
+        ],
+        [
+          3.252151297202,
+          -3.83240767806
+        ],
+        [
+          7.3621904786,
+          5.423801976558
+        ],
+        [
+          0.144938956356,
+          5.223285643636
+        ],
+        [
+          -0.911556866115,
+          3.371277939028
+        ],
+        [
+          7.272061714194,
+          -5.172346914381
+        ],
+        [
+          -3.619059177691,
+          0.199684219932
+        ],
+        [
+          -1.756361047438,
+          4.626973728594
+        ],
+        [
+          6.442735065813,
+          1.130847715466
+        ],
+        [
+          -2.989860090665,
+          2.221981162519
+        ],
+        [
+          -0.100589462896,
+          -3.449266943877
+        ],
+        [
+          3.306768653503,
+          -5.98597403515
+        ],
+        [
+          4.049815927615,
+          7.654099398639
+        ],
+        [
+          -3.653098908347,
+          2.587499441097
+        ],
+        [
+          -0.550593433646,
+          4.402116577686
+        ],
+        [
+          -2.639441996398,
+          0.987569630868
+        ],
+        [
+          6.971253453273,
+          -6.115597012886
+        ],
+        [
+          -4.832833912507,
+          6.262899188181
+        ]
+      ],
+      "final_headings": [
+        -0.005935764436,
+        -0.471238752096,
+        0.238880685434,
+        0.471238833356,
+        0.471238750546,
+        0.47123875258,
+        -0.471238750859,
+        0.47123875101,
+        -0.471238752356,
+        -0.429505687463,
+        -0.471238751143,
+        -0.471238752756,
+        0.471238750274,
+        0.39168554206,
+        0.363228702008,
+        -0.471238751361,
+        -0.471238750886,
+        0.47123875251,
+        -0.471238750569,
+        -0.471238752186
+      ],
+      "final_state_sha256": "b2d78637bc9f5cbf816606bed8ea380a12eeaefee258cb4ec0e8fdbe6ea39a6f",
+      "gpu_model": "none",
+      "horizon_s": 0.3,
+      "inner_substeps": 3,
+      "local_unit_definition": "sum across sequential inner nodes of the maximum exact connected-component QP solve at each node",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 1.461316,
+          "mean": 0.5889561249999999,
+          "median": 0.37943550000000004,
+          "p95": 1.3125624999999999,
+          "sample_count": 8
+        },
+        "per_step_max": {
+          "maximum": 1.461316,
+          "mean": 0.5889561249999999,
+          "median": 0.37943550000000004,
+          "p95": 1.3125624999999999,
+          "sample_count": 8
+        },
+        "unit_count": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "p95": 1.0,
+          "sample_count": 8
+        }
+      },
+      "maximum_component_size": 20,
+      "mean_components_per_projection": 1.0,
+      "measured_steps": 8,
+      "n_robots": 20,
+      "nonconverged_steps": 0,
+      "projection_mode": "global",
+      "samples_file": "validation/timing_v2/smoke_samples/clear_global_rect15_n20_s99.npz",
+      "samples_sha256": "d6852be3ae5c9e8a83236175b730edeb2d9d1434f870c49628e80fa210016e8b",
+      "scenario_fingerprint": "4028572f94385c2a",
+      "seed": 99,
+      "shared_coordination_ms": {
+        "maximum": 2.086129,
+        "mean": 1.977583875,
+        "median": 1.9609255,
+        "p95": 2.0761729,
+        "sample_count": 8
+      },
+      "variant": "clear",
+      "warmup_steps": 2,
+      "worker_count": 1
+    }
+  ],
+  "schema_version": "timing-v2.1",
+  "unicycle": {
+    "actuation_mode": "native-cbf",
+    "bridge_geometry_tolerance": 1e-08,
+    "bridge_progress_retention": 0.9,
+    "certified_bridge_progress": true,
+    "hierarchical_progress": false,
+    "hqp_minimum_direction_norm": 1e-08,
+    "hqp_progress_retention": 0.995,
+    "hqp_regularization": 1e-06,
+    "inner_substeps": 3,
+    "lookahead": 0.05,
+    "minimum_restoration_retention": 0.25,
+    "projection_backend": "osqp",
+    "projection_extension_sweeps": 0,
+    "projection_max_sweeps": 4000,
+    "projection_solver_margin": 0.0,
+    "projection_solver_tolerance": 1e-07,
+    "projection_tolerance": 1e-06,
+    "yaw_rate_limit": 1.5707963267948966
+  }
+}

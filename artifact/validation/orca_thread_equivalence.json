@@ -1,0 +1,33 @@
+{
+  "purpose": "Verify that limiting nested OpenMP/BLAS workers changes runtime only.",
+  "method": "ORCA",
+  "scenario": {
+    "family": "doorway",
+    "doorway_width_m": 1.2,
+    "n_robots": 8,
+    "seed": 99,
+    "horizon_s": 3.0,
+    "dt_s": 0.03
+  },
+  "reference": {
+    "execution": "library default worker count",
+    "output": "baselines/comparison-harness/results/orca_profile_tmp.json"
+  },
+  "candidate": {
+    "execution": "OMP_NUM_THREADS=1, OPENBLAS_NUM_THREADS=1, MKL_NUM_THREADS=1",
+    "output": "baselines/comparison-harness/results/orca_profile_omp1.json"
+  },
+  "exact_matches": {
+    "fingerprint": "6d13d4e53436bb63",
+    "final_maximum_goal_distance_m": 9.998867649886954,
+    "mean_path_length_m": 1.630055484361562,
+    "minimum_pair_distance_m": 0.5360149336892984,
+    "minimum_obstacle_clearance_m": 0.78442923557382,
+    "maximum_linear_speed_mps": 0.7999410358555135,
+    "maximum_yaw_rate_rps": 1.5707963267948966,
+    "gap_completed_robots": 0,
+    "mission_success": false
+  },
+  "timing_excluded_from_equivalence": true,
+  "passed": true
+}

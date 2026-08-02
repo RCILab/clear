@@ -1,0 +1,47 @@
+{
+  "method": "IMPC-DR",
+  "implementation": "public algorithm adapted to common unicycle dynamics",
+  "state": "[x, y, v, theta]",
+  "input": "[a, omega]",
+  "dt_s": 0.03,
+  "horizon_steps": 24,
+  "scp_iterations": 2,
+  "records": [
+    {
+      "n_robots": 20,
+      "steps": 1,
+      "mean_replan_wall_time_s": 0.7500306160072796,
+      "maximum_replan_wall_time_s": 0.7500306160072796,
+      "per_robot_replan_ms": 37.50153080036398,
+      "moving_robot_count": 0,
+      "minimum_pair_distance_m": 0.8760330042252917,
+      "all_solves_accepted": true,
+      "maximum_abs_speed_mps": 0.035999999961795474,
+      "maximum_abs_yaw_rate_rps": 1.5707963217793783
+    },
+    {
+      "n_robots": 40,
+      "steps": 1,
+      "mean_replan_wall_time_s": 1.3485010290023638,
+      "maximum_replan_wall_time_s": 1.3485010290023638,
+      "per_robot_replan_ms": 33.712525725059095,
+      "moving_robot_count": 0,
+      "minimum_pair_distance_m": 0.8787418721518611,
+      "all_solves_accepted": true,
+      "maximum_abs_speed_mps": 0.03599999993298897,
+      "maximum_abs_yaw_rate_rps": 1.570796322208657
+    },
+    {
+      "n_robots": 80,
+      "steps": 1,
+      "mean_replan_wall_time_s": 2.7533759619982447,
+      "maximum_replan_wall_time_s": 2.7533759619982447,
+      "per_robot_replan_ms": 34.41719952497806,
+      "moving_robot_count": 0,
+      "minimum_pair_distance_m": 0.8794198730031311,
+      "all_solves_accepted": true,
+      "maximum_abs_speed_mps": 0.03599999991016312,
+      "maximum_abs_yaw_rate_rps": 1.570796306545417
+    }
+  ]
+}

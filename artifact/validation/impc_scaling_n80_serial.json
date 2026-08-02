@@ -1,0 +1,35 @@
+{
+  "method": "IMPC-DR",
+  "source": "SMGLib public implementation",
+  "model_audit": {
+    "executed_state": "[x, y, vx, vy]",
+    "executed_input": "[ax, ay]",
+    "prediction_model": "double integrator",
+    "bounded_unicycle_compatible": false,
+    "common_unicycle_table_eligible": false,
+    "reason": "the public execution path does not use the repository's separate nonholonomic linearization module"
+  },
+  "horizon_steps": 10,
+  "dt_s": 0.2,
+  "parallel_workers": 1,
+  "records": [
+    {
+      "n_robots": 40,
+      "one_replan_wall_time_s": 0.39630986101110466,
+      "per_robot_replan_ms": 9.907746525277616,
+      "moving_robot_count": 40,
+      "maximum_displacement_m": 0.005925932814173022,
+      "constraint_rows_mean": 81.0,
+      "constraint_rows_max": 81
+    },
+    {
+      "n_robots": 80,
+      "one_replan_wall_time_s": 0.9079916519986,
+      "per_robot_replan_ms": 11.3498956499825,
+      "moving_robot_count": 80,
+      "maximum_displacement_m": 0.005926254119643044,
+      "constraint_rows_mean": 81.0,
+      "constraint_rows_max": 81
+    }
+  ]
+}

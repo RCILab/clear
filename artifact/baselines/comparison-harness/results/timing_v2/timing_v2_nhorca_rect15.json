@@ -1,0 +1,4245 @@
+{
+  "algorithm": "NH-ORCA",
+  "initial_heading_rad": 0.0,
+  "physical_protocol": {
+    "arrival_radius": 0.22,
+    "body_radius": 0.2,
+    "circle_count": 14,
+    "dt": 0.03,
+    "horizon": 60.0,
+    "obstacle_fraction": 0.15,
+    "rectangle_count": 12,
+    "safety_margin": 0.02,
+    "speed_limit": 0.8,
+    "swap_radius": 7.5,
+    "workspace_size": 16.0
+  },
+  "records": [
+    {
+      "algorithm": "NH-ORCA",
+      "arrival_success": false,
+      "batch_contains_local_units": true,
+      "batch_step_ms": {
+        "maximum": 0.282602,
+        "mean": 0.08266545204081634,
+        "median": 0.0772565,
+        "p95": 0.11086164999999995,
+        "sample_count": 1960
+      },
+      "control_time_max_ms": 0.282602,
+      "control_time_mean_ms": 0.08283609450000001,
+      "control_time_p95_ms": 0.11330714999999997,
+      "controller_backend": "public-rvo2-c++-per-agent-hook",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 0.26586100000000007,
+        "mean": 0.07612725255102042,
+        "median": 0.071353,
+        "p95": 0.09980534999999999,
+        "sample_count": 1960
+      },
+      "dynamics": "bounded-lookahead-unicycle",
+      "ever_arrival_rate": 0.95,
+      "ever_arrival_success": false,
+      "family": "rect15",
+      "final_arrival_success": false,
+      "final_centers": [
+        [
+          -3.557824335875,
+          -3.854392407669
+        ],
+        [
+          6.207000813511,
+          -4.176471718306
+        ],
+        [
+          -5.69178792848,
+          -3.084175237539
+        ],
+        [
+          4.573256220242,
+          0.897317483443
+        ],
+        [
+          -3.155231165336,
+          -1.163848686402
+        ],
+        [
+          5.042966269466,
+          1.779661352537
+        ],
+        [
+          0.597536809073,
+          1.424351921917
+        ],
+        [
+          -6.849858163463,
+          4.999555653492
+        ],
+        [
+          -7.358175914149,
+          -2.079187324296
+        ],
+        [
+          -6.554228585136,
+          2.572694304777
+        ],
+        [
+          3.368631406879,
+          -5.68407471002
+        ],
+        [
+          -1.745102920634,
+          -1.278395203924
+        ],
+        [
+          0.044312574817,
+          7.363629271339
+        ],
+        [
+          5.679924766538,
+          0.160895031819
+        ],
+        [
+          -2.605103020527,
+          7.559983828262
+        ],
+        [
+          2.554918953493,
+          6.876312926384
+        ],
+        [
+          6.597599918155,
+          3.62190055832
+        ],
+        [
+          3.52707018288,
+          -5.202664912043
+        ],
+        [
+          -1.614073120705,
+          6.127703165463
+        ],
+        [
+          -4.513369588664,
+          0.399480958999
+        ]
+      ],
+      "final_headings": [
+        3.827602565109,
+        -2.852001350456,
+        -2.109877086259,
+        0.173417568592,
+        -2.135444143133,
+        2.187313762572,
+        0.210298326648,
+        3.190631829705,
+        -3.081237749584,
+        -1.386081321356,
+        -0.346315946305,
+        2.042028435757,
+        3.130156871484,
+        0.021511723157,
+        0.150185300659,
+        1.380205676883,
+        1.644970108047,
+        6.650723435378,
+        1.573642185126,
+        -3.15469874036
+      ],
+      "final_maximum_goal_distance_m": 3.4935809635904627,
+      "final_state_sha256": "f354211417d3acbfb6d352e9d9891dc48b71517e0f59019927dd1fc41a797528",
+      "fingerprint": "52135e2051226e3c",
+      "gpu_model": "none",
+      "local_unit_definition": "one RVO2 agent computeNeighbors plus computeNewVelocity",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 0.02703,
+          "mean": 0.00036587867346938777,
+          "median": 0.000321,
+          "p95": 0.00067,
+          "sample_count": 39200
+        },
+        "per_step_max": {
+          "maximum": 0.02703,
+          "mean": 0.0007793739795918367,
+          "median": 0.000588,
+          "p95": 0.00138105,
+          "sample_count": 1960
+        },
+        "unit_count": {
+          "maximum": 20.0,
+          "mean": 20.0,
+          "median": 20.0,
+          "p95": 20.0,
+          "sample_count": 1960
+        }
+      },
+      "makespan_s": null,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "mean_path_length_m": 8.936023781618193,
+      "minimum_boundary_clearance_m": null,
+      "minimum_obstacle_clearance_m": null,
+      "minimum_pair_distance_m": null,
+      "minimum_static_obstacle_clearance_m": null,
+      "n_robots": 20,
+      "parameters": {
+        "circle_vertices": 32,
+        "heading_gain": 2.5,
+        "lookahead_m": 0.05,
+        "max_neighbors": 19,
+        "mode": "nh-orca",
+        "neighbor_distance_m": 3.0,
+        "obstacle_inflation_m": 0.1,
+        "obstacle_time_horizon_s": 2.0,
+        "pair_inflation_m": 0.0,
+        "time_horizon_s": 2.0
+      },
+      "planning_time_ms": 408.778082,
+      "robot_arrival_rate": 0.95,
+      "safe": null,
+      "safety_audit": false,
+      "scenario_fingerprint": "52135e2051226e3c",
+      "seed": 0,
+      "shared_coordination_ms": {
+        "maximum": 0.26372900000000005,
+        "mean": 0.07534787857142858,
+        "median": 0.07073399999999999,
+        "p95": 0.09837615,
+        "sample_count": 1960
+      },
+      "steps": 2000,
+      "success": null,
+      "termination_time_s": 60.0,
+      "timing_v2_samples_file": "baselines/comparison-harness/results/timing_v2/samples/nh-orca_rect15_n20_s0.npz",
+      "timing_v2_samples_sha256": "fd5ca9c7e10b9abd9e1039da449285548b4e748a21e80540a239add2436379e6",
+      "warmup_steps": 40,
+      "worker_count": 1
+    },
+    {
+      "algorithm": "NH-ORCA",
+      "arrival_success": false,
+      "batch_contains_local_units": true,
+      "batch_step_ms": {
+        "maximum": 0.556275,
+        "mean": 0.08579294693877551,
+        "median": 0.077281,
+        "p95": 0.13102855,
+        "sample_count": 1960
+      },
+      "control_time_max_ms": 0.556275,
+      "control_time_mean_ms": 0.08585637,
+      "control_time_p95_ms": 0.13108994999999998,
+      "controller_backend": "public-rvo2-c++-per-agent-hook",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 0.542376,
+        "mean": 0.07882524081632653,
+        "median": 0.07093350000000001,
+        "p95": 0.11745665,
+        "sample_count": 1960
+      },
+      "dynamics": "bounded-lookahead-unicycle",
+      "ever_arrival_rate": 0.85,
+      "ever_arrival_success": false,
+      "family": "rect15",
+      "final_arrival_success": false,
+      "final_centers": [
+        [
+          -5.179151950159,
+          6.705004710338
+        ],
+        [
+          -7.43212099988,
+          3.909570613846
+        ],
+        [
+          -7.29031916474,
+          1.9880027012
+        ],
+        [
+          0.871843191498,
+          -4.743857635764
+        ],
+        [
+          -4.441724658543,
+          -2.118773987521
+        ],
+        [
+          6.785922754162,
+          1.201441847408
+        ],
+        [
+          -2.434036455404,
+          -3.318503799293
+        ],
+        [
+          7.020160166271,
+          -0.643454272616
+        ],
+        [
+          1.36771937661,
+          -4.612627515594
+        ],
+        [
+          3.562161077567,
+          1.352152252914
+        ],
+        [
+          0.841283325327,
+          3.927090191297
+        ],
+        [
+          1.789118811176,
+          7.28254225063
+        ],
+        [
+          -2.512653982075,
+          -1.53028298123
+        ],
+        [
+          -4.6244941562,
+          -6.728522177246
+        ],
+        [
+          -4.446776929079,
+          6.203268219377
+        ],
+        [
+          5.472362890849,
+          -5.963182339023
+        ],
+        [
+          -2.9928006912,
+          7.065028496411
+        ],
+        [
+          -0.31003092655,
+          1.978414734733
+        ],
+        [
+          -6.555165503098,
+          -1.356832091059
+        ],
+        [
+          4.121511928989,
+          5.087336344441
+        ]
+      ],
+      "final_headings": [
+        3.158648665569,
+        3.125445478676,
+        3.155136577513,
+        -4.408723436928,
+        3.129196359998,
+        -2.576088340171,
+        -1.749553547605,
+        -1.71692173862,
+        1.311286257747,
+        -0.503631479664,
+        1.418927764903,
+        0.036226451202,
+        -2.54354687603,
+        -1.426982110123,
+        2.217584310221,
+        -2.957764674953,
+        1.849218694176,
+        3.122708623172,
+        -3.090729643026,
+        -1.753797557762
+      ],
+      "final_maximum_goal_distance_m": 7.762828643912029,
+      "final_state_sha256": "1580e4b04e727e35b07041ed334a63a7b71fc6f80d75a204189dd3214ca56a2d",
+      "fingerprint": "6c011b2fc892eddf",
+      "gpu_model": "none",
+      "local_unit_definition": "one RVO2 agent computeNeighbors plus computeNewVelocity",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 0.43297,
+          "mean": 0.000409412193877551,
+          "median": 0.000331,
+          "p95": 0.000748,
+          "sample_count": 39200
+        },
+        "per_step_max": {
+          "maximum": 0.43297,
+          "mean": 0.0012205377551020408,
+          "median": 0.000568,
+          "p95": 0.00193715,
+          "sample_count": 1960
+        },
+        "unit_count": {
+          "maximum": 20.0,
+          "mean": 20.0,
+          "median": 20.0,
+          "p95": 20.0,
+          "sample_count": 1960
+        }
+      },
+      "makespan_s": null,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "mean_path_length_m": 7.8987866163799625,
+      "minimum_boundary_clearance_m": null,
+      "minimum_obstacle_clearance_m": null,
+      "minimum_pair_distance_m": null,
+      "minimum_static_obstacle_clearance_m": null,
+      "n_robots": 20,
+      "parameters": {
+        "circle_vertices": 32,
+        "heading_gain": 2.5,
+        "lookahead_m": 0.05,
+        "max_neighbors": 19,
+        "mode": "nh-orca",
+        "neighbor_distance_m": 3.0,
+        "obstacle_inflation_m": 0.1,
+        "obstacle_time_horizon_s": 2.0,
+        "pair_inflation_m": 0.0,
+        "time_horizon_s": 2.0
+      },
+      "planning_time_ms": 418.008299,
+      "robot_arrival_rate": 0.85,
+      "safe": null,
+      "safety_audit": false,
+      "scenario_fingerprint": "6c011b2fc892eddf",
+      "seed": 7,
+      "shared_coordination_ms": {
+        "maximum": 0.5399689999999999,
+        "mean": 0.07760470306122448,
+        "median": 0.0702885,
+        "p95": 0.11496229999999999,
+        "sample_count": 1960
+      },
+      "steps": 2000,
+      "success": null,
+      "termination_time_s": 60.0,
+      "timing_v2_samples_file": "baselines/comparison-harness/results/timing_v2/samples/nh-orca_rect15_n20_s7.npz",
+      "timing_v2_samples_sha256": "2bfdcb22a432b65a41d2a19f53d5303d62a64c178e181c24eb8484e3fa79d420",
+      "warmup_steps": 40,
+      "worker_count": 1
+    },
+    {
+      "algorithm": "NH-ORCA",
+      "arrival_success": true,
+      "batch_contains_local_units": true,
+      "batch_step_ms": {
+        "maximum": 0.43087,
+        "mean": 0.09020996843434344,
+        "median": 0.08048749999999999,
+        "p95": 0.1441430999999999,
+        "sample_count": 792
+      },
+      "control_time_max_ms": 0.43087,
+      "control_time_mean_ms": 0.09066879447115385,
+      "control_time_p95_ms": 0.1449888,
+      "controller_backend": "public-rvo2-c++-per-agent-hook",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 0.41309599999999996,
+        "mean": 0.08236863888888889,
+        "median": 0.073436,
+        "p95": 0.13117025,
+        "sample_count": 792
+      },
+      "dynamics": "bounded-lookahead-unicycle",
+      "ever_arrival_rate": 1.0,
+      "ever_arrival_success": true,
+      "family": "rect15",
+      "final_arrival_success": true,
+      "final_centers": [
+        [
+          -3.16522194075,
+          3.228481761893
+        ],
+        [
+          6.999778195697,
+          3.042044883337
+        ],
+        [
+          -2.692856915331,
+          -2.104684007472
+        ],
+        [
+          -0.443034760763,
+          -4.798832324262
+        ],
+        [
+          0.723423698422,
+          -3.752233466616
+        ],
+        [
+          6.76111985478,
+          -0.970291959375
+        ],
+        [
+          1.258886481797,
+          1.287805441603
+        ],
+        [
+          -1.334726099831,
+          7.169901800713
+        ],
+        [
+          -6.918735733283,
+          3.782864183179
+        ],
+        [
+          -3.429635971347,
+          -6.807453003725
+        ],
+        [
+          -4.89470600121,
+          3.669200727348
+        ],
+        [
+          6.107256393869,
+          4.303507211005
+        ],
+        [
+          -5.682381536487,
+          -1.234122200635
+        ],
+        [
+          -3.087929097691,
+          6.454129693088
+        ],
+        [
+          -6.280926177774,
+          -6.920805460646
+        ],
+        [
+          -5.783021145271,
+          3.938089876878
+        ],
+        [
+          1.972545064218,
+          2.198584207401
+        ],
+        [
+          0.189986252403,
+          -7.680489677505
+        ],
+        [
+          2.776888319006,
+          -1.168772482677
+        ],
+        [
+          6.635962182403,
+          7.469821646317
+        ]
+      ],
+      "final_headings": [
+        2.598110915276,
+        0.985343381266,
+        3.597485736845,
+        -1.933308809766,
+        2.968633611887,
+        -0.023867095635,
+        0.274581956344,
+        1.557867287074,
+        -3.235870340952,
+        -3.225551934568,
+        2.588191496661,
+        -0.214054256449,
+        -3.103596575668,
+        2.263794683692,
+        -1.728645960994,
+        3.291699988475,
+        0.764004915587,
+        0.046440284806,
+        0.386598432789,
+        1.108505660214
+      ],
+      "final_maximum_goal_distance_m": 0.2196741770737826,
+      "final_state_sha256": "e710f8af57a1ec085a7aa8d16b743e50e04a544af3c1e82c964732ce55e55c06",
+      "fingerprint": "7a1acb1942ce9a35",
+      "gpu_model": "none",
+      "local_unit_definition": "one RVO2 agent computeNeighbors plus computeNewVelocity",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 0.052903,
+          "mean": 0.00045011231060606064,
+          "median": 0.000376,
+          "p95": 0.000819,
+          "sample_count": 15840
+        },
+        "per_step_max": {
+          "maximum": 0.052903,
+          "mean": 0.0011609166666666667,
+          "median": 0.000665,
+          "p95": 0.001985649999999999,
+          "sample_count": 792
+        },
+        "unit_count": {
+          "maximum": 20.0,
+          "mean": 20.0,
+          "median": 20.0,
+          "p95": 20.0,
+          "sample_count": 792
+        }
+      },
+      "makespan_s": 24.96,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "mean_path_length_m": 8.916032280690757,
+      "minimum_boundary_clearance_m": null,
+      "minimum_obstacle_clearance_m": null,
+      "minimum_pair_distance_m": null,
+      "minimum_static_obstacle_clearance_m": null,
+      "n_robots": 20,
+      "parameters": {
+        "circle_vertices": 32,
+        "heading_gain": 2.5,
+        "lookahead_m": 0.05,
+        "max_neighbors": 19,
+        "mode": "nh-orca",
+        "neighbor_distance_m": 3.0,
+        "obstacle_inflation_m": 0.1,
+        "obstacle_time_horizon_s": 2.0,
+        "pair_inflation_m": 0.0,
+        "time_horizon_s": 2.0
+      },
+      "planning_time_ms": 420.756377,
+      "robot_arrival_rate": 1.0,
+      "safe": null,
+      "safety_audit": false,
+      "scenario_fingerprint": "7a1acb1942ce9a35",
+      "seed": 13,
+      "shared_coordination_ms": {
+        "maximum": 0.40954599999999997,
+        "mean": 0.08120772222222221,
+        "median": 0.07275200000000001,
+        "p95": 0.12913914999999998,
+        "sample_count": 792
+      },
+      "steps": 832,
+      "success": null,
+      "termination_time_s": 24.96,
+      "timing_v2_samples_file": "baselines/comparison-harness/results/timing_v2/samples/nh-orca_rect15_n20_s13.npz",
+      "timing_v2_samples_sha256": "e213160fcadbdc8bc132e2a58151ed37788186a043a4056fe17e7d8dd48a48f2",
+      "warmup_steps": 40,
+      "worker_count": 1
+    },
+    {
+      "algorithm": "NH-ORCA",
+      "arrival_success": true,
+      "batch_contains_local_units": true,
+      "batch_step_ms": {
+        "maximum": 0.756959,
+        "mean": 0.14952636408977554,
+        "median": 0.138751,
+        "p95": 0.2181749999999998,
+        "sample_count": 1203
+      },
+      "control_time_max_ms": 0.756959,
+      "control_time_mean_ms": 0.1495179919549477,
+      "control_time_p95_ms": 0.21855119999999995,
+      "controller_backend": "public-rvo2-c++-per-agent-hook",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 0.723391,
+        "mean": 0.12791774314214463,
+        "median": 0.118007,
+        "p95": 0.1840291999999998,
+        "sample_count": 1203
+      },
+      "dynamics": "bounded-lookahead-unicycle",
+      "ever_arrival_rate": 1.0,
+      "ever_arrival_success": true,
+      "family": "rect15",
+      "final_arrival_success": true,
+      "final_centers": [
+        [
+          7.444302235685,
+          0.885686215982
+        ],
+        [
+          -7.440797241898,
+          4.105334232736
+        ],
+        [
+          2.461501308078,
+          -4.638095534346
+        ],
+        [
+          7.036369815511,
+          -6.425815283237
+        ],
+        [
+          0.199575842103,
+          3.684867539296
+        ],
+        [
+          -4.77469699799,
+          -1.703960492883
+        ],
+        [
+          -6.644271984266,
+          3.372070294771
+        ],
+        [
+          -6.184842380404,
+          -1.520711311056
+        ],
+        [
+          5.654961959206,
+          -0.264495153746
+        ],
+        [
+          6.162718255104,
+          4.142602415882
+        ],
+        [
+          6.433247417124,
+          -5.541705707792
+        ],
+        [
+          -6.429873274187,
+          -6.500058826282
+        ],
+        [
+          5.543684091827,
+          2.164988948637
+        ],
+        [
+          -0.085563719845,
+          -5.041178072364
+        ],
+        [
+          3.145983501594,
+          -0.426019456753
+        ],
+        [
+          -6.193253227905,
+          1.023886054009
+        ],
+        [
+          -4.468629143153,
+          4.73412437935
+        ],
+        [
+          0.015292185297,
+          7.44533756216
+        ],
+        [
+          4.438154371676,
+          -0.240211734029
+        ],
+        [
+          5.04424926581,
+          1.598672773453
+        ],
+        [
+          2.251368317459,
+          6.232428689489
+        ],
+        [
+          -6.772118774904,
+          4.971138636615
+        ],
+        [
+          -2.045602951657,
+          -2.684655333578
+        ],
+        [
+          7.447143809188,
+          4.275350348019
+        ],
+        [
+          -0.413100131314,
+          -1.302064770014
+        ],
+        [
+          3.059783301229,
+          4.324257522431
+        ],
+        [
+          -1.941966801723,
+          -1.17073044779
+        ],
+        [
+          0.592181546646,
+          -5.778644264685
+        ],
+        [
+          3.662652031507,
+          5.410198182686
+        ],
+        [
+          4.746780135444,
+          7.447770948261
+        ],
+        [
+          5.730070170584,
+          2.928579437622
+        ],
+        [
+          -3.058231824834,
+          4.004074476567
+        ],
+        [
+          -1.550745937449,
+          -6.417113725365
+        ],
+        [
+          -1.232591705247,
+          1.547372291456
+        ],
+        [
+          -5.659099099601,
+          6.83905914283
+        ],
+        [
+          2.696805194938,
+          5.160926692623
+        ],
+        [
+          6.22762862076,
+          1.094479405396
+        ],
+        [
+          7.472240197441,
+          -2.36901200317
+        ],
+        [
+          3.82663484157,
+          -0.783593762396
+        ],
+        [
+          1.36713793028,
+          -5.98005654432
+        ]
+      ],
+      "final_headings": [
+        1.540855224546,
+        -4.065572733987,
+        -0.586906218556,
+        -1.02836182765,
+        -3.501201392938,
+        3.264144698282,
+        0.611094776012,
+        -2.779650788329,
+        -0.218322520453,
+        -0.144648978631,
+        -1.025819814715,
+        3.861147742126,
+        2.757809625766,
+        -2.33434698202,
+        -1.055392411517,
+        4.184275690718,
+        3.002620612357,
+        2.743926212381,
+        -0.227315879176,
+        1.322448517111,
+        1.612087205424,
+        -4.95398865718,
+        -0.034998725702,
+        0.790196001486,
+        -5.75351236654,
+        1.407464330773,
+        3.655906381499,
+        -1.346369127081,
+        0.779884920112,
+        0.005959599434,
+        2.076431573192,
+        3.216600007402,
+        -2.210093205071,
+        -1.26798418245,
+        -2.48927547652,
+        3.462796287173,
+        2.018860126204,
+        0.676079929057,
+        -0.333199892992,
+        -0.303737214249
+      ],
+      "final_maximum_goal_distance_m": 0.21979756269397982,
+      "final_state_sha256": "d3440764c2ef5f12f6f25f19d0380589a81eab484832d36c2c653acf4ea99102",
+      "fingerprint": "276d23e6bee3c665",
+      "gpu_model": "none",
+      "local_unit_definition": "one RVO2 agent computeNeighbors plus computeNewVelocity",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 0.128305,
+          "mean": 0.0005840509143807148,
+          "median": 0.000512,
+          "p95": 0.001026,
+          "sample_count": 48120
+        },
+        "per_step_max": {
+          "maximum": 0.128305,
+          "mean": 0.0017534156275976725,
+          "median": 0.001023,
+          "p95": 0.003259799999999993,
+          "sample_count": 1203
+        },
+        "unit_count": {
+          "maximum": 40.0,
+          "mean": 40.0,
+          "median": 40.0,
+          "p95": 40.0,
+          "sample_count": 1203
+        }
+      },
+      "makespan_s": 37.29,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "mean_path_length_m": 10.419330216703706,
+      "minimum_boundary_clearance_m": null,
+      "minimum_obstacle_clearance_m": null,
+      "minimum_pair_distance_m": null,
+      "minimum_static_obstacle_clearance_m": null,
+      "n_robots": 40,
+      "parameters": {
+        "circle_vertices": 32,
+        "heading_gain": 2.5,
+        "lookahead_m": 0.05,
+        "max_neighbors": 39,
+        "mode": "nh-orca",
+        "neighbor_distance_m": 3.0,
+        "obstacle_inflation_m": 0.1,
+        "obstacle_time_horizon_s": 2.0,
+        "pair_inflation_m": 0.0,
+        "time_horizon_s": 2.0
+      },
+      "planning_time_ms": 556.815411,
+      "robot_arrival_rate": 1.0,
+      "safe": null,
+      "safety_audit": false,
+      "scenario_fingerprint": "276d23e6bee3c665",
+      "seed": 0,
+      "shared_coordination_ms": {
+        "maximum": 0.720581,
+        "mean": 0.12616432751454698,
+        "median": 0.116673,
+        "p95": 0.17917909999999995,
+        "sample_count": 1203
+      },
+      "steps": 1243,
+      "success": null,
+      "termination_time_s": 37.29,
+      "timing_v2_samples_file": "baselines/comparison-harness/results/timing_v2/samples/nh-orca_rect15_n40_s0.npz",
+      "timing_v2_samples_sha256": "06b77adc5b9ee41b76a14c386e795840d89a5406353fa6c2196d8775d19f9cd9",
+      "warmup_steps": 40,
+      "worker_count": 1
+    },
+    {
+      "algorithm": "NH-ORCA",
+      "arrival_success": false,
+      "batch_contains_local_units": true,
+      "batch_step_ms": {
+        "maximum": 0.726086,
+        "mean": 0.1493735030612245,
+        "median": 0.138266,
+        "p95": 0.20841705000000002,
+        "sample_count": 1960
+      },
+      "control_time_max_ms": 0.726086,
+      "control_time_mean_ms": 0.14946005799999998,
+      "control_time_p95_ms": 0.20948925,
+      "controller_backend": "public-rvo2-c++-per-agent-hook",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 0.6837619999999998,
+        "mean": 0.1280800831632653,
+        "median": 0.11787800000000001,
+        "p95": 0.1777895,
+        "sample_count": 1960
+      },
+      "dynamics": "bounded-lookahead-unicycle",
+      "ever_arrival_rate": 0.775,
+      "ever_arrival_success": false,
+      "family": "rect15",
+      "final_arrival_success": false,
+      "final_centers": [
+        [
+          5.7372629857,
+          0.166511588624
+        ],
+        [
+          6.427546122571,
+          -6.789527694924
+        ],
+        [
+          -7.179745990588,
+          -7.2196508144
+        ],
+        [
+          -1.572337967717,
+          -5.946346428663
+        ],
+        [
+          -5.017999758688,
+          2.593055825823
+        ],
+        [
+          6.703772044101,
+          0.797278688619
+        ],
+        [
+          4.59946153835,
+          2.425304493791
+        ],
+        [
+          1.449435477426,
+          -2.887705861577
+        ],
+        [
+          1.367978776609,
+          -4.612695645424
+        ],
+        [
+          1.353457126401,
+          -2.349358122481
+        ],
+        [
+          -2.300970515967,
+          -2.716202178022
+        ],
+        [
+          -6.004955755566,
+          2.171212647285
+        ],
+        [
+          4.386081672749,
+          -2.845380236561
+        ],
+        [
+          5.441767719698,
+          4.453971638912
+        ],
+        [
+          -5.638570590434,
+          3.931298205989
+        ],
+        [
+          5.923860821524,
+          -4.465344700932
+        ],
+        [
+          1.329979569746,
+          2.043087830393
+        ],
+        [
+          1.906530125287,
+          -6.233344453675
+        ],
+        [
+          2.550378774601,
+          1.830600371243
+        ],
+        [
+          1.906399439148,
+          4.478585530967
+        ],
+        [
+          5.459718576013,
+          6.095203576164
+        ],
+        [
+          -7.626320559024,
+          1.49274382087
+        ],
+        [
+          0.788802494887,
+          6.965075472616
+        ],
+        [
+          -1.848610111779,
+          -3.607040269047
+        ],
+        [
+          -0.584920292707,
+          2.230368590268
+        ],
+        [
+          -5.955071616132,
+          -1.904959121313
+        ],
+        [
+          4.896341535764,
+          -1.910796854529
+        ],
+        [
+          -2.416850455235,
+          -0.691321264178
+        ],
+        [
+          -6.254810645459,
+          3.876073133396
+        ],
+        [
+          1.410982592896,
+          4.529887224795
+        ],
+        [
+          0.907869076805,
+          4.487725464553
+        ],
+        [
+          6.072524584747,
+          -3.50738390842
+        ],
+        [
+          -2.096323430322,
+          3.12243683204
+        ],
+        [
+          4.267252645088,
+          4.819184909738
+        ],
+        [
+          2.483756756786,
+          -1.932197123166
+        ],
+        [
+          -3.685054164097,
+          0.353028708856
+        ],
+        [
+          0.822398182125,
+          3.866438062733
+        ],
+        [
+          -5.567018625813,
+          -4.874830437582
+        ],
+        [
+          3.416224115558,
+          7.461457689284
+        ],
+        [
+          6.847913160187,
+          5.094968543584
+        ]
+      ],
+      "final_headings": [
+        1.137643989711,
+        -1.579109148974,
+        -2.009723318738,
+        -3.11289078462,
+        2.318493530876,
+        -1.226707048232,
+        0.065452493837,
+        -2.236012032815,
+        1.31665020376,
+        -0.885967921772,
+        3.564424533869,
+        -1.486163128271,
+        -0.160793027386,
+        0.695530071714,
+        2.008638447366,
+        -1.610578841279,
+        -3.630981731589,
+        -3.101390158581,
+        -4.020295049588,
+        -0.000134619917,
+        -0.09240053983,
+        -1.644449303873,
+        -0.415965908369,
+        -1.682632095941,
+        -4.30139318877,
+        2.870962074835,
+        0.032990301513,
+        -3.295411943921,
+        3.017121178101,
+        -1.462223101537,
+        -2.227254152671,
+        -0.278357289572,
+        0.682271485137,
+        1.538445633594,
+        -0.306532468418,
+        -4.519780810653,
+        -5.269758907308,
+        -3.058290780832,
+        1.57060502202,
+        1.504332182731
+      ],
+      "final_maximum_goal_distance_m": 12.804049924414608,
+      "final_state_sha256": "dee231d8faaceb3869811f03c53f663853d1bbefc648a1a6370f458adea0b1fe",
+      "fingerprint": "7afb985b3f19cd4f",
+      "gpu_model": "none",
+      "local_unit_definition": "one RVO2 agent computeNeighbors plus computeNewVelocity",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 0.50469,
+          "mean": 0.0005782255229591838,
+          "median": 0.0005,
+          "p95": 0.001041050000000003,
+          "sample_count": 78400
+        },
+        "per_step_max": {
+          "maximum": 0.50469,
+          "mean": 0.0018356010204081633,
+          "median": 0.000926,
+          "p95": 0.0022881,
+          "sample_count": 1960
+        },
+        "unit_count": {
+          "maximum": 40.0,
+          "mean": 40.0,
+          "median": 40.0,
+          "p95": 40.0,
+          "sample_count": 1960
+        }
+      },
+      "makespan_s": null,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "mean_path_length_m": 8.317766245184583,
+      "minimum_boundary_clearance_m": null,
+      "minimum_obstacle_clearance_m": null,
+      "minimum_pair_distance_m": null,
+      "minimum_static_obstacle_clearance_m": null,
+      "n_robots": 40,
+      "parameters": {
+        "circle_vertices": 32,
+        "heading_gain": 2.5,
+        "lookahead_m": 0.05,
+        "max_neighbors": 39,
+        "mode": "nh-orca",
+        "neighbor_distance_m": 3.0,
+        "obstacle_inflation_m": 0.1,
+        "obstacle_time_horizon_s": 2.0,
+        "pair_inflation_m": 0.0,
+        "time_horizon_s": 2.0
+      },
+      "planning_time_ms": 552.510386,
+      "robot_arrival_rate": 0.775,
+      "safe": null,
+      "safety_audit": false,
+      "scenario_fingerprint": "7afb985b3f19cd4f",
+      "seed": 7,
+      "shared_coordination_ms": {
+        "maximum": 0.431784,
+        "mean": 0.12624448214285713,
+        "median": 0.1167745,
+        "p95": 0.17347635,
+        "sample_count": 1960
+      },
+      "steps": 2000,
+      "success": null,
+      "termination_time_s": 60.0,
+      "timing_v2_samples_file": "baselines/comparison-harness/results/timing_v2/samples/nh-orca_rect15_n40_s7.npz",
+      "timing_v2_samples_sha256": "3f9761b19a07cfe894fc80cd665fc8ce126d97a373c292d9b84fda39646d7141",
+      "warmup_steps": 40,
+      "worker_count": 1
+    },
+    {
+      "algorithm": "NH-ORCA",
+      "arrival_success": false,
+      "batch_contains_local_units": true,
+      "batch_step_ms": {
+        "maximum": 1.394698,
+        "mean": 0.15054806326530612,
+        "median": 0.135724,
+        "p95": 0.22197094999999994,
+        "sample_count": 1960
+      },
+      "control_time_max_ms": 1.394698,
+      "control_time_mean_ms": 0.1504928875,
+      "control_time_p95_ms": 0.22197094999999994,
+      "controller_backend": "public-rvo2-c++-per-agent-hook",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 1.359216,
+        "mean": 0.12988591785714285,
+        "median": 0.116567,
+        "p95": 0.19113919999999995,
+        "sample_count": 1960
+      },
+      "dynamics": "bounded-lookahead-unicycle",
+      "ever_arrival_rate": 0.975,
+      "ever_arrival_success": false,
+      "family": "rect15",
+      "final_arrival_success": false,
+      "final_centers": [
+        [
+          -2.877403656146,
+          1.952540368518
+        ],
+        [
+          5.564721274025,
+          -1.25863305445
+        ],
+        [
+          -2.068468583343,
+          1.448483164141
+        ],
+        [
+          1.550939186974,
+          1.997044950248
+        ],
+        [
+          -0.424297876192,
+          -1.99204288914
+        ],
+        [
+          -3.557147183199,
+          -1.200540888273
+        ],
+        [
+          -5.114651923254,
+          -2.535642565069
+        ],
+        [
+          1.208233718612,
+          4.613985567432
+        ],
+        [
+          -3.547279139922,
+          -5.656944093302
+        ],
+        [
+          -3.27224035739,
+          4.434795869332
+        ],
+        [
+          -2.764171934386,
+          3.665950751427
+        ],
+        [
+          1.210836533546,
+          7.623430164795
+        ],
+        [
+          0.778046017012,
+          -4.008169894893
+        ],
+        [
+          -0.917344920122,
+          -6.148504660251
+        ],
+        [
+          0.198756495175,
+          0.655818438138
+        ],
+        [
+          -1.713207389253,
+          0.108530250848
+        ],
+        [
+          0.884665862293,
+          0.298977555016
+        ],
+        [
+          -4.833782294509,
+          -4.348473447385
+        ],
+        [
+          0.026690941493,
+          2.998220633085
+        ],
+        [
+          -0.940500130611,
+          -4.384824288596
+        ],
+        [
+          -4.192499784925,
+          -3.85739280778
+        ],
+        [
+          5.691314284299,
+          -2.30963316299
+        ],
+        [
+          -7.590207717383,
+          -0.09682531262
+        ],
+        [
+          3.957010449134,
+          -6.214633140496
+        ],
+        [
+          -0.049653163149,
+          -1.513430043415
+        ],
+        [
+          -1.523274516974,
+          -5.590969447674
+        ],
+        [
+          4.952777658716,
+          -1.01394838688
+        ],
+        [
+          -1.227810392053,
+          5.201326144729
+        ],
+        [
+          -5.682582199835,
+          -6.12936458067
+        ],
+        [
+          -4.296864105817,
+          -2.048363074534
+        ],
+        [
+          1.050460719969,
+          -3.061144802173
+        ],
+        [
+          5.795379539808,
+          1.780556246472
+        ],
+        [
+          1.015446265931,
+          -7.500346177505
+        ],
+        [
+          -0.407505116354,
+          4.073764822855
+        ],
+        [
+          2.308543794876,
+          -5.76100834122
+        ],
+        [
+          -4.23967339835,
+          3.006720352619
+        ],
+        [
+          0.521496975275,
+          -1.919973928514
+        ],
+        [
+          -1.121357259183,
+          2.352149658744
+        ],
+        [
+          3.253759373167,
+          -3.779950030824
+        ],
+        [
+          -0.380089758816,
+          -3.437145234437
+        ]
+      ],
+      "final_headings": [
+        -2.922281524179,
+        -0.100043700104,
+        2.049207777979,
+        4.350815077304,
+        -0.432368971003,
+        -3.52855752822,
+        -2.482031402667,
+        1.446069200869,
+        -1.59595826193,
+        -4.719811858373,
+        0.908544869475,
+        0.037547699512,
+        -1.776896813315,
+        -1.576493078104,
+        -9.072000829305,
+        -7.971779154758,
+        -1.638496218933,
+        3.222136031774,
+        0.703599301215,
+        -1.685144555115,
+        -2.358628969226,
+        -1.627942842403,
+        2.491195180833,
+        -0.562255493888,
+        -1.198769280558,
+        -2.44420381244,
+        -0.09157897885,
+        0.597153660372,
+        2.754044614096,
+        -2.508187672049,
+        -1.80526885339,
+        1.069318409909,
+        -2.874266800809,
+        2.10732550335,
+        0.105699517383,
+        3.094989930168,
+        0.276144765097,
+        3.321485713076,
+        -3.035980089088,
+        1.0080835434
+      ],
+      "final_maximum_goal_distance_m": 3.1362062155680452,
+      "final_state_sha256": "c22286914a6458ba7d343379909413f04120cde35304e3958f0eab71f3c1850b",
+      "fingerprint": "cad351c4a891b5a7",
+      "gpu_model": "none",
+      "local_unit_definition": "one RVO2 agent computeNeighbors plus computeNewVelocity",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 0.195437,
+          "mean": 0.0005632229846938776,
+          "median": 0.000488,
+          "p95": 0.000964050000000003,
+          "sample_count": 78400
+        },
+        "per_step_max": {
+          "maximum": 0.195437,
+          "mean": 0.0018667739795918369,
+          "median": 0.0008185,
+          "p95": 0.004708349999999994,
+          "sample_count": 1960
+        },
+        "unit_count": {
+          "maximum": 40.0,
+          "mean": 40.0,
+          "median": 40.0,
+          "p95": 40.0,
+          "sample_count": 1960
+        }
+      },
+      "makespan_s": null,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "mean_path_length_m": 8.517644130938589,
+      "minimum_boundary_clearance_m": null,
+      "minimum_obstacle_clearance_m": null,
+      "minimum_pair_distance_m": null,
+      "minimum_static_obstacle_clearance_m": null,
+      "n_robots": 40,
+      "parameters": {
+        "circle_vertices": 32,
+        "heading_gain": 2.5,
+        "lookahead_m": 0.05,
+        "max_neighbors": 39,
+        "mode": "nh-orca",
+        "neighbor_distance_m": 3.0,
+        "obstacle_inflation_m": 0.1,
+        "obstacle_time_horizon_s": 2.0,
+        "pair_inflation_m": 0.0,
+        "time_horizon_s": 2.0
+      },
+      "planning_time_ms": 564.386827,
+      "robot_arrival_rate": 0.975,
+      "safe": null,
+      "safety_audit": false,
+      "scenario_fingerprint": "cad351c4a891b5a7",
+      "seed": 13,
+      "shared_coordination_ms": {
+        "maximum": 1.356651,
+        "mean": 0.128019143877551,
+        "median": 0.11538300000000001,
+        "p95": 0.18400655,
+        "sample_count": 1960
+      },
+      "steps": 2000,
+      "success": null,
+      "termination_time_s": 60.0,
+      "timing_v2_samples_file": "baselines/comparison-harness/results/timing_v2/samples/nh-orca_rect15_n40_s13.npz",
+      "timing_v2_samples_sha256": "c9c8872e21b2be8677a0e2e4ad941eaf094f7edcd103f8fba84960ba224d8d72",
+      "warmup_steps": 40,
+      "worker_count": 1
+    },
+    {
+      "algorithm": "NH-ORCA",
+      "arrival_success": false,
+      "batch_contains_local_units": true,
+      "batch_step_ms": {
+        "maximum": 1.025277,
+        "mean": 0.22082857142857143,
+        "median": 0.20626450000000002,
+        "p95": 0.30300859999999996,
+        "sample_count": 1960
+      },
+      "control_time_max_ms": 1.025277,
+      "control_time_mean_ms": 0.22096245499999997,
+      "control_time_p95_ms": 0.30370294999999997,
+      "controller_backend": "public-rvo2-c++-per-agent-hook",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 0.964736,
+        "mean": 0.17803306479591835,
+        "median": 0.1638,
+        "p95": 0.24872000000000002,
+        "sample_count": 1960
+      },
+      "dynamics": "bounded-lookahead-unicycle",
+      "ever_arrival_rate": 0.9333333333333333,
+      "ever_arrival_success": false,
+      "family": "rect15",
+      "final_arrival_success": false,
+      "final_centers": [
+        [
+          -1.782546049548,
+          -6.398415525991
+        ],
+        [
+          -0.581970141559,
+          -1.150872536472
+        ],
+        [
+          -1.367601207026,
+          1.245156680257
+        ],
+        [
+          -5.730802548856,
+          6.51613995225
+        ],
+        [
+          3.044526326373,
+          4.927511629548
+        ],
+        [
+          6.228271612557,
+          1.092355845843
+        ],
+        [
+          -7.011890861512,
+          3.075645145782
+        ],
+        [
+          7.596153307944,
+          -2.102649094777
+        ],
+        [
+          -5.239035019406,
+          -1.520762021425
+        ],
+        [
+          3.764254517818,
+          -0.900476863997
+        ],
+        [
+          1.449529915247,
+          -5.562013334293
+        ],
+        [
+          7.257467029615,
+          -2.386842809617
+        ],
+        [
+          -2.138957333003,
+          -2.514452110391
+        ],
+        [
+          6.645689983599,
+          -4.681558577407
+        ],
+        [
+          0.163882452587,
+          -7.141804607386
+        ],
+        [
+          -5.412648263446,
+          5.858220088499
+        ],
+        [
+          4.661355655401,
+          0.772563144998
+        ],
+        [
+          4.38516551144,
+          -4.71524928155
+        ],
+        [
+          1.635902962925,
+          -6.427771916311
+        ],
+        [
+          -1.41744167338,
+          7.604847975903
+        ],
+        [
+          6.736007153072,
+          -5.272081433787
+        ],
+        [
+          5.111539124157,
+          -4.904233164148
+        ],
+        [
+          3.187294989578,
+          6.047120789138
+        ],
+        [
+          5.142877605761,
+          1.204126844306
+        ],
+        [
+          -0.568515915418,
+          -3.70941490623
+        ],
+        [
+          -6.537745638763,
+          -7.245612868481
+        ],
+        [
+          1.13718197897,
+          -4.97180514007
+        ],
+        [
+          7.141879994961,
+          -6.007411820574
+        ],
+        [
+          -0.918918684727,
+          -1.701495795827
+        ],
+        [
+          2.254765524278,
+          3.703715231296
+        ],
+        [
+          1.168568566421,
+          -3.951171346577
+        ],
+        [
+          -6.974421453035,
+          -4.554682138971
+        ],
+        [
+          5.518073486309,
+          4.78050406239
+        ],
+        [
+          -1.468578835992,
+          -0.492558629373
+        ],
+        [
+          5.067916276688,
+          2.951504438427
+        ],
+        [
+          5.024770703908,
+          3.938485824515
+        ],
+        [
+          4.721295895895,
+          -5.236388623465
+        ],
+        [
+          -2.699375746454,
+          7.378401020938
+        ],
+        [
+          -3.812921007059,
+          4.985756754619
+        ],
+        [
+          -5.096920621938,
+          1.120789866773
+        ],
+        [
+          6.871083175256,
+          3.355879360126
+        ],
+        [
+          7.423822598467,
+          0.938692545022
+        ],
+        [
+          4.116921530084,
+          5.900516136143
+        ],
+        [
+          0.606817689777,
+          -4.305075848181
+        ],
+        [
+          4.100535897199,
+          -5.211176432721
+        ],
+        [
+          1.01374396413,
+          0.434464179778
+        ],
+        [
+          2.836108309268,
+          3.967315111718
+        ],
+        [
+          3.418165053885,
+          0.343659847759
+        ],
+        [
+          2.428038650569,
+          -4.660313152139
+        ],
+        [
+          7.082290110229,
+          2.590146568737
+        ],
+        [
+          -0.316777842663,
+          -0.183928690979
+        ],
+        [
+          -3.952217882773,
+          -5.338135651298
+        ],
+        [
+          -6.768001538532,
+          4.081899120619
+        ],
+        [
+          -3.101475850018,
+          -3.246403619205
+        ],
+        [
+          -2.363344460716,
+          1.189034860335
+        ],
+        [
+          0.752672595595,
+          1.941889460416
+        ],
+        [
+          0.971193242214,
+          7.298910440832
+        ],
+        [
+          -6.283950738225,
+          5.758965498372
+        ],
+        [
+          6.908853493418,
+          -3.482100766698
+        ],
+        [
+          -7.326034550076,
+          -0.267888855928
+        ]
+      ],
+      "final_headings": [
+        -1.075020680069,
+        -6.061753443823,
+        -5.695899003941,
+        2.104400821486,
+        -3.509957384215,
+        2.017316230186,
+        2.031820656979,
+        0.829376980636,
+        -3.752582236327,
+        -1.81914163611,
+        4.335791535066,
+        -2.707665626796,
+        -1.048156842305,
+        -0.033797178709,
+        -1.452025063345,
+        0.723847117572,
+        2.651341190309,
+        3.14151813713,
+        -1.172212760345,
+        3.133209054366,
+        3.458826552971,
+        1.529322252832,
+        0.795946843815,
+        0.235170486025,
+        5.812114330146,
+        -1.968533789248,
+        -4.216515604845,
+        -0.298361173973,
+        -7.331914414495,
+        4.114072142215,
+        2.462359486261,
+        4.084028130334,
+        2.144495254249,
+        -3.146242185931,
+        -1.644788562793,
+        7.349698007253,
+        14.711020965225,
+        2.811184871566,
+        6.909474636488,
+        7.460050353882,
+        -0.039751126847,
+        1.548221875583,
+        0.524407166761,
+        4.282224932207,
+        -2.287938961546,
+        0.584701049463,
+        1.71935986906,
+        0.527776376649,
+        6.786611824416,
+        0.261119620379,
+        5.243227743672,
+        6.3871211904,
+        2.956648347369,
+        -8.32065068338,
+        -12.563175112228,
+        -0.220317067617,
+        7.543530170401,
+        2.479414278684,
+        -1.952672663421,
+        3.10220197856
+      ],
+      "final_maximum_goal_distance_m": 10.9166477843383,
+      "final_state_sha256": "8f465a98e3ac5f366da4492ab86761f9748a18aa3fd84b57add0998a8244be01",
+      "fingerprint": "c86f12600b7f6ebc",
+      "gpu_model": "none",
+      "local_unit_definition": "one RVO2 agent computeNeighbors plus computeNewVelocity",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 0.179114,
+          "mean": 0.0007632236479591836,
+          "median": 0.000674,
+          "p95": 0.001293,
+          "sample_count": 117600
+        },
+        "per_step_max": {
+          "maximum": 0.179114,
+          "mean": 0.0029979122448979593,
+          "median": 0.0013614999999999999,
+          "p95": 0.008556599999999989,
+          "sample_count": 1960
+        },
+        "unit_count": {
+          "maximum": 60.0,
+          "mean": 60.0,
+          "median": 60.0,
+          "p95": 60.0,
+          "sample_count": 1960
+        }
+      },
+      "makespan_s": null,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "mean_path_length_m": 10.55766475390079,
+      "minimum_boundary_clearance_m": null,
+      "minimum_obstacle_clearance_m": null,
+      "minimum_pair_distance_m": null,
+      "minimum_static_obstacle_clearance_m": null,
+      "n_robots": 60,
+      "parameters": {
+        "circle_vertices": 32,
+        "heading_gain": 2.5,
+        "lookahead_m": 0.05,
+        "max_neighbors": 59,
+        "mode": "nh-orca",
+        "neighbor_distance_m": 3.0,
+        "obstacle_inflation_m": 0.1,
+        "obstacle_time_horizon_s": 2.0,
+        "pair_inflation_m": 0.0,
+        "time_horizon_s": 2.0
+      },
+      "planning_time_ms": 688.192608,
+      "robot_arrival_rate": 0.8666666666666667,
+      "safe": null,
+      "safety_audit": false,
+      "scenario_fingerprint": "c86f12600b7f6ebc",
+      "seed": 0,
+      "shared_coordination_ms": {
+        "maximum": 0.960079,
+        "mean": 0.1750351525510204,
+        "median": 0.161686,
+        "p95": 0.24262455,
+        "sample_count": 1960
+      },
+      "steps": 2000,
+      "success": null,
+      "termination_time_s": 60.0,
+      "timing_v2_samples_file": "baselines/comparison-harness/results/timing_v2/samples/nh-orca_rect15_n60_s0.npz",
+      "timing_v2_samples_sha256": "d275f5ddd395b2c053e66523ad4c5a785c06d4d9d082c6dd9b68a6c05460d88b",
+      "warmup_steps": 40,
+      "worker_count": 1
+    },
+    {
+      "algorithm": "NH-ORCA",
+      "arrival_success": false,
+      "batch_contains_local_units": true,
+      "batch_step_ms": {
+        "maximum": 1.658999,
+        "mean": 0.2157889520408163,
+        "median": 0.20141900000000001,
+        "p95": 0.28962415,
+        "sample_count": 1960
+      },
+      "control_time_max_ms": 1.658999,
+      "control_time_mean_ms": 0.215894319,
+      "control_time_p95_ms": 0.2901429499999999,
+      "controller_backend": "public-rvo2-c++-per-agent-hook",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 1.625723,
+        "mean": 0.17476488418367347,
+        "median": 0.16111999999999999,
+        "p95": 0.23516374999999995,
+        "sample_count": 1960
+      },
+      "dynamics": "bounded-lookahead-unicycle",
+      "ever_arrival_rate": 0.8333333333333334,
+      "ever_arrival_success": false,
+      "family": "rect15",
+      "final_arrival_success": false,
+      "final_centers": [
+        [
+          -5.180001939292,
+          -7.10494532423
+        ],
+        [
+          1.16665332964,
+          6.763215642788
+        ],
+        [
+          -1.834685027872,
+          -3.60850302216
+        ],
+        [
+          0.399006493415,
+          -4.71378781293
+        ],
+        [
+          -5.951807869702,
+          -1.869115309737
+        ],
+        [
+          1.681758535688,
+          4.52392348258
+        ],
+        [
+          5.038284998743,
+          -1.700578334188
+        ],
+        [
+          -4.211639355021,
+          -3.81378190117
+        ],
+        [
+          1.367978776609,
+          -4.612695645424
+        ],
+        [
+          -6.338365823562,
+          4.081048851836
+        ],
+        [
+          -5.545871605235,
+          -5.81683949408
+        ],
+        [
+          -7.626494595273,
+          1.492756476288
+        ],
+        [
+          6.234216005869,
+          -3.387364946133
+        ],
+        [
+          -2.054006516861,
+          3.08325315242
+        ],
+        [
+          4.301017261332,
+          4.818683136638
+        ],
+        [
+          2.584786066325,
+          -2.182940506651
+        ],
+        [
+          -3.787257486585,
+          0.452744708725
+        ],
+        [
+          3.856774840592,
+          5.934730823852
+        ],
+        [
+          -5.730158943582,
+          -5.082121583282
+        ],
+        [
+          4.674885131459,
+          2.436264072362
+        ],
+        [
+          3.206922571836,
+          7.626886386116
+        ],
+        [
+          0.842140296001,
+          3.925920332686
+        ],
+        [
+          4.297072573955,
+          -1.450535751485
+        ],
+        [
+          3.797926009721,
+          4.033630282205
+        ],
+        [
+          3.277547300914,
+          -1.012958802953
+        ],
+        [
+          -1.861220928576,
+          -1.023754479278
+        ],
+        [
+          -7.011247885426,
+          5.246703938751
+        ],
+        [
+          0.601469161156,
+          -1.722423023466
+        ],
+        [
+          0.681133236889,
+          3.21573811459
+        ],
+        [
+          -1.837128137382,
+          5.323748584698
+        ],
+        [
+          6.451127917995,
+          -1.524751014322
+        ],
+        [
+          -5.537877405328,
+          3.856360999804
+        ],
+        [
+          -3.057726720419,
+          -5.992481535025
+        ],
+        [
+          3.294150650418,
+          4.815459472676
+        ],
+        [
+          6.542999546808,
+          -5.607238955965
+        ],
+        [
+          -6.289746161273,
+          7.324560306492
+        ],
+        [
+          6.248103546266,
+          -4.220707979676
+        ],
+        [
+          4.355263979964,
+          -6.590533402029
+        ],
+        [
+          0.905290086775,
+          -4.867269159909
+        ],
+        [
+          6.07236062766,
+          6.231041542926
+        ],
+        [
+          -3.709951959509,
+          -1.649417187601
+        ],
+        [
+          -1.572317566303,
+          -5.947642844603
+        ],
+        [
+          5.393858393216,
+          -0.36564221832
+        ],
+        [
+          -4.75013298648,
+          2.462342232558
+        ],
+        [
+          5.773929684705,
+          -4.740870237188
+        ],
+        [
+          7.415751487678,
+          6.612809153713
+        ],
+        [
+          -3.944650014398,
+          7.258310903953
+        ],
+        [
+          1.430964001496,
+          -6.889099034386
+        ],
+        [
+          -4.12255156134,
+          -0.330846709502
+        ],
+        [
+          5.888648492202,
+          3.81541627917
+        ],
+        [
+          4.926392282544,
+          3.892633015468
+        ],
+        [
+          6.265439761495,
+          1.49629424193
+        ],
+        [
+          -2.558566699713,
+          6.548972516927
+        ],
+        [
+          1.247175041971,
+          4.898959269358
+        ],
+        [
+          3.136955401442,
+          2.004251110846
+        ],
+        [
+          6.92562816015,
+          -1.240534360417
+        ],
+        [
+          -0.139600682753,
+          -4.717103156212
+        ],
+        [
+          5.234258053106,
+          -2.742617254097
+        ],
+        [
+          -7.295003779771,
+          6.993183525798
+        ],
+        [
+          0.887039226042,
+          4.465663171218
+        ]
+      ],
+      "final_headings": [
+        -1.821457386434,
+        2.583392097312,
+        -1.754135393098,
+        -5.923407327209,
+        3.035323821584,
+        -2.006075411547,
+        -1.22178814542,
+        -2.701008960804,
+        1.31665020376,
+        -2.217981343494,
+        -3.602483416217,
+        -1.640959609695,
+        1.087878162902,
+        -0.256581188677,
+        1.692001571893,
+        1.038327726108,
+        6.174590026132,
+        2.127415532175,
+        -4.746225761954,
+        -0.380926694832,
+        0.006349468192,
+        1.436245415206,
+        -0.799071224999,
+        1.190380994881,
+        -5.445541744343,
+        -3.371964586253,
+        2.781016996524,
+        -10.606527287852,
+        0.665950240269,
+        5.103503977298,
+        -1.40547704928,
+        2.561907325096,
+        0.50914833446,
+        1.599683308563,
+        -1.758796968416,
+        1.727057321819,
+        -1.557459319393,
+        -2.690706219159,
+        -0.471921649383,
+        1.868814532673,
+        -3.991568498059,
+        3.144362370181,
+        0.574854200335,
+        2.277453477066,
+        4.709673315543,
+        1.576333521455,
+        3.112134289014,
+        1.00936004905,
+        -1.339322395948,
+        1.573530602092,
+        0.732207310313,
+        -0.010011060114,
+        1.941515213211,
+        -0.67576016036,
+        -4.707696336596,
+        1.171336337752,
+        0.43202958493,
+        -2.647307863529,
+        -3.715692659816,
+        -4.517397549235
+      ],
+      "final_maximum_goal_distance_m": 10.69288984959999,
+      "final_state_sha256": "5db624cf89b29a1b6c4acc717f5fbe1bab804b3f51e5ca04c12dd07d9f652984",
+      "fingerprint": "f6b5c2611603d5ba",
+      "gpu_model": "none",
+      "local_unit_definition": "one RVO2 agent computeNeighbors plus computeNewVelocity",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 0.655252,
+          "mean": 0.000729826513605442,
+          "median": 0.000656,
+          "p95": 0.001225,
+          "sample_count": 117600
+        },
+        "per_step_max": {
+          "maximum": 0.655252,
+          "mean": 0.0027655229591836733,
+          "median": 0.0013335,
+          "p95": 0.007752049999999998,
+          "sample_count": 1960
+        },
+        "unit_count": {
+          "maximum": 60.0,
+          "mean": 60.0,
+          "median": 60.0,
+          "p95": 60.0,
+          "sample_count": 1960
+        }
+      },
+      "makespan_s": null,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "mean_path_length_m": 9.212822948231631,
+      "minimum_boundary_clearance_m": null,
+      "minimum_obstacle_clearance_m": null,
+      "minimum_pair_distance_m": null,
+      "minimum_static_obstacle_clearance_m": null,
+      "n_robots": 60,
+      "parameters": {
+        "circle_vertices": 32,
+        "heading_gain": 2.5,
+        "lookahead_m": 0.05,
+        "max_neighbors": 59,
+        "mode": "nh-orca",
+        "neighbor_distance_m": 3.0,
+        "obstacle_inflation_m": 0.1,
+        "obstacle_time_horizon_s": 2.0,
+        "pair_inflation_m": 0.0,
+        "time_horizon_s": 2.0
+      },
+      "planning_time_ms": 690.41974,
+      "robot_arrival_rate": 0.8166666666666667,
+      "safe": null,
+      "safety_audit": false,
+      "scenario_fingerprint": "f6b5c2611603d5ba",
+      "seed": 7,
+      "shared_coordination_ms": {
+        "maximum": 1.624833,
+        "mean": 0.17199936122448978,
+        "median": 0.159192,
+        "p95": 0.22554109999999997,
+        "sample_count": 1960
+      },
+      "steps": 2000,
+      "success": null,
+      "termination_time_s": 60.0,
+      "timing_v2_samples_file": "baselines/comparison-harness/results/timing_v2/samples/nh-orca_rect15_n60_s7.npz",
+      "timing_v2_samples_sha256": "d36cc57e219e078e07659e498a217f68e1a3d92757abdac75d893935eb532c9f",
+      "warmup_steps": 40,
+      "worker_count": 1
+    },
+    {
+      "algorithm": "NH-ORCA",
+      "arrival_success": false,
+      "batch_contains_local_units": true,
+      "batch_step_ms": {
+        "maximum": 1.059382,
+        "mean": 0.220649706122449,
+        "median": 0.206041,
+        "p95": 0.294376,
+        "sample_count": 1960
+      },
+      "control_time_max_ms": 1.059382,
+      "control_time_mean_ms": 0.220881127,
+      "control_time_p95_ms": 0.294376,
+      "controller_backend": "public-rvo2-c++-per-agent-hook",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 1.007875,
+        "mean": 0.17620022397959184,
+        "median": 0.16183299999999998,
+        "p95": 0.23804209999999998,
+        "sample_count": 1960
+      },
+      "dynamics": "bounded-lookahead-unicycle",
+      "ever_arrival_rate": 0.6666666666666666,
+      "ever_arrival_success": false,
+      "family": "rect15",
+      "final_arrival_success": false,
+      "final_centers": [
+        [
+          -0.433040879847,
+          -3.572986513147
+        ],
+        [
+          -3.449588295587,
+          -1.735245052798
+        ],
+        [
+          7.599427978542,
+          -6.40562511022
+        ],
+        [
+          4.638894643824,
+          4.331535264126
+        ],
+        [
+          -5.664757361473,
+          -6.019124022606
+        ],
+        [
+          -4.343601070799,
+          -2.001024596423
+        ],
+        [
+          -0.184433627511,
+          0.271939394675
+        ],
+        [
+          -0.483095301182,
+          -4.668441135651
+        ],
+        [
+          4.271950483176,
+          4.766888567307
+        ],
+        [
+          1.031519257982,
+          -7.550433404041
+        ],
+        [
+          -0.553591912762,
+          4.093100683543
+        ],
+        [
+          1.994094314692,
+          -5.568807245232
+        ],
+        [
+          -4.256304197188,
+          2.946587295651
+        ],
+        [
+          -7.110770224446,
+          3.045763776974
+        ],
+        [
+          0.490325281789,
+          -1.682976872827
+        ],
+        [
+          -1.138740103349,
+          -0.526042832759
+        ],
+        [
+          -1.204433974943,
+          2.312726757575
+        ],
+        [
+          3.207102134951,
+          -3.662820332309
+        ],
+        [
+          0.06083297825,
+          -3.406059814463
+        ],
+        [
+          5.020583813895,
+          -7.441587957129
+        ],
+        [
+          3.744982425444,
+          4.887247153669
+        ],
+        [
+          5.00068758664,
+          3.95371378591
+        ],
+        [
+          -2.437528707998,
+          6.845352937178
+        ],
+        [
+          -0.92221213636,
+          -4.362606765457
+        ],
+        [
+          0.501138148613,
+          -4.210715103056
+        ],
+        [
+          -3.670145683618,
+          -6.769437716224
+        ],
+        [
+          0.03591514472,
+          -4.486474200851
+        ],
+        [
+          -7.590285183966,
+          2.722904827425
+        ],
+        [
+          -5.829712543673,
+          -0.966383335935
+        ],
+        [
+          -7.623774575415,
+          3.282124038888
+        ],
+        [
+          2.263367298568,
+          -5.07508004513
+        ],
+        [
+          -7.61322657949,
+          -0.113678153027
+        ],
+        [
+          5.908690434584,
+          -3.799406214333
+        ],
+        [
+          -5.814902841486,
+          -3.24927107157
+        ],
+        [
+          -0.097204199175,
+          -1.479220677286
+        ],
+        [
+          -3.751961257713,
+          -0.558983665855
+        ],
+        [
+          -0.190005366986,
+          2.859639796357
+        ],
+        [
+          7.476106686555,
+          2.054172561799
+        ],
+        [
+          4.633345610255,
+          5.223159392987
+        ],
+        [
+          -3.085990636247,
+          6.593392247436
+        ],
+        [
+          4.469194345427,
+          3.818455819601
+        ],
+        [
+          4.064542265838,
+          -4.554545705827
+        ],
+        [
+          -4.622643312147,
+          -4.605783067538
+        ],
+        [
+          0.539476026722,
+          -2.927020089271
+        ],
+        [
+          -0.401625501884,
+          -5.202584028837
+        ],
+        [
+          7.097390362366,
+          -1.754505465092
+        ],
+        [
+          -4.851409826129,
+          -4.103844949665
+        ],
+        [
+          -0.383589586662,
+          -4.146335249253
+        ],
+        [
+          7.016804878463,
+          -1.217798191759
+        ],
+        [
+          -1.408157422079,
+          -4.392121516354
+        ],
+        [
+          5.94761308763,
+          2.583337723157
+        ],
+        [
+          1.872947044661,
+          2.06747782248
+        ],
+        [
+          5.539454669052,
+          -1.838847839418
+        ],
+        [
+          -7.611048589974,
+          -0.65284490158
+        ],
+        [
+          2.647523613633,
+          -6.892592995005
+        ],
+        [
+          -7.073929890617,
+          -0.19863464536
+        ],
+        [
+          -4.76399108628,
+          -7.221674726713
+        ],
+        [
+          4.354132849495,
+          -3.854783953707
+        ],
+        [
+          3.987281302432,
+          -6.67261424933
+        ],
+        [
+          -0.910944700445,
+          -3.821178434672
+        ]
+      ],
+      "final_headings": [
+        -1.536689203436,
+        -3.05972809588,
+        0.91291968588,
+        4.156619575653,
+        3.274152981446,
+        -2.202882316188,
+        -4.990023951902,
+        -1.36455966048,
+        -0.605785158618,
+        -3.017459048375,
+        1.917259907534,
+        -2.028196787878,
+        -3.47528829147,
+        -2.098784308626,
+        -5.244703660642,
+        2.021386428571,
+        1.544864688722,
+        1.449248393857,
+        14.557557122861,
+        -1.419537317215,
+        0.06354057017,
+        -1.752336409746,
+        1.589715163228,
+        4.786011268662,
+        -4.106153943199,
+        -2.783963790656,
+        -0.904546135229,
+        -2.488256913647,
+        1.552182125787,
+        -1.695626335888,
+        -10.109351569735,
+        1.912896108969,
+        0.135848673006,
+        -1.885166569534,
+        -4.581806654291,
+        -3.204136333289,
+        1.805379180053,
+        0.216851698487,
+        -1.570406840315,
+        1.612345299223,
+        4.710258670121,
+        -1.011674443453,
+        4.080094499502,
+        2.95303675393,
+        4.724763892772,
+        -2.485393037474,
+        2.317128002624,
+        -7.329643098539,
+        0.424737637361,
+        -3.140925405021,
+        1.386625879243,
+        -5.597664761512,
+        1.116046827994,
+        1.959539591254,
+        -1.491996967599,
+        2.054543591164,
+        -2.519714370309,
+        0.279444198081,
+        -2.419605541264,
+        -1.571777011703
+      ],
+      "final_maximum_goal_distance_m": 15.39515296324237,
+      "final_state_sha256": "839cb507b55ca9014b44ef562ecaf87c3ebfc8c5790a3421c137f04a4c622c17",
+      "fingerprint": "95187891f5d1a381",
+      "gpu_model": "none",
+      "local_unit_definition": "one RVO2 agent computeNeighbors plus computeNewVelocity",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 0.221444,
+          "mean": 0.0007918567346938773,
+          "median": 0.000693,
+          "p95": 0.001374,
+          "sample_count": 117600
+        },
+        "per_step_max": {
+          "maximum": 0.221444,
+          "mean": 0.0030619219387755105,
+          "median": 0.001477,
+          "p95": 0.0074632,
+          "sample_count": 1960
+        },
+        "unit_count": {
+          "maximum": 60.0,
+          "mean": 60.0,
+          "median": 60.0,
+          "p95": 60.0,
+          "sample_count": 1960
+        }
+      },
+      "makespan_s": null,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "mean_path_length_m": 8.069147820121819,
+      "minimum_boundary_clearance_m": null,
+      "minimum_obstacle_clearance_m": null,
+      "minimum_pair_distance_m": null,
+      "minimum_static_obstacle_clearance_m": null,
+      "n_robots": 60,
+      "parameters": {
+        "circle_vertices": 32,
+        "heading_gain": 2.5,
+        "lookahead_m": 0.05,
+        "max_neighbors": 59,
+        "mode": "nh-orca",
+        "neighbor_distance_m": 3.0,
+        "obstacle_inflation_m": 0.1,
+        "obstacle_time_horizon_s": 2.0,
+        "pair_inflation_m": 0.0,
+        "time_horizon_s": 2.0
+      },
+      "planning_time_ms": 687.654526,
+      "robot_arrival_rate": 0.6333333333333333,
+      "safe": null,
+      "safety_audit": false,
+      "scenario_fingerprint": "95187891f5d1a381",
+      "seed": 13,
+      "shared_coordination_ms": {
+        "maximum": 1.00475,
+        "mean": 0.17313830204081634,
+        "median": 0.15969250000000001,
+        "p95": 0.22933534999999997,
+        "sample_count": 1960
+      },
+      "steps": 2000,
+      "success": null,
+      "termination_time_s": 60.0,
+      "timing_v2_samples_file": "baselines/comparison-harness/results/timing_v2/samples/nh-orca_rect15_n60_s13.npz",
+      "timing_v2_samples_sha256": "fa781c5e65d70a219a82747402ad176db44e791bc4fa35f64820036fd2a84619",
+      "warmup_steps": 40,
+      "worker_count": 1
+    },
+    {
+      "algorithm": "NH-ORCA",
+      "arrival_success": false,
+      "batch_contains_local_units": true,
+      "batch_step_ms": {
+        "maximum": 2.60377,
+        "mean": 0.29278330918367346,
+        "median": 0.276171,
+        "p95": 0.38021325,
+        "sample_count": 1960
+      },
+      "control_time_max_ms": 2.60377,
+      "control_time_mean_ms": 0.292630316,
+      "control_time_p95_ms": 0.38021325,
+      "controller_backend": "public-rvo2-c++-per-agent-hook",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 2.49614,
+        "mean": 0.22572927755102043,
+        "median": 0.20923750000000002,
+        "p95": 0.30151324999999995,
+        "sample_count": 1960
+      },
+      "dynamics": "bounded-lookahead-unicycle",
+      "ever_arrival_rate": 0.8625,
+      "ever_arrival_success": false,
+      "family": "rect15",
+      "final_arrival_success": false,
+      "final_centers": [
+        [
+          -1.89289619599,
+          -0.486666625206
+        ],
+        [
+          4.913526890794,
+          2.682037028263
+        ],
+        [
+          5.165967139867,
+          4.080630547512
+        ],
+        [
+          2.8272071813,
+          6.263782569616
+        ],
+        [
+          5.193972498678,
+          -4.907666409259
+        ],
+        [
+          0.021315211077,
+          -0.327316323421
+        ],
+        [
+          -6.272878691626,
+          -7.434564930887
+        ],
+        [
+          -2.728420055526,
+          7.370005373211
+        ],
+        [
+          -3.708828592942,
+          4.949992547022
+        ],
+        [
+          -5.073268270647,
+          1.268853121599
+        ],
+        [
+          6.875304152609,
+          3.318970455719
+        ],
+        [
+          7.216975060391,
+          1.211506733416
+        ],
+        [
+          4.217327092975,
+          5.895317659856
+        ],
+        [
+          0.382182876868,
+          -4.197314549667
+        ],
+        [
+          4.111070840455,
+          -5.221517926937
+        ],
+        [
+          -0.503996602326,
+          -0.499495175685
+        ],
+        [
+          2.476815335393,
+          3.989861389147
+        ],
+        [
+          0.405366989699,
+          0.099328291047
+        ],
+        [
+          3.441089849589,
+          0.399968099022
+        ],
+        [
+          0.025476383208,
+          0.417750852543
+        ],
+        [
+          4.278058609364,
+          -4.716437280376
+        ],
+        [
+          7.36177808669,
+          2.438329375375
+        ],
+        [
+          -0.772867869756,
+          0.316854102823
+        ],
+        [
+          -3.740497222791,
+          -5.099356138192
+        ],
+        [
+          3.188085032852,
+          5.171960278777
+        ],
+        [
+          -5.214174264525,
+          5.614410491855
+        ],
+        [
+          4.352842909547,
+          1.466856306528
+        ],
+        [
+          0.893009966861,
+          -4.721153658339
+        ],
+        [
+          -6.825179100886,
+          4.217801464926
+        ],
+        [
+          -3.287685482879,
+          -3.256660135313
+        ],
+        [
+          -2.041322852189,
+          0.966560388368
+        ],
+        [
+          -2.428584329336,
+          -2.827666291137
+        ],
+        [
+          0.496956126903,
+          1.687455365666
+        ],
+        [
+          0.802246302993,
+          7.531959682349
+        ],
+        [
+          -6.269093874196,
+          5.75175525487
+        ],
+        [
+          6.948408058911,
+          -3.833369836758
+        ],
+        [
+          -7.324539503709,
+          -0.269616313229
+        ],
+        [
+          -4.687534562304,
+          7.28872666095
+        ],
+        [
+          -0.034841500384,
+          -4.726847548087
+        ],
+        [
+          -3.099326228143,
+          0.939767843763
+        ],
+        [
+          -5.512640064062,
+          -7.314531400328
+        ],
+        [
+          -5.179978939966,
+          -4.555247130502
+        ],
+        [
+          -1.285477010773,
+          0.100650410943
+        ],
+        [
+          -4.922167134471,
+          4.411537764845
+        ],
+        [
+          -1.98445961685,
+          1.467770903253
+        ],
+        [
+          3.356381834704,
+          -5.709377519029
+        ],
+        [
+          -3.173315841899,
+          3.558649226258
+        ],
+        [
+          2.319509381396,
+          -3.421190860657
+        ],
+        [
+          5.748502969188,
+          -3.411897390392
+        ],
+        [
+          1.907986836685,
+          5.910979618877
+        ],
+        [
+          -5.108964397485,
+          -5.19729871477
+        ],
+        [
+          -5.842258874301,
+          -6.332104374966
+        ],
+        [
+          4.532468873954,
+          -7.356997628546
+        ],
+        [
+          0.877473964518,
+          0.054143143568
+        ],
+        [
+          -4.254205305748,
+          -3.158725726054
+        ],
+        [
+          -6.214922534441,
+          1.186680648897
+        ],
+        [
+          3.659503997236,
+          4.444244907359
+        ],
+        [
+          1.383740452164,
+          -5.497033823409
+        ],
+        [
+          -6.238158611069,
+          -2.648832814279
+        ],
+        [
+          3.482919820287,
+          -5.168611936626
+        ],
+        [
+          -7.445041114275,
+          3.311867649608
+        ],
+        [
+          -7.628150960898,
+          -4.687862276399
+        ],
+        [
+          -5.722638259533,
+          -1.00353405208
+        ],
+        [
+          6.578949229089,
+          3.773953267881
+        ],
+        [
+          3.734525281696,
+          -4.73339753396
+        ],
+        [
+          4.924567882193,
+          -0.643212015675
+        ],
+        [
+          5.737721771841,
+          1.371601624828
+        ],
+        [
+          -2.759054542206,
+          -2.046444931504
+        ],
+        [
+          5.217327295736,
+          6.030850221258
+        ],
+        [
+          7.344840579989,
+          -6.832163079917
+        ],
+        [
+          -5.692606086592,
+          -1.859329810242
+        ],
+        [
+          -3.265164916849,
+          -1.0365625387
+        ],
+        [
+          6.909380495781,
+          -7.059346422396
+        ],
+        [
+          0.024627434656,
+          -0.86719102299
+        ],
+        [
+          -0.339942823937,
+          0.013524423877
+        ],
+        [
+          6.073033455349,
+          0.369184325218
+        ],
+        [
+          3.985650118864,
+          -0.786590479341
+        ],
+        [
+          7.519553103275,
+          -0.889637398802
+        ],
+        [
+          3.322248668481,
+          -1.359611192312
+        ],
+        [
+          6.657283644641,
+          -4.568270301152
+        ]
+      ],
+      "final_headings": [
+        6.000380457025,
+        -1.631416514778,
+        0.563886038746,
+        2.034175343774,
+        -1.090379313395,
+        -1.499106733694,
+        4.800030519866,
+        1.651207110991,
+        4.392714548368,
+        1.463708424993,
+        0.212426093226,
+        -0.322944225721,
+        -0.424478526492,
+        4.771613350079,
+        -0.602995512978,
+        -4.588236845181,
+        0.941186240517,
+        -1.937288104503,
+        0.914175188074,
+        -4.999276933004,
+        3.117290620006,
+        -4.405433500818,
+        4.203243855252,
+        -1.55276451049,
+        -0.24838533345,
+        1.950647723531,
+        1.017839920535,
+        -1.529642657866,
+        2.435738757684,
+        -0.930051954443,
+        3.751949911723,
+        -1.753119139251,
+        0.278891859228,
+        -0.101382569956,
+        -3.440936092105,
+        2.901217025913,
+        -3.193814867099,
+        3.129227132467,
+        -1.82281234352,
+        2.713393457774,
+        -1.137831069005,
+        9.853532854737,
+        -3.772858112312,
+        -0.049178729279,
+        6.28137453123,
+        -0.510621474625,
+        3.095362653916,
+        -1.120281594831,
+        -4.373912955178,
+        1.236840318776,
+        -1.530025795538,
+        4.690141534474,
+        -0.107939636608,
+        -0.030825953311,
+        -1.716522399445,
+        -3.512170647999,
+        0.286804065853,
+        -1.639811000036,
+        -2.727162003709,
+        -2.577526714204,
+        -4.064459345494,
+        -1.570034262913,
+        -2.454359475771,
+        1.106115311355,
+        -3.512348350535,
+        3.688254948002,
+        2.089551282533,
+        -3.156626833188,
+        -0.14840654162,
+        1.174683396953,
+        -3.631663002176,
+        -1.158525401206,
+        -8.353737888894,
+        -1.560644936834,
+        0.813613884639,
+        -1.74733618177,
+        -2.181310458893,
+        -1.775828713673,
+        -1.334754023563,
+        -1.130950052681
+      ],
+      "final_maximum_goal_distance_m": 9.689442294565598,
+      "final_state_sha256": "d99f08b49414d1b3afbcb5f8fd765a9fccdd9abcd4346f0573c128bbf7ac5708",
+      "fingerprint": "509b15e377a67853",
+      "gpu_model": "none",
+      "local_unit_definition": "one RVO2 agent computeNeighbors plus computeNewVelocity",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 0.543166,
+          "mean": 0.0008887464859693879,
+          "median": 0.000812,
+          "p95": 0.00141,
+          "sample_count": 156800
+        },
+        "per_step_max": {
+          "maximum": 0.543166,
+          "mean": 0.00404568724489796,
+          "median": 0.0017859999999999998,
+          "p95": 0.012896999999999997,
+          "sample_count": 1960
+        },
+        "unit_count": {
+          "maximum": 80.0,
+          "mean": 80.0,
+          "median": 80.0,
+          "p95": 80.0,
+          "sample_count": 1960
+        }
+      },
+      "makespan_s": null,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "mean_path_length_m": 10.261008984680801,
+      "minimum_boundary_clearance_m": null,
+      "minimum_obstacle_clearance_m": null,
+      "minimum_pair_distance_m": null,
+      "minimum_static_obstacle_clearance_m": null,
+      "n_robots": 80,
+      "parameters": {
+        "circle_vertices": 32,
+        "heading_gain": 2.5,
+        "lookahead_m": 0.05,
+        "max_neighbors": 79,
+        "mode": "nh-orca",
+        "neighbor_distance_m": 3.0,
+        "obstacle_inflation_m": 0.1,
+        "obstacle_time_horizon_s": 2.0,
+        "pair_inflation_m": 0.0,
+        "time_horizon_s": 2.0
+      },
+      "planning_time_ms": 818.908422,
+      "robot_arrival_rate": 0.8125,
+      "safe": null,
+      "safety_audit": false,
+      "scenario_fingerprint": "509b15e377a67853",
+      "seed": 0,
+      "shared_coordination_ms": {
+        "maximum": 2.488981,
+        "mean": 0.22168359030612242,
+        "median": 0.206991,
+        "p95": 0.2849197,
+        "sample_count": 1960
+      },
+      "steps": 2000,
+      "success": null,
+      "termination_time_s": 60.0,
+      "timing_v2_samples_file": "baselines/comparison-harness/results/timing_v2/samples/nh-orca_rect15_n80_s0.npz",
+      "timing_v2_samples_sha256": "d99144a4b966d34025bd9a9639bd27e2fff180bdb52ecf57248c358e698946e6",
+      "warmup_steps": 40,
+      "worker_count": 1
+    },
+    {
+      "algorithm": "NH-ORCA",
+      "arrival_success": false,
+      "batch_contains_local_units": true,
+      "batch_step_ms": {
+        "maximum": 1.836784,
+        "mean": 0.3023644255102041,
+        "median": 0.2853595,
+        "p95": 0.40334415,
+        "sample_count": 1960
+      },
+      "control_time_max_ms": 1.836784,
+      "control_time_mean_ms": 0.30233294050000004,
+      "control_time_p95_ms": 0.40334415,
+      "controller_backend": "public-rvo2-c++-per-agent-hook",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 1.751148,
+        "mean": 0.22840157142857143,
+        "median": 0.211926,
+        "p95": 0.3215375,
+        "sample_count": 1960
+      },
+      "dynamics": "bounded-lookahead-unicycle",
+      "ever_arrival_rate": 0.85,
+      "ever_arrival_success": false,
+      "family": "rect15",
+      "final_arrival_success": false,
+      "final_centers": [
+        [
+          -1.807877147649,
+          5.059112853925
+        ],
+        [
+          6.641751018011,
+          -1.889769888085
+        ],
+        [
+          -5.389672773474,
+          3.963895760793
+        ],
+        [
+          7.536645268413,
+          -5.643448410105
+        ],
+        [
+          3.391534643149,
+          4.927423349184
+        ],
+        [
+          6.526856523938,
+          -5.707486872327
+        ],
+        [
+          -6.293964813357,
+          7.326038404605
+        ],
+        [
+          6.571993894789,
+          -4.232980851414
+        ],
+        [
+          3.942860055924,
+          -6.708674508463
+        ],
+        [
+          -2.879197048805,
+          -2.683876469712
+        ],
+        [
+          3.376668230885,
+          -0.477670974989
+        ],
+        [
+          5.790074821146,
+          6.444093733971
+        ],
+        [
+          -4.135090793194,
+          -1.645146304001
+        ],
+        [
+          -4.333997784184,
+          -5.616533987216
+        ],
+        [
+          5.41331092928,
+          -0.37898136045
+        ],
+        [
+          -4.671771902147,
+          2.651211260688
+        ],
+        [
+          -3.506407116039,
+          0.602224460095
+        ],
+        [
+          5.936501418927,
+          -4.857139298207
+        ],
+        [
+          -5.582835199331,
+          -5.76784082386
+        ],
+        [
+          7.196549039894,
+          6.820467431023
+        ],
+        [
+          -4.20441357858,
+          7.049474202396
+        ],
+        [
+          1.451317959021,
+          -2.889279026841
+        ],
+        [
+          -4.173546967509,
+          -0.348260205149
+        ],
+        [
+          5.849850621096,
+          3.818458067968
+        ],
+        [
+          4.955127817775,
+          3.860343876156
+        ],
+        [
+          0.397828839759,
+          1.452655788802
+        ],
+        [
+          -2.558361348134,
+          6.548481348941
+        ],
+        [
+          1.365956670458,
+          4.783568821002
+        ],
+        [
+          3.353704732353,
+          2.243816852907
+        ],
+        [
+          6.899921455285,
+          -0.821405466486
+        ],
+        [
+          0.893275556182,
+          4.376720876471
+        ],
+        [
+          5.01010146527,
+          -2.45158903615
+        ],
+        [
+          -6.512949093558,
+          3.454204088868
+        ],
+        [
+          0.871518503316,
+          -4.744040326214
+        ],
+        [
+          -0.488286402266,
+          -1.186499407704
+        ],
+        [
+          1.201068934263,
+          -1.929918076139
+        ],
+        [
+          1.9829952205,
+          -2.782385123118
+        ],
+        [
+          6.725578489641,
+          -6.904747345963
+        ],
+        [
+          0.988931554046,
+          -6.517468770084
+        ],
+        [
+          0.753940899394,
+          -1.629431299679
+        ],
+        [
+          -4.665220388608,
+          5.638573917526
+        ],
+        [
+          3.816124964075,
+          3.09200163064
+        ],
+        [
+          -0.556428596308,
+          2.077433100263
+        ],
+        [
+          4.740672120213,
+          2.725621644792
+        ],
+        [
+          2.410863058866,
+          -1.410268387619
+        ],
+        [
+          1.692911551369,
+          -1.714070298044
+        ],
+        [
+          3.983708222829,
+          -1.784249272142
+        ],
+        [
+          1.380740452063,
+          -4.613981292463
+        ],
+        [
+          -6.984655208007,
+          -1.724453117006
+        ],
+        [
+          5.579815336402,
+          1.014122412632
+        ],
+        [
+          2.056434612088,
+          2.334545059378
+        ],
+        [
+          -3.229566845658,
+          -6.492222285794
+        ],
+        [
+          -2.176180497346,
+          -0.730354354059
+        ],
+        [
+          6.770961019383,
+          5.857633226169
+        ],
+        [
+          -1.855643473605,
+          -3.393054228769
+        ],
+        [
+          3.066128733668,
+          -6.508999238299
+        ],
+        [
+          -0.051806984265,
+          -4.884613401776
+        ],
+        [
+          4.063689300737,
+          -0.81890876584
+        ],
+        [
+          -4.428201824638,
+          -2.870515339115
+        ],
+        [
+          3.146867323536,
+          3.972651054557
+        ],
+        [
+          4.707680626197,
+          -0.87795708949
+        ],
+        [
+          -6.700237573793,
+          2.957684945866
+        ],
+        [
+          -3.866391144656,
+          2.015512574631
+        ],
+        [
+          0.579507722274,
+          1.964282744012
+        ],
+        [
+          -3.84844192221,
+          -6.530892722539
+        ],
+        [
+          -5.469517124605,
+          -2.729518304536
+        ],
+        [
+          6.325246878527,
+          2.422230543923
+        ],
+        [
+          -3.060864593149,
+          -5.966767415677
+        ],
+        [
+          -4.82978150799,
+          -3.342489456701
+        ],
+        [
+          -4.896362725705,
+          -4.963341599787
+        ],
+        [
+          -4.701072587918,
+          1.699105679029
+        ],
+        [
+          -1.357580676906,
+          -1.074393612793
+        ],
+        [
+          -7.610619448615,
+          -1.093243989591
+        ],
+        [
+          6.198909568552,
+          7.580147536183
+        ],
+        [
+          -2.324191051231,
+          0.205608246809
+        ],
+        [
+          -7.237009487992,
+          3.464536360091
+        ],
+        [
+          2.989556881089,
+          -1.384984882552
+        ],
+        [
+          -5.477652958562,
+          -4.81521274369
+        ],
+        [
+          -3.136455290911,
+          -1.004409447429
+        ],
+        [
+          3.992006273059,
+          0.655109200291
+        ]
+      ],
+      "final_headings": [
+        1.42277077275,
+        1.814225406339,
+        2.856410429958,
+        1.17490769266,
+        0.96292850712,
+        -2.927250720204,
+        1.696390231785,
+        -8.683517948968,
+        -2.734276689804,
+        -1.727550288282,
+        4.807284251299,
+        -0.03522197659,
+        -6.356296905675,
+        -1.547028889942,
+        0.58459189831,
+        3.256159456632,
+        -2.478083719245,
+        -2.635188651195,
+        -1.756332448877,
+        0.063926819241,
+        0.54329209599,
+        -2.284818141601,
+        3.940878150887,
+        1.395739881025,
+        -5.352474266918,
+        7.482670549933,
+        1.941573409521,
+        3.230306006285,
+        -5.841505192882,
+        -1.262858607938,
+        -1.894927003023,
+        -5.262763988861,
+        2.44267549693,
+        -4.421191333526,
+        4.730271907977,
+        5.900798258214,
+        -0.228023665585,
+        -1.779596378902,
+        -2.829238425286,
+        -0.860537196195,
+        1.761022608778,
+        2.391703665943,
+        11.160373235627,
+        6.49979100387,
+        2.641355250297,
+        5.982227544643,
+        -2.558884890185,
+        1.570796849613,
+        -3.238600503948,
+        1.612786445835,
+        -9.423098079128,
+        0.263135147834,
+        2.711133399976,
+        0.767728323147,
+        -1.77777508024,
+        -2.725262987619,
+        1.933199317437,
+        6.749720152191,
+        -1.267705148012,
+        -4.928083083456,
+        -0.139811028259,
+        4.008439796817,
+        2.019666659614,
+        7.658405887476,
+        -2.642444536672,
+        -3.216042423416,
+        -0.02088981657,
+        -0.000938570639,
+        3.191659378602,
+        -1.6028505907,
+        -3.689799726605,
+        4.285288380603,
+        1.968832332352,
+        -0.035216957117,
+        -3.111312008797,
+        -2.98678578677,
+        2.500887033407,
+        -2.60899085101,
+        -2.74333863864,
+        5.45619716404
+      ],
+      "final_maximum_goal_distance_m": 14.487603538548553,
+      "final_state_sha256": "06293e189473afabf121fca5b4611d042765cca8d26bc52d05fcdb082c3d4f92",
+      "fingerprint": "bf5fd42d9ff178af",
+      "gpu_model": "none",
+      "local_unit_definition": "one RVO2 agent computeNeighbors plus computeNewVelocity",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 0.614519,
+          "mean": 0.0009887970344387754,
+          "median": 0.000878,
+          "p95": 0.001667,
+          "sample_count": 156800
+        },
+        "per_step_max": {
+          "maximum": 0.614519,
+          "mean": 0.0051409086734693875,
+          "median": 0.0021805,
+          "p95": 0.0129994,
+          "sample_count": 1960
+        },
+        "unit_count": {
+          "maximum": 80.0,
+          "mean": 80.0,
+          "median": 80.0,
+          "p95": 80.0,
+          "sample_count": 1960
+        }
+      },
+      "makespan_s": null,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "mean_path_length_m": 9.409532083164164,
+      "minimum_boundary_clearance_m": null,
+      "minimum_obstacle_clearance_m": null,
+      "minimum_pair_distance_m": null,
+      "minimum_static_obstacle_clearance_m": null,
+      "n_robots": 80,
+      "parameters": {
+        "circle_vertices": 32,
+        "heading_gain": 2.5,
+        "lookahead_m": 0.05,
+        "max_neighbors": 79,
+        "mode": "nh-orca",
+        "neighbor_distance_m": 3.0,
+        "obstacle_inflation_m": 0.1,
+        "obstacle_time_horizon_s": 2.0,
+        "pair_inflation_m": 0.0,
+        "time_horizon_s": 2.0
+      },
+      "planning_time_ms": 813.70309,
+      "robot_arrival_rate": 0.8125,
+      "safe": null,
+      "safety_audit": false,
+      "scenario_fingerprint": "bf5fd42d9ff178af",
+      "seed": 7,
+      "shared_coordination_ms": {
+        "maximum": 1.7114,
+        "mean": 0.22326066275510204,
+        "median": 0.2088685,
+        "p95": 0.3067178,
+        "sample_count": 1960
+      },
+      "steps": 2000,
+      "success": null,
+      "termination_time_s": 60.0,
+      "timing_v2_samples_file": "baselines/comparison-harness/results/timing_v2/samples/nh-orca_rect15_n80_s7.npz",
+      "timing_v2_samples_sha256": "9e9a0d01bfd96a485af1f4dd78c62502d9711d00c76279123c0d3949c93e1b89",
+      "warmup_steps": 40,
+      "worker_count": 1
+    },
+    {
+      "algorithm": "NH-ORCA",
+      "arrival_success": false,
+      "batch_contains_local_units": true,
+      "batch_step_ms": {
+        "maximum": 0.855502,
+        "mean": 0.2915679362244898,
+        "median": 0.27753300000000003,
+        "p95": 0.38817304999999996,
+        "sample_count": 1960
+      },
+      "control_time_max_ms": 0.855502,
+      "control_time_mean_ms": 0.291944429,
+      "control_time_p95_ms": 0.38954704999999995,
+      "controller_backend": "public-rvo2-c++-per-agent-hook",
+      "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+      "critical_path_ms": {
+        "maximum": 0.762987,
+        "mean": 0.22285193163265304,
+        "median": 0.20839849999999996,
+        "p95": 0.30280009999999985,
+        "sample_count": 1960
+      },
+      "dynamics": "bounded-lookahead-unicycle",
+      "ever_arrival_rate": 0.85,
+      "ever_arrival_success": false,
+      "family": "rect15",
+      "final_arrival_success": false,
+      "final_centers": [
+        [
+          5.903428440956,
+          -3.759311718509
+        ],
+        [
+          -5.770480416033,
+          -3.468661622683
+        ],
+        [
+          -0.430381556235,
+          -1.654535112962
+        ],
+        [
+          4.515729016803,
+          4.377243680119
+        ],
+        [
+          -0.211321948262,
+          2.853347200351
+        ],
+        [
+          7.421364008663,
+          2.11135918841
+        ],
+        [
+          -6.38030292258,
+          -5.22261504809
+        ],
+        [
+          -3.170880416514,
+          6.611869156581
+        ],
+        [
+          2.04789285638,
+          3.924870744878
+        ],
+        [
+          3.979342415529,
+          -4.462111190606
+        ],
+        [
+          -4.54337190814,
+          -4.741969609662
+        ],
+        [
+          0.512802046116,
+          -2.696440911684
+        ],
+        [
+          4.666398563004,
+          -6.493845924869
+        ],
+        [
+          6.671597498362,
+          -1.685626208797
+        ],
+        [
+          -4.990532569121,
+          -3.874424201578
+        ],
+        [
+          -6.66200694236,
+          -3.294299038602
+        ],
+        [
+          -0.475991302645,
+          -5.877553056495
+        ],
+        [
+          6.998888072197,
+          -1.11848832973
+        ],
+        [
+          -5.371012985466,
+          -0.585087395876
+        ],
+        [
+          -1.082186039751,
+          6.438004318135
+        ],
+        [
+          5.116708456573,
+          -7.039919726023
+        ],
+        [
+          6.177167253162,
+          2.807667727618
+        ],
+        [
+          0.780592542482,
+          -7.629848996737
+        ],
+        [
+          2.109237069789,
+          2.213269789125
+        ],
+        [
+          5.73774360081,
+          -1.457290190149
+        ],
+        [
+          -2.624106343635,
+          2.612698406428
+        ],
+        [
+          2.62765646428,
+          -6.896557578716
+        ],
+        [
+          -7.244497187189,
+          7.152255438116
+        ],
+        [
+          -4.707561769628,
+          -7.231720341665
+        ],
+        [
+          4.36515994922,
+          -3.708288152302
+        ],
+        [
+          3.877791134807,
+          -6.651331762372
+        ],
+        [
+          -1.973355385544,
+          -4.665297526034
+        ],
+        [
+          0.973679775339,
+          1.463582606909
+        ],
+        [
+          0.915542250393,
+          -1.037830677096
+        ],
+        [
+          0.989843276647,
+          0.321675064852
+        ],
+        [
+          -3.108920639512,
+          5.432974978062
+        ],
+        [
+          -2.551211414111,
+          -6.371248254275
+        ],
+        [
+          -5.796223574891,
+          -7.192612077087
+        ],
+        [
+          4.718686648933,
+          5.093529168657
+        ],
+        [
+          -1.481076864202,
+          -6.185357851004
+        ],
+        [
+          7.555797874575,
+          3.427004893514
+        ],
+        [
+          5.172949360284,
+          0.630342879675
+        ],
+        [
+          1.811040134874,
+          3.159181773631
+        ],
+        [
+          -7.147950428413,
+          -0.755042369278
+        ],
+        [
+          -5.400238998839,
+          -4.92676135652
+        ],
+        [
+          -7.23644870668,
+          -2.223735627259
+        ],
+        [
+          6.157835937788,
+          -2.366803191314
+        ],
+        [
+          0.67545777539,
+          2.364257048837
+        ],
+        [
+          4.945782857203,
+          4.552502239717
+        ],
+        [
+          -2.651166435261,
+          -4.584380435864
+        ],
+        [
+          -3.535027926033,
+          -3.472655076314
+        ],
+        [
+          -4.514096126693,
+          5.130373711766
+        ],
+        [
+          -6.55902861389,
+          -2.715937557258
+        ],
+        [
+          -5.544211484639,
+          -6.507540250319
+        ],
+        [
+          2.206824287525,
+          -4.312743099431
+        ],
+        [
+          -3.225094684427,
+          -6.710166901389
+        ],
+        [
+          4.99391728943,
+          -2.821790274615
+        ],
+        [
+          2.255255065586,
+          -5.004991663885
+        ],
+        [
+          1.741226835581,
+          4.391441952036
+        ],
+        [
+          4.990894241089,
+          2.078570928028
+        ],
+        [
+          4.686151402662,
+          -2.391820390849
+        ],
+        [
+          -4.460863392783,
+          -2.604215052805
+        ],
+        [
+          -4.037485276132,
+          -1.565001572953
+        ],
+        [
+          -2.213060900076,
+          2.938989335134
+        ],
+        [
+          1.275220691771,
+          -7.413349177667
+        ],
+        [
+          4.490765809882,
+          2.180806782157
+        ],
+        [
+          0.419038646059,
+          -1.89049940587
+        ],
+        [
+          -7.07078946968,
+          5.909410370479
+        ],
+        [
+          -1.046902242707,
+          3.753236080522
+        ],
+        [
+          -7.307822039089,
+          5.347065394636
+        ],
+        [
+          -0.580223890084,
+          1.305465295652
+        ],
+        [
+          0.079238642516,
+          -4.029682605867
+        ],
+        [
+          4.125528382937,
+          4.883625151547
+        ],
+        [
+          -2.445236626515,
+          -7.439874949571
+        ],
+        [
+          4.660991934719,
+          0.541143151761
+        ],
+        [
+          -1.395311660012,
+          4.567915425504
+        ],
+        [
+          4.469090658265,
+          3.835836939886
+        ],
+        [
+          -7.590939348949,
+          -0.09778886805
+        ],
+        [
+          6.435803347493,
+          0.411354627746
+        ],
+        [
+          0.230489709012,
+          0.502027031701
+        ]
+      ],
+      "final_headings": [
+        -0.051142682713,
+        -2.181361172066,
+        7.783344002675,
+        10.665877284413,
+        1.704090968033,
+        -0.402037840802,
+        -2.256782779595,
+        1.197108611649,
+        -0.066951586829,
+        1.598939047028,
+        -2.993017013279,
+        3.86915836393,
+        0.367620853751,
+        -0.244666708001,
+        -2.198191817116,
+        -2.793266193618,
+        4.71977066739,
+        6.241621527258,
+        3.021016686704,
+        -2.410677316876,
+        -0.553730763015,
+        -2.484830488799,
+        -3.138581651065,
+        -6.297894006194,
+        -1.294000021391,
+        8.74106335348,
+        -1.399127693018,
+        1.795805944707,
+        -1.742732922416,
+        -12.787846393168,
+        -2.370168751972,
+        2.33693812807,
+        4.278575008955,
+        3.053040464434,
+        5.690285968049,
+        0.013050043276,
+        1.925474307089,
+        -2.684624508511,
+        -8.459303141955,
+        -4.805326551954,
+        1.381635827067,
+        -5.994127208801,
+        0.015295293969,
+        2.594670841286,
+        -2.480402929107,
+        -3.086819849958,
+        0.05617867985,
+        4.253712760955,
+        -0.129861810773,
+        7.019484202052,
+        -0.682334095453,
+        2.155354634599,
+        -5.532070108682,
+        -3.496393408569,
+        -3.031271823779,
+        -1.295421826012,
+        -5.773799074011,
+        -3.103732507037,
+        7.449535702567,
+        0.807152504155,
+        -2.443591534271,
+        -2.475880801168,
+        -3.165831971209,
+        0.91178798589,
+        3.141320242058,
+        1.42725832433,
+        3.381481848367,
+        -4.83349353871,
+        0.622597792306,
+        2.111204058399,
+        1.169866738816,
+        4.601625432388,
+        0.136207800543,
+        -1.673037885941,
+        -1.906882656686,
+        1.398068614487,
+        -1.570840828695,
+        2.467399135315,
+        1.352306445472,
+        1.020114618563
+      ],
+      "final_maximum_goal_distance_m": 11.435246845077808,
+      "final_state_sha256": "61b7037beda85530ea2cfa7eac1c60d9f3ea0f10ae6bf74e9820196cc0272edc",
+      "fingerprint": "24dc7f5c525af1ae",
+      "gpu_model": "none",
+      "local_unit_definition": "one RVO2 agent computeNeighbors plus computeNewVelocity",
+      "local_unit_ms": {
+        "per_call": {
+          "maximum": 0.199377,
+          "mean": 0.0009145278954081631,
+          "median": 0.000784,
+          "p95": 0.001625,
+          "sample_count": 156800
+        },
+        "per_step_max": {
+          "maximum": 0.199377,
+          "mean": 0.0044462270408163265,
+          "median": 0.0019155,
+          "p95": 0.013477449999999998,
+          "sample_count": 1960
+        },
+        "unit_count": {
+          "maximum": 80.0,
+          "mean": 80.0,
+          "median": 80.0,
+          "p95": 80.0,
+          "sample_count": 1960
+        }
+      },
+      "makespan_s": null,
+      "maximum_linear_speed_mps": 0.8,
+      "maximum_yaw_rate_rps": 1.5707963267948966,
+      "mean_path_length_m": 9.396738662492059,
+      "minimum_boundary_clearance_m": null,
+      "minimum_obstacle_clearance_m": null,
+      "minimum_pair_distance_m": null,
+      "minimum_static_obstacle_clearance_m": null,
+      "n_robots": 80,
+      "parameters": {
+        "circle_vertices": 32,
+        "heading_gain": 2.5,
+        "lookahead_m": 0.05,
+        "max_neighbors": 79,
+        "mode": "nh-orca",
+        "neighbor_distance_m": 3.0,
+        "obstacle_inflation_m": 0.1,
+        "obstacle_time_horizon_s": 2.0,
+        "pair_inflation_m": 0.0,
+        "time_horizon_s": 2.0
+      },
+      "planning_time_ms": 813.443013,
+      "robot_arrival_rate": 0.8,
+      "safe": null,
+      "safety_audit": false,
+      "scenario_fingerprint": "24dc7f5c525af1ae",
+      "seed": 13,
+      "shared_coordination_ms": {
+        "maximum": 0.746232,
+        "mean": 0.21840570459183672,
+        "median": 0.205864,
+        "p95": 0.28667285,
+        "sample_count": 1960
+      },
+      "steps": 2000,
+      "success": null,
+      "termination_time_s": 60.0,
+      "timing_v2_samples_file": "baselines/comparison-harness/results/timing_v2/samples/nh-orca_rect15_n80_s13.npz",
+      "timing_v2_samples_sha256": "0f42b67fe49b9f81d8d69d1f179f0c4c5e7baeb137765838ca781ced4e66f8b5",
+      "warmup_steps": 40,
+      "worker_count": 1
+    }
+  ],
+  "shared_static_guidance": "cost-field",
+  "source": "public NH-ORCA Python implementation"
+}

@@ -1,0 +1,53 @@
+{
+  "method": "IMPC-DR",
+  "source": "SMGLib public implementation",
+  "model_audit": {
+    "executed_state": "[x, y, vx, vy]",
+    "executed_input": "[ax, ay]",
+    "prediction_model": "double integrator",
+    "bounded_unicycle_compatible": false,
+    "common_unicycle_table_eligible": false,
+    "reason": "the public execution path does not use the repository's separate nonholonomic linearization module"
+  },
+  "horizon_steps": 10,
+  "dt_s": 0.2,
+  "parallel_workers": 1,
+  "records": [
+    {
+      "n_robots": 2,
+      "one_replan_wall_time_s": 0.07954319000418764,
+      "per_robot_replan_ms": 39.77159500209382,
+      "moving_robot_count": 2,
+      "maximum_displacement_m": 0.005925973555010788,
+      "constraint_rows_mean": 1.0,
+      "constraint_rows_max": 1
+    },
+    {
+      "n_robots": 4,
+      "one_replan_wall_time_s": 0.029196257004514337,
+      "per_robot_replan_ms": 7.299064251128584,
+      "moving_robot_count": 4,
+      "maximum_displacement_m": 0.005925973555010788,
+      "constraint_rows_mean": 1.0,
+      "constraint_rows_max": 1
+    },
+    {
+      "n_robots": 8,
+      "one_replan_wall_time_s": 0.06549778798944317,
+      "per_robot_replan_ms": 8.187223498680396,
+      "moving_robot_count": 8,
+      "maximum_displacement_m": 0.005925926502970647,
+      "constraint_rows_mean": 21.0,
+      "constraint_rows_max": 21
+    },
+    {
+      "n_robots": 16,
+      "one_replan_wall_time_s": 0.15255204400455114,
+      "per_robot_replan_ms": 9.534502750284446,
+      "moving_robot_count": 16,
+      "maximum_displacement_m": 0.005925929055742962,
+      "constraint_rows_mean": 61.0,
+      "constraint_rows_max": 61
+    }
+  ]
+}
