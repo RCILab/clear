@@ -158,6 +158,13 @@ function pickSeed() {
   if (mode === "static") {
     $("sub").textContent = "precomputed runs from the actual clear_nav pipeline";
     $("modeRow").style.display = "none";
+    const availableN = new Set(bank.map(e => e.n));
+    document.querySelectorAll(".nn").forEach(b => {
+      if (!availableN.has(+b.dataset.n)) {
+        b.disabled = true;
+        b.title = "not in the precomputed run bank";
+      }
+    });
     $("status").textContent =
       `Pick a family, then press Play.\nRun bank: ${bank.length} precomputed missions.`;
   }
@@ -175,6 +182,12 @@ document.querySelectorAll(".fam").forEach(b => b.onclick = () => {
 document.querySelectorAll(".nn").forEach(b => b.onclick = () => {
   nRobots = +b.dataset.n; dirty = true;
   document.querySelectorAll(".nn").forEach(x => x.classList.toggle("active", x === b));
+  if (mode === "static" && family) {
+    $("status").classList.remove("err");
+    $("status").textContent = bankPool().length
+      ? `${family}, N=${nRobots}, seed=${$("seed").value} — press Play.`
+      : `No precomputed run for ${family} at N=${nRobots} in this bank.`;
+  }
 });
 document.querySelector('.nn[data-n="20"]').classList.add("active");
 document.querySelectorAll(".spd").forEach(b => b.onclick = () => {
@@ -387,16 +400,24 @@ async function computeBatch() {
 
 /* ---------- static bank mode --------------------------------------------- */
 async function loadFromBank() {
+  if (busy) return;
   const seed = Math.max(0, +$("seed").value | 0);
   const pool = bankPool();
   $("status").classList.remove("err");
   if (!pool.length) {
-    $("status").textContent = `No precomputed run for ${family} at N=${nRobots}.`;
+    $("status").textContent = `No precomputed run for ${family} at N=${nRobots} in this bank.`;
     $("status").classList.add("err");
     return;
   }
   let entry = pool.find(e => e.seed === seed);
-  if (!entry) { entry = pool[Math.floor(Math.random() * pool.length)]; $("seed").value = entry.seed; }
+  let seedNote = "";
+  if (!entry) {
+    entry = pool[Math.floor(Math.random() * pool.length)];
+    $("seed").value = entry.seed;
+    if (seed !== entry.seed)
+      seedNote = `\nSeed ${seed} is not in the bank; playing banked seed ${entry.seed}.`;
+  }
+  busy = true; $("play").disabled = true;
   $("status").textContent = `Loading ${entry.file} …`;
   try {
     const r = await fetch("runs/" + entry.file);
@@ -412,12 +433,14 @@ async function loadFromBank() {
     $("h-mk").textContent = j.completed ? j.makespan.toFixed(2) + " s" : "timeout";
     $("h-mp").textContent = j.min_pair.toFixed(3) + " m";
     $("h-rt").textContent = "precomputed";
-    $("status").textContent = j.completed
+    $("status").textContent = (j.completed
       ? `Completed: all ${j.n} robots arrived (makespan ${j.makespan.toFixed(2)} s).`
-      : `Timeout run.`;
+      : `Timeout run.`) + seedNote;
   } catch (err) {
     $("status").textContent = "Error: " + err.message;
     $("status").classList.add("err");
+  } finally {
+    busy = false; $("play").disabled = false;
   }
 }
 
