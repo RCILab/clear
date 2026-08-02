@@ -75,6 +75,13 @@ and their SHA-256 manifest are under `validation/timing_v2/`. Large GIFs and
 duplicate diagnostic traces are not stored here: the public replay bank is
 already maintained once in `../playground/runs/`.
 
+The reported centralized latency table is backed by
+`validation/timing_v2/timing_v2_clear_global_n80.json`, which contains the
+four headline families, all four team sizes, and three 60 s state streams per
+cell. `timing_v2_vanilla_global_rect15_n80.json` supplies the matched N=80
+Rect15 CBF-QP overhead reference. Both use the same persistent global OSQP
+workspace as the mission runner.
+
 ## Baselines
 
 The repository includes only our adapters and evaluation harnesses. Public
