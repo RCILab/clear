@@ -8,12 +8,140 @@
   "makespan": 25.46
  },
  {
+  "family": "circ15",
+  "n": 20,
+  "seed": 1,
+  "file": "circ15_n20_s1.json",
+  "completed": true,
+  "makespan": 23.64
+ },
+ {
+  "family": "circ15",
+  "n": 20,
+  "seed": 2,
+  "file": "circ15_n20_s2.json",
+  "completed": true,
+  "makespan": 21.95
+ },
+ {
+  "family": "circ15",
+  "n": 40,
+  "seed": 0,
+  "file": "circ15_n40_s0.json",
+  "completed": true,
+  "makespan": 25.8
+ },
+ {
+  "family": "circ15",
+  "n": 40,
+  "seed": 1,
+  "file": "circ15_n40_s1.json",
+  "completed": true,
+  "makespan": 23.490000000000002
+ },
+ {
+  "family": "circ15",
+  "n": 40,
+  "seed": 2,
+  "file": "circ15_n40_s2.json",
+  "completed": true,
+  "makespan": 27.01
+ },
+ {
+  "family": "circ15",
+  "n": 60,
+  "seed": 0,
+  "file": "circ15_n60_s0.json",
+  "completed": true,
+  "makespan": 29.48
+ },
+ {
+  "family": "circ15",
+  "n": 60,
+  "seed": 1,
+  "file": "circ15_n60_s1.json",
+  "completed": true,
+  "makespan": 32.480000000000004
+ },
+ {
+  "family": "circ15",
+  "n": 60,
+  "seed": 2,
+  "file": "circ15_n60_s2.json",
+  "completed": false,
+  "makespan": null
+ },
+ {
   "family": "free",
   "n": 20,
   "seed": 0,
   "file": "free_n20_s0.json",
   "completed": true,
   "makespan": 23.92
+ },
+ {
+  "family": "free",
+  "n": 20,
+  "seed": 1,
+  "file": "free_n20_s1.json",
+  "completed": true,
+  "makespan": 20.1
+ },
+ {
+  "family": "free",
+  "n": 20,
+  "seed": 2,
+  "file": "free_n20_s2.json",
+  "completed": true,
+  "makespan": 19.55
+ },
+ {
+  "family": "free",
+  "n": 40,
+  "seed": 0,
+  "file": "free_n40_s0.json",
+  "completed": true,
+  "makespan": 25.45
+ },
+ {
+  "family": "free",
+  "n": 40,
+  "seed": 1,
+  "file": "free_n40_s1.json",
+  "completed": true,
+  "makespan": 23.47
+ },
+ {
+  "family": "free",
+  "n": 40,
+  "seed": 2,
+  "file": "free_n40_s2.json",
+  "completed": true,
+  "makespan": 20.87
+ },
+ {
+  "family": "free",
+  "n": 60,
+  "seed": 0,
+  "file": "free_n60_s0.json",
+  "completed": true,
+  "makespan": 24.26
+ },
+ {
+  "family": "free",
+  "n": 60,
+  "seed": 1,
+  "file": "free_n60_s1.json",
+  "completed": true,
+  "makespan": 25.98
+ },
+ {
+  "family": "free",
+  "n": 60,
+  "seed": 2,
+  "file": "free_n60_s2.json",
+  "completed": true,
+  "makespan": 24.34
  },
  {
   "family": "rect15",
@@ -24,11 +152,139 @@
   "makespan": 26.46
  },
  {
+  "family": "rect15",
+  "n": 20,
+  "seed": 1,
+  "file": "rect15_n20_s1.json",
+  "completed": true,
+  "makespan": 24.34
+ },
+ {
+  "family": "rect15",
+  "n": 20,
+  "seed": 2,
+  "file": "rect15_n20_s2.json",
+  "completed": true,
+  "makespan": 25.93
+ },
+ {
+  "family": "rect15",
+  "n": 40,
+  "seed": 0,
+  "file": "rect15_n40_s0.json",
+  "completed": true,
+  "makespan": 29.900000000000002
+ },
+ {
+  "family": "rect15",
+  "n": 40,
+  "seed": 1,
+  "file": "rect15_n40_s1.json",
+  "completed": true,
+  "makespan": 31.03
+ },
+ {
+  "family": "rect15",
+  "n": 40,
+  "seed": 2,
+  "file": "rect15_n40_s2.json",
+  "completed": true,
+  "makespan": 26.53
+ },
+ {
+  "family": "rect15",
+  "n": 60,
+  "seed": 0,
+  "file": "rect15_n60_s0.json",
+  "completed": true,
+  "makespan": 26.13
+ },
+ {
+  "family": "rect15",
+  "n": 60,
+  "seed": 1,
+  "file": "rect15_n60_s1.json",
+  "completed": true,
+  "makespan": 41.95
+ },
+ {
+  "family": "rect15",
+  "n": 60,
+  "seed": 2,
+  "file": "rect15_n60_s2.json",
+  "completed": true,
+  "makespan": 28.28
+ },
+ {
   "family": "swap",
   "n": 20,
   "seed": 0,
   "file": "swap_n20_s0.json",
   "completed": true,
   "makespan": 21.34
+ },
+ {
+  "family": "swap",
+  "n": 20,
+  "seed": 1,
+  "file": "swap_n20_s1.json",
+  "completed": true,
+  "makespan": 21.44
+ },
+ {
+  "family": "swap",
+  "n": 20,
+  "seed": 2,
+  "file": "swap_n20_s2.json",
+  "completed": true,
+  "makespan": 21.44
+ },
+ {
+  "family": "swap",
+  "n": 40,
+  "seed": 0,
+  "file": "swap_n40_s0.json",
+  "completed": true,
+  "makespan": 23.41
+ },
+ {
+  "family": "swap",
+  "n": 40,
+  "seed": 1,
+  "file": "swap_n40_s1.json",
+  "completed": true,
+  "makespan": 23.52
+ },
+ {
+  "family": "swap",
+  "n": 40,
+  "seed": 2,
+  "file": "swap_n40_s2.json",
+  "completed": true,
+  "makespan": 23.41
+ },
+ {
+  "family": "swap",
+  "n": 60,
+  "seed": 0,
+  "file": "swap_n60_s0.json",
+  "completed": true,
+  "makespan": 27.64
+ },
+ {
+  "family": "swap",
+  "n": 60,
+  "seed": 1,
+  "file": "swap_n60_s1.json",
+  "completed": true,
+  "makespan": 27.59
+ },
+ {
+  "family": "swap",
+  "n": 60,
+  "seed": 2,
+  "file": "swap_n60_s2.json",
+  "completed": true,
+  "makespan": 27.32
  }
 ]
