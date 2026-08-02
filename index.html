@@ -180,17 +180,29 @@
   </section>
 
   <!-- ===================== Playground ===================== -->
-  <section class="section pt-0">
-    <div class="container is-max-desktop has-text-centered">
+  <section class="section pt-0" id="playground">
+    <div class="container is-widescreen has-text-centered">
       <h2 class="title is-3">Try it in your browser</h2>
       <p class="is-size-5 mb-4">
         Replay precomputed runs of the actual CLEAR pipeline &mdash; pick a map family,
         team size, and seed, then watch the passage unfold in real time.
       </p>
-      <a href="playground/index.html" class="button is-link is-medium is-rounded">
-        <span class="icon"><i class="fas fa-play"></i></span>
-        <span>Open the CLEAR Playground</span>
-      </a>
+      <div class="playground-embed-shell">
+        <iframe
+          class="playground-embed"
+          src="playground/index.html"
+          title="Interactive CLEAR multi-robot playground"
+          loading="lazy"
+          allowfullscreen>
+          <p>Your browser cannot display the embedded playground. <a href="playground/index.html">Open the full playground instead.</a></p>
+        </iframe>
+      </div>
+      <p class="mt-4">
+        <a href="playground/index.html" class="button is-link is-medium is-rounded">
+          <span class="icon"><i class="fas fa-expand"></i></span>
+          <span>Open Full Playground</span>
+        </a>
+      </p>
     </div>
   </section>
 
