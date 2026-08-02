@@ -72,6 +72,78 @@
   "makespan": null
  },
  {
+  "family": "circ15",
+  "n": 80,
+  "seed": 0,
+  "file": "circ15_n80_s0.json",
+  "completed": true,
+  "makespan": 30.55
+ },
+ {
+  "family": "circ15",
+  "n": 80,
+  "seed": 1,
+  "file": "circ15_n80_s1.json",
+  "completed": true,
+  "makespan": 32.59
+ },
+ {
+  "family": "circ15",
+  "n": 80,
+  "seed": 2,
+  "file": "circ15_n80_s2.json",
+  "completed": true,
+  "makespan": 30.490000000000002
+ },
+ {
+  "family": "doorway",
+  "n": 8,
+  "seed": 0,
+  "file": "doorway_n8_s0.json",
+  "completed": true,
+  "makespan": 23.91
+ },
+ {
+  "family": "doorway",
+  "n": 8,
+  "seed": 1,
+  "file": "doorway_n8_s1.json",
+  "completed": true,
+  "makespan": 24.12
+ },
+ {
+  "family": "doorway",
+  "n": 8,
+  "seed": 2,
+  "file": "doorway_n8_s2.json",
+  "completed": true,
+  "makespan": 19.52
+ },
+ {
+  "family": "doorway",
+  "n": 16,
+  "seed": 0,
+  "file": "doorway_n16_s0.json",
+  "completed": true,
+  "makespan": 25.76
+ },
+ {
+  "family": "doorway",
+  "n": 16,
+  "seed": 1,
+  "file": "doorway_n16_s1.json",
+  "completed": true,
+  "makespan": 29.87
+ },
+ {
+  "family": "doorway",
+  "n": 16,
+  "seed": 2,
+  "file": "doorway_n16_s2.json",
+  "completed": true,
+  "makespan": 32.31
+ },
+ {
   "family": "free",
   "n": 20,
   "seed": 0,
@@ -142,6 +214,78 @@
   "file": "free_n60_s2.json",
   "completed": true,
   "makespan": 24.34
+ },
+ {
+  "family": "free",
+  "n": 80,
+  "seed": 0,
+  "file": "free_n80_s0.json",
+  "completed": true,
+  "makespan": 28.94
+ },
+ {
+  "family": "free",
+  "n": 80,
+  "seed": 1,
+  "file": "free_n80_s1.json",
+  "completed": true,
+  "makespan": 28.98
+ },
+ {
+  "family": "free",
+  "n": 80,
+  "seed": 2,
+  "file": "free_n80_s2.json",
+  "completed": true,
+  "makespan": 27.11
+ },
+ {
+  "family": "intersection",
+  "n": 8,
+  "seed": 0,
+  "file": "intersection_n8_s0.json",
+  "completed": true,
+  "makespan": 16.18
+ },
+ {
+  "family": "intersection",
+  "n": 8,
+  "seed": 1,
+  "file": "intersection_n8_s1.json",
+  "completed": true,
+  "makespan": 16.17
+ },
+ {
+  "family": "intersection",
+  "n": 8,
+  "seed": 2,
+  "file": "intersection_n8_s2.json",
+  "completed": true,
+  "makespan": 16.18
+ },
+ {
+  "family": "intersection",
+  "n": 16,
+  "seed": 0,
+  "file": "intersection_n16_s0.json",
+  "completed": true,
+  "makespan": 19.87
+ },
+ {
+  "family": "intersection",
+  "n": 16,
+  "seed": 1,
+  "file": "intersection_n16_s1.json",
+  "completed": true,
+  "makespan": 20.54
+ },
+ {
+  "family": "intersection",
+  "n": 16,
+  "seed": 2,
+  "file": "intersection_n16_s2.json",
+  "completed": true,
+  "makespan": 20.47
  },
  {
   "family": "rect15",
@@ -216,6 +360,30 @@
   "makespan": 28.28
  },
  {
+  "family": "rect15",
+  "n": 80,
+  "seed": 0,
+  "file": "rect15_n80_s0.json",
+  "completed": true,
+  "makespan": 29.060000000000002
+ },
+ {
+  "family": "rect15",
+  "n": 80,
+  "seed": 1,
+  "file": "rect15_n80_s1.json",
+  "completed": true,
+  "makespan": 31.67
+ },
+ {
+  "family": "rect15",
+  "n": 80,
+  "seed": 2,
+  "file": "rect15_n80_s2.json",
+  "completed": true,
+  "makespan": 28.26
+ },
+ {
   "family": "swap",
   "n": 20,
   "seed": 0,
@@ -286,5 +454,29 @@
   "file": "swap_n60_s2.json",
   "completed": true,
   "makespan": 27.32
+ },
+ {
+  "family": "swap",
+  "n": 80,
+  "seed": 0,
+  "file": "swap_n80_s0.json",
+  "completed": true,
+  "makespan": 30.5
+ },
+ {
+  "family": "swap",
+  "n": 80,
+  "seed": 1,
+  "file": "swap_n80_s1.json",
+  "completed": true,
+  "makespan": 30.990000000000002
+ },
+ {
+  "family": "swap",
+  "n": 80,
+  "seed": 2,
+  "file": "swap_n80_s2.json",
+  "completed": true,
+  "makespan": 32.35
  }
 ]
