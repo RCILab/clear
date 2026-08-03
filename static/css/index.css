@@ -253,6 +253,25 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
+.resource-demos figure {
+  margin: 0;
+}
+
+.resource-demos img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.resource-demos figcaption {
+  min-height: 3rem;
+  margin-top: 0.75rem;
+}
+
 .results-carousel {
   overflow: hidden;
   padding: 1rem 0;
@@ -761,6 +780,5 @@ a:focus {
     box-shadow: none !important;
   }
 }
-
 
 

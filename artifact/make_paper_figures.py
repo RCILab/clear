@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+from dataclasses import replace
 import json
 from pathlib import Path
 
@@ -16,6 +17,7 @@ from clear_nav import (
     Protocol,
     REPORTED_CLEAR_CONTROLLER,
     SMGGeometry,
+    VanillaCBFController,
     make_scenario,
     make_smg_scenario,
 )
@@ -453,27 +455,75 @@ def make_internal_closeups(output: Path) -> None:
         "xlim": (2.0, 8.0),
         "ylim": (-6.0, 0.0),
         "highlight": (4, 6, 11),
+        "highlight_colors": {
+            4: "#0072B2",
+            6: "#D55E00",
+            11: "#009E73",
+        },
     }
     panels = [
         {
             **common,
+            "variant": "clear",
             "trace": Path("results/internal_30ms_diagnostics_clear")
             / "rect15_n20_seed16_trace.npz",
-            "color": "#1F6FB2",
         },
         {
             **common,
+            "variant": "vanilla-cbf-qp",
             "trace": Path("results/internal_30ms_diagnostics_vanilla")
             / "rect15_n20_seed16_trace.npz",
-            "color": "#C83A3A",
         },
         {
             **common,
+            "variant": "component-free",
             "trace": Path("results/internal_30ms_diagnostics_component_free")
             / "rect15_n20_seed16_trace.npz",
-            "color": "#C83A3A",
         },
     ]
+
+    def ensure_trace(panel: dict) -> None:
+        trace_path = panel["trace"]
+        if trace_path.exists():
+            return
+        scenario = make_unicycle_scenario(
+            panel["family"],
+            panel["count"],
+            panel["seed"],
+            protocol,
+            unicycle,
+        )
+        config = clear_config()
+        controller = None
+        if panel["variant"] != "clear":
+            config = replace(
+                config,
+                cluster_escape_gain=0.0,
+                cluster_escape_hysteresis=False,
+            )
+        if panel["variant"] == "vanilla-cbf-qp":
+            controller = VanillaCBFController(
+                inflated_unicycle_protocol(protocol, unicycle.lookahead),
+                config,
+            )
+        rollout = simulate_unicycle(
+            scenario,
+            config,
+            unicycle,
+            initial_headings=np.zeros(panel["count"]),
+            record_stride=1,
+            guidance_mode="cost",
+            controller=controller,
+        )
+        trace_path.parent.mkdir(parents=True, exist_ok=True)
+        np.savez_compressed(
+            trace_path,
+            times=rollout.times,
+            positions=rollout.trajectory,
+            headings=rollout.headings,
+            goals=scenario.goals,
+        )
+        print(f"wrote {trace_path}")
 
     def draw_panels(selected_panels: list[dict], filename: str) -> None:
         figure, axes = plt.subplots(
@@ -483,6 +533,7 @@ def make_internal_closeups(output: Path) -> None:
             squeeze=False,
         )
         for ax, panel in zip(axes[0], selected_panels):
+            ensure_trace(panel)
             scenario = make_unicycle_scenario(
                 panel["family"],
                 panel["count"],
@@ -503,10 +554,11 @@ def make_internal_closeups(output: Path) -> None:
             highlighted = set(panel["highlight"])
             for robot in range(panel["count"]):
                 selected = robot in highlighted
+                color = panel["highlight_colors"].get(robot, "#AAB4C0")
                 ax.plot(
                     positions[begin : end + 1 : 2, robot, 0],
                     positions[begin : end + 1 : 2, robot, 1],
-                    color=panel["color"] if selected else "#AAB4C0",
+                    color=color,
                     lw=1.25 if selected else 0.55,
                     alpha=0.90 if selected else 0.38,
                     zorder=3 if selected else 2,
@@ -514,6 +566,7 @@ def make_internal_closeups(output: Path) -> None:
             arrow_index = int(np.argmin(np.abs(times - panel["arrow_time"])))
             future_index = min(arrow_index + 7, len(times) - 1)
             for robot in sorted(highlighted):
+                color = panel["highlight_colors"][robot]
                 direction = positions[future_index, robot] - positions[arrow_index, robot]
                 norm = float(np.linalg.norm(direction))
                 if norm <= 1.0e-5:
@@ -526,34 +579,35 @@ def make_internal_closeups(output: Path) -> None:
                         arrowstyle="-|>",
                         mutation_scale=7.5,
                         lw=0.9,
-                        color=panel["color"],
+                        color=color,
                         zorder=5,
                     )
                 )
             for robot in range(panel["count"]):
                 selected = robot in highlighted
+                color = panel["highlight_colors"].get(robot, "#9AA4B0")
                 ax.add_patch(
                     CirclePatch(
                         positions[end, robot],
                         protocol.body_radius,
-                        facecolor=panel["color"] if selected else "#9AA4B0",
+                        facecolor=color,
                         edgecolor="white",
                         lw=0.45,
                         alpha=0.92 if selected else 0.55,
                         zorder=6 if selected else 4,
                     )
                 )
-            selected = np.array(sorted(highlighted), dtype=int)
-            ax.scatter(
-                goals[selected, 0],
-                goals[selected, 1],
-                s=24,
-                marker="*",
-                color="#16803C",
-                edgecolor="white",
-                linewidth=0.35,
-                zorder=7,
-            )
+            for robot in sorted(highlighted):
+                ax.scatter(
+                    goals[robot, 0],
+                    goals[robot, 1],
+                    s=24,
+                    marker="*",
+                    color=panel["highlight_colors"][robot],
+                    edgecolor="white",
+                    linewidth=0.35,
+                    zorder=7,
+                )
             ax.set_xlim(*panel["xlim"])
             ax.set_ylim(*panel["ylim"])
             ax.set_aspect("equal")
@@ -565,6 +619,10 @@ def make_internal_closeups(output: Path) -> None:
     draw_panels([panels[0]], "clear_internal_full_closeup.png")
     draw_panels([panels[1]], "clear_internal_vanilla_closeup.png")
     draw_panels([panels[2]], "clear_internal_component_free_closeup.png")
+    draw_panels(
+        [panels[0], panels[2]],
+        "clear_component_closeup.png",
+    )
 
 
 def make_results(output: Path) -> None:

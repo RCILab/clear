@@ -32,6 +32,12 @@ PAIRED_CASES = (
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument(
+        "--groups",
+        nargs="+",
+        choices=("main", "paired", "smg", "bridge"),
+        default=("main", "paired", "smg", "bridge"),
+    )
+    parser.add_argument(
         "--output-dir",
         type=Path,
         default=Path("results/paper_gifs"),
@@ -39,6 +45,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-frames", type=int, default=160)
     parser.add_argument("--fps", type=int, default=15)
     parser.add_argument("--dpi", type=int, default=90)
+    parser.add_argument("--smg-robots", nargs="+", type=int, default=(8, 16))
     return parser.parse_args()
 
 
@@ -157,7 +164,7 @@ def make_smg(args: argparse.Namespace, records: list[dict]) -> None:
         intersection_corridor_width=2.4,
     )
     for family in ("doorway", "intersection"):
-        for count in (8, 16):
+        for count in args.smg_robots:
             scenario = make_smg_scenario(
                 family,
                 count,
@@ -302,10 +309,14 @@ def main() -> None:
     args = parse_args()
     args.output_dir.mkdir(parents=True, exist_ok=True)
     records: list[dict] = []
-    make_main(args, records)
-    make_paired(args, records)
-    make_smg(args, records)
-    make_bridge(args, records)
+    if "main" in args.groups:
+        make_main(args, records)
+    if "paired" in args.groups:
+        make_paired(args, records)
+    if "smg" in args.groups:
+        make_smg(args, records)
+    if "bridge" in args.groups:
+        make_bridge(args, records)
     write_index(args, records)
     print(f"wrote {len(records)} unicycle GIFs to {args.output_dir}")
 

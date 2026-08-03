@@ -152,11 +152,11 @@
           </p>
         </div>
         <div class="column is-6">
-          <img src="static/images/clear_component_closeup.png" alt="Rigid component translation">
+          <img src="static/images/clear_component_closeup.png" alt="Robot-colored rigid component comparison">
           <p class="is-size-6 has-text-grey has-text-centered">
             Same Rect15 instance: rigid component translation (left) carries a wall-bridged
             group through the local boundary passage; without it (right) the group stays
-            clustered until timeout.
+            clustered until timeout. Blue, orange, and green track the same robots in both panels.
           </p>
         </div>
       </div>
@@ -176,6 +176,38 @@
           <li>Component-parallel critical path &le; <b>22.8 ms</b> worst-seed p95 at N&thinsp;=&thinsp;80, inside the common 30 ms control period.</li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <!-- ===================== Shared-resource GIFs ===================== -->
+  <section class="section pt-0">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Shared-resource passage</h2>
+      <div class="columns is-centered resource-demos">
+        <div class="column is-6">
+          <figure>
+            <img
+              src="static/images/clear_doorway_n16_seed0.gif"
+              alt="Animated CLEAR execution through a doorway with 16 robots">
+            <figcaption class="is-size-6 has-text-grey has-text-centered">
+              Doorway, N&thinsp;=&thinsp;16: 20/20 audited completions and normalized flow 1.006.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure>
+            <img
+              src="static/images/clear_intersection_n16_seed0.gif"
+              alt="Animated CLEAR execution through a four-way intersection with 16 robots">
+            <figcaption class="is-size-6 has-text-grey has-text-centered">
+              Four-way Intersection, N&thinsp;=&thinsp;16: 20/20 audited completions and normalized flow 0.918.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <p class="has-text-centered is-size-6 has-text-grey mt-3">
+        Both animations use the same 30&thinsp;ms bounded-unicycle CLEAR controller as the reported evaluation.
+      </p>
     </div>
   </section>
 
