@@ -173,11 +173,10 @@ def render_comparison(
             ax.scatter(
                 trace.goals[robot, 0],
                 trace.goals[robot, 1],
-                s=30,
-                marker="*",
+                s=18,
+                marker=".",
                 color=colors[robot],
-                edgecolor="white",
-                linewidth=0.35,
+                linewidth=0,
                 zorder=6,
             )
         clock = ax.text(

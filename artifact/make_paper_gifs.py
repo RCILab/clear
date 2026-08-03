@@ -176,11 +176,10 @@ def _draw_static_scene(
     ax.scatter(
         scenario.goals[:, 0],
         scenario.goals[:, 1],
-        s=44,
-        facecolors="none",
-        edgecolors=colors,
-        linewidths=1.25,
-        marker="o",
+        s=18,
+        c=colors,
+        linewidths=0,
+        marker=".",
         zorder=3,
     )
     ax.scatter(

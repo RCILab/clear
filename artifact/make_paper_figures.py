@@ -37,6 +37,7 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=Path("results/figures"),
     )
+    parser.add_argument("--main-task-panels-only", action="store_true")
     parser.add_argument("--smg-task-panels-only", action="store_true")
     parser.add_argument("--internal-closeups-only", action="store_true")
     parser.add_argument("--bridge-panel-only", action="store_true")
@@ -139,6 +140,104 @@ def _draw_arena(ax: plt.Axes, scenario) -> None:
             )
 
 
+def make_main_task_panels(output: Path) -> None:
+    physical = Protocol(dt=0.03, horizon=60.0)
+    unicycle = UnicycleConfig(
+        lookahead=0.05,
+        yaw_rate_limit=np.pi / 2.0,
+        inner_substeps=3,
+    )
+    for family in ("free", "swap", "circ15", "rect15"):
+        scenario = make_unicycle_scenario(
+            family,
+            20,
+            0,
+            physical,
+            unicycle,
+        )
+        rollout = simulate_unicycle(
+            scenario,
+            REPORTED_CLEAR_CONTROLLER,
+            unicycle,
+            initial_headings=np.zeros(20),
+            record_stride=10,
+            guidance_mode="cost",
+        )
+        figure, ax = plt.subplots(figsize=(3.05, 3.05))
+        _draw_arena(ax, scenario)
+        colors = plt.get_cmap("tab20")(np.linspace(0.0, 1.0, 20))
+        for robot, color in enumerate(colors):
+            path = rollout.trajectory[:, robot]
+            ax.plot(
+                path[:, 0],
+                path[:, 1],
+                color=color,
+                linewidth=0.85,
+                alpha=0.72,
+                zorder=2,
+            )
+            ax.scatter(
+                path[0, 0],
+                path[0, 1],
+                marker="s",
+                s=10,
+                color=color,
+                edgecolors="none",
+                zorder=3,
+            )
+            ax.scatter(
+                scenario.goals[robot, 0],
+                scenario.goals[robot, 1],
+                marker=".",
+                s=14,
+                color=color,
+                linewidths=0,
+                zorder=4,
+            )
+            ax.add_patch(
+                CirclePatch(
+                    path[-1],
+                    physical.body_radius,
+                    facecolor=color,
+                    edgecolor="#20262c",
+                    linewidth=0.35,
+                    zorder=5,
+                )
+            )
+        limit = physical.half_width
+        ax.set_xlim(-limit, limit)
+        ax.set_ylim(-limit, limit)
+        ax.set_aspect("equal", adjustable="box")
+        tick_values = (-8, -4, 0, 4, 8)
+        tick_labels = ("-8", "-4", "0", "4", "8")
+        ax.set_xticks(tick_values, labels=tick_labels)
+        ax.set_yticks(tick_values, labels=tick_labels)
+        ax.tick_params(
+            labelsize=7,
+            length=2.5,
+            width=0.6,
+            labelbottom=True,
+            labelleft=True,
+            colors="#111827",
+        )
+        ax.grid(color="#d8dde3", linewidth=0.35, alpha=0.7, zorder=-1)
+        ax.set_xlabel("x (m)", fontsize=8, labelpad=1)
+        ax.set_ylabel("y (m)", fontsize=8, labelpad=1)
+        figure.tight_layout(pad=0.25)
+        target = output / f"clear_n20_{family}_seed0.png"
+        figure.savefig(
+            target,
+            dpi=320,
+            bbox_inches="tight",
+            facecolor="white",
+        )
+        plt.close(figure)
+        print(
+            f"wrote {target} success={rollout.mission_success} "
+            f"makespan={rollout.makespan:.3f}s"
+        )
+
+
 def make_smg_task_panels(output: Path) -> None:
     physical = Protocol(dt=0.03, horizon=60.0)
     unicycle = UnicycleConfig(
@@ -192,10 +291,10 @@ def make_smg_task_panels(output: Path) -> None:
             ax.scatter(
                 scenario.goals[robot, 0],
                 scenario.goals[robot, 1],
-                marker="x",
-                s=18,
+                marker=".",
+                s=14,
                 color=color,
-                linewidths=0.9,
+                linewidths=0,
                 zorder=4,
             )
             ax.add_patch(
@@ -291,10 +390,10 @@ def make_straight_bridge_panel(output: Path) -> None:
         ax.scatter(
             scenario.goals[robot, 0],
             scenario.goals[robot, 1],
-            marker="x",
-            s=28,
+            marker=".",
+            s=16,
             color=color,
-            linewidths=1.0,
+            linewidths=0,
             zorder=7,
         )
         ax.add_patch(
@@ -402,10 +501,11 @@ def make_failure_recovery(output: Path) -> None:
             ax.scatter(
                 scenario.goals[:, 0],
                 scenario.goals[:, 1],
-                s=18,
-                marker="*",
+                s=14,
+                marker=".",
                 color="#16803C",
                 alpha=0.75,
+                linewidths=0,
                 zorder=5,
             )
             ax.set_xlim(-protocol.half_width, protocol.half_width)
@@ -601,11 +701,10 @@ def make_internal_closeups(output: Path) -> None:
                 ax.scatter(
                     goals[robot, 0],
                     goals[robot, 1],
-                    s=24,
-                    marker="*",
+                    s=16,
+                    marker=".",
                     color=panel["highlight_colors"][robot],
-                    edgecolor="white",
-                    linewidth=0.35,
+                    linewidth=0,
                     zorder=7,
                 )
             ax.set_xlim(*panel["xlim"])
@@ -768,6 +867,9 @@ def make_results(output: Path) -> None:
 def main() -> None:
     args = parse_args()
     args.output_dir.mkdir(parents=True, exist_ok=True)
+    if args.main_task_panels_only:
+        make_main_task_panels(args.output_dir)
+        return
     if args.smg_task_panels_only:
         make_smg_task_panels(args.output_dir)
         return
