@@ -115,10 +115,8 @@ def load_trace(path: Path) -> Trace:
 def panel_colors(variant: str, robot_colored: bool) -> list[str]:
     colors = ["#AAB4C0"] * 20
     for robot in HIGHLIGHTED:
-        if robot_colored:
+        if robot_colored or variant == "clear":
             colors[robot] = ROBOT_COLORS[robot]
-        elif variant == "clear":
-            colors[robot] = "#2478B9"
         else:
             colors[robot] = "#D94747"
     return colors
